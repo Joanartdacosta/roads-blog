@@ -1,3 +1,17 @@
+/* Inter Regular 400 */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: url("https://estradas-website.s3.amazonaws.com/Estradas/roads-background.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -85,15 +99,7 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 a {
   color: inherit;
