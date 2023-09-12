@@ -1,6 +1,8 @@
 import Link from "next/link";
 import navBarStyles from "./navbar.module.css";
 
+import Footer from "./Footer";
+
 export default function NavBar() {
   return (
     <div className={navBarStyles.navBar}>
@@ -18,7 +20,7 @@ export default function NavBar() {
         <Link className={navBarStyles.navBarLink} href="/geossitios">
           Geossitios
         </Link>
-        <Link className={navBarStyles.navBarLink} href="#passadicos">
+        <Link className={navBarStyles.navBarLink} href="/passadicos">
           Passadicos
         </Link>
         {/* <Link className={navBarStyles.navBarLink} href="/humor">
@@ -33,6 +35,9 @@ export default function NavBar() {
         <Link className={navBarStyles.navBarLink} href="/contactos">
           Contactos
         </Link> */}
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

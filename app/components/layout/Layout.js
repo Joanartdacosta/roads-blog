@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
         </div>
       </main>
 
-      {!home && <div>hello</div>}
+      {!home && <div></div>}
     </>
   );
 }
