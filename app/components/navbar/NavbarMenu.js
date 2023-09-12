@@ -8,7 +8,7 @@ export default function NavbarMenu() {
   const [openMenu, setOpenMenu] = useState(false);
 
   const menu = (
-    <div>
+    <div className={navBarStyles.navBar}>
       <NavBar />
     </div>
   );

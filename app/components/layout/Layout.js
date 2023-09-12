@@ -2,9 +2,8 @@ import React from "react";
 import Head from "next/head";
 import NavbarMenu from "../navbar/NavbarMenu";
 import navBarStyles from "../../components/navbar/navbar.module.css";
-import layoutStyles from "./layout.module.css";
 
-export default function Layout() {
+export default function Layout({ children, home }) {
   return (
     <>
       <Head>
@@ -20,13 +19,14 @@ export default function Layout() {
       </Head>
 
       <main>
-        <div className={layoutStyles.sections}>
-          <div className={navBarStyles.menuIcon}>
-            <NavbarMenu />
-          </div>
-          <div>content</div>
+        {" "}
+        <div className={navBarStyles.menuIcon}>
+          <NavbarMenu />
+          {children}
         </div>
       </main>
+
+      {!home && <div>hello</div>}
     </>
   );
 }
