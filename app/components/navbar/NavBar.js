@@ -1,24 +1,23 @@
 import Link from "next/link";
-import navBarStyles from "./navbar.module.css";
 
 export default function NavBar() {
   return (
-    <div className={navBarStyles.navBar}>
-      <div className={navBarStyles.menu}>
-        <Link className={navBarStyles.navBarLink} href="/sobre">
+    <div>
+      <div className="display-flex display-column height-100 padding-40 small-menu">
+        <Link className="link font-text padding-10" href="/sobre">
           Sobre
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/miradouros">
+        <Link className="link font-text padding-10" href="/miradouros">
           Miradouros
         </Link>
 
-        <Link className={navBarStyles.navBarLink} href="/passeios">
+        <Link className="link font-text padding-10" href="/passeios">
           Passeios
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/geossitios">
+        <Link className="link font-text padding-10" href="/geossitios">
           Geossitios
         </Link>
-        <Link className={navBarStyles.navBarLink} href="#passadicos">
+        <Link className="link font-text padding-10" href="#passadicos">
           Passadicos
         </Link>
         {/* <Link className={navBarStyles.navBarLink} href="/humor">

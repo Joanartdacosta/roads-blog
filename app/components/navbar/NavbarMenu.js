@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import NavBar from "./NavBar";
-import navBarStyles from "./navbar.module.css";
 
 export default function NavbarMenu() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -14,11 +13,11 @@ export default function NavbarMenu() {
   );
 
   return (
-    <div className={navBarStyles.menuTotal}>
+    <div className="height-100 display-flex display-column big-menu">
       <Link onClick={() => setOpenMenu(!openMenu)} href="/">
         {" "}
         <img
-          className={navBarStyles.menuIcon}
+          className="icon"
           src="https://estradas-website.s3.amazonaws.com/Estradas/icons/Design+sem+nome.png"
           alt="menu"
         />
