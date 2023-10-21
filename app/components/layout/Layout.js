@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import NavbarMenu from "../navbar/NavbarMenu";
-import navBarStyles from "../../components/navbar/navbar.module.css";
 
 export default function Layout({ children, home }) {
   return (
@@ -20,7 +19,7 @@ export default function Layout({ children, home }) {
 
       <main>
         {" "}
-        <div className={navBarStyles.menuIcon}>
+        <div>
           <NavbarMenu />
           {children}
         </div>

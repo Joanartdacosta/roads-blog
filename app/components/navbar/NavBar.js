@@ -1,51 +1,39 @@
 import Link from "next/link";
-import navBarStyles from "./navbar.module.css";
-
-import Footer from "./Footer";
 
 export default function NavBar() {
   return (
-    <div className={navBarStyles.navBar}>
-      <div className={navBarStyles.menu}>
-        <Link className={navBarStyles.navBarLink} href="/sobre">
+    <div className="navbar">
+      <div className="display-flex padding-40 display-column navbar-background">
+        <Link className="link font-text padding-10" href="/sobre">
           Sobre
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/miradouros">
+        <Link className="link font-text padding-10" href="/miradouros">
           Miradouros
         </Link>
 
-        <Link className={navBarStyles.navBarLink} href="/passeios">
+        <Link className="link font-text padding-10" href="/passeios">
           Passeios
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/geossitios">
+        <Link className="link font-text padding-10" href="/geossitios">
           Geossitios
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/passadicos">
+        <Link className="link font-text padding-10" href="/passadicos">
           Passadicos
         </Link>
-        {/* <Link className={navBarStyles.navBarLink} href="/humor">
+        <Link className="link font-text padding-10" href="/humor">
           Humor
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/proverbios">
+        <Link className="link font-text padding-10" href="/proverbios">
           Proverbio do Mes
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/imprensa">
+        <Link className="link font-text padding-10" href="/imprensa">
           Artigos & Imprensa
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/contactos">
+        <Link className="link font-text padding-10" href="/contactos">
           Contactos
-        </Link> */}
+        </Link>
       </div>
-      <div>
-        <Footer />
-      </div>
+      <div></div>
     </div>
   );
-}
-
-{
-  /* {LINKS.map((link) => (
-        <Link className="navbar-link" key={link.id} to={link.to}>
-          {link.text}
-        </Link> */
 }
