@@ -19,13 +19,10 @@ export default function Layout({ children, home }) {
       </Head>
 
       <main>
-        <div className="wrap-section">
-          <div className="icon">
-            <NavbarMenu />
-          </div>
-          <div className="margin-auto">{children}</div>
-          <FooterOut />
-        </div>
+        <NavbarMenu />
+
+        {children}
+        <FooterOut />
       </main>
 
       {!home && <div></div>}
