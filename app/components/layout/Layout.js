@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import NavbarMenu from "../navbar/NavbarMenu";
-import navBarStyles from "../../components/navbar/navbar.module.css";
+import FooterOut from "../footer/FooterOut";
 
 export default function Layout({ children, home }) {
   return (
-    <>
+    <div>
       <Head>
         <title>Estradas</title>
         <meta name="description" content="Blog de turismo" />
@@ -19,14 +19,16 @@ export default function Layout({ children, home }) {
       </Head>
 
       <main>
-        {" "}
-        <div className={navBarStyles.menuIcon}>
-          <NavbarMenu />
-          {children}
+        <div className="wrap-section">
+          <div className="icon">
+            <NavbarMenu />
+          </div>
+          <div className="margin-auto">{children}</div>
+          <FooterOut />
         </div>
       </main>
 
       {!home && <div></div>}
-    </>
+    </div>
   );
 }
