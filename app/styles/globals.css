@@ -160,13 +160,14 @@ main {
 
 .roads-entrance {
   background-image: url(https://plus.unsplash.com/premium_photo-1669731123911-81f7aafda76a?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  /* opacity: 70%; */
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: cover;
-  height: 900px;
+
   padding-top: 100px;
   color: black;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
 }
 
 .roads-shadow {

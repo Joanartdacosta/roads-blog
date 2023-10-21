@@ -24,12 +24,8 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
-        <div className="display-flex">
-          <div className="icon">
-            <NavbarMenu />
-          </div>
-          <div className="margin-auto">{children}</div>
-        </div>
+        <NavbarMenu />
+        {children}
       </main>
     </>
   );
