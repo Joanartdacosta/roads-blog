@@ -24,8 +24,6 @@ export default function Layout({ children, home }) {
         {children}
         <FooterOut />
       </main>
-
-      {!home && <div></div>}
     </div>
   );
 }
