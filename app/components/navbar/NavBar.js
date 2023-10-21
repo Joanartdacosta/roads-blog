@@ -20,26 +20,19 @@ export default function NavBar() {
         <Link className="link font-text padding-10" href="#passadicos">
           Passadicos
         </Link>
-        {/* <Link className={navBarStyles.navBarLink} href="/humor">
+        <Link className="link font-text padding-10" href="/humor">
           Humor
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/proverbios">
+        <Link className="link font-text padding-10" href="/proverbios">
           Proverbio do Mes
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/imprensa">
+        <Link className="link font-text padding-10" href="/imprensa">
           Artigos & Imprensa
         </Link>
-        <Link className={navBarStyles.navBarLink} href="/contactos">
+        <Link className="link font-text padding-10" href="/contactos">
           Contactos
-        </Link> */}
+        </Link>
       </div>
     </div>
   );
-}
-
-{
-  /* {LINKS.map((link) => (
-        <Link className="navbar-link" key={link.id} to={link.to}>
-          {link.text}
-        </Link> */
 }
