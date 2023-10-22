@@ -23,38 +23,36 @@ export default function NavBar() {
         />
         <Dropdown.Item>
           {" "}
-          <Link href="/sobre">Sobre</Link>
+          <Link href="/about">Sobre</Link>
         </Dropdown.Item>
 
         <Dropdown.Item>
           {" "}
-          <Link href="/feiras">Feiras, Romarias e Festivais</Link>
+          <Link href="/fairs">Feiras, Romarias e Festivais</Link>
         </Dropdown.Item>
 
         <Dropdown.Item>
           {" "}
-          <Link href="/passadicos">Passeios e Passadicos</Link>
+          <Link href="/trips">Passeios e Passadicos</Link>
         </Dropdown.Item>
 
         <Dropdown.Item>
           {" "}
-          <Link href="/roteiros">Roteiros</Link>
+          <Link href="/tours">Roteiros</Link>
         </Dropdown.Item>
 
         <Dropdown.Item>
           {" "}
-          <Link href="/roteiros/#roteirogratuito">
-            Roteiro Personalizado GRATUITO
-          </Link>
+          <Link href="/tours/#freetour">Roteiro Personalizado GRATUITO</Link>
         </Dropdown.Item>
 
         <Dropdown.Item>
           {" "}
-          <Link href="/geossitios">Geossitios</Link>
+          <Link href="/geospots">Geossitios</Link>
         </Dropdown.Item>
 
         <Dropdown.Item>
-          <Link href="/proverbios">Proverbio do Mes</Link>
+          <Link href="/proverbs">Proverbio do Mes</Link>
         </Dropdown.Item>
 
         <Dropdown.Item>
