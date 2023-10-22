@@ -13,7 +13,7 @@ export default function NavbarMenu() {
   );
 
   return (
-    <div className="display-flex display-column navbar-small">
+    <div className="height-100 display-flex display-column big-menu">
       <Link onClick={() => setOpenMenu(!openMenu)} href="/">
         {" "}
         <img
