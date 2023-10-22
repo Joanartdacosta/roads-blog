@@ -1,6 +1,6 @@
-const ROTEIROS = [
+const TOURS = [
   {
-    id: "passadicos-1",
+    id: "tour-1",
     title: "Minas de Sal Gema de Loulé",
     district: "Faro",
     town1: "Loule",
@@ -15,4 +15,4 @@ const ROTEIROS = [
   },
 ];
 
-export default ROTEIROS;
+export default TOURS;
