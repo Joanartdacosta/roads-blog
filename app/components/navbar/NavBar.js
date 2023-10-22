@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div>
-      <div className="display-flex display-column height-100 padding-40 small-menu">
+    <div className="navbar">
+      <div className="display-flex padding-40 display-column navbar-background">
         <Link className="link font-text padding-10" href="/sobre">
           Sobre
         </Link>
@@ -17,7 +17,7 @@ export default function NavBar() {
         <Link className="link font-text padding-10" href="/geossitios">
           Geossitios
         </Link>
-        <Link className="link font-text padding-10" href="#passadicos">
+        <Link className="link font-text padding-10" href="/passadicos">
           Passadicos
         </Link>
         <Link className="link font-text padding-10" href="/humor">
@@ -33,6 +33,7 @@ export default function NavBar() {
           Contactos
         </Link>
       </div>
+      <div></div>
     </div>
   );
 }
