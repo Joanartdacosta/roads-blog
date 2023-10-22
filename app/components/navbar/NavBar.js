@@ -60,7 +60,7 @@ export default function NavBar() {
         </Dropdown.Item>
 
         <Dropdown.Item>
-          <Link href="/contactos">Contactos</Link>
+          <Link href="/contacts">Contactos</Link>
         </Dropdown.Item>
 
         <SmallFooter />
