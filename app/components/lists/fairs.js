@@ -1,6 +1,6 @@
-const FEIRAS = [
+const FAIRS = [
   {
-    id: "feiras-1",
+    id: "fair-1",
     title: "Feira dos Gorazes",
     month: "Meados de Outubro",
     region: "Norte",
@@ -11,7 +11,7 @@ const FEIRAS = [
       "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
 
     paragraph1:
-      "A feira dos Gorazes é uma das feiras anuais mais antigas de Portugal e, seguramente, a mais importante e antiga feira das Terras de Trás-os-Montes. O certame tem lugar em Mogadouro, pelo menos, desde os dias 15 e 16 de outubro de 1760, ano em que aparecem as primeiras referências escritas sobre o evento, embora exista quem defenda a sua origem medieval.",
+      "A feira dos Gorazes é uma das fair anuais mais antigas de Portugal e, seguramente, a mais importante e antiga feira das Terras de Trás-os-Montes. O certame tem lugar em Mogadouro, pelo menos, desde os dias 15 e 16 de outubro de 1760, ano em que aparecem as primeiras referências escritas sobre o evento, embora exista quem defenda a sua origem medieval.",
     district: "Braganca",
     paragraph2:
       "Se não é de estranhar a origem anterior ao século XVIII desta Feira, motivo de maior surpresa e alvo até de uma certa controvérsia é a própria designação do certame. É que apesar de Goraz ser nome de peixe o que é facto é que na Feira todos se juntam para comer carne. Tamanha contradição parece encontrar explicação na história e na origem da própria palavra.",
@@ -24,7 +24,7 @@ const FEIRAS = [
       "Retirado do site “https://7maravilhas.pt/portfolio/feira-dos-gorazes-de-mogadouro/”, consultado em setembro 23.",
   },
   {
-    id: "feiras-2",
+    id: "fair-2",
     title: "Feira de S. Simao",
     month: "28 de Outubro",
 
@@ -46,7 +46,7 @@ const FEIRAS = [
   },
 
   {
-    id: "feiras-3",
+    id: "fair-3",
 
     title: "Festa da Nossa Senhora das Areias",
     month: "1º Fim de Semana de Outubro",
@@ -68,7 +68,7 @@ const FEIRAS = [
       "Retirado do Site “http://patrimonioreligiosodeaveiro.blogspot.com/2020/11/historia-da-capela-de-nossa-senhora-das.html”, consultado em setembro 23.",
   },
   {
-    id: "feiras-4",
+    id: "fair-4",
     title: "Festa de Nossa Senhora do Rosário (Terra da Sopa Seca)",
     month: "1º domingo de outubro",
     location: "Norte",
@@ -88,7 +88,7 @@ const FEIRAS = [
       "Retirado do site “https://www.mysound-mag.com/2021/09/festa-senhora-rosario-duas-igrejas.html”, consultado em setembro 23.",
   },
   {
-    id: "feiras-5",
+    id: "fair-5",
     title: "Feira de Santa Iria",
     month: "Início na sexta feira anterior a 20 de outubro e domingo seguinte",
     location: "Lisboa e Vale do Tejo",
@@ -105,10 +105,10 @@ const FEIRAS = [
     paragraph3:
       "Nesse dia, a imagem da Santa é levada em procissão, com a presença de grande número de crianças das escolas do concelho, que lançam pétalas ao rio, evocando o seu martírio.",
     sources:
-      "Retirado do site “https://feirasantairia.pt/index.php/2022/09/29/historia-da-feira-de-santa-iria/”, consultado em setembro 23.",
+      "Retirado do site “https://fairantairia.pt/index.php/2022/09/29/historia-da-feira-de-santa-iria/”, consultado em setembro 23.",
   },
   {
-    id: "feiras-6",
+    id: "fair-6",
     title: "Feira das Mercês",
     month: "2ª quinzena de outubro",
     location: "Lisboa e Vale do Tejo",
@@ -128,7 +128,7 @@ const FEIRAS = [
       "Retirado do site “https://cm-sintra.pt/atualidade/agenda/1482-a-feira-das-merces-esta-de-regresso-a-sintra-2”, consultado em setembro 23.",
   },
   {
-    id: "feiras-7",
+    id: "fair-7",
     title: "Festival Nacional de Gastronomia",
     month: " Final de outubro/Início novembro",
     location: "Lisboa e Vale do Tejo",
@@ -145,7 +145,7 @@ const FEIRAS = [
       "Retirado do site “https://cm-sintra.pt/atualidade/agenda/1482-a-feira-das-merces-esta-de-regresso-a-sintra-2”, consultado em setembro 23.",
   },
   {
-    id: "feiras-8",
+    id: "fair-8",
     title: "Festa de Nossa Senhora do Fetal",
     month: " 1º domingo de outubro",
     location: "Centro e Beira Interior",
@@ -168,7 +168,7 @@ const FEIRAS = [
       "Retirado do site “https://7maravilhas.pt/portfolio/procissao-dos-caracois-festa-de-nossa-senhora-do-fetal/”, consultado em setembro 23.",
   },
   {
-    id: "feiras-9",
+    id: "fair-9",
     title: "Festa dos Círios a Nossa Senhora dos Remédios",
     month: " 3º domingo de outubro",
     location: "Centro e Beira Interior",
@@ -187,7 +187,7 @@ const FEIRAS = [
       "Retirado do site “https://jornaldascaldas.pt/2021/10/18/cirios-a-nossa-senhora-dos-remedios-2/”, consultado em setembro 23.",
   },
   {
-    id: "feiras-10",
+    id: "fair-10",
     title: "Feira de Castro",
     month: "3º fim de semana de outubro",
     location: "Centro e Beira Interior",
@@ -210,7 +210,7 @@ const FEIRAS = [
       "Retirado do Site “https://www.cm-castroverde.pt/pt/menu/943/feira-de-castro.aspx”, consultado em setembro 23.",
   },
   {
-    id: "feiras-11",
+    id: "fair-11",
     title: "Festa do Senhor dos Milagres",
     month: "8 e 9 outubro",
     location: "Arquipélagos dos Açores e Madeira",
@@ -234,4 +234,4 @@ const FEIRAS = [
   },
 ];
 
-export default FEIRAS;
+export default FAIRS;

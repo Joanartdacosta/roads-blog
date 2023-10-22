@@ -1,9 +1,9 @@
-const PASSEIOS = [
+const TRIPS = [
   {
-    id: "passadicos-1",
+    id: "trip-1",
     imgURL:
       "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
-    href: "/passadicos/minas_loule",
+    href: "/trips/minas_loule",
     title: "Passeio - Minas de Sal Gema de Loulé",
     paragraph1:
       "Passeio pelas minas de Sal Gema de Loule, um passeio bastante interessante",
@@ -19,14 +19,14 @@ const PASSEIOS = [
     sources: "http://www.techsalt.pt/",
   },
   {
-    id: "passadicos-2",
-    title: "Passadicos do Mondega",
+    id: "trips-2",
+    title: "trips do Mondega",
     imgURL:
-      "https://images.impresa.pt/expresso/2023-03-28-passadicos-do-mondego3.jpg-a9238acb/3x2/mw-694",
+      "https://images.impresa.pt/expresso/2023-03-28-trips-do-mondego3.jpg-a9238acb/3x2/mw-694",
 
     paragraph1:
       "Passeio pelas minas de Sal Gema de Loule, um passeio bastante interessante",
-    href: "/passadicos/mondego",
+    href: "/trips/mondego",
 
     district: "Guarda",
     town1: "Guarda",
@@ -43,8 +43,8 @@ const PASSEIOS = [
     direction1:
       "Sentido Videmonte – Barragem é mais suave para início, mas depois a parte final obriga à subida de cerca de 700 degraus, dificil",
     directions2: "Sentido Barragem – Videmonte – mais aconselhada",
-    sources: "https://www.passadicosdomondego.pt/",
+    sources: "https://www.tripsdomondego.pt/",
   },
 ];
 
-export default PASSEIOS;
+export default TRIPS;
