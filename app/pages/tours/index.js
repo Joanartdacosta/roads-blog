@@ -1,6 +1,5 @@
 import React from "react";
 
-import ROTEIROS from "@/components/lists/roteiros";
 import Form from "@/components/UI/forms/Form";
 import CardStars from "@/components/UI/cards/card_stars/CardStars";
 import TOURS from "@/components/lists/tours";
