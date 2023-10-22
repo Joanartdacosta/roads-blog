@@ -39,6 +39,23 @@ main {
   font-weight: lighter;
 }
 
+.font-bold {
+  font-weight: 600;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+/* text */
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 /* old */
 
 .road-title {
@@ -71,21 +88,53 @@ main {
   text-shadow: 0.05rem 0.05rem 0.125rem rgb(44, 75, 32);
 }
 
-.font-bold {
-  font-weight: 600;
+/* margin */
+.margin-auto {
+  margin: auto;
 }
 
-.font-italic {
-  font-style: italic;
+.margin-40 {
+  margin: 5rem;
 }
 
-/* text */
-.text-center {
-  text-align: center;
+/* paddings */
+.padding-10 {
+  padding: 10px;
+}
+.padding-40 {
+  padding: 40px;
+}
+.padding-50 {
+  padding-left: 50px;
 }
 
-.text-justify {
-  text-align: justify;
+/* width - height */
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.max-width {
+  max-width: 900px;
+}
+
+/* display */
+
+.display-flex {
+  display: flex;
+}
+
+.display-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 /* link, icons, logo */
@@ -129,30 +178,7 @@ main {
   height: 16vh;
 }
 
-/* display */
-
-.display-flex {
-  display: flex;
-}
-
-.display-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-/* width - height */
-
-.height-100 {
-  height: 100vh;
-}
-
-.width-100 {
-  width: 100vw;
-}
+/* background */
 
 .roads-entrance {
   background-image: url("https://estradas-website.s3.amazonaws.com/Estradas/roads-background.JPG");
@@ -202,6 +228,13 @@ main {
   height: 100%;
 }
 
-.margin-40 {
-  margin: 5rem;
+.small-menu {
+  background-color: rgb(174, 178, 179);
+  width: 100px;
+}
+
+.big-menu {
+  width: 100px;
+  background-color: rgb(46, 57, 42);
+  position: fixed;
 }
