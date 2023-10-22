@@ -1,3 +1,179 @@
+:root {
+  --font-title: "Raleway", san-serif;
+  --font-text: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-text);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: auto;
+  min-width: 320px;
+  max-width: 2560px;
+}
+
+/* fonts */
+
+.font-text {
+  font-family: var(--font-text);
+  font-size: 18px;
+}
+
+.font-title {
+  font-family: var(--font-title);
+  font-size: 20px;
+}
+
+.title-roads1 {
+  font-size: 50px;
+  letter-spacing: 35px;
+}
+.title-roads2 {
+  font-size: 35px;
+  letter-spacing: 35px;
+}
+.title-roads3 {
+  font-size: 40px;
+  letter-spacing: 35px;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+/* text */
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* link, icons, logo */
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.logo {
+  width: 80px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* buttons */
+
+.button {
+  border: none;
+  text-align: center;
+  min-width: fit-content;
+}
+
+.button-green {
+  background: #cdcfc4;
+  padding: 10px;
+}
+
+.button-brown {
+  border-radius: 12px;
+  background: #e9dccf;
+  color: #856343;
+  width: 200px;
+  height: 40px;
+}
+
+/* display */
+
+.display-flex {
+  display: flex;
+}
+
+.display-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* width - height */
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.max-width {
+  max-width: 900px;
+}
+
+/* margin */
+.margin-auto {
+  margin: auto;
+}
+
+/* paddings */
+.padding-10 {
+  padding: 10px;
+}
+.padding-40 {
+  padding: 40px;
+}
+.padding-50 {
+  padding-left: 50px;
+}
+
+/* backgrounds */
+.small-menu {
+  background-color: rgb(174, 178, 179);
+  width: 100px;
+}
+
+.big-menu {
+  width: 100px;
+  background-color: rgb(46, 57, 42);
+  position: fixed;
+}
+
+.roads-entrance {
+  background-image: url(https://plus.unsplash.com/premium_photo-1669731123911-81f7aafda76a?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+  padding-top: 100px;
+  color: black;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.roads-shadow {
+  text-shadow: 1px 1px 2px rgb(44, 75, 32);
+}
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
