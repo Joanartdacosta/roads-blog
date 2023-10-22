@@ -27,8 +27,6 @@ export default function Layout({ children }) {
         <NavbarMenu />
         {children}
       </main>
-
-      {!home && <div></div>}
     </>
   );
 }
