@@ -1,11 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --font-title: "Raleway", san-serif;
-  --font-text: "Poppins", sans-serif;
+  --font-text: "Raleway", sans-serif;
 }
 
 body {
   font-family: var(--font-text);
   margin: 0;
+  font-weight: lighter;
 }
 
 * {
@@ -31,12 +36,17 @@ main {
 
 .font-text {
   font-family: var(--font-text);
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
+.font-footer {
+  font-size: 0.8rem;
+}
 .font-title {
   font-family: var(--font-title);
   font-size: 1.25rem;
+  font-weight: lighter;
 }
 
 /* old */
@@ -100,12 +110,12 @@ main {
 }
 
 .logo {
-  width: 5rem;
+  width: 5vw;
 }
 
 .icon {
-  width: 5vw;
-  min-height: 10vh;
+  width: 2vw;
+  min-height: 2vh;
 }
 
 /* buttons */
@@ -147,15 +157,15 @@ main {
 /* width - height */
 
 .height-100 {
-  height: 100%;
+  height: 100vh;
 }
 
-html {
-  font-family: "Inter", sans-serif;
+.width-100 {
+  width: 100vw;
 }
 
 .roads-entrance {
-  background-image: url("https://estradas-website.s3.amazonaws.com/Estradas/roads-background.jpg");
+  background-image: url("https://estradas-website.s3.amazonaws.com/Estradas/roads-background.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -167,25 +177,43 @@ html {
 }
 
 .footer-background {
-  background-color: #345449;
-  color: lightgrey;
+  bottom: 0;
+  z-index: -1;
+  position: fixed;
+  height: 4.5vh;
 }
 
-.navbar-background {
-  background-color: aliceblue;
+.background {
+  background-color: rgb(223, 232, 223);
+  /* background-color: rgb(19, 21, 13); */
+  /* color: #dad7cd; */
+  color: black;
+}
+
+.geo-banner {
+  background-image: url("https://images.unsplash.com/photo-1548265806-7b461a2886ac?auto=format&fit=crop&q=80&w=1771&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.temporary-photo {
+  background-color: #345449;
+  height: 45vh;
 }
 
 .navbar-small {
   height: 390vh;
   min-width: 8vw;
-  background-color: whitesmoke;
   position: fixed;
 }
 
 .navbar {
-  background-color: aliceblue;
   width: 20vw;
   height: 100%;
+}
+
+.margin-40 {
+  margin: 5rem;
 }
 
 /* :root {
