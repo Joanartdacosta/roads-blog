@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import NavbarMenu from "../navbar/NavbarMenu";
+import Navbar from "../navbar/NavBar";
 import FooterOut from "../footer/FooterOut";
 
 export default function Layout({ children }) {
@@ -24,10 +24,13 @@ export default function Layout({ children }) {
         <meta name="author" content="Estradas Blog" />
       </Head>
 
-      <main className="text-center margin-auto">
-        <NavbarMenu />
+      <main>
+        <div>
+          <Navbar />
+        </div>
 
-        {children}
+        <div>{children}</div>
+
         <FooterOut />
       </main>
     </div>
