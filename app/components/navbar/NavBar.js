@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <div>
       <Dropdown
-        className="navbar"
+        className="height-100 margin-auto padding-40"
         label={
           <img
             className="icon"

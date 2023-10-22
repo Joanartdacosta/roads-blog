@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../navbar/NavBar";
-import FooterOut from "../footer/FooterOut";
+import Footer from "../footer/Footer";
 
 export default function Layout({ children }) {
   return (
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
 
         <div>{children}</div>
 
-        <FooterOut />
+        <Footer />
       </main>
     </div>
   );

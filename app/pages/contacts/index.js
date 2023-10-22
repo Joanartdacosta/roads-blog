@@ -6,7 +6,7 @@ export default function Contacts() {
     <div>
       <h1>CONTACTOS </h1>
 
-      <div className="display-column display-flex justify-center wrap-section">
+      <div>
         <Form />
       </div>
     </div>

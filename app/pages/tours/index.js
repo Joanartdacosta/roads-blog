@@ -8,7 +8,7 @@ export default function Tours() {
   return (
     <div>
       <h1>ROTEIROS </h1>
-      <div className="display-column display-flex justify-center wrap-section">
+      <div>
         <CardStars array={TOURS} />
         <div id="#freetours">
           <h1>ROTEIRO PERSONALIZADO GRATUITO</h1>

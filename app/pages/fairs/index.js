@@ -6,7 +6,7 @@ export default function Fairs() {
   return (
     <div>
       <h1>FEIRAS, ROMARIAS e FESTIVAIS </h1>
-      <div className="display-column display-flex justify-center wrap-section">
+      <div>
         <CardInfoButton array={FAIRS} />
       </div>
     </div>
