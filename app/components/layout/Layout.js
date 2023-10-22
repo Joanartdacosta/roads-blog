@@ -1,10 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import NavbarMenu from "../navbar/NavbarMenu";
+import FooterOut from "../footer/FooterOut";
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div>
       <Head>
         <title>Estradas</title>
         <meta name="description" content="Blog de turismo" />
@@ -26,7 +27,8 @@ export default function Layout({ children }) {
       <main>
         <NavbarMenu />
         {children}
+        <FooterOut />
       </main>
-    </>
+    </div>
   );
 }
