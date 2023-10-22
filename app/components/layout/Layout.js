@@ -26,6 +26,7 @@ export default function Layout({ children }) {
 
       <main>
         <NavbarMenu />
+
         {children}
         <FooterOut />
       </main>

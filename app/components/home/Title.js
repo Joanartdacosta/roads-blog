@@ -3,14 +3,14 @@ import Typewriter from "typewriter-effect";
 
 export default function Title() {
   return (
-    <div>
-      <div className="padding-50 title-roads1 margin-auto text-center oads-shadow2 font-bold">
+    <div className="margin-auto text-center">
+      <div className="padding-10 title-roads1 roads-shadow1 font-bold">
         <Typewriter
           onInit={(typewriter) => {
             typewriter.typeString("ESTRADA FORA, ").pauseFor(2000).start();
           }}
         />
-        <div className="padding-50 title-roads2 margin-auto text-center roads-shadow2 font-bold">
+        <div className="padding-10 title-roads2 roads-shadow2 font-bold">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -21,11 +21,12 @@ export default function Title() {
             }}
           />
         </div>
-        <div className="padding-50 title-roads3 text-center margin-auto font-bold roads-shadow2">
+        <div className="padding-10 title-roads3 font-bold roads-shadow1">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
                 .pauseFor(3000)
+                .typeString("        ...")
                 .typeString("E OUTROS LUGARES QUE TAIS")
                 .start();
               Title();
