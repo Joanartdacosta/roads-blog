@@ -5,6 +5,7 @@ export default function Geossitios() {
     <>
       <div id={"#geossitios"}>
         <h1>Geossitios</h1>
+        <p>Nao disponivel. Atualizacao em breve.</p>
       </div>
     </>
   );

@@ -24,7 +24,7 @@ export default function Layout({ children }) {
         <meta name="author" content="Estradas Blog" />
       </Head>
 
-      <main>
+      <main className="text-center margin-auto">
         <NavbarMenu />
 
         {children}
