@@ -196,7 +196,6 @@ main {
   bottom: 0;
   z-index: -1;
   position: fixed;
-  height: 4.5vh;
 }
 
 .background {
