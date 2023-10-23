@@ -68,9 +68,3 @@ export default function NavBar() {
     </div>
   );
 }
-// {LINKS.map((link) => (
-//  <Dropdown.Item> <Link className="link font-text padding-10" key={link.id} to={link.to}>
-//     {link.text}
-//   </Link></Dropdown.Item>))}
-
-// </div>
