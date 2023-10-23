@@ -19,7 +19,6 @@ export default function Banner() {
             </div>
             <div>
               <div className="mt-10">
-                {/* Decorative image grid */}
                 <div
                   aria-hidden="true"
                   className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
