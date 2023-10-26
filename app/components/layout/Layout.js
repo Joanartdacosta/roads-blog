@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import NavbarMenu from "../navbar/NavbarMenu";
+
 import Footer from "../UI/footer/Footer";
 
 export default function Layout({ children }) {
@@ -25,8 +25,6 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
-        <NavbarMenu />
-
         {children}
         <Footer />
       </main>
