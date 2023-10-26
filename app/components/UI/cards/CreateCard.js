@@ -1,5 +1,7 @@
-export default function createarray(array) {
-  <array
+import CardInfo from "./card_info/CardInfo";
+
+export default function CreateCard(array) {
+  <CardInfo
     key={array.id}
     id={array.id}
     href={array.href}
@@ -16,7 +18,6 @@ export default function createarray(array) {
     advices={array.advices}
     distance={array.distance}
     array={array.array}
-    description={array.description}
     paragraph1={array.paragraph1}
     paragraph2={array.paragraph2}
     paragraph3={array.paragraph3}

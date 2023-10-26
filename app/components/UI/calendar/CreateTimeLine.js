@@ -1,7 +1,7 @@
-import CardInfo from "./card_info/CardInfo";
+import TimeLine from "./TimeLine";
 
-export default function createCard(array) {
-  <CardInfo
+export default function CreateTimeLine(array) {
+  <TimeLine
     key={array.id}
     id={array.id}
     href={array.href}
@@ -18,6 +18,7 @@ export default function createCard(array) {
     advices={array.advices}
     distance={array.distance}
     array={array.array}
+    description={array.description}
     paragraph1={array.paragraph1}
     paragraph2={array.paragraph2}
     paragraph3={array.paragraph3}
