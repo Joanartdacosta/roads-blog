@@ -14,6 +14,7 @@ export default function Footer() {
               </a>
               . Todos os direitos Reservados.
             </span>
+
             <Socials />
           </div>
         </div>
