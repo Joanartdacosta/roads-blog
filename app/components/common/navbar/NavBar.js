@@ -5,23 +5,11 @@ import SmallFooter from "./SmallFooter";
 
 export default function NavBar() {
   return (
-    <div>
+    <div className="bg-black h-20 p-5">
       <Dropdown
-        className="height-100 margin-auto padding-40"
-        label={
-          <img
-            className="icon"
-            src="https://estradas-website.s3.amazonaws.com/Estradas/icons/Design+sem+nome+(1).png"
-            alt="menu"
-          />
-        }
+        className="h-full m-auto p-10 bg-black border-transparent  "
+        label="MENU"
       >
-        <img
-          className="logo"
-          src="https://estradas-website.s3.amazonaws.com/Estradas/roads-logo.png"
-          alt="logo"
-        />
-
         <NavbarLink array={NAVBAR_LINKS} />
         <SmallFooter />
       </Dropdown>

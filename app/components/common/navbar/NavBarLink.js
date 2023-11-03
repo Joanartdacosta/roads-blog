@@ -12,9 +12,14 @@ export default function NavbarLink(props) {
     <div>
       {ARRAY.map((item) => {
         return (
-          <Dropdown.Item>
+          <Dropdown.Item className="hover:bg-black">
             {" "}
-            <Link href={item.href}>{item.section}</Link>
+            <Link
+              className="text-gray-300 hover:text-yellow-300 text-base"
+              href={item.href}
+            >
+              {item.section}
+            </Link>
           </Dropdown.Item>
         );
       })}
