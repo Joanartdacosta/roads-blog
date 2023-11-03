@@ -1,6 +1,6 @@
 import React from "react";
 import FAIRS from "@/components/lists/fairs";
-import CardInfoButton from "@/components/UI/cards/card_info/CardInfoButton";
+import CardInfoButton from "@/components/common/UI/cards/card_info/CardInfoButton";
 
 export default function Fairs() {
   return (

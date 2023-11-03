@@ -1,5 +1,5 @@
-import CardInfo from "@/components/UI/cards/card_info/CardInfo";
-import PROVERBS from "../../components/lists/proverbs";
+import CardInfo from "@/components/common/UI/cards/card_info/CardInfo";
+import PROVERBS from "@/components/lists/proverbs";
 
 export default function Proverbs() {
   return (

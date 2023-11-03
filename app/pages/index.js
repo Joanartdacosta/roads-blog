@@ -1,4 +1,4 @@
-import Title from "../components/home/Title";
+import Title from "@/components/dashboard/home/Title";
 
 export default function Home() {
   return (
