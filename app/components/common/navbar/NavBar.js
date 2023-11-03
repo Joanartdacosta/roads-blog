@@ -1,6 +1,6 @@
 import { Dropdown } from "flowbite-react";
 import NavbarLink from "@/components/common/navbar/NavBarLink";
-import MENU from "@/components/lists/menu";
+import NAVBAR_LINKS from "@/components/lists/navbar_links";
 import SmallFooter from "./SmallFooter";
 
 export default function NavBar() {
@@ -22,7 +22,7 @@ export default function NavBar() {
           alt="logo"
         />
 
-        <NavbarLink array={MENU} />
+        <NavbarLink array={NAVBAR_LINKS} />
         <SmallFooter />
       </Dropdown>
     </div>
