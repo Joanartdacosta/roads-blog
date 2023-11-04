@@ -1,3 +1,5 @@
+import Label from "./Label";
+
 export default function Select(props) {
   return (
     <div>
@@ -10,18 +12,13 @@ export default function Select(props) {
           <option className="bg-yellow" selected>
             Seleccione o meio de transporte de preferencia.
           </option>
-          <option value="carro">Carro</option>
-          <option value="aviao">Aviao</option>
-          <option value="FR">Comboio</option>
-          <option value="DE">Autocarro</option>
+          <option value="car">Carro</option>
+          <option value="airplane">Aviao</option>
+          <option value="train">Comboio</option>
+          <option value="bus">Autocarro</option>
         </select>
 
-        <label
-          for="transport"
-          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-yellow-600 peer-focus:dark:text-yellow-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-        >
-          {props.label}
-        </label>
+        <Label label={"Transporte"} />
       </div>
     </div>
   );
