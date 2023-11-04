@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div className="height-10vh width-100 position-fixed bottom-0 text-center margin-auto background text-white">
-      <p className="font-text font-italic padding-10">
+    <div className="text-center bg-black text-yellow-300 bottom-0 fixed w-full left-0 ">
+      <p className="italic p-5 text-base">
         Copyright. Direitos reservados - Rui Costa. Website developed by Joana
         Costa.
       </p>

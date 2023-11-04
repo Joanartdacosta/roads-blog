@@ -1,9 +1,8 @@
-import Link from "next/link";
 import CurrentTime from "./CurrentTIme";
 
 export default function SmallFooter() {
   return (
-    <div className="text-center font-text">
+    <div className="text-center text-gray-200">
       <CurrentTime />
     </div>
   );

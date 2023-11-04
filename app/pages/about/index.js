@@ -1,7 +1,10 @@
+import NAVBAR_LINKS from "@/components/lists/navbar_links";
+import Banner from "@/components/common/banner/Banner";
+
 export default function AboutMe() {
   return (
     <div>
-      <h1 className="text-center font-title">SOBRE MIM</h1>
+      <Banner />
     </div>
   );
 }
