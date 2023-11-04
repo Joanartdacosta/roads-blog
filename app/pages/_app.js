@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import Layout from "@/components/layout/Layout";
+import Layout from "@/components/common/layout/Layout";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 

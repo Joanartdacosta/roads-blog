@@ -1,10 +1,9 @@
-import NAVBAR_LINKS from "@/components/lists/navbar_links";
-import Banner from "@/components/common/banner/Banner";
+import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 
 export default function AboutMe() {
   return (
     <div>
-      <Banner />
+      <GeneralBanner />
       <div className="max-w-5xl m-auto pt-20 pb-20">
         <h1 className="pb-10 text-center">What is Lorem Ipsum?</h1>
 

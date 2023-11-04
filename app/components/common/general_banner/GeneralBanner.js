@@ -1,4 +1,4 @@
-export default function Banner(props) {
+export default function GeneralBanner(props) {
   return (
     <div className="h-80 background-image bg-cover bg-no-repeat">
       <div className="pt-32">

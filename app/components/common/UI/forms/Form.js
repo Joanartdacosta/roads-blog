@@ -5,7 +5,7 @@ import SubmitButton from "./details/SubmitButton";
 
 export default function Form() {
   return (
-    <form className="pb-20">
+    <form className="pb-20" id="freetour">
       <Input type={"text"} label={"Nome"} />
       <Input type={"email"} label={"Email"} />
       <TextArea />
