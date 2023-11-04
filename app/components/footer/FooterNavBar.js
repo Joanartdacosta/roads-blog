@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Footer() {
+export default function FooterNavBar() {
   return (
     <div className="height-10vh width-100 position-fixed bottom-0 text-center margin-auto background text-white">
       <Link
