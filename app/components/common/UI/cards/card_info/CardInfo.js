@@ -6,7 +6,7 @@ export default function CardInfo(props) {
   }
 
   return (
-    <div>
+    <div className="m-auto">
       {ARRAY.map((trip) => {
         return (
           <div>
