@@ -5,9 +5,9 @@ import SmallFooter from "./SmallFooter";
 
 export default function NavBar() {
   return (
-    <div className="bg-black h-20 p-5">
+    <div className="bg-black h-20 p-5 w-full fixed">
       <Dropdown
-        className="h-full m-auto p-10 bg-black border-transparent  "
+        className="h-max m-auto bg-black border-transparent pl-0"
         label="MENU"
       >
         <NavbarLink array={NAVBAR_LINKS} />

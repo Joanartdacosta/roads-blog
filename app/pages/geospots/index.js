@@ -6,6 +6,8 @@ export default function GeoSpots() {
     <div>
       <Banner />
       <div className="max-w-5xl m-auto pt-20 pb-20">
+        <p>Em atualizacao.</p>
+      </div>
     </div>
   );
 }
