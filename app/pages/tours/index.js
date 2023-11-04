@@ -1,7 +1,7 @@
 import React from "react";
 
-import Form from "@/components/UI/forms/Form";
-import CardStars from "@/components/UI/cards/card_stars/CardStars";
+import Form from "@/components/common/UI/forms/Form";
+import CardStars from "@/components/common/UI/cards/card_stars/CardStars";
 import TOURS from "@/components/lists/tours";
 
 export default function Tours() {

@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "@/components/UI/forms/Form";
+import Form from "@/components/common/UI/forms/Form";
 
 export default function Contacts() {
   return (

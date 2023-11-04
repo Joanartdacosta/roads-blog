@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
-
-import Footer from "../UI/footer/Footer";
+import Navbar from "@/components/common/navbar/NavBar";
+import Footer from "@/components/common/footer/Footer";
 
 export default function Layout({ children }) {
   return (
@@ -25,6 +25,8 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
+        <Navbar />
+
         {children}
         <Footer />
       </main>

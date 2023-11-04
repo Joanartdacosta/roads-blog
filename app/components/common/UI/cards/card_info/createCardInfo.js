@@ -1,4 +1,4 @@
-import CardInfo from "./cards/card_info/CardInfo";
+import CardInfo from "./CardInfo";
 
 export default function createCard(array) {
   <CardInfo
