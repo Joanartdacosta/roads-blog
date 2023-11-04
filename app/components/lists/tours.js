@@ -3,6 +3,8 @@ const TOURS = [
     id: "tour-1",
     title: "Minas de Sal Gema de Loulé",
     district: "Faro",
+    evaluation: "4.0",
+
     town1: "Loule",
     town2: "Sao Clemente",
     access1:
