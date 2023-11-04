@@ -4,9 +4,8 @@ import PROVERBS from "@/components/lists/proverbs";
 
 export default function Proverbs() {
   return (
-    <div>
-      <Banner />
-      <div className="max-w-5xl m-auto pt-20 pb-20">
+    <div className="m-auto justify-items-center">
+      <div className="max-w-5xl m-auto pt-20 pb-20 w-max">
         <CardInfo array={PROVERBS} />
       </div>
     </div>

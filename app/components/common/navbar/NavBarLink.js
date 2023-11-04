@@ -9,7 +9,7 @@ export default function NavbarLink(props) {
   }
 
   return (
-    <div>
+    <div className="bg-black h-max">
       {ARRAY.map((item) => {
         return (
           <Dropdown.Item className="hover:bg-black">

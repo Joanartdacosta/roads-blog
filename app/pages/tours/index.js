@@ -9,18 +9,8 @@ export default function Tours() {
   return (
     <div>
       <Banner />
-      <div className="max-w-5xl m-auto">
+      <div className="max-w-5xl m-auto pt-20 pb-20 w-max">
         <CardStars array={TOURS} />
-        <div id="#freetours" className="p-20">
-          <h1>ROTEIRO PERSONALIZADO GRATUITO</h1>
-          <p>
-            Preencha os seus dados e de acordo com as informacoes partilhadas,
-            sera enviado para o email um roteiro personalizado. O roteiro inclui
-            percurso, dicas: alojamento, alimentacao, percurso, deslocamento e
-            dicas uteis.
-          </p>
-          <Form />
-        </div>
       </div>
     </div>
   );
