@@ -10,29 +10,31 @@ const TRIPS = [
     district: "Faro",
     town1: "Loule",
     town2: "Sao Clemente",
+    distance: "",
     access1:
       "Sentido A2 »» A22 – Saída 12 Loulé Centro, direção Loulé e indicação “Minas de Sal Gema",
     access2:
       "Sentido Espanha »» A22 – Saída 13 Loulé Sul, direção Loulé e indicação “Minas de Sal Gema”",
-    advices:
+    advices1:
       " Aconselha-se o uso de calçado e pode-se usar qualquer material de recolha de imagem",
+    advices2: "",
+    advices3: "",
+    direction1: "",
+    direction2: "",
     sources: "http://www.techsalt.pt/",
   },
   {
     id: "trips-2",
-    title: "trips do Mondega",
     imgURL:
       "https://images.impresa.pt/expresso/2023-03-28-trips-do-mondego3.jpg-a9238acb/3x2/mw-694",
-
+    href: "/trips/mondego",
+    title: "trips do Mondega",
     paragraph1:
       "Passeio pelas minas de Sal Gema de Loule, um passeio bastante interessante",
-    href: "/trips/mondego",
-
     district: "Guarda",
     town1: "Guarda",
     town2: "Videmonte, Corujeira e Trinta e Mizarela/Pero Soares e Vila Soeiro",
     distance: "12km",
-
     access1: "A25 - A23 – Guarda – Prado – Barragem do Caldeirão",
     access2:
       "   A23 – Sair em Belmonte N18 direção Guarda – Prado - Barragem do Caldeirão",
