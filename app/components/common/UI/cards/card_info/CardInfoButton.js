@@ -1,5 +1,5 @@
 import BlackButton from "../../button/BlackButton";
-import ModalInfo from "@/components/common/UI/cards/card_with_date_region/ModalInfo";
+import ModalInfo from "@/components/dashboard/fairs/UI/fairs_card/ModalInfo";
 import { useState } from "react";
 
 export default function CardInfoButton(props) {
