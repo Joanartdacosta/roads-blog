@@ -1,6 +1,7 @@
 const TRIPS = [
   {
     id: "trip-1",
+    evaluation: "5.0",
     imgURL:
       "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
     href: "/trips/minas_loule",
@@ -25,6 +26,7 @@ const TRIPS = [
   },
   {
     id: "trips-2",
+    evaluation: "4.5",
     imgURL:
       "https://images.impresa.pt/expresso/2023-03-28-trips-do-mondego3.jpg-a9238acb/3x2/mw-694",
     href: "/trips/mondego",

@@ -40,7 +40,7 @@ export default function CardStars(props) {
                 <span class="text-xl font-bold text-gray-900 dark:text-white">
                   {trip.district}, {trip.town1}
                 </span>
-                <YellowButton href={trip.href}>Saber mais</YellowButton>
+                <YellowButton href={trip.href} label={"Saber mais"} />
               </div>
             </div>
           </div>
