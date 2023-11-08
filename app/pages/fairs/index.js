@@ -20,11 +20,6 @@ export default function Fairs() {
             <ListOfFairs array={FAIRS} />
           </div>
           <div className="pl-20">
-            <div className="text-center ">
-              {" "}
-              <DatePicker />
-            </div>
-
             <Calendar />
           </div>
         </div>

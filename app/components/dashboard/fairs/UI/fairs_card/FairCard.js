@@ -1,4 +1,3 @@
-import ModalInfo from "@/components/common/UI/cards/card_with_date_region/ModalInfo";
 import { useState } from "react";
 import LightButton from "@/components/common/UI/button/LightButton";
 import FAIRS from "@/components/lists/fairs";
@@ -6,8 +5,9 @@ import WorldIcon from "@/components/common/icons/WorldIcon";
 import AvatarImg from "@/components/common/icons/AvatarImg";
 import FairLocation from "./FairLocation";
 import FairMonth from "./FairMonth";
+import ModalInfo from "./ModalInfo";
 
-export default function FairCard() {
+export default function FairCard(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   function handleClose() {

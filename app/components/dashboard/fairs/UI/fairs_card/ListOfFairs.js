@@ -18,6 +18,11 @@ export default function ListOfFairs(props) {
             district={event.district}
             town2={event.town2}
             region={event.region}
+            description={event.description}
+            paragraph1={event.paragraph1}
+            paragraph2={event.paragraph2}
+            paragraph3={event.paragraph3}
+            paragraph4={event.paragraph4}
           />
         );
       })}
