@@ -1,5 +1,5 @@
-import DribbleAccount from "./DribbleAccount";
-import GitHubAccount from "./GithubAccount";
+import DribbleAccount from "../../icons/socials/DribbleAccount";
+import GitHubAccount from "../../icons/socials/GithubAccount";
 
 export default function Socials() {
   return (

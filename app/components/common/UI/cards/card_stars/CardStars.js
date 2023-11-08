@@ -1,6 +1,6 @@
 import YellowButton from "../../button/YellowButton";
-import StartWhite from "../../stars/StarWhite";
-import StartYellow from "../../stars/StarYellow";
+import StartWhite from "../../../icons/stars/StarWhite";
+import StartYellow from "../../../icons/stars/StarYellow";
 
 export default function CardStars(props) {
   const ARRAY = [];
