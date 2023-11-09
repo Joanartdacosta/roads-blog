@@ -7,7 +7,6 @@ import SmallFooter from "../SmallFooter";
 import NAVBAR_LINKS from "@/components/lists/navbar_links";
 import Link from "next/link";
 import Box from "@mui/material/Box";
-import { useState } from "react";
 
 export default function ListNavBar(anchor) {
   return (
