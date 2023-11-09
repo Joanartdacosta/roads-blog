@@ -3,10 +3,10 @@ export default function GitHubAccount() {
     <div>
       <a
         href="#"
-        class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+        className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
       >
         <svg
-          class="w-4 h-4"
+          className="w-4 h-4"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -18,7 +18,7 @@ export default function GitHubAccount() {
             clip-rule="evenodd"
           />
         </svg>
-        <span class="sr-only">GitHub account</span>
+        <span className="sr-only">GitHub account</span>
       </a>
     </div>
   );

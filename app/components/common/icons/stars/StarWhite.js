@@ -2,7 +2,7 @@ export default function StartWhite() {
   return (
     <div>
       <svg
-        class="w-4 h-4 text-gray-200 dark:text-gray-600"
+        className="w-4 h-4 text-gray-200 dark:text-gray-600"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"

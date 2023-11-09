@@ -1,4 +1,4 @@
-import YellowButton from "@/components/common/UI/button/YellowButton";
+import ButtonYellow from "@/components/common/UI/button/ButtonYellow";
 import Link from "next/link";
 
 export default function BannerDescription() {
@@ -21,7 +21,7 @@ export default function BannerDescription() {
               </p>
             </div>
             <Link href="#freetour">
-              <YellowButton label={"Pedido de Roteiro Gratuito"} />
+              <ButtonYellow label={"Pedido de Roteiro Gratuito"} />
             </Link>
           </div>
         </div>
