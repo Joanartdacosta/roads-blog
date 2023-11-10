@@ -1,6 +1,6 @@
 import React from "react";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
-import MenuOptions from "@/components/common/UI/menu/MenuOptions";
+import MenuOptions from "@/components/dashboard/fairs/MenuOptions";
 
 export default function Fairs() {
   return (
