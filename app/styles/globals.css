@@ -33,22 +33,6 @@ main {
 .background-home {
   background-image: url("https://estradas-website.s3.amazonaws.com/Estradas/roads-background.JPG");
 }
-
-.background-norepeat {
-  background-repeat: no-repeat;
-}
-
-.background-100 {
-  background-size: cover;
-  position: relative;
-  z-index: -1;
-  position: fixed;
-}
-
-.background {
-  background-color: rgb(46, 57, 42);
-  color: whitesmoke;
-}
 .h-50vh {
   height: 50vh;
 }
