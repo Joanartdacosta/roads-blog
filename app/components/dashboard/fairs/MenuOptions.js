@@ -14,14 +14,16 @@ export default function MenuOptions(props) {
   }, []);
 
   function handleRegions(event) {
-    const regionFair = event.target.getAttribute("value");
+    const regionFair = event.target.value;
 
-    console.log(regionFair);
-    console.log("hello");
     const filtered = FAIRS.filter((fair) =>
-      fair.region.toLocaleLowerCase().includes(regionFair)
+      fair.region.toLowerCase().includes(regionFair.toLowerCase())
     );
-    console.log(filtered);
+
+    if (regionFair === "Todos") {
+      return setRegions(FAIRS);
+    }
+
     regionFair !== "Todos" ? setRegions(FAIRS) : setRegions(filtered);
     setRegions(filtered);
   }
@@ -64,13 +66,13 @@ export default function MenuOptions(props) {
           label={"Arquipélagos dos Açores e Madeira"}
         />
       </div>
-      <div className="flex wrap">
-        <div className="wrap">
+      <div className="flex">
+        <div className="w-full">
           <p className="pb-10 text-xl font-bold">Lista de Eventos</p>
           {regions &&
             regions.map((fair) => {
               return (
-                <div>
+                <div className="w-full">
                   <FairCard
                     key={fair.id}
                     title={fair.title}
@@ -89,6 +91,7 @@ export default function MenuOptions(props) {
               );
             })}
         </div>
+
         <div className="pl-20">
           <Calendar />
         </div>
