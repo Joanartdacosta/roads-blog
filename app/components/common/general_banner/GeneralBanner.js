@@ -1,13 +1,15 @@
 export default function GeneralBanner(props) {
   return (
     <div
-      className="bg-auto bg-center bg-norepeat backdrop-blur-md backdrop-blur-md w-full h-96"
+      className="bg-auto bg-center bg-norepeat w-full h-96 bg-gradient-to-r from-black to-transparent"
       style={{
         backgroundImage: props.imgUrl,
       }}
     >
-      <h1 className="tracking-widest text-5xl absolute">{props.section}</h1>
-      <p className="text-sm absolute">{props.description}</p>
+      <div className="w-full text-center m-auto text-white pt-40">
+        <h1 className="tracking-widest text-5xl">{props.section}</h1>
+        <p className="text-sm">{props.description}</p>
+      </div>
     </div>
   );
 }
