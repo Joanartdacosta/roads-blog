@@ -3,14 +3,15 @@ import Typewriter from "typewriter-effect";
 
 export default function Title() {
   return (
-    <div className="margin-auto text-center">
-      <div className="padding-10 font-title font-bold">
+    <div className="">
+      <div className="text-gray-100 font-extrabold text-5xl tracking-widest p-2">
+        {/* border-current border-solid border-4"> */}
         <Typewriter
           onInit={(typewriter) => {
             typewriter.typeString("ESTRADA FORA, ").pauseFor(2000).start();
           }}
         />
-        <div className="padding-10 font-title font-bold">
+        <div className="p-5 text-dark-200 text-5xl">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -21,7 +22,7 @@ export default function Title() {
             }}
           />
         </div>
-        <div className="padding-10 font-title font-bold">
+        <div className="bold text-dark-200 text-5xl">
           <Typewriter
             onInit={(typewriter) => {
               typewriter

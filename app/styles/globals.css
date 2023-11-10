@@ -182,7 +182,10 @@ main {
   background-color: rgb(46, 57, 42);
   color: whitesmoke;
 }
-
-.position-fixed {
-  position: fixed;
+.h-50vh {
+  height: 50vh;
+}
+.background-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1496950866446-3253e1470e8e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
