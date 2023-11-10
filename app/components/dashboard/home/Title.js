@@ -8,7 +8,7 @@ export default function Title() {
         {/* border-current border-solid border-4"> */}
         <Typewriter
           onInit={(typewriter) => {
-            typewriter.typeString("ESTRADA FORA, ").pauseFor(2000).start();
+            typewriter.typeString("ESTRADA FORA ").pauseFor(2000).start();
           }}
         />
         <div className="p-5 text-dark-200 text-5xl">
@@ -16,7 +16,7 @@ export default function Title() {
             onInit={(typewriter) => {
               typewriter
                 .pauseFor(1500)
-                .typeString("PAISAGENS ADENTRO, ")
+                .typeString("     PAISAGENS ADENTRO... ")
                 .pauseFor(700)
                 .start();
             }}
@@ -28,7 +28,7 @@ export default function Title() {
               typewriter
                 .pauseFor(3000)
                 .typeString("        ...")
-                .typeString("E OUTROS LUGARES QUE TAIS")
+                .typeString("E outros Lugares que tais")
                 .start();
               Title();
             }}

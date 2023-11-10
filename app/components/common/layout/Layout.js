@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kaushan+Script&family=Poppins:wght@200&family=Raleway:wght@100;300;400&family=Shadows+Into+Light&family=Zeyada&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,500;1,300&display=swap"
           rel="stylesheet"
         />
         <meta
