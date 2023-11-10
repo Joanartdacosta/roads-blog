@@ -1,3 +1,5 @@
+// Component removed from MUI framework - https://mui.com/x/react-date-pickers/date-calendar/
+
 import * as React from "react";
 import dayjs from "dayjs";
 import Badge from "@mui/material/Badge";
