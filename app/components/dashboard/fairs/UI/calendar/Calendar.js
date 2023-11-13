@@ -35,7 +35,7 @@ function fakeFetch(date, { signal }) {
   });
 }
 
-const initialValue = dayjs("2022-04-17");
+const initialValue = dayjs("2023-08-19");
 
 function ServerDay(props) {
   const { highlightedDays = [], day, outsideCurrentMonth, ...other } = props;
@@ -48,12 +48,21 @@ function ServerDay(props) {
     <Badge
       key={props.day.toString()}
       overlap="circular"
-      badgeContent={isSelected ? "🌚" : undefined}
+      badgeContent={
+        isSelected ? (
+          <img
+            src="https://estradas-website.s3.amazonaws.com/Estradas/icons/moon-icon.svg"
+            className="w-4"
+          />
+        ) : undefined
+      }
+      className="bg-white"
     >
       <PickersDay
         {...other}
         outsideCurrentMonth={outsideCurrentMonth}
         day={day}
+        className="bg-dark-200"
       />
     </Badge>
   );
@@ -86,6 +95,7 @@ export default function Calendar() {
   React.useEffect(() => {
     fetchHighlightedDays(initialValue);
     // abort request on unmount
+
     return () => requestAbortController.current?.abort();
   }, []);
 
@@ -106,6 +116,7 @@ export default function Calendar() {
       <DateCalendar
         defaultValue={initialValue}
         loading={isLoading}
+        className="bg-amber-100"
         onMonthChange={handleMonthChange}
         renderLoading={() => <DayCalendarSkeleton />}
         slots={{
