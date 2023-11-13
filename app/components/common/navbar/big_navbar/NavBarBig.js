@@ -38,14 +38,19 @@ export default function NavBarBig() {
       onKeyDown={toggleDrawer(anchor, false)}
       className="overflow-hidden pl-0 w-full p-5 h-full bg-black"
     >
-      <List className=" text-white overflow-hidden">
+      <List className="text-gray-200 text-3xl poppins font-thin overflow-hidden tracking-widest poppins">
+        <img
+          className="w-24 m-auto mt-4 mb-4"
+          src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
+          alt="logo"
+        />
         {NAVBAR_LINKS["order"].map((item) => (
           <ListItem key={NAVBAR_LINKS[item].section} disablePadding>
             <ListItemButton>
               <ListItemIcon></ListItemIcon>
               <Link
                 href={NAVBAR_LINKS[item].href}
-                className="hover:text-yellow-400"
+                className="hover:text-amber-800"
               >
                 <ListItemText primary={NAVBAR_LINKS[item].section} />
               </Link>
@@ -62,13 +67,15 @@ export default function NavBarBig() {
 
   return (
     <div className="bg-black">
-      <img
-        src="https://www.tailorbrands.com/wp-content/uploads/2021/05/forbes-300x300.png"
-        alt="logotipo"
-        width={"100"}
-        height={"100"}
-        className="m-2 float-right"
-      />
+      <Link href="/">
+        <img
+          src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
+          alt="logotipo"
+          width={"100"}
+          height={"100"}
+          className="m-2 float-right"
+        />
+      </Link>
 
       <React.Fragment key={anchor}>
         <Button

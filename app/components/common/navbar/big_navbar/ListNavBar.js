@@ -18,12 +18,15 @@ export default function ListNavBar(anchor) {
         onKeyDown={toggleDrawer(anchor, false)}
         className="overflow-hidden pl-0 w-full p-5 h-full bg-black"
       >
-        <List className=" text-white overflow-hidden">
+        <List className="text-white overflow-hidden">
           {NAVBAR_LINKS.map((item) => (
             <ListItem key={item.section} disablePadding>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>
-                <Link href={item.href} className="hover:text-yellow-400">
+                <Link
+                  href={item.href}
+                  className="hover:text-amber-700 text-3xl"
+                >
                   <ListItemText primary={item.section} />
                 </Link>
               </ListItemButton>
