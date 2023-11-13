@@ -69,7 +69,7 @@ export default function NavBarBig() {
     <div className="bg-black">
       <Link href="/">
         <img
-          src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
+          src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo02.png"
           alt="logotipo"
           width={"100"}
           height={"100"}

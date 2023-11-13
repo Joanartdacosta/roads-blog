@@ -8,6 +8,7 @@ const NAVBAR_LINKS = {
     "proverbs",
     "media",
     "freetour",
+    "passports",
     "food",
     "contacts",
   ],
@@ -77,8 +78,16 @@ const NAVBAR_LINKS = {
     description:
       "Solicite ja e enviarei um roteiro TOTALMENTE GRATUITO e personalizado.",
   },
-  food: {
+  passports: {
     id: "navbar-9",
+    section: "PASSAPORTES",
+    href: "/passports",
+    imgUrl:
+      "url(https://estradas-website.s3.amazonaws.com/Estradas/general-banner/passports-banner.jpg)",
+    description: "Uma otima forma de percorrer .",
+  },
+  food: {
+    id: "navbar-10",
     section: "GASTRONOMIA",
     href: "/food",
     imgUrl:
@@ -86,7 +95,7 @@ const NAVBAR_LINKS = {
     description: "Dicas de gastronomia.",
   },
   contacts: {
-    id: "navbar-10",
+    id: "navbar-11",
     section: "CONTACTOS",
     href: "/contacts",
     imgUrl:
