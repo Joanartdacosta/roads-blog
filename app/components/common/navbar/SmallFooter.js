@@ -2,7 +2,7 @@ import CurrentTime from "./CurrentTIme";
 
 export default function SmallFooter() {
   return (
-    <div className="text-center text-gray-200 pt-20">
+    <div className="text-center text-gray-200 text-xs mb-4">
       <CurrentTime />
     </div>
   );
