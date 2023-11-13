@@ -5,7 +5,7 @@ import SubmitButton from "./details/SubmitButton";
 
 export default function Form() {
   return (
-    <form className="pb-20">
+    <form className="pb-20" id="freetour">
       <Input type={"text"} label={"Nome"} />
       <Input type={"email"} label={"Email"} />
       <TextArea />
@@ -17,12 +17,12 @@ export default function Form() {
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 md:gap-6">
+      <div className="grid md:grid-cols-2 md:gap-6">
         <Input type={"text"} label={"Ponto de Partida"} />
         <Input type={"text"} label={"Ponto de Chegada"} />
       </div>
 
-      <div class="grid md:grid-cols-2 md:gap-6">
+      <div className="grid md:grid-cols-2 md:gap-6">
         <Select label={"Mensagem de contacto"} />
         <Input type={"text"} label={"Outros"} />
       </div>

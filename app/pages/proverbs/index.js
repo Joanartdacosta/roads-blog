@@ -1,5 +1,5 @@
 import CardInfo from "@/components/common/UI/cards/card_info/CardInfo";
-import Banner from "@/components/common/banner/Banner";
+import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import PROVERBS from "@/components/lists/proverbs";
 
 export default function Proverbs() {

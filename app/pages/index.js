@@ -1,6 +1,3 @@
-// import BlackButton from "@/components/common/UI/button/BlackButton";
-// import LightButton from "@/components/common/UI/button/LightButton";
-// import YellowButton from "@/components/common/UI/button/YellowButton";
 import Title from "@/components/dashboard/home/Title";
 import HomeVideo from "@/components/dashboard/video/HomeVideo";
 
@@ -13,7 +10,7 @@ export default function Home() {
         <header className="relative text-center">
           <Title />
           <div className="my-8">
-            {/* <LightButton label={"GANHA UM ROTEIRO GRATUITO"} /> */}
+            {/* <LightButton label={"RECEBA UM ROTEIRO GRATUITO"} /> */}
           </div>
         </header>
       </div>

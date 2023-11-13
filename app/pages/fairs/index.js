@@ -1,21 +1,18 @@
 import React from "react";
-import FAIRS from "@/components/lists/fairs";
-import CardInfoButton from "@/components/common/UI/cards/card_info/CardInfoButton";
-import Banner from "@/components/common/banner/Banner";
-import MenuOptions from "@/components/common/UI/menu/MenuOptions";
+import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
+import MenuOptions from "@/components/dashboard/fairs/MenuOptions";
+import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 
 export default function Fairs() {
   return (
     <div>
-      <Banner />
+      <GeneralBanner
+        section={NAVBAR_LINKS["fairs"]["section"]}
+        imgUrl={NAVBAR_LINKS["fairs"]["imgUrl"]}
+        description={NAVBAR_LINKS["fairs"]["description"]}
+      />
       <div className="max-w-5xl m-auto pt-20 pb-20">
-        <div className="text-center pb-10">
-          <MenuOptions />
-        </div>
-
-        <div>
-          <CardInfoButton array={FAIRS} />
-        </div>
+        <MenuOptions />
       </div>
     </div>
   );
