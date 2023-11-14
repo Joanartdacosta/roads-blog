@@ -12,12 +12,13 @@ export default function Layout({ children }) {
         <meta name="description" content="Blog de turismo" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,500;1,300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Poppins:wght@200;300&family=Recursive&family=Roboto:ital,wght@0,500;1,300&display=swap"
           rel="stylesheet"
-        />
+        ></link>
         <meta
           name="keywords"
           content="Blog de Turismo, Dicas de Lugares, passadicos"

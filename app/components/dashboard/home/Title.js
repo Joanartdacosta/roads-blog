@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 export default function Title() {
   return (
     <div className="">
-      <div className="text-gray-100 font-extrabold text-5xl tracking-widest p-2">
+      <div className="text-white font-extrabold text-4xl tracking-widest p-2">
         {/* border-current border-solid border-4"> */}
         <Typewriter
           onInit={(typewriter) => {
