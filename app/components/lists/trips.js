@@ -7,7 +7,7 @@ const TRIPS = [
     href: "/trips/minas_loule",
     title: "Minas de Sal Gema de Loulé",
     paragraph1:
-      "Passeio pelas minas de Sal Gema de Loule, um passeio bastante interessante",
+      "Passeio pelas minas de Sal Gema de Loulé, um passeio bastante interessante",
     district: "Faro",
     town1: "Loule",
     town2: "Sao Clemente",
@@ -30,7 +30,7 @@ const TRIPS = [
     imgURL:
       "https://estradas-website.s3.amazonaws.com/Estradas/trips-tours/mondego01.jpg",
     href: "/trips/mondego",
-    title: "Passadicos do Mondego",
+    title: "Passadiços do Mondego",
     paragraph1:
       "Passeio pelas minas de Sal Gema de Loule, um passeio bastante interessante",
     district: "Guarda",
