@@ -8,7 +8,7 @@ import SmallFooter from "../SmallFooter";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import Link from "next/link";
 
-export default function NavBarBig() {
+export default function MenuNavBar() {
   const [state, setState] = React.useState({
     menu: true,
   });

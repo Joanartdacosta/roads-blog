@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import Footer from "@/components/common/footer/Footer";
-import NavBarBig from "../navbar/big_navbar/NavBarBig";
+import MenuNavBar from "@/components/common/navbar/menu_navbar/MenuNavBar";
 
 export default function Layout({ children }) {
   return (
@@ -26,7 +26,7 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
-        <NavBarBig />
+        <MenuNavBar />
         {children}
         <Footer />
       </main>
