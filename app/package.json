@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -25,7 +26,11 @@
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "autoprefixer": "^10.4.16",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3"
   }
