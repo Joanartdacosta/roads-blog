@@ -1,0 +1,17 @@
+---
+name: jest
+on:
+  - push
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: ./app
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.14.1"
+      - run: npm install
+      - run: npm test
