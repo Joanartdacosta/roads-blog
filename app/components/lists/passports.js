@@ -2,7 +2,8 @@ const PASSPORTS = [
   {
     id: "passports-01",
     title: "Passaporte Douro",
-    href: "https://cimdouro.pt/passaporte-douro",
+    href: "/passports/douro",
+    link: "https://cimdouro.pt/passaporte-douro",
     paragraph1:
       "Descubra e viva uma experiência única!” é o slogan do Passaporte Douro, o projeto inédito que a CIMDOURO (Comunidade Intermunicipal do Douro) desenvolveu para promover turisticamente os 19 concelhos que a constituem (…) e pode ser obtido nas lojas interativas de Turismo dos 19 municípios e iniciar a sua viagem à descoberta de 76 pontos de interesse nesta área geográfica de mais de 4 mil quilómetros quadrados.",
     paragraph2:
@@ -18,7 +19,8 @@ const PASSPORTS = [
   {
     id: "passports-02",
     title: "Estrada Nacional 2",
-    href: "www.rotan2.pt",
+    href: "/passports/nacional2",
+    link: "www.rotan2.pt",
     paragraph1:
       "Este passaporte físico foi elaborado pela Associação de Municípios da Rota da Estrada Nacional 2,  com sede em Santa Marta de Penaguião e permite que os viajantes possam carimbar em locais indicados (Câmaras Municipais, Postos de Turismo, Bombeiros Voluntários, Cafés, Alojamentos, etc.)",
     paragraph2: "Vagar para descobrir” e “Uma experiência a partilhar",

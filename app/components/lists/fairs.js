@@ -2,7 +2,7 @@ const FAIRS = [
   {
     id: "fair-01",
     title: "Festa da Nossa Senhora das Areias",
-    month: "1º Fim de Semana de Outubro",
+    month: "2023-10",
     region: "Norte",
     district: "Aveiro",
     town1: "Aveiro",
@@ -20,11 +20,12 @@ const FAIRS = [
     paragraph4: "",
     sources:
       "Retirado do Site “http://patrimonioreligiosodeaveiro.blogspot.com/2020/11/historia-da-capela-de-nossa-senhora-das.html” e “https://jf-darque.com/a-singela-festa-de-nossa-senhora-das-areias/” , consultado em setembro 23.",
+    isFeatured: true,
   },
   {
     id: "fair-02",
     title: "Festa de Nossa Senhora do Rosário (Terra da Sopa Seca)",
-    month: "1º domingo de outubro",
+    month: "2023-10",
     region: "Norte",
     district: "Porto",
     town1: "Penafiel",
@@ -42,11 +43,12 @@ const FAIRS = [
       "A partir desta lenda a freguesia presta homenagem à Senhora das Areias.",
     sources:
       "Retirado do site “https://www.mysound-mag.com/2021/09/festa-senhora-rosario-duas-igrejas.html”, consultado em setembro 23.",
+    isFeatured: true,
   },
   {
     id: "fair-03",
     title: "Festa de Nossa Senhora do Fetal",
-    month: " 1º domingo de outubro",
+    month: "2023-10",
     region: "Centro e Beira Interior",
     district: "Leiria",
     town1: "Batalha",
@@ -64,11 +66,12 @@ const FAIRS = [
       "As iluminações estendem-se também às escarpas de toda a aldeia, o que proporciona aos visitantes a oportunidade única de assistirem ao vivo a um espetáculo impressionante de luz, cor e de devoção.",
     sources:
       "Retirado do site “https://7maravilhas.pt/portfolio/procissao-dos-caracois-festa-de-nossa-senhora-do-fetal/”, consultado em setembro 23.",
+    isFeatured: true,
   },
   {
     id: "fair-04",
     title: "Festa do Senhor dos Milagres",
-    month: "8 e 9 outubro",
+    month: "2023-10-08",
     region: "Arquipélagos dos Açores e Madeira",
     district: "Arquipélago da Madeira",
     town1: "Machico",
@@ -86,11 +89,12 @@ const FAIRS = [
       "Ainda segundo a lenda, quando os barcos entraram na baía, os sinos tocaram a rebate sem que ninguém lhes tocasse. Devido a este milagre e à fé do povo, a capela passou a ser denominada de Capela dos Milagres. Em memória do dia em que Nosso Senhor dos Milagres protegeu aquela zona aquando da grande aluvião de 1803 e devido ao facto de se ter recuperado milagrosamente a imagem intacta, celebra-se a 8 e 9 de outubro a sua festa.",
     sources:
       "“https://cultura.madeira.gov.pt/visitas-virtuais1/1315-festa-do-senhor-dos-milagres-machico.html”, consultado em setembro 23.",
+    isFeatured: true,
   },
   {
     id: "fair-05",
     title: "Feira dos Gorazes",
-    month: "Meados de Outubro",
+    month: "2023-10",
     region: "Norte",
     district: "Braganca",
     town1: "Mogadouro",
@@ -109,6 +113,7 @@ const FAIRS = [
       "A tese não é consensual, mas foi ganhando expressão e os mogadourenses continuam a pagar o imposto à tradição durante os dias do evento. À marrã juntou-se, atualmente, a posta transmontana e poucos são os que resistem a degustar um bom naco de carne durante os Gorazes.",
     sources:
       "Retirado do site “https://7maravilhas.pt/portfolio/feira-dos-gorazes-de-mogadouro/”, consultado em setembro 23.",
+    isFeatured: true,
   },
   {
     id: "fair-06",
@@ -131,11 +136,12 @@ const FAIRS = [
     paragraph4: "",
     sources:
       "Retirado do site “https://cm-sintra.pt/atualidade/agenda/1482-a-feira-das-merces-esta-de-regresso-a-sintra-2”, consultado em setembro 23.",
+    isFeatured: true,
   },
   {
     id: "fair-07",
     title: "Festa dos Círios a Nossa Senhora dos Remédios",
-    month: " 3º domingo de outubro",
+    month: "2023-10",
     region: "Centro e Beira Interior",
     district: "Leiria",
     town1: "Peniche",
@@ -151,6 +157,7 @@ const FAIRS = [
     paragraph4: "",
     sources:
       "Retirado do site “https://jornaldascaldas.pt/2021/10/18/cirios-a-nossa-senhora-dos-remedios-2/”, consultado em setembro 23.",
+    isFeatured: true,
   },
   {
     id: "fair-08",
@@ -173,6 +180,7 @@ const FAIRS = [
       "Paralelamente à animação da própria feira, é dinamizado um conjunto de iniciativas que têm como referência o valorizar da tradição e do património cultural da região, merecendo destaque o desfile de corais Planície a Cantar ou o Encontro de Tocadores de Viola Campaniça e Cantadores de Despique e Baldão.",
     sources:
       "Retirado do Site “https://www.cm-castroverde.pt/pt/menu/943/feira-de-castro.aspx”, consultado em setembro 23.",
+    isFeatured: true,
   },
   {
     id: "fair-09",
@@ -194,6 +202,7 @@ const FAIRS = [
     paragraph4: "",
     sources:
       "Adaptado  do livro “Guia das Mais Famosas FESTAS & ROMARIAS de Portugal, Atlântico Press.",
+    isFeatured: true,
   },
 
   {
@@ -217,6 +226,7 @@ const FAIRS = [
     paragraph4: "",
     sources:
       "Retirado do site “https://fairantairia.pt/index.php/2022/09/29/historia-da-feira-de-santa-iria/”, consultado em setembro 23.",
+    isFeatured: true,
   },
 
   {
@@ -238,7 +248,30 @@ const FAIRS = [
     paragraph4: "",
     sources:
       "Retirado do site “https://cm-sintra.pt/atualidade/agenda/1482-a-feira-das-merces-esta-de-regresso-a-sintra-2”, consultado em setembro 23.",
+    isFeatured: true,
   },
 ];
 
 export default FAIRS;
+
+export function getFeaturedFairs() {
+  return FAIRS.filter((event) => event.isFeatured);
+}
+
+export function getAllFairs() {
+  return FAIRS;
+}
+
+export function getEventById(id) {
+  return FAIRS.find((event) => event.id === id);
+}
+
+export function getFilteredFairs(dateFilter) {
+  const { year, month } = dateFilter;
+
+  let filteredFairs = TOURS.filter((fair) => {
+    const fairDate = new Date(fair.date);
+    return fairDate.getFullYear() === year && fairDate.getMonth() === month - 1;
+  });
+  return filteredFairs;
+}

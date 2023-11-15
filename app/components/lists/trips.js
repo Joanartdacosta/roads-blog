@@ -4,7 +4,7 @@ const TRIPS = [
     evaluation: "5.0",
     imgURL:
       "https://estradas-website.s3.amazonaws.com/Estradas/trips-tours/salgema01.JPG",
-    href: "/trips/minas_loule",
+    href: "/trips/minas-loule",
     title: "Minas de Sal Gema de Loulé",
     paragraph1:
       "Passeio pelas minas de Sal Gema de Loulé, um passeio bastante interessante",
@@ -52,3 +52,15 @@ const TRIPS = [
 ];
 
 export default TRIPS;
+
+export function getFeaturedTrips() {
+  return TRIPS.filter((event) => event.isFeatured);
+}
+
+export function getAllTrips() {
+  return TRIPS;
+}
+
+export function getEventById(id) {
+  return TRIPS.find((event) => event.id === id);
+}
