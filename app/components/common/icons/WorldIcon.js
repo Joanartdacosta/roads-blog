@@ -1,7 +1,7 @@
 export default function WorldIcon(props) {
   return (
     <div>
-      <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+      <span className="inline-flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
         <svg
           className="w-2.5 h-2.5 mr-1"
           aria-hidden="true"

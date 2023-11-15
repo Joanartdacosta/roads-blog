@@ -1,6 +1,8 @@
 import ButtonYellow from "../../button/ButtonYellow";
 import StartWhite from "../../../icons/stars/StarWhite";
 import StartYellow from "../../../icons/stars/StarYellow";
+import LocationIcon from "@/components/common/icons/location/LocationIcon";
+import Link from "next/link";
 
 export default function CardStars(props) {
   const ARRAY = [];
@@ -38,10 +40,20 @@ export default function CardStars(props) {
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                  {trip.district}, {trip.town1}
+                  <div className="flex">
+                    <span>
+                      {" "}
+                      <LocationIcon />
+                    </span>
+                    <span>
+                      {trip.district}, {trip.town1}
+                    </span>
+                  </div>
                 </span>
                 <div className="pt-2">
-                  <ButtonYellow href={trip.href} label={"Saber mais"} />
+                  <Link href={trip.href}>
+                    <ButtonYellow label={"Saber mais"} />
+                  </Link>
                 </div>
               </div>
             </div>
