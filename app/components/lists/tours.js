@@ -1,8 +1,9 @@
 const TOURS = [
   {
     id: "tour-1",
-    title: "Minas de Sal Gema de Loulé",
-    district: "Faro",
+    imgUrl: "",
+    title: "Peso da Regua",
+    district: "Porto",
     evaluation: "4.0",
 
     town1: "Loule",

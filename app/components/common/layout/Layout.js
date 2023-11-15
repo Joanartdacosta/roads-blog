@@ -20,7 +20,7 @@ export default function Layout({ children }) {
         />
         <meta
           name="keywords"
-          content="Blog de Turismo, Dicas de Lugares, passadicos"
+          content="Blog de Turismo, Dicas de Lugares, passadiços"
         />
         <meta name="author" content="Estradas Blog" />
       </Head>

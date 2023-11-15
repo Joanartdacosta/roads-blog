@@ -10,24 +10,24 @@ export default function CardStars(props) {
   }
 
   return (
-    <div className="flex flex-wrap gap-10 justify-start">
+    <div className="flex flex-wrap gap-8 justify-center">
       {ARRAY.map((trip) => {
         return (
-          <div className="w-full max-w-sm bg-white border border-yello-200 rounded-lg shadow dark:bg-yello-800 dark:border-gray-700">
-            <a href={trip.href}>
+          <div className="p-8 bg-white border border-gray-300 rounded-lg shadow dark:bg-yellow-800 dark:border-gray-700 w-96 h-70">
+            <div className="w-full p-2 pb-8">
               <img
-                className="p-8 rounded-t-lg"
+                className="w-full object-cover h-60 rounded-t-lg"
                 src={trip.imgURL}
                 alt={trip.title}
               />
-            </a>
-            <div className="px-5 pb-5">
+            </div>
+            <div className="p-2">
               <a href={trip.href}>
-                <h5 className="text-2xl font-semibold tracking-tight text-yellow-600 dark:text-yellow">
+                <h5 className="text-xl tracking-tight text-gray-800 dark:text-yellow poppins">
                   {trip.title}
                 </h5>
               </a>
-              <div className="flex items-center mt-2.5 mb-2.5 justify-start">
+              <div className="flex items-center mt-2.5 mb-2.5 justify-start pb-4">
                 <StartYellow />
                 <StartYellow />
                 <StartYellow />
@@ -37,10 +37,12 @@ export default function CardStars(props) {
                 </span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-xl font-bold text-gray-900 dark:text-white">
+                <span className="text-lg font-semibold text-gray-900 dark:text-white">
                   {trip.district}, {trip.town1}
                 </span>
-                <ButtonYellow href={trip.href} label={"Saber mais"} />
+                <div className="pt-2">
+                  <ButtonYellow href={trip.href} label={"Saber mais"} />
+                </div>
               </div>
             </div>
           </div>
