@@ -1,7 +1,7 @@
 import CardInfo from "@/components/common/UI/cards/card_info/CardInfo";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import PROVERBS from "@/components/lists/proverbs";
-import { RevealWrapper, RevealList } from "next-reveal";
+import { RevealWrapper } from "next-reveal";
 
 export default function Proverbs() {
   return (
