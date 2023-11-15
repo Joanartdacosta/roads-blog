@@ -15,7 +15,6 @@ export default function Tours() {
       />
       <div className="max-w-5xl m-auto pt-20 pb-20 w-max">
         <CardStars array={TOURS} />
-        <MenuDescription />
       </div>
     </div>
   );
