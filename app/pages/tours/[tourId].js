@@ -1,14 +1,10 @@
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
-import { useRouter } from "next/router";
-import { getEventById } from "@/components/lists/tours";
+
 import MenuDescription from "@/components/dashboard/tour/menus/menu_description/MenuDescription";
-
-export default function TourDetailPage() {
-  const router = useRouter();
-
-  const tourId = router.query.tourId;
-  const tour = getEventById(tourId);
+import { getToursById, getAllTours } from "@/helpers/api-util";
+export default function TourDetailPage(props) {
+  const tour = props.selectedTour;
 
   if (!tour) {
     return <p>Nao existem tours disponiveis.</p>;
@@ -24,4 +20,26 @@ export default function TourDetailPage() {
       <MenuDescription />
     </div>
   );
+}
+
+export async function getStaticProps(context) {
+  const tourId = context.params.tourId;
+
+  const tour = await getToursById(tourId);
+
+  return {
+    props: {
+      selectedTour: tour,
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  const tours = await getAllTours();
+  const paths = tours.map((tour) => ({ params: { tourId: tour.id } }));
+
+  return {
+    paths: paths,
+    fallback: false,
+  };
 }
