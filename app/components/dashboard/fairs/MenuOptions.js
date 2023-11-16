@@ -6,6 +6,7 @@ import Calendar from "@/components/dashboard/fairs/UI/calendar/Calendar";
 import ButtonOptionLeft from "../../common/UI/button/ButtonOptionLeft";
 import ButtonOptionMid from "../../common/UI/button/ButtonOptionMiddle";
 import ButtonOptionRight from "../../common/UI/button/ButtonOptionRight";
+import { RevealWrapper, RevealList } from "next-reveal";
 
 export default function MenuOptions(props) {
   const [regions, setRegions] = useState(null);
@@ -73,20 +74,22 @@ export default function MenuOptions(props) {
             regions.map((fair) => {
               return (
                 <div className="w-full">
-                  <FairCard
-                    key={fair.id}
-                    title={fair.title}
-                    month={fair.month}
-                    region={fair.region}
-                    district={fair.district}
-                    town2={fair.town2}
-                    imgURL={fair.imgURL}
-                    description={fair.description}
-                    paragraph1={fair.paragraph1}
-                    paragraph2={fair.paragraph2}
-                    paragraph3={fair.paragraph3}
-                    paragraph4={fair.paragraph4}
-                  />
+                  <RevealWrapper>
+                    <FairCard
+                      key={fair.id}
+                      title={fair.title}
+                      month={fair.month}
+                      region={fair.region}
+                      district={fair.district}
+                      town2={fair.town2}
+                      imgURL={fair.imgURL}
+                      description={fair.description}
+                      paragraph1={fair.paragraph1}
+                      paragraph2={fair.paragraph2}
+                      paragraph3={fair.paragraph3}
+                      paragraph4={fair.paragraph4}
+                    />
+                  </RevealWrapper>
                 </div>
               );
             })}
