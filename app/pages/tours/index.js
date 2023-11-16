@@ -3,6 +3,7 @@ import CardStars from "@/components/common/UI/cards/card_stars/CardStars";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getFeaturedTours } from "@/helpers/api-util";
+
 export default function Tours(props) {
   return (
     <div>
@@ -25,5 +26,6 @@ export async function getStaticProps() {
     props: {
       tours: featuredTours,
     },
+    revalidate: 1800,
   };
 }
