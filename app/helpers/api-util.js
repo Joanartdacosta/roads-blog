@@ -113,3 +113,27 @@ export async function getByIdPassport(id) {
   const all = await getAllPassaports();
   return all.find((item) => item.id === id);
 }
+
+// PROVERBS
+
+export async function getAllProverbs() {
+  const response = await fetch(
+    "https://roads-blog-default-rtdb.firebaseio.com/roads/proverbs.json"
+  );
+  const data = await response.json();
+
+  const NEW = [];
+
+  for (const key in data) {
+    NEW.push({
+      id: key,
+      ...data[key],
+    });
+  }
+  return NEW;
+}
+
+export async function getFeaturedProverbs() {
+  const all = await getAllProverbs();
+  return all.filter((item) => item.isFeatured);
+}
