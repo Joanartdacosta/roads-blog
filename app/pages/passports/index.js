@@ -1,7 +1,9 @@
+import CardStars from "@/components/common/UI/cards/card_stars/CardStars";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
+import { getFeaturedPassports } from "@/helpers/api-util";
 
-export default function Passports() {
+export default function Passports(props) {
   return (
     <div>
       <GeneralBanner
@@ -10,8 +12,19 @@ export default function Passports() {
         description={NAVBAR_LINKS["passports"]["description"]}
       />
       <div className="max-w-5xl m-auto pt-20 pb-20">
-        <p>Em atualizacao.</p>
+        <CardStars array={props.passports} />
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const featuredPassports = await getFeaturedPassports();
+
+  return {
+    props: {
+      passports: featuredPassports,
+    },
+    revalidate: 1800,
+  };
 }

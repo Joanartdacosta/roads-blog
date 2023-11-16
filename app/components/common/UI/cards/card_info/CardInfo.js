@@ -24,16 +24,16 @@ export default function CardInfo(props) {
                   {trip.title}
                 </h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {trip.paragraph1}
+                  {trip.p1}
                 </p>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {trip.paragraph2}
+                  {trip.p2}
                 </p>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {trip.paragraph3}
+                  {trip.p3}
                 </p>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {trip.paragraph4}
+                  {trip.p4}
                 </p>
               </div>
             </a>
