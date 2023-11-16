@@ -19,7 +19,7 @@ export default function CardStars(props) {
             <div className="w-full p-2 pb-8">
               <img
                 className="w-full object-cover h-60 rounded-t-lg"
-                src={trip.imgURL}
+                src={trip.imgUrl}
                 alt={trip.title}
               />
             </div>
@@ -46,7 +46,7 @@ export default function CardStars(props) {
                       <LocationIcon />
                     </span>
                     <span>
-                      {trip.district}, {trip.town1}
+                      {trip.district}, {trip.town}
                     </span>
                   </div>
                 </span>
