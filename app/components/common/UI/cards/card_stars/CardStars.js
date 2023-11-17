@@ -19,7 +19,7 @@ export default function CardStars(props) {
               <div className="w-full p-2 pb-8">
                 <img
                   className="w-full object-cover h-60 rounded-t-lg"
-                  src={trip.imgURL}
+                  src={trip.imgUrl}
                   alt={trip.title}
                 />
               </div>
@@ -40,7 +40,7 @@ export default function CardStars(props) {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                    {trip.district}, {trip.town1}
+                    {trip.district}, {trip.town}
                   </span>
                   <div className="pt-2">
                     <ButtonYellow href={trip.href} label={"Saber mais"} />

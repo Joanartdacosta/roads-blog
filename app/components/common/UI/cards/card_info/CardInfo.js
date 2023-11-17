@@ -16,7 +16,7 @@ export default function CardInfo(props) {
             >
               <img
                 className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                src={trip.imgURL}
+                src={trip.imgUrl}
                 alt={trip.title}
               />
               <div className="flex flex-col justify-between p-4 leading-normal">
@@ -24,16 +24,16 @@ export default function CardInfo(props) {
                   {trip.title}
                 </h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {trip.paragraph1}
+                  {trip.p1}
                 </p>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {trip.paragraph2}
+                  {trip.p2}
                 </p>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {trip.paragraph3}
+                  {trip.p3}
                 </p>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {trip.paragraph4}
+                  {trip.p4}
                 </p>
               </div>
             </a>
