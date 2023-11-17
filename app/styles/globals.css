@@ -27,3 +27,7 @@ main {
   width: 3.5 vw;
   min-height: 3.5vh;
 }
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
