@@ -1,12 +1,10 @@
-import FairCard from "@/components/dashboard/fairs/UI/fairs_card/FairCard";
-import FAIRS from "@/components/lists/fairs";
-
-import { useEffect, useState } from "react";
-import Calendar from "@/components/dashboard/fairs/UI/calendar/Calendar";
 import ButtonOptionLeft from "../../common/UI/button/ButtonOptionLeft";
 import ButtonOptionMid from "../../common/UI/button/ButtonOptionMiddle";
 import ButtonOptionRight from "../../common/UI/button/ButtonOptionRight";
-import { RevealWrapper, RevealList } from "next-reveal";
+import Calendar from "./calendar/Calendar";
+import FairCard from "@/components/dashboard/fairs/fairs_card/FairCard";
+import FAIRS from "@/components/lists/fairs";
+import { useEffect, useState } from "react";
 
 export default function MenuOptions(props) {
   const [regions, setRegions] = useState(null);
@@ -34,37 +32,37 @@ export default function MenuOptions(props) {
       <div className="flex justify-center pb-20">
         <ButtonOptionLeft
           key={props.id}
-          value="Todos"
-          onClick={handleRegions}
           label={"Todos"}
+          onClick={handleRegions}
+          value="Todos"
         />
 
         <ButtonOptionMid
           key={props.id}
-          value="Norte"
-          onClick={handleRegions}
           label={"Norte"}
+          onClick={handleRegions}
+          value="Norte"
         />
 
         <ButtonOptionMid
           key={props.id}
-          value="Centro e Beira Interior"
-          onClick={handleRegions}
           label={"Centro e Beira Interior"}
+          onClick={handleRegions}
+          value="Centro e Beira Interior"
         />
 
         <ButtonOptionMid
           key={props.id}
-          value="Sul"
-          onClick={handleRegions}
           label={"Sul"}
+          onClick={handleRegions}
+          value="Sul"
         />
 
         <ButtonOptionRight
-          value="Arquipélagos dos Açores e Madeira"
           key={props.id}
-          onClick={handleRegions}
           label={"Arquipélagos dos Açores e Madeira"}
+          onClick={handleRegions}
+          value="Arquipélagos dos Açores e Madeira"
         />
       </div>
       <div className="flex">
@@ -74,22 +72,20 @@ export default function MenuOptions(props) {
             regions.map((fair) => {
               return (
                 <div className="w-full">
-                  <RevealWrapper>
-                    <FairCard
-                      key={fair.id}
-                      title={fair.title}
-                      month={fair.month}
-                      region={fair.region}
-                      district={fair.district}
-                      town2={fair.town2}
-                      imgURL={fair.imgURL}
-                      description={fair.description}
-                      paragraph1={fair.paragraph1}
-                      paragraph2={fair.paragraph2}
-                      paragraph3={fair.paragraph3}
-                      paragraph4={fair.paragraph4}
-                    />
-                  </RevealWrapper>
+                  <FairCard
+                    description={fair.description}
+                    district={fair.district}
+                    imgURL={fair.imgURL}
+                    key={fair.id}
+                    month={fair.month}
+                    paragraph1={fair.paragraph1}
+                    paragraph2={fair.paragraph2}
+                    paragraph3={fair.paragraph3}
+                    paragraph4={fair.paragraph4}
+                    region={fair.region}
+                    title={fair.title}
+                    town2={fair.town2}
+                  />
                 </div>
               );
             })}
