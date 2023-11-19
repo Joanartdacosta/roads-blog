@@ -21,3 +21,9 @@ At the moment, it is under-construction.
 - `git commit -m "description"`
 - `git push origin "branch_name"`
 - Merge feature branch to dev after PR is reviewed and approved
+
+# Vercel deployment
+
+- Open https://vercel.com/dashboard
+- Add new project
+-
