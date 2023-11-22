@@ -36,10 +36,6 @@ export default function FilteringFairByDateAndRegion() {
   }
 
   function filterFairsByDate(startDate, endDate, fairs) {
-    // startDate and endDate inside range
-    // startDate inside range but endDate outside range
-    // starDate outside range but endDate inside range
-
     return fairs.filter((fair) => {
       if (fair.endDate < startDate) {
         return false;
