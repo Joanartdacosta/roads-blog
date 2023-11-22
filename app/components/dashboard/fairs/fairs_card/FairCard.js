@@ -7,7 +7,6 @@ import FairMonth from "./FairMonth";
 import ModalInfo from "./ModalInfo";
 import ButtonYellow2 from "@/components/common/UI/button/ButtonYellow2";
 import CalendarIcon from "@/components/common/icons/calendar/CalendarIcon";
-import Link from "next/link";
 
 export default function FairCard(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -42,8 +41,8 @@ export default function FairCard(props) {
             <AvatarImg imgURL={props.imgURL} title={props.title} />
             <div className="text-gray-600 dark:text-gray-400">
               <FairLocation
-                title={props.title}
                 district={props.district}
+                title={props.title}
                 town2={props.town2}
               />{" "}
               <WorldIcon region={props.region} />
@@ -59,11 +58,11 @@ export default function FairCard(props) {
         <ModalInfo
           array={FAIRS}
           description={props.description}
+          onClick={handleClose}
           paragraph1={props.paragraph1}
           paragraph2={props.paragraph2}
           paragraph3={props.paragraph3}
           paragraph4={props.paragraph4}
-          onClick={handleClose}
         />
       )}
     </div>
