@@ -1,7 +1,7 @@
 import ButtonYellow from "../../button/ButtonYellow";
 import StartWhite from "../../../icons/stars/StarWhite";
 import StartYellow from "../../../icons/stars/StarYellow";
-import { RevealList, RevealWrapper } from "next-reveal";
+import { RevealList } from "next-reveal";
 
 export default function CardStars(props) {
   const ARRAY = [];

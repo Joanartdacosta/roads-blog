@@ -8,7 +8,7 @@ export default function Home() {
       <HomeVideo />
 
       <div className="flex flex-column justify-center align-items-center w-screen pt-28">
-        <header className="text-center">
+        <header className="text-center relative">
           <Title />
           <div className="my-8 text-xl">
             <ButtonBlack label={"Ganhe um Roteiro GRATUITO"} />

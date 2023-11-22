@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-
 import Footer from "@/components/common/footer/Footer";
 import MenuNavBar from "@/components/common/navbar/menu_navbar/MenuNavBar";
 
