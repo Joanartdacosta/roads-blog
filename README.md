@@ -34,7 +34,7 @@ At the moment, it is under-construction.
   - cd app
   - npx vercel --prod
 
-## Vercel
+## Vercel deployment
 
 - Open Dashboard
 - 'Add New Project'
