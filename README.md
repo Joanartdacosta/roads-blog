@@ -26,4 +26,4 @@ At the moment, it is under-construction.
 
 # Documentation
 
-https://www.mongodb.com/developer/languages/javascript/nextjs-with-mongodb/
+[Link](https://www.mongodb.com/developer/languages/javascript/nextjs-with-mongodb/)
