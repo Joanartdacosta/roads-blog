@@ -1,7 +1,6 @@
 import BlueBullet from "../../../../common/icons/bullets/BLueBullet";
 import MenuDescriptionArrow from "./elements/MenuDescriptionArrow";
 import MenuDescriptionValues from "./elements/MenuDescriptionValues";
-import MenuDescriptionInfo from "./elements/MenuDescriptionInfo";
 import MenuDescriptionTab from "./elements/menu_tab/MenuDescriptionTab";
 import MenuDescriptionSelectTab from "../menu_select_tab/MenuDescriptionSelectTab";
 
@@ -24,7 +23,6 @@ export default function MenuDescription(props) {
             <MenuDescriptionValues value={"3.5"} subtitle={"Dificuldade"} />
             <MenuDescriptionValues value={"4+"} subtitle={"Avaliacao"} />
           </div>
-          <BlueBullet />
         </div>
 
         <div
@@ -40,13 +38,12 @@ export default function MenuDescription(props) {
             data-inactive-classes="text-gray-500 dark:text-gray-400"
           >
             <MenuDescriptionArrow label={"Trajeto - Opcao 1"} />
-            <MenuDescriptionInfo />
+
             <MenuDescriptionArrow label={"Trajeto - Opcao 2"} />
-            <MenuDescriptionInfo />
+
             <MenuDescriptionArrow label={"Trajeto - Opcao 3"} />
-            <MenuDescriptionInfo />
+
             <MenuDescriptionArrow label={"Trajeto - Opcao 4"} />
-            <MenuDescriptionInfo />
           </div>
         </div>
       </div>

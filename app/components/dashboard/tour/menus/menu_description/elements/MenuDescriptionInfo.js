@@ -1,4 +1,4 @@
-export default function MenuDescriptionInfo() {
+export default function MenuDescriptionInfo(props) {
   return (
     <div>
       <div

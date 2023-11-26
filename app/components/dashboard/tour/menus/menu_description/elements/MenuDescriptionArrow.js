@@ -1,4 +1,12 @@
+import MenuDescriptionInfo from "./MenuDescriptionInfo";
+import { useState } from "react";
 export default function MenuDescriptionArrow(props) {
+  const [show, setShow] = useState(false);
+
+  function seeMore() {
+    setShow(!show);
+  }
+
   return (
     <div>
       <h2 id="accordion-flush-heading-2">
@@ -8,6 +16,7 @@ export default function MenuDescriptionArrow(props) {
           data-accordion-target="#accordion-flush-body-2"
           aria-expanded="false"
           aria-controls="accordion-flush-body-2"
+          onClick={seeMore}
         >
           <span>{props.label}</span>
           <svg
@@ -27,6 +36,8 @@ export default function MenuDescriptionArrow(props) {
             />
           </svg>
         </button>
+
+        {show && <MenuDescriptionInfo onClick={close} />}
       </h2>
     </div>
   );
