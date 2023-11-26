@@ -23,7 +23,6 @@ export default function TripDetailsPage(props) {
 }
 
 export async function getStaticProps(context) {
-  console.log(context);
   const tripId = context.params.tripId;
 
   const trip = await getByIdTrips(tripId);
