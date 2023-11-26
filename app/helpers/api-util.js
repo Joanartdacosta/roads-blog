@@ -1,4 +1,5 @@
 // TOURS
+import clientPromise from "@/components/mongo/client";
 
 export async function getAllTours() {
   const response = await fetch(
@@ -30,20 +31,18 @@ export async function getByIdTour(id) {
 // TRIPS
 
 export async function getAllTrips() {
-  const response = await fetch(
-    "https://roads-blog-default-rtdb.firebaseio.com/roads/trips.json"
-  );
-  const data = await response.json();
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
 
-  const NEW = [];
+    const allTrips = await db.collection("trips").find({}).toArray();
 
-  for (const key in data) {
-    NEW.push({
-      id: key,
-      ...data[key],
+    return allTrips.map((mongoDbItem) => {
+      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
+  } catch (e) {
+    console.error(e);
   }
-  return NEW;
 }
 
 export async function getFeaturedTrips() {
@@ -53,6 +52,8 @@ export async function getFeaturedTrips() {
 
 export async function getByIdTrips(id) {
   const all = await getAllTrips();
+  console.log(all);
+  console.log(id);
   return all.find((item) => item.id === id);
 }
 
