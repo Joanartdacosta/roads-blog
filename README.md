@@ -21,3 +21,9 @@ At the moment, it is under-construction.
 - `git commit -m "description"`
 - `git push origin "branch_name"`
 - Merge feature branch to dev after PR is reviewed and approved
+
+## DB - NoSQL Mongo DB
+
+# Documentation
+
+https://www.mongodb.com/developer/languages/javascript/nextjs-with-mongodb/
