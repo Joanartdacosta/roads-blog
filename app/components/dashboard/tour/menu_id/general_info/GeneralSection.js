@@ -1,7 +1,7 @@
 import InfoBullets from "./InfoBullets";
 import GeneralValues from "./GeneralValues";
 
-export default function MenuGeneral() {
+export default function GeneralSection() {
   return (
     <div>
       <div
