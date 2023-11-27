@@ -4,6 +4,7 @@ import MenuItem from "./MenuItem";
 import TAB_BUTTONS from "@/components/lists/TabButton";
 import { useState } from "react";
 import PathOptions from "./path/PathOptions";
+import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 
 export default function MenuDetailsId() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,17 +13,17 @@ export default function MenuDetailsId() {
   function handleEvent(event) {
     const label = event.target.value;
 
-    if (label == "Informacoes gerais") {
+    if (label == TAB_BUTTONS_LABELS.general) {
       setInfo(<GeneralSection />);
       setIsOpen(!isOpen);
     }
 
-    if (label == "Como chegar - trajectos") {
+    if (label == TAB_BUTTONS_LABELS.paths) {
       setInfo(<PathOptions />);
       setIsOpen(!isOpen);
     }
 
-    if (label == "Dicas") {
+    if (label == TAB_BUTTONS_LABELS.tip) {
       setInfo(<InfoBullets />);
       setIsOpen(!isOpen);
     }

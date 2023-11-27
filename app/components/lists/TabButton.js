@@ -1,19 +1,24 @@
+import TAB_BUTTONS_LABELS from "../enums/tab_buttons_labels";
 const TAB_BUTTONS = [
   {
     id: "general-tab",
     href: "#general",
-    label: "Informacoes gerais",
+    label: TAB_BUTTONS_LABELS.general,
   },
-
+  {
+    id: "location-tab",
+    href: "#local",
+    label: TAB_BUTTONS_LABELS.location,
+  },
+  {
+    id: "recomendation-tab",
+    href: "#recomend",
+    label: TAB_BUTTONS_LABELS.tip,
+  },
   {
     id: "path-tab",
     href: "#path",
-    label: "Como chegar - trajectos",
-  },
-  {
-    id: "detail-tab",
-    href: "#detail",
-    label: "Dicas",
+    label: TAB_BUTTONS_LABELS.path,
   },
 ];
 
