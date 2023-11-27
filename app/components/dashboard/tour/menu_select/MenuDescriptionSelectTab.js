@@ -1,4 +1,4 @@
-export default function MenuDescriptionSelectTab(props) {
+export default function MenuSelectTab(props) {
   return (
     <div class="sm:hidden">
       <label for="tabs" class="sr-only">
