@@ -3,16 +3,12 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
+
 import SmallFooter from "../SmallFooter";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import Link from "next/link";
-import Image from "next/image";
 
-export default function NavBarBig() {
+export default function MenuNavBar() {
   const [state, setState] = React.useState({
     menu: true,
   });
@@ -36,26 +32,26 @@ export default function NavBarBig() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      className="overflow-hidden pl-0 w-full p-5 h-full bg-black"
+      className="overflow-hidden pl-0 w-full h-full bg-black"
     >
-      <List className="text-gray-200 text-3xl poppins font-thin overflow-hidden tracking-widest poppins">
+      <List className="text-gray-100 overflow-hidden">
         <img
           className="w-24 m-auto mt-4 mb-4"
           src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
           alt="logo"
         />
         {NAVBAR_LINKS["order"].map((item) => (
-          <ListItem key={NAVBAR_LINKS[item].section} disablePadding>
-            <ListItemButton>
-              <ListItemIcon></ListItemIcon>
-              <Link
-                href={NAVBAR_LINKS[item].href}
-                className="hover:text-amber-800"
-              >
-                <ListItemText primary={NAVBAR_LINKS[item].section} />
-              </Link>
-            </ListItemButton>
-          </ListItem>
+          <div
+            key={NAVBAR_LINKS[item].section}
+            className="pl-28 pr-28 pt-2 pb-2 font-thin poppins"
+          >
+            <Link
+              href={NAVBAR_LINKS[item].href}
+              className="hover:text-amber-500 text-base poppins"
+            >
+              {NAVBAR_LINKS[item].section}
+            </Link>
+          </div>
         ))}
       </List>
 
@@ -69,7 +65,7 @@ export default function NavBarBig() {
     <div className="bg-black">
       <Link href="/">
         <img
-          src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
+          src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo02.png"
           alt="logotipo"
           width={"100"}
           height={"100"}
@@ -79,7 +75,7 @@ export default function NavBarBig() {
 
       <React.Fragment key={anchor}>
         <Button
-          className="overflow-hidden text-gray-300 text-lg h-28 pl-20"
+          className="overflow-hidden text-gray-200 text-2xl h-28 pl-20 font-thin poppins"
           onClick={toggleDrawer(anchor, true)}
         >
           {anchor}

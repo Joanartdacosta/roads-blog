@@ -1,7 +1,7 @@
 export default function FairMonth(props) {
   return (
     <div>
-      <time className="text-xl font-semibold text-gray-900 dark:text-white">
+      <time className="dark:text-white font-semibold text-base text-amber-900 ">
         {props.month}
       </time>
     </div>

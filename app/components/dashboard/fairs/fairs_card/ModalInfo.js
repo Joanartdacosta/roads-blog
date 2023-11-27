@@ -3,8 +3,8 @@ import ButtonYellow from "@/components/common/UI/button/ButtonYellow";
 export default function ModalInfo(props) {
   return (
     <div>
-      <div className="p-5 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-        <time className="text-lg font-semibold text-gray-900 dark:text-white">
+      <div className="bg-gray-50 border border-gray-100 dark:bg-gray-800 dark:border-gray-700 p-5 rounded-lg ">
+        <time className="font-semibold text-lg text-gray-900 dark:text-white">
           Mais detalhes
         </time>
 
@@ -23,7 +23,7 @@ export default function ModalInfo(props) {
               <p>{props.paragraph4}</p>
             </div>
 
-            <ButtonYellow onClick={props.onClick} label={"Fechar"} />
+            <ButtonYellow label={"Fechar"} onClick={props.onClick} />
           </div>
         </ol>
       </div>

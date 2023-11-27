@@ -10,7 +10,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Play", sans-serif;
 }
 
 main {
@@ -26,4 +26,8 @@ main {
 .icon {
   width: 3.5 vw;
   min-height: 3.5vh;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
 }

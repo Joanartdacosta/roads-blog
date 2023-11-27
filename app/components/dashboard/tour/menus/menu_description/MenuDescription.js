@@ -4,9 +4,8 @@ import MenuDescriptionValues from "./elements/MenuDescriptionValues";
 import MenuDescriptionInfo from "./elements/MenuDescriptionInfo";
 import MenuDescriptionTab from "./elements/menu_tab/MenuDescriptionTab";
 import MenuDescriptionSelectTab from "../menu_select_tab/MenuDescriptionSelectTab";
-import MenuDescriptionItem from "./elements/menu_tab/MenuDescriptionItem";
 
-export default function MenuDescription() {
+export default function MenuDescription(props) {
   return (
     <div>
       <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

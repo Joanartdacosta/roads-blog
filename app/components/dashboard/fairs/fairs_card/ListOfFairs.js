@@ -12,17 +12,17 @@ export default function ListOfFairs(props) {
       {ARRAY.map((event) => {
         return (
           <FairCard
-            month={event.month}
-            imgURL={event.imgURL}
-            title={event.title}
-            district={event.district}
-            town2={event.town2}
-            region={event.region}
             description={event.description}
+            district={event.district}
+            imgURL={event.imgURL}
+            month={event.month}
+            region={event.region}
             paragraph1={event.paragraph1}
             paragraph2={event.paragraph2}
             paragraph3={event.paragraph3}
             paragraph4={event.paragraph4}
+            title={event.title}
+            town2={event.town2}
           />
         );
       })}
