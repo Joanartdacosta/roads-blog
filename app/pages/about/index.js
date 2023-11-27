@@ -1,5 +1,6 @@
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import Introduction from "@/components/dashboard/about/Introduction";
+import QuotesExhibition from "@/components/dashboard/about/QuotesExhibition";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 
 export default function AboutMe() {
@@ -12,6 +13,7 @@ export default function AboutMe() {
       />
       <div className="max-w-5xl m-auto pt-20 pb-20">
         <Introduction />
+        <QuotesExhibition />
       </div>
     </div>
   );
