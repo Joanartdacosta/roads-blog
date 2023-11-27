@@ -1,6 +1,6 @@
-import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
-import MenuDescription from "@/components/dashboard/tour/menus/menu_description/MenuDescription";
+import MenuDetailsId from "@/components/dashboard/tour/menu_id/MenuDetailsId";
+import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getByIdTour, getFeaturedTours } from "@/helpers/api-util";
 
 export default function TourDetailPage(props) {
@@ -17,7 +17,7 @@ export default function TourDetailPage(props) {
         imgUrl={NAVBAR_LINKS["tours"]["imgUrl"]}
         description={NAVBAR_LINKS["tours"]["description"]}
       />
-      <MenuDescription />
+      <MenuDetailsId />
     </div>
   );
 }
