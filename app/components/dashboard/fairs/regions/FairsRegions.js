@@ -1,6 +1,7 @@
 import ButtonOptionLeft from "../../../common/UI/button/ButtonOptionLeft";
 import ButtonOptionMid from "../../../common/UI/button/ButtonOptionMiddle";
 import ButtonOptionRight from "../../../common/UI/button/ButtonOptionRight";
+import REGIONS_LABELS from "@/components/enums/regions_labels";
 
 export default function FairsRegions({ setRegion }) {
   function handleRegions(event) {
@@ -12,37 +13,37 @@ export default function FairsRegions({ setRegion }) {
       <div className="flex justify-center pb-20">
         <ButtonOptionLeft
           key={"1"}
-          label={"Todos"}
+          label={REGIONS_LABELS.all}
           onClick={handleRegions}
           value={null}
         />
 
         <ButtonOptionMid
           key={"2"}
-          label={"Norte"}
+          label={REGIONS_LABELS.north}
           onClick={handleRegions}
           value="Norte"
         />
 
         <ButtonOptionMid
           key={"3"}
-          label={"Centro e Beira Interior"}
+          label={REGIONS_LABELS.center}
           onClick={handleRegions}
           value="Centro e Beira Interior"
         />
 
         <ButtonOptionMid
           key={"4"}
-          label={"Sul"}
+          label={REGIONS_LABELS.south}
           onClick={handleRegions}
           value="Sul"
         />
 
         <ButtonOptionRight
           key={"5"}
-          label={"Arquipélagos dos Açores e Madeira"}
+          label={REGIONS_LABELS.islands}
           onClick={handleRegions}
-          value="Arquipélagos dos Açores e Madeira"
+          value={REGIONS_LABELS.islands}
         />
       </div>
     </div>

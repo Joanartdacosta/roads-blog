@@ -1,6 +1,7 @@
+import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import ButtonBlack from "@/components/common/UI/button/ButtonBlack";
-import Title from "@/components/dashboard/home/Title";
 import HomeVideo from "@/components/dashboard/home/video/HomeVideo";
+import Title from "@/components/dashboard/home/Title";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <header className="text-center relative">
           <Title />
           <div className="my-8 text-xl">
-            <ButtonBlack label={"Ganhe um Roteiro GRATUITO"} />
+            <ButtonBlack label={BUTTONS_LABELS.winFreeTour} />
           </div>
         </header>
       </div>
