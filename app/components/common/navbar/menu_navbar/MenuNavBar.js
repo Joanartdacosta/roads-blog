@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import List from "@mui/material/List";
-
 import SmallFooter from "../SmallFooter";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import Link from "next/link";
