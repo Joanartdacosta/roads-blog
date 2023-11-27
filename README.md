@@ -50,3 +50,9 @@ At the moment, it is under-construction.
 - On vercel the repository will be available, then you import it
 - On 'Configure project' check the root
 - Deploy
+
+## DB - NoSQL Mongo DB
+
+# Documentation
+
+[Link](https://www.mongodb.com/developer/languages/javascript/nextjs-with-mongodb/)
