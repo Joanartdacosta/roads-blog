@@ -1,7 +1,7 @@
 const TRANSPORTS_LABELS = Object.freeze({
   selection: "Seleccione o meio de transporte de preferência.",
   transport: "Meio de Transporte",
-  car: "Car",
+  car: "Carro",
   airplane: "Avião",
   bus: "Autocarro",
   train: "Comboio",
