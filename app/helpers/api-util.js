@@ -6,9 +6,9 @@ export async function getAllTours() {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allTrips = await db.collection("tours").find({}).toArray();
+    const allTours = await db.collection("tours").find({}).toArray();
 
-    return allTrips.map((mongoDbItem) => {
+    return allTours.map((mongoDbItem) => {
       return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
   } catch (e) {
@@ -50,8 +50,6 @@ export async function getFeaturedTrips() {
 
 export async function getByIdTrips(id) {
   const all = await getAllTrips();
-  console.log(all);
-  console.log(id);
   return all.find((item) => item.id === id);
 }
 
@@ -62,9 +60,9 @@ export async function getAllFairs() {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allTrips = await db.collection("fairs").find({}).toArray();
+    const allFairs = await db.collection("fairs").find({}).toArray();
 
-    return allTrips.map((mongoDbItem) => {
+    return allFairs.map((mongoDbItem) => {
       return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
   } catch (e) {
@@ -89,9 +87,9 @@ export async function getAllPassaports() {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allTrips = await db.collection("passports").find({}).toArray();
+    const allPassaports = await db.collection("passports").find({}).toArray();
 
-    return allTrips.map((mongoDbItem) => {
+    return allPassaports.map((mongoDbItem) => {
       return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
   } catch (e) {
@@ -116,9 +114,9 @@ export async function getAllProverbs() {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allTrips = await db.collection("proverbs").find({}).toArray();
+    const allProverbs = await db.collection("proverbs").find({}).toArray();
 
-    return allTrips.map((mongoDbItem) => {
+    return allProverbs.map((mongoDbItem) => {
       return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
   } catch (e) {
