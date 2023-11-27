@@ -1,20 +1,19 @@
 // TOURS
+import clientPromise from "@/components/mongo/client";
 
 export async function getAllTours() {
-  const response = await fetch(
-    "https://roads-blog-default-rtdb.firebaseio.com/roads/tours.json"
-  );
-  const data = await response.json();
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
 
-  const NEW = [];
+    const allTours = await db.collection("tours").find({}).toArray();
 
-  for (const key in data) {
-    NEW.push({
-      id: key,
-      ...data[key],
+    return allTours.map((mongoDbItem) => {
+      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
+  } catch (e) {
+    console.error(e);
   }
-  return NEW;
 }
 
 export async function getFeaturedTours() {
@@ -30,20 +29,18 @@ export async function getByIdTour(id) {
 // TRIPS
 
 export async function getAllTrips() {
-  const response = await fetch(
-    "https://roads-blog-default-rtdb.firebaseio.com/roads/trips.json"
-  );
-  const data = await response.json();
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
 
-  const NEW = [];
+    const allTrips = await db.collection("trips").find({}).toArray();
 
-  for (const key in data) {
-    NEW.push({
-      id: key,
-      ...data[key],
+    return allTrips.map((mongoDbItem) => {
+      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
+  } catch (e) {
+    console.error(e);
   }
-  return NEW;
 }
 
 export async function getFeaturedTrips() {
@@ -59,20 +56,18 @@ export async function getByIdTrips(id) {
 // FAIRS
 
 export async function getAllFairs() {
-  const response = await fetch(
-    "https://roads-blog-default-rtdb.firebaseio.com/roads/fairs.json"
-  );
-  const data = await response.json();
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
 
-  const NEW = [];
+    const allFairs = await db.collection("fairs").find({}).toArray();
 
-  for (const key in data) {
-    NEW.push({
-      id: key,
-      ...data[key],
+    return allFairs.map((mongoDbItem) => {
+      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
+  } catch (e) {
+    console.error(e);
   }
-  return NEW;
 }
 
 export async function getFeaturedFairs() {
@@ -88,20 +83,18 @@ export async function getByIdFair(id) {
 // PASSPORTS
 
 export async function getAllPassaports() {
-  const response = await fetch(
-    "https://roads-blog-default-rtdb.firebaseio.com/roads/passports.json"
-  );
-  const data = await response.json();
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
 
-  const NEW = [];
+    const allPassaports = await db.collection("passports").find({}).toArray();
 
-  for (const key in data) {
-    NEW.push({
-      id: key,
-      ...data[key],
+    return allPassaports.map((mongoDbItem) => {
+      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
+  } catch (e) {
+    console.error(e);
   }
-  return NEW;
 }
 
 export async function getFeaturedPassports() {
@@ -117,20 +110,18 @@ export async function getByIdPassport(id) {
 // PROVERBS
 
 export async function getAllProverbs() {
-  const response = await fetch(
-    "https://roads-blog-default-rtdb.firebaseio.com/roads/proverbs.json"
-  );
-  const data = await response.json();
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
 
-  const NEW = [];
+    const allProverbs = await db.collection("proverbs").find({}).toArray();
 
-  for (const key in data) {
-    NEW.push({
-      id: key,
-      ...data[key],
+    return allProverbs.map((mongoDbItem) => {
+      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
+  } catch (e) {
+    console.error(e);
   }
-  return NEW;
 }
 
 export async function getFeaturedProverbs() {
