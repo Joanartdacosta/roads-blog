@@ -1,4 +1,4 @@
-import PrevAndNext from "@/components/common/icons/arrows/PrevAndNext";
+import ArrowsLeftAndRight from "@/components/common/icons/arrows/ArrowsLeftAndRight";
 import QUOTES from "@/components/lists/quotes";
 
 export default function QuotesExhibition() {
@@ -19,7 +19,7 @@ export default function QuotesExhibition() {
 
           {QUOTES.map((quote) => {
             return (
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <div class=" duration-700 ease-in-out" data-carousel-item>
                 <img
                   src={quote.imgUrl}
                   class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -33,7 +33,7 @@ export default function QuotesExhibition() {
           })}
         </div>
 
-        <PrevAndNext />
+        <ArrowsLeftAndRight />
       </div>
     </div>
   );
