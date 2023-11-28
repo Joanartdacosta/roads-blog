@@ -24,11 +24,10 @@ export default function CardStars(props) {
                 />
               </div>
               <div className="p-2">
-                <a href={trip.href}>
-                  <h5 className="text-xl tracking-tight text-gray-800 dark:text-yellow poppins">
-                    {trip.title}
-                  </h5>
-                </a>
+                <h5 className="text-xl tracking-tight text-gray-800 dark:text-yellow poppins">
+                  {trip.title}
+                </h5>
+
                 <div className="flex items-center mt-2.5 mb-2.5 justify-start pb-4">
                   <StartYellow />
                   <StartYellow />

@@ -1,5 +1,5 @@
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
-import MenuDescription from "@/components/dashboard/tour/menus/menu_description/MenuDescription";
+import MenuDetailsId from "@/components/dashboard/tour/menu_id/MenuDetailsId";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
 
@@ -17,7 +17,7 @@ export default function TripDetailsPage(props) {
         imgUrl={NAVBAR_LINKS["trips"]["imgUrl"]}
         description={NAVBAR_LINKS["trips"]["description"]}
       />
-      <MenuDescription />
+      <MenuDetailsId />
     </div>
   );
 }

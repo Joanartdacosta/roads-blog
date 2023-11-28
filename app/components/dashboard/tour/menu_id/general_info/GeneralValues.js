@@ -1,4 +1,4 @@
-export default function MenuDescriptionValues(props) {
+export default function GeneralValues(props) {
   return (
     <div
       class="bg-white rounded-lg dark:bg-gray-800"

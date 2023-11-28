@@ -1,7 +1,7 @@
-import Blue from "./Blue";
-import LABELS from "../../../dashboard/tour/menus/menu_description/lists/labels";
+import Blue from "../../../../common/icons/bullets/Blue";
+import LABELS from "@/components/lists/labels";
 
-export default function BlueBullet() {
+export default function InfoBullets() {
   return (
     <div>
       <div
@@ -24,7 +24,6 @@ export default function BlueBullet() {
               </div>
             );
           })}
-          ;
         </ul>
       </div>
     </div>
