@@ -1,4 +1,5 @@
 import ButtonBlack from "../../button/ButtonBlack";
+import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import Link from "next/link";
 import ModalInfo from "@/components/dashboard/fairs/fairs_card/ModalInfo";
 import { useState } from "react";
@@ -39,7 +40,7 @@ export default function CardInfoButton(props) {
                 <Link href={trip.href}>
                   <ButtonBlack
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    label={"Saber mais"}
+                    label={BUTTONS_LABELS.moreInfo}
                     onClick={handleSeeMore}
                   />
                 </Link>

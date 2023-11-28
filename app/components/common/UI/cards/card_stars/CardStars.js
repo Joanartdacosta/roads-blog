@@ -1,7 +1,8 @@
+import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import ButtonYellow from "../../button/ButtonYellow";
+import { RevealList } from "next-reveal";
 import StartWhite from "../../../icons/stars/StarWhite";
 import StartYellow from "../../../icons/stars/StarYellow";
-import { RevealList } from "next-reveal";
 
 export default function CardStars(props) {
   const ARRAY = [];
@@ -42,7 +43,10 @@ export default function CardStars(props) {
                     {trip.district}, {trip.town}
                   </span>
                   <div className="pt-2">
-                    <ButtonYellow href={trip.href} label={"Saber mais"} />
+                    <ButtonYellow
+                      href={trip.href}
+                      label={BUTTONS_LABELS.moreInfo}
+                    />
                   </div>
                 </div>
               </div>

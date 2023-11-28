@@ -1,4 +1,5 @@
 import ButtonYellow from "@/components/common/UI/button/ButtonYellow";
+import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import Link from "next/link";
 
 export default function BannerDescription() {
@@ -21,7 +22,7 @@ export default function BannerDescription() {
               </p>
             </div>
             <Link href="#freetour">
-              <ButtonYellow label={"Pedido de Roteiro Gratuito"} />
+              <ButtonYellow label={BUTTONS_LABELS.askFreeTour} />
             </Link>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import ButtonYellow from "@/components/common/UI/button/ButtonYellow";
+import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 
 export default function ModalInfo(props) {
   return (
@@ -23,7 +24,10 @@ export default function ModalInfo(props) {
               <p>{props.paragraph4}</p>
             </div>
 
-            <ButtonYellow label={"Fechar"} onClick={props.onClick} />
+            <ButtonYellow
+              label={BUTTONS_LABELS.close}
+              onClick={props.onClick}
+            />
           </div>
         </ol>
       </div>

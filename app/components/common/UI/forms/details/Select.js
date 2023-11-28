@@ -1,6 +1,7 @@
+import TRANSPORTS_LABELS from "@/components/enums/transports_labels";
 import Label from "./Label";
 
-export default function Select(props) {
+export default function Select() {
   return (
     <div>
       <div className="relative z-0 w-full mb-6 group">
@@ -10,15 +11,15 @@ export default function Select(props) {
           required
         >
           <option className="bg-yellow" selected>
-            Seleccione o meio de transporte de preferencia.
+            {TRANSPORTS_LABELS.selection}
           </option>
-          <option value="car">Carro</option>
-          <option value="airplane">Aviao</option>
-          <option value="train">Comboio</option>
-          <option value="bus">Autocarro</option>
+          <option value="car">{TRANSPORTS_LABELS.car}</option>
+          <option value="airplane">{TRANSPORTS_LABELS.airplane}</option>
+          <option value="train">{TRANSPORTS_LABELS.train}</option>
+          <option value="bus">{TRANSPORTS_LABELS.bus}</option>
         </select>
 
-        <Label label={"Transporte"} />
+        <Label label={TRANSPORTS_LABELS.transport} />
       </div>
     </div>
   );

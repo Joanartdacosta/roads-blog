@@ -7,6 +7,7 @@ import FairMonth from "./FairMonth";
 import ModalInfo from "./ModalInfo";
 import ButtonYellow2 from "@/components/common/UI/button/ButtonYellow2";
 import CalendarIcon from "@/components/common/icons/calendar/CalendarIcon";
+import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 
 export default function FairCard(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -50,7 +51,10 @@ export default function FairCard(props) {
           </div>
         </div>
         <div className="flex justify-end">
-          <ButtonYellow2 onClick={handleSeeMore} label={"Saber mais"} />
+          <ButtonYellow2
+            onClick={handleSeeMore}
+            label={BUTTONS_LABELS.moreInfo}
+          />
         </div>
       </div>
 
