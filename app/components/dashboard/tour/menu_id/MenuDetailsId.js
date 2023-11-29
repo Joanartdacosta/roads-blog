@@ -5,6 +5,7 @@ import TAB_BUTTONS from "@/components/lists/TabButton";
 import { useState } from "react";
 import PathOptions from "./path/PathOptions";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
+import GoogleMaps from "./location/GoogleMaps";
 
 export default function MenuDetailsId() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,11 @@ export default function MenuDetailsId() {
 
     if (label == TAB_BUTTONS_LABELS.tip) {
       setInfo(<InfoBullets />);
+      setIsOpen(!isOpen);
+    }
+
+    if (label == TAB_BUTTONS_LABELS.location) {
+      setInfo(<GoogleMaps />);
       setIsOpen(!isOpen);
     }
   }
