@@ -17,7 +17,9 @@ export default function TourDetailPage(props) {
         imgUrl={NAVBAR_LINKS["tours"]["imgUrl"]}
         description={NAVBAR_LINKS["tours"]["description"]}
       />
-      <MenuDetailsId />
+      <div className="max-w-5xl m-auto pt-20 pb-20">
+        <MenuDetailsId />
+      </div>
     </div>
   );
 }
