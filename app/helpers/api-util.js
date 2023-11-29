@@ -18,7 +18,7 @@ export async function getAllTours() {
 
 export async function getFeaturedTours() {
   const all = await getAllTours();
-  return all.filter((item) => item.isFeatured);
+  return all.filter((item) => item.isFeatured == true);
 }
 
 export async function getByIdTour(id) {
@@ -45,7 +45,7 @@ export async function getAllTrips() {
 
 export async function getFeaturedTrips() {
   const all = await getAllTrips();
-  return all.filter((item) => item.isFeatured);
+  return all.filter((item) => item.isFeatured == true);
 }
 
 export async function getByIdTrips(id) {
@@ -72,7 +72,7 @@ export async function getAllFairs() {
 
 export async function getFeaturedFairs() {
   const all = await getAllFairs();
-  return all.filter((item) => item.isFeatured);
+  return all.filter((item) => item.isFeatured == true);
 }
 
 export async function getByIdFair(id) {
@@ -99,7 +99,7 @@ export async function getAllPassaports() {
 
 export async function getFeaturedPassports() {
   const all = await getAllPassaports();
-  return all.filter((item) => item.isFeatured);
+  return all.filter((item) => item.isFeatured == true);
 }
 
 export async function getByIdPassport(id) {
@@ -126,5 +126,5 @@ export async function getAllProverbs() {
 
 export async function getFeaturedProverbs() {
   const all = await getAllProverbs();
-  return all.filter((item) => item.isFeatured);
+  return all.filter((item) => item.isFeatured == true);
 }
