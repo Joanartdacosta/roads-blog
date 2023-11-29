@@ -18,7 +18,7 @@ export default function MenuDetailsId() {
       setIsOpen(!isOpen);
     }
 
-    if (label == TAB_BUTTONS_LABELS.paths) {
+    if (label == TAB_BUTTONS_LABELS.path) {
       setInfo(<PathOptions />);
       setIsOpen(!isOpen);
     }
@@ -52,7 +52,7 @@ export default function MenuDetailsId() {
         </ul>
       </div>
       {info}
-      {isOpen && info}
+      {isOpen}
     </div>
   );
 }
