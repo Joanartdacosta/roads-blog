@@ -31,3 +31,7 @@ main {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+
+svg {
+  color: rgb(186, 152, 13);
+}
