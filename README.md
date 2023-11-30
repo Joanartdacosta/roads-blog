@@ -56,3 +56,5 @@ At the moment, it is under-construction.
 # Documentation
 
 [Link](https://www.mongodb.com/developer/languages/javascript/nextjs-with-mongodb/)
+
+# Connection - Local (mongosh)
