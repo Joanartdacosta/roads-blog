@@ -14,21 +14,24 @@ export default function GoogleMaps() {
       try {
         const google = await loader.load();
         const Map = new google.maps.Map(mapRef.current, {
-          center: { lat: 43.642693, lng: -79.3871189 },
-          zoom: 17,
+          center: { lat: 34.4905458, lng: -90.3871189 },
+          zoom: 10,
           mapId: "MY_NEXTJS_MAPID",
         });
 
-        // Add a marker to the map
         new google.maps.Marker({
-          position: { lat: 43.642693, lng: -79.3871189 },
+          position: { lat: 34.4905458, lng: -90.3871189 },
           map: Map,
           title: "Marker Title",
         });
 
-        // Add additional map customization or event handling here
-      } catch (error) {
-        console.error("Error loading Google Maps:", error);
+        new google.maps.Marker({
+          position: { lat: 34.5005458, lng: -90.3871189 },
+          map: Map,
+          title: "Marker Title",
+        });
+      } catch (hover) {
+        console.log("Error loading Google Maps:", hover);
       }
     };
 
@@ -36,9 +39,8 @@ export default function GoogleMaps() {
   }, []);
 
   return (
-    <div>
-      <h1>Google Maps</h1>
-      <div style={{ height: "600px" }} ref={mapRef} />
+    <div className="flex flex-col justify justify-center items-center">
+      <div style={{ height: "400px", width: "700px" }} ref={mapRef} />
     </div>
   );
 }
