@@ -26,10 +26,6 @@ export default function FilteringFairByDateAndRegion() {
       filteredFairs = filterFairsByDate(startDate, endDate, filteredFairs);
     }
 
-    if (filteredFairs.length == 0) {
-      return <p>Nao existem feiras nos filtros seleccionados.</p>;
-    }
-
     setFairs(filteredFairs);
   }
 
@@ -55,30 +51,49 @@ export default function FilteringFairByDateAndRegion() {
     <div>
       <Regions filterFairs={filterFairs} setRegion={setRegion} />
 
-      <div className="flex">
+      <div className="flex pt-16">
         <div className="w-full">
-          <p className="pb-10 text-xl font-bold">Lista de Eventos</p>
-          {allfairs &&
-            allfairs.map((fair) => {
-              return (
-                <div className="w-full">
-                  <FairCard
-                    description={fair.description}
-                    district={fair.district}
-                    imgURL={fair.imgURL}
-                    key={fair.id}
-                    month={fair.month}
-                    paragraph1={fair.paragraph1}
-                    paragraph2={fair.paragraph2}
-                    paragraph3={fair.paragraph3}
-                    paragraph4={fair.paragraph4}
-                    region={fair.region}
-                    title={fair.title}
-                    town2={fair.town2}
-                  />
-                </div>
-              );
-            })}
+          <p className="pb-10 text-xl font-bold ">Lista de Eventos</p>
+
+          <div className="p-4 bg-gray-100 text-xs ">
+            <h1 className="text-lg pb-2 text-center">Resultados</h1>
+            <p className="text-sm italic underline">Datas: </p>
+            <p>
+              De {startDate.toLocaleDateString()} - a{" "}
+              {endDate.toLocaleDateString()}
+            </p>
+
+            <p className="text-sm italic underline">Regiao:</p>
+            <p> {region} </p>
+          </div>
+
+          <p className="text-sm pb-8 pt-8">
+            Por favor seleccione um intervalo de datas no calendario e uma
+            regiao no menu.
+          </p>
+          <div className="">
+            {allfairs &&
+              allfairs.map((fair) => {
+                return (
+                  <div className="w-full">
+                    <FairCard
+                      description={fair.description}
+                      district={fair.district}
+                      imgURL={fair.imgURL}
+                      key={fair.id}
+                      month={fair.month}
+                      paragraph1={fair.paragraph1}
+                      paragraph2={fair.paragraph2}
+                      paragraph3={fair.paragraph3}
+                      paragraph4={fair.paragraph4}
+                      region={fair.region}
+                      title={fair.title}
+                      town2={fair.town2}
+                    />
+                  </div>
+                );
+              })}
+          </div>
         </div>
 
         <div className="pl-20">
