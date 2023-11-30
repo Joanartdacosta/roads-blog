@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
+import { useEffect, useRef } from "react";
 
 export default function GoogleMaps() {
   const mapRef = useRef(null);

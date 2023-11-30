@@ -1,11 +1,11 @@
 import InfoBullets from "./general_info/InfoBullets";
 import GeneralSection from "./general_info/GeneralSection";
-import MenuItem from "./MenuItem";
-import TAB_BUTTONS from "@/components/lists/TabButton";
-import { useState } from "react";
-import PathOptions from "./path/PathOptions";
-import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 import GoogleMaps from "./location/GoogleMaps";
+import MenuItem from "./MenuItem";
+import PathOptions from "./path/PathOptions";
+import TAB_BUTTONS from "@/components/lists/TabButton";
+import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
+import { useState } from "react";
 
 export default function MenuDetailsId() {
   const [isOpen, setIsOpen] = useState(false);
