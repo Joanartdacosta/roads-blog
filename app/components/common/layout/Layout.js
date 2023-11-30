@@ -1,9 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Footer from "@/components/common/footer/Footer";
-import MenuNavBar from "@/components/common/navbar/menu_navbar/MenuNavBar";
-import NavBar from "../navbar/menu_navbar/NavBar";
-import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
+import NavBarPrincipal from "../navbar/navbar_large/NavBarPrincipal";
 
 export default function Layout({ children }) {
   return (
@@ -28,9 +26,9 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
-        <div className="flex">
-          <NavBar array={NAVBAR_LINKS} />
-          <div className="w-4/5 relative">{children}</div>
+        <div>
+          <NavBarPrincipal />
+          {children}
         </div>
         <Footer />
       </main>
