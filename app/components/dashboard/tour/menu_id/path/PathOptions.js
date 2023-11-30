@@ -1,3 +1,4 @@
+import PATH_OPTIONS_LABELS from "@/components/enums/path_options_labels";
 import Info from "./Info";
 import Path from "./Path";
 
@@ -16,10 +17,10 @@ export default function PathOptions() {
         data-inactive-classes="text-gray-500 dark:text-gray-400"
       >
         <Info />
-        <Path label={"Trajeto - Opcao 1"} />
-        <Path label={"Trajeto - Opcao 2"} />
-        <Path label={"Trajeto - Opcao 3"} />
-        <Path label={"Trajeto - Opcao 4"} />
+        <Path label={PATH_OPTIONS_LABELS.pathOption1} />
+        <Path label={PATH_OPTIONS_LABELS.pathOption2} />
+        <Path label={PATH_OPTIONS_LABELS.pathOption3} />
+        <Path label={PATH_OPTIONS_LABELS.pathOption4} />
       </div>
     </div>
   );
