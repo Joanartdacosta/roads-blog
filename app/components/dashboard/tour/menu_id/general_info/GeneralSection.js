@@ -1,4 +1,5 @@
 import InfoBullets from "./InfoBullets";
+import Classification from "../../classification/Classification";
 import GeneralValues from "./GeneralValues";
 
 export default function GeneralSection() {
@@ -15,6 +16,7 @@ export default function GeneralSection() {
           <GeneralValues value={"4+"} subtitle={"Avaliacao"} />
         </div>
       </div>
+      <Classification />
       <InfoBullets />
     </div>
   );
