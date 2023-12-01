@@ -1,4 +1,4 @@
-import Blue from "../../../../common/icons/bullets/Blue";
+import Blue from "../../icons/bullets/Blue";
 import LABELS from "@/components/lists/labels";
 
 export default function InfoBullets() {
