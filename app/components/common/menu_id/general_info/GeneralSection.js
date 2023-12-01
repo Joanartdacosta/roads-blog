@@ -1,5 +1,6 @@
-import InfoBullets from "./InfoBullets";
-import GeneralValues from "./GeneralValues";
+import Classification from "@/components/common/menu_id/classification/Classification";
+import InfoBullets from "@/components/common/menu_id/general_info/InfoBullets";
+import GeneralValues from "@/components/common/menu_id/general_info/GeneralValues";
 import GENERAL_SUBTITLES from "@/components/enums/general_subtitle";
 
 export default function GeneralSection() {
@@ -22,6 +23,7 @@ export default function GeneralSection() {
           <GeneralValues value={"4+"} subtitle={GENERAL_SUBTITLES.evaluation} />
         </div>
       </div>
+      <Classification />
       <InfoBullets />
     </div>
   );

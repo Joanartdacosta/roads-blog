@@ -1,7 +1,7 @@
 export default function Introduction() {
   return (
     <div>
-      <div className="pb-8 text-center m-auto">
+      <div className="pb-8 text-center m-auto poppins">
         <p>
           Chamo-me Rui Costa e fui professor de Geografia ao longo de 42 anos.
         </p>

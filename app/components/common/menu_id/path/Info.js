@@ -15,7 +15,7 @@ export default function Info() {
             Check out this guide to learn how to{" "}
             <a
               href="/docs/getting-started/introduction/"
-              class="text-blue-600 dark:text-blue-500 hover:underline"
+              class="text-green-600 dark:text-green-500 hover:underline"
             >
               get started
             </a>{" "}
@@ -47,7 +47,7 @@ export default function Info() {
             <li>
               <a
                 href="https://flowbite.com/pro/"
-                class="text-blue-600 dark:text-blue-500 hover:underline"
+                class="text-green-600 dark:text-green-500 hover:underline"
               >
                 Flowbite Pro
               </a>
@@ -56,7 +56,7 @@ export default function Info() {
               <a
                 href="https://tailwindui.com/"
                 rel="nofollow"
-                class="text-blue-600 dark:text-blue-500 hover:underline"
+                class="text-green-600 dark:text-green-500 hover:underline"
               >
                 Tailwind UI
               </a>
