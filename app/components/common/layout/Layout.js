@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Footer from "@/components/common/footer/Footer";
-import NavBarPrincipal from "../navbar/navbar_large/NavBarPrincipal";
+import NavBar from "../navbar/NavBar";
 
 export default function Layout({ children }) {
   return (
@@ -27,7 +27,7 @@ export default function Layout({ children }) {
 
       <main>
         <div>
-          <NavBarPrincipal />
+          <NavBar />
           {children}
         </div>
         <Footer />

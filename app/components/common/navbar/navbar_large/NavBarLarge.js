@@ -2,7 +2,7 @@ import DropDownArrow from "../../icons/DropDownArrow";
 import { useState } from "react";
 import DropDownMenu from "./DropDownMenu";
 
-export default function NavBarPrincipal() {
+export default function NavBarLarge() {
   const [isOpen, setIsOpen] = useState(false);
 
   function setVisible() {
