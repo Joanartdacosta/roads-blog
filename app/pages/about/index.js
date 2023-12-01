@@ -13,7 +13,6 @@ export default function AboutMe() {
       />
       <div className="max-w-5xl m-auto pt-20 pb-20">
         <Introduction />
-        <QuotesExhibition />
       </div>
     </div>
   );

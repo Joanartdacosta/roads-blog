@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Footer from "@/components/common/footer/Footer";
-import MenuNavBar from "@/components/common/navbar/menu_navbar/MenuNavBar";
+import NavBar from "../navbar/NavBar";
 
 export default function Layout({ children }) {
   return (
@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         <link
           href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Poppins:wght@200;300&family=Recursive&family=Roboto:ital,wght@0,500;1,300&display=swap"
           rel="stylesheet"
-        ></link>
+        />
         <meta
           name="keywords"
           content="Blog de Turismo, Dicas de Lugares, passadiços"
@@ -26,8 +26,10 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
-        <MenuNavBar />
-        {children}
+        <div>
+          <NavBar />
+          {children}
+        </div>
         <Footer />
       </main>
     </div>
