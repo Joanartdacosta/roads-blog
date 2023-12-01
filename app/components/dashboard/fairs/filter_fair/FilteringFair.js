@@ -68,8 +68,7 @@ export default function FilteringFairByDateAndRegion() {
           </div>
 
           <p className="text-sm pb-8 pt-8">
-            Por favor seleccione um intervalo de datas no calendario e uma
-            regiao no menu.
+            Por favor seleccione um intervalo de datas no calendário.
           </p>
           <div className="">
             {allfairs &&
