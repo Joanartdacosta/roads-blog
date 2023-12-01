@@ -10,7 +10,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Play", sans-serif;
 }
 
 main {
@@ -28,8 +27,20 @@ main {
   min-height: 3.5vh;
 }
 
+.play {
+  font-family: "Play", sans-serif;
+}
+
 .poppins {
   font-family: "Poppins", sans-serif;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
 
 svg {

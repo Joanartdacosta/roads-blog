@@ -17,7 +17,7 @@ export default function TripDetailsPage(props) {
         imgUrl={NAVBAR_LINKS["trips"]["imgUrl"]}
         description={NAVBAR_LINKS["trips"]["description"]}
       />
-      <div className="max-w-5xl m-auto pt-20 pb-20">
+      <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         <MenuDetailsId />
       </div>
     </div>

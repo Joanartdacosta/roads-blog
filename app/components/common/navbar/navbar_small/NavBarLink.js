@@ -9,7 +9,7 @@ export default function NavbarLink(props) {
   }
 
   return (
-    <div className="bg-black h-max p-4">
+    <div className="bg-black h-max p-4 poppins">
       {NAVBAR_LINKS["order"].map((item) => {
         return (
           <div className="font-thin cursor-pointer">

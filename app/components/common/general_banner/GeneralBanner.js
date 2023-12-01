@@ -7,10 +7,10 @@ export default function GeneralBanner(props) {
         className="w-full h-full object-cover absolute mix-blend-overlay"
       />
       <div className="w-full text-center m-auto p-24">
-        <h1 className="tracking-widest text-5xl text-white relative font-extrabold overline decoration-1">
+        <h1 className="tracking-widest text-5xl text-white relative font-extrabold overline decoration-1 oswald">
           {props.section}
         </h1>
-        <p className="text-sm text-white text-slate-200 relative ">
+        <p className="text-base text-white text-slate-200 relative play">
           {props.description}
         </p>
       </div>
