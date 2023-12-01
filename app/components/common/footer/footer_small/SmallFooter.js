@@ -1,4 +1,4 @@
-import CurrentTime from "./CurrentTIme";
+import CurrentTime from "../CurrentTime";
 
 export default function SmallFooter() {
   return (
