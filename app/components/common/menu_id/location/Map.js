@@ -1,7 +1,7 @@
 import { Loader } from "@googlemaps/js-api-loader";
 import { useEffect, useRef } from "react";
 
-export default function GoogleMaps() {
+export default function Map() {
   const mapRef = useRef(null);
 
   useEffect(() => {
@@ -12,26 +12,26 @@ export default function GoogleMaps() {
       });
 
       try {
-        const google = await loader.load();
-        const Map = new google.maps.Map(mapRef.current, {
-          center: { lat: 34.4905458, lng: -90.3871189 },
-          zoom: 10,
+        const GOOGLE = await loader.load();
+        const MAP = new google.maps.Map(mapRef.current, {
+          center: { lat: 37.135089, lng: -8.008024 },
+          zoom: 8,
           mapId: "MY_NEXTJS_MAPID",
         });
 
-        new google.maps.Marker({
-          position: { lat: 34.4905458, lng: -90.3871189 },
-          map: Map,
-          title: "Marker Title",
+        new GOOGLE.maps.Marker({
+          position: { lat: 40.315266, lng: 7.193451 },
+          map: MAP,
+          title: "Passadicos do Mondego",
         });
 
-        new google.maps.Marker({
-          position: { lat: 34.5005458, lng: -90.3871189 },
-          map: Map,
-          title: "Marker Title",
+        new GOOGLE.maps.Marker({
+          position: { lat: 37.135089, lng: -8.008024 },
+          map: MAP,
+          title: "Minas de Sal Gema",
         });
-      } catch (hover) {
-        console.log("Error loading Google Maps:", hover);
+      } catch (error) {
+        console.error("Error loading Google Maps:", error);
       }
     };
 
