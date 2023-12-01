@@ -70,7 +70,7 @@ export default function FilteringFairByDateAndRegion() {
           <p className="text-sm pb-8 pt-8">
             Por favor seleccione um intervalo de datas no calendário.
           </p>
-          <div className="">
+          <div>
             {allfairs &&
               allfairs.map((fair) => {
                 return (
