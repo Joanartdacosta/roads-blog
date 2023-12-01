@@ -18,11 +18,11 @@ export default function Introduction() {
           interesse geográfico.
         </p>
       </div>
-      <div className="text-center m-auto">
-        <h2 className="font-thin italic">
+      <div className="text-center m-auto border border-green-100 p-8">
+        <p className="font-thin italic text-s text-green-700">
           A vida é o que fazemos dela. As viagens são os viajantes. O que vemos
           não é o que vemos, senão o que somos.
-        </h2>
+        </p>
         <p>Fernando Pessoa</p>
       </div>
     </div>

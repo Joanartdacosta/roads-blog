@@ -14,7 +14,7 @@ export default function Media() {
         <div className="text-center m-auto">
           {" "}
           <p>Videos, artigos e noticias.</p>
-          <p>Em atualizacao.</p>
+          <p>Em atualização.</p>
         </div>
       </div>
     </div>

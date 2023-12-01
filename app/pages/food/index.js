@@ -10,7 +10,11 @@ export default function Food() {
         description={NAVBAR_LINKS["food"]["description"]}
       />
       <div className="max-w-5xl m-auto pt-20 pb-20">
-        <p>Em atualizacao.</p>
+        <div className="text-center m-auto">
+          {" "}
+          <p>À descoberta da rica gastronomia portuguesa.</p>
+          <p>Em atualização.</p>
+        </div>
       </div>
     </div>
   );

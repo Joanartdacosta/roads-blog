@@ -11,7 +11,10 @@ export default function GeoSpots() {
         description={NAVBAR_LINKS["geospots"]["description"]}
       />
       <div className="max-w-5xl m-auto pt-20 pb-20">
-        <p>Em atualizacao.</p>
+        <div className="text-center m-auto">
+          <p>Para amantes da geografia.</p>
+          <p>Em atualização.</p>
+        </div>
       </div>
     </div>
   );

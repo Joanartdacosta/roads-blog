@@ -7,7 +7,6 @@ const NAVBAR_LINKS = {
     "geospots",
     "proverbs",
     "media",
-    "freetour",
     "passports",
     "food",
     "contacts",
@@ -43,7 +42,7 @@ const NAVBAR_LINKS = {
     href: "/tours",
     imgUrl:
       "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/tour-banner.jpg",
-    descritpion: "Explore os cantinhos de Portugal.",
+    description: "Explore os cantinhos de Portugal.",
   },
   geospots: {
     id: "navbar-5",
@@ -57,8 +56,9 @@ const NAVBAR_LINKS = {
     id: "navbar-6",
     section: "PROVÉRBIOS DO MES",
     href: "/proverbs",
-    imgUrl: "",
-    description: "",
+    imgUrl:
+      "https://images.unsplash.com/photo-1462219157779-8a35f2687626?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Proverbios ao longo do ano.",
   },
   media: {
     id: "navbar-7",

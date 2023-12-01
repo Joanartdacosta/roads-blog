@@ -1,5 +1,5 @@
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
-import MenuDetailsId from "@/components/dashboard/tour/menu_id/MenuDetailsId";
+import MenuDetailsId from "@/components/common/menu_id/MenuDetailsId";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
 
