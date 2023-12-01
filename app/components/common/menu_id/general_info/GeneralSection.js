@@ -1,6 +1,6 @@
-import InfoBullets from "./InfoBullets";
-import Classification from "../../classification/Classification";
-import GeneralValues from "./GeneralValues";
+import Classification from "@/components/common/menu_id/classification/Classification";
+import InfoBullets from "@/components/common/menu_id/general_info/InfoBullets";
+import GeneralValues from "@/components/common/menu_id/general_info/GeneralValues";
 import GENERAL_SUBTITLES from "@/components/enums/general_subtitle";
 
 export default function GeneralSection() {

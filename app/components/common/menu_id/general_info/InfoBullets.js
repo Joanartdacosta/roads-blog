@@ -1,5 +1,5 @@
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
-import Bullet from "../../../../common/icons/bullets/Bullet";
+import Bullet from "@/components/common/icons/bullets/Bullet";
 import LABELS from "@/components/lists/labels";
 
 export default function InfoBullets() {
