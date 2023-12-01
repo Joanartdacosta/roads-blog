@@ -1,6 +1,6 @@
 import InfoBullets from "./general_info/InfoBullets";
 import GeneralSection from "./general_info/GeneralSection";
-import GoogleMaps from "./location/GoogleMaps";
+import Map from "./location/Map";
 import MenuItem from "./MenuItem";
 import PathOptions from "./path/PathOptions";
 import TAB_BUTTONS from "@/components/lists/TabButton";
@@ -30,7 +30,7 @@ export default function MenuDetailsId() {
     }
 
     if (label == TAB_BUTTONS_LABELS.location) {
-      setInfo(<GoogleMaps />);
+      setInfo(<Map />);
       setIsOpen(!isOpen);
     }
   }
