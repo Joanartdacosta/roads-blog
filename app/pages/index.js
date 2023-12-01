@@ -12,7 +12,10 @@ export default function Home() {
         <header className="text-center relative">
           <Title />
           <div className="my-8 text-xl">
-            <ButtonBlack label={BUTTONS_LABELS.winFreeTour} />
+            <ButtonBlack
+              label={BUTTONS_LABELS.winFreeTour}
+              href={"/tours/freetour"}
+            />
           </div>
         </header>
       </div>
