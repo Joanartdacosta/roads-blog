@@ -1,4 +1,4 @@
-import CLASSIFICATIONS from "./classifications";
+import CLASSIFICATIONS from "../../../lists/classifications";
 
 export default function Classification() {
   return (
