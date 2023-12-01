@@ -7,7 +7,7 @@ export default function FreeTour() {
       <div>
         <Banner />
       </div>
-      <div className="max-w-5xl m-auto pt-20 pb-20">
+      <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         <p>
           Preencha os seus dados e de acordo com as informacoes partilhadas,
           sera enviado para o email um roteiro personalizado.

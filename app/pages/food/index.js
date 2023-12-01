@@ -9,7 +9,7 @@ export default function Food() {
         imgUrl={NAVBAR_LINKS["food"]["imgUrl"]}
         description={NAVBAR_LINKS["food"]["description"]}
       />
-      <div className="max-w-5xl m-auto pt-20 pb-20">
+      <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         <div className="text-center m-auto">
           {" "}
           <p>À descoberta da rica gastronomia portuguesa.</p>

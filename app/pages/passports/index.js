@@ -11,7 +11,7 @@ export default function Passports(props) {
         imgUrl={NAVBAR_LINKS["passports"]["imgUrl"]}
         description={NAVBAR_LINKS["passports"]["description"]}
       />
-      <div className="max-w-5xl m-auto pt-20 pb-20">
+      <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         <CardStars array={props.passports} />
       </div>
     </div>

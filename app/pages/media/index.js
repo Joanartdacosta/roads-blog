@@ -10,7 +10,7 @@ export default function Media() {
         imgUrl={NAVBAR_LINKS["media"]["imgUrl"]}
         description={NAVBAR_LINKS["media"]["description"]}
       />
-      <div className="max-w-5xl m-auto pt-20 pb-20">
+      <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         <div className="text-center m-auto">
           {" "}
           <p>Videos, artigos e noticias.</p>
