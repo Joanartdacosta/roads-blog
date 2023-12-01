@@ -1,3 +1,4 @@
+import LOCATIONS_COORD from "@/components/enums/locations_coord";
 import { Loader } from "@googlemaps/js-api-loader";
 import { useEffect, useRef } from "react";
 
@@ -14,19 +15,28 @@ export default function Map() {
       try {
         const GOOGLE = await loader.load();
         const MAP = new google.maps.Map(mapRef.current, {
-          center: { lat: 37.135089, lng: -8.008024 },
-          zoom: 8,
+          center: {
+            lat: LOCATIONS_COORD.pt_lat,
+            lng: LOCATIONS_COORD.pt_long,
+          },
+          zoom: 6,
           mapId: "MY_NEXTJS_MAPID",
         });
 
         new GOOGLE.maps.Marker({
-          position: { lat: 40.315266, lng: 7.193451 },
+          position: {
+            lat: LOCATIONS_COORD.mondego_lat,
+            lng: LOCATIONS_COORD.mondego_long,
+          },
           map: MAP,
           title: "Passadicos do Mondego",
         });
 
         new GOOGLE.maps.Marker({
-          position: { lat: 37.135089, lng: -8.008024 },
+          position: {
+            lat: LOCATIONS_COORD.gema_lat,
+            lng: LOCATIONS_COORD.gema_long,
+          },
           map: MAP,
           title: "Minas de Sal Gema",
         });
