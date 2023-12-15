@@ -15,7 +15,10 @@ export default function CardStars(props) {
     <div className="flex flex-wrap gap-8 justify-center">
       {ARRAY.map((trip) => {
         return (
-          <div className="p-4 bg-neutral-100 rounded-lg shadow dark:bg-yellow-800 dark:border-gray-700 w-96 h-70">
+          <div
+            className="p-4 bg-neutral-100 rounded-lg shadow dark:bg-yellow-800 dark:border-gray-700 w-96 h-70"
+            key={trip.id}
+          >
             <RevealList interval={50} delay={50} reset={true}>
               <div className="w-full p-2 pb-8">
                 <img
@@ -38,10 +41,17 @@ export default function CardStars(props) {
                     {trip.evaluation}
                   </span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-lg font-semibold text-gray-900 dark:text-white">
-                    {trip.district}, {trip.town}
-                  </span>
+                <div className="flex items-center justify-between items-baseline">
+                  <div className="flex flex-col">
+                    {" "}
+                    <span className="text-lg font-semibold text-gray-900 dark:text-white">
+                      {trip.district}
+                    </span>{" "}
+                    <span className="text-sm font-semibold text-gray-900">
+                      {trip.town}
+                    </span>
+                  </div>
+
                   <div className="pt-2">
                     <ButtonYellow
                       href={trip.href}
