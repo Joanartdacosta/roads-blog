@@ -1,9 +1,17 @@
 import DropDownArrow from "../../icons/DropDownArrow";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DropDownMenu from "./DropDownMenu";
 
 export default function NavBarLarge() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    function handler() {
+      setIsOpen(false);
+    }
+
+    document.addEventListener("mousedown", handler);
+  });
 
   function setVisible() {
     setIsOpen(!isOpen);
