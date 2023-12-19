@@ -26,8 +26,6 @@ export default function FilteringFairByDateAndRegion() {
       filteredFairs = filterFairsByDate(startDate, endDate, filteredFairs);
     }
 
-    console.log(filteredFairs);
-
     setFairs(filteredFairs);
   }
 
@@ -95,7 +93,7 @@ export default function FilteringFairByDateAndRegion() {
                 );
               })
             ) : (
-              <p>Nao existem feiras nos filtros seleccionados.</p>
+              <p>Não existem feiras nos filtros seleccionados.</p>
             )}
           </div>
         </div>
