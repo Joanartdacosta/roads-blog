@@ -26,6 +26,8 @@ export default function FilteringFairByDateAndRegion() {
       filteredFairs = filterFairsByDate(startDate, endDate, filteredFairs);
     }
 
+    console.log(filteredFairs);
+
     setFairs(filteredFairs);
   }
 
@@ -71,7 +73,7 @@ export default function FilteringFairByDateAndRegion() {
             Por favor seleccione um intervalo de datas no calendário.
           </p>
           <div>
-            {allfairs &&
+            {allfairs.length ? (
               allfairs.map((fair) => {
                 return (
                   <div className="w-full">
@@ -91,7 +93,10 @@ export default function FilteringFairByDateAndRegion() {
                     />
                   </div>
                 );
-              })}
+              })
+            ) : (
+              <p>Nao existem feiras nos filtros seleccionados.</p>
+            )}
           </div>
         </div>
 
