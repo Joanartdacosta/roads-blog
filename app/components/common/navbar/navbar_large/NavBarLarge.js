@@ -1,25 +1,32 @@
 import DropDownArrow from "../../icons/DropDownArrow";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import DropDownMenu from "./DropDownMenu";
 
 export default function NavBarLarge() {
   const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef();
 
-  useEffect(() => {
-    function handler() {
+  const handleMouseDown = (e) => {
+    if (ref.current && !ref.current.contains(e.target)) {
       setIsOpen(false);
     }
+  };
 
-    document.addEventListener("mousedown", handler);
-  });
+  useEffect(() => {
+    document.addEventListener("mousedown", handleMouseDown);
+
+    return () => {
+      document.removeEventListener("mousedown", handleMouseDown);
+    };
+  }, []);
 
   function setVisible() {
     setIsOpen(!isOpen);
   }
 
   return (
-    <div>
-      <nav className="bg-black  dark:bg-gray-900">
+    <div ref={ref}>
+      <nav className="bg-black dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <a href="/">
