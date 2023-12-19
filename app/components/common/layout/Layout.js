@@ -15,9 +15,10 @@ export default function Layout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Poppins:wght@200;300&family=Recursive&family=Roboto:ital,wght@0,500;1,300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Open+Sans&family=Oswald:wght@700&family=Play:wght@700&family=Poppins:wght@200;300&family=Recursive&family=Roboto:ital,wght@0,500;1,300&display=swap"
           rel="stylesheet"
         />
+
         <meta
           name="keywords"
           content="Blog de Turismo, Dicas de Lugares, passadiços"
