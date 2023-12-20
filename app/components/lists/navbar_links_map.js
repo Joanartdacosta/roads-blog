@@ -89,7 +89,7 @@ const NAVBAR_LINKS = {
     href: "/food",
     imgUrl:
       "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/food-banner-02.jpg",
-    description: "Dicas de gastronomia.",
+    description: "À descoberta da rica gastronomia portuguesa",
   },
   contacts: {
     id: "navbar-11",
