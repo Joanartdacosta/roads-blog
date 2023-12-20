@@ -12,11 +12,6 @@ export default function FreeTour() {
           Preencha os seus dados e de acordo com as informacoes partilhadas,
           sera enviado para o email um roteiro personalizado.
         </p>
-        <p className="poppins pb-10">
-          {" "}
-          O roteiro inclui percurso, dicas: alojamento, alimentacao, percurso,
-          deslocamento e dicas uteis.
-        </p>
 
         <Form />
       </div>

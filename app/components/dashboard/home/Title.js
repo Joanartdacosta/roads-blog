@@ -28,7 +28,7 @@ export default function Title() {
               typewriter
                 .pauseFor(3000)
                 .typeString("        ...")
-                .typeString("E OUTROS LUGARES QUE TAIS")
+                .typeString("E OUTROS LUGARES QUE TAIS!")
                 .start();
               Title();
             }}

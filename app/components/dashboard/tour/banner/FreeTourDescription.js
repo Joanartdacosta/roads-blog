@@ -10,15 +10,18 @@ export default function BannerDescription() {
           <div className="relative mx-auto sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="play text-xl tracking-tight text-dark-600 sm:text-6xl">
-                Roteiro Personalizado Gratuito
+                Roteiro Gratuito
               </h1>
               <p className="poppins mt-4 text-base text-gray-500 pb-8 ">
-                Pretende viajar e necessita de sugestoes de alojamento, locais
-                restauracao, melhor percurso, pontos de interesse? Preencha o
-                formulario e envio um roteiro para a regiao que pretende, de
-                forma gratuita. Inclui indicacoes de percurso, sugestoes de
-                restaurantes, alojamentos e dicas para aproveitar o que de
-                melhor tem o local.
+                Está a planear uma viagem pelo país e gostaria de ter um roteiro
+                que o ajude a aproveitar ao máximo essa experiência? Não dispõe
+                de tempo ou paciência para o elaborar? Estou aqui para o ajudar
+                e o melhor é que é totalmente gratuito! Basta fornecer as
+                indicações necessárias, como: o destino desejado, o tipo de
+                transporte, entre outros detalhes. Com essas informações, será
+                entregue uma proposta de roteiro no prazo máximo de uma semana.
+                Não perca mais tempo, partilhe connosco as suas preferências
+                atraves do formulário e prepare-se para uma experiência única!
               </p>
             </div>
             <Link href="#freetour">

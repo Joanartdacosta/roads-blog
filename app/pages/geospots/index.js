@@ -12,7 +12,10 @@ export default function GeoSpots() {
       />
       <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         <div className="text-center m-auto">
-          <p>Para amantes da geografia.</p>
+          <p>
+            Lugares de interesse científico e turístico, para os amantes da
+            natureza.
+          </p>
           <p>Em atualização.</p>
         </div>
       </div>
