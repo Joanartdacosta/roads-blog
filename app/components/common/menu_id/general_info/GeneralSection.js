@@ -20,7 +20,6 @@ export default function GeneralSection() {
             value={"3.5"}
             subtitle={GENERAL_SUBTITLES.difficulty}
           />
-          <GeneralValues value={"4+"} subtitle={GENERAL_SUBTITLES.evaluation} />
         </div>
       </div>
       <Classification />
