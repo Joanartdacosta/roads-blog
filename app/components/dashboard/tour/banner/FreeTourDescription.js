@@ -16,12 +16,9 @@ export default function BannerDescription() {
                 Está a planear uma viagem pelo país e gostaria de ter um roteiro
                 que o ajude a aproveitar ao máximo essa experiência? Não dispõe
                 de tempo ou paciência para o elaborar? Estou aqui para o ajudar
-                e o melhor é que é totalmente gratuito! Basta fornecer as
-                indicações necessárias, como: o destino desejado, o tipo de
-                transporte, entre outros detalhes. Com essas informações, será
-                entregue uma proposta de roteiro no prazo máximo de uma semana.
-                Não perca mais tempo, partilhe connosco as suas preferências
-                atraves do formulário e prepare-se para uma experiência única!
+                e o melhor é que é totalmente gratuito! Não perca mais tempo,
+                partilhe connosco as suas preferências atraves do formulário e
+                prepare-se para uma experiência única!
               </p>
             </div>
             <Link href="#freetour">
