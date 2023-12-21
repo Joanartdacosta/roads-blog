@@ -1,6 +1,6 @@
 const GENERAL_SUBTITLES = Object.freeze({
   distance: "Distancia",
-  duration: "Duracao (dias)",
+  duration: "Duracao (horas)",
   difficulty: "Dificuldade",
   evaluation: "Avaliacao",
 });

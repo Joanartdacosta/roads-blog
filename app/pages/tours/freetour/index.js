@@ -8,14 +8,11 @@ export default function FreeTour() {
         <Banner />
       </div>
       <div className="poppins max-w-5xl m-auto pt-20 pb-20">
-        <p>
+        <p className="pt-10 pb-10">
+          Para receber o seu roteiro basta fornecer as indicações necessárias,
+          como: o destino desejado, o tipo de transporte, entre outros detalhes.
           Preencha os seus dados e de acordo com as informacoes partilhadas,
-          sera enviado para o email um roteiro personalizado.
-        </p>
-        <p className="poppins pb-10">
-          {" "}
-          O roteiro inclui percurso, dicas: alojamento, alimentacao, percurso,
-          deslocamento e dicas uteis.
+          será entregue uma proposta de roteiro no prazo máximo de uma semana.
         </p>
 
         <Form />

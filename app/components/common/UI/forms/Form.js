@@ -13,10 +13,7 @@ export default function Form() {
       <TextArea />
 
       <div className="pt-10 pb-10">
-        <p>
-          Se tiver interesse em solicitar um roteiro gratuito, preencha os
-          seguintes campos:
-        </p>
+        <p>Para solicitar o roteiro gratuito, estes campos sao obrigatorios:</p>
       </div>
 
       <div className="grid md:grid-cols-2 md:gap-6">
