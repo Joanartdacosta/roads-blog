@@ -1,26 +1,32 @@
+import Video from "next-video";
+import floresta from "/videos/floresta.mp4";
+
 export default function HomeVideo() {
-  const videoCar = "https://estradas-website.s3.amazonaws.com/Estradas/car.mp4";
+  // const videoCar = "https://estradas-website.s3.amazonaws.com/Estradas/car.mp4";
 
   // const videoRoad =
   //   "https://estradas-website.s3.amazonaws.com/Estradas/road.mp4";
 
-  const videoTrees =
-    "https://estradas-website.s3.amazonaws.com/Estradas/floresta.mp4";
+  // const videoTrees =
+  // "https://estradas-website.s3.amazonaws.com/Estradas/floresta.mp4";
 
   // const videoLandscape =
   //   "https://estradas-website.s3.amazonaws.com/Estradas/road-landscape.mp4";
 
   return (
-    <div className="video">
+    <div className="">
       {" "}
-      <video
-        autoplay="autoplay"
+      <Video
+        autoPlay="autoplay"
         muted
         loop="loop"
-        className="video object-cover w-screen h-screen fixed"
+        playsInline
+        controls={false}
+        // loop="loop"
+        className=" object-cover w-screen h-screen fixed"
       >
-        <source src={videoTrees} type="video/mp4" />
-      </video>
+        <source src={floresta} type="video/mp4" />
+      </Video>
     </div>
   );
 }
