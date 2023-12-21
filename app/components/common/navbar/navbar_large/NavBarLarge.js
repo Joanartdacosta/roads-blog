@@ -1,6 +1,7 @@
 import DropDownArrow from "../../icons/DropDownArrow";
 import { useState, useEffect, useRef } from "react";
 import DropDownMenu from "./DropDownMenu";
+import Image from "next/image";
 
 export default function NavBarLarge() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,10 +31,13 @@ export default function NavBarLarge() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <a href="/">
-              <img
-                className="w-24 m-auto"
-                src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
+              <Image
                 alt="logo"
+                className="m-auto"
+                height={96}
+                width={96}
+                src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
+                unoptimized
               />
             </a>
           </div>

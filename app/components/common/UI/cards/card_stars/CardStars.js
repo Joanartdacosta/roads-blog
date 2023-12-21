@@ -1,5 +1,6 @@
 import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import ButtonYellow from "../../button/ButtonYellow";
+import Image from "next/image";
 import { RevealList } from "next-reveal";
 import StartWhite from "../../../icons/stars/StarWhite";
 import StartYellow from "../../../icons/stars/StarYellow";
@@ -21,10 +22,14 @@ export default function CardStars(props) {
           >
             <RevealList interval={50} delay={50} reset={true}>
               <div className="w-full p-2 pb-8">
-                <img
-                  className="w-full object-cover h-60 rounded-t-lg"
-                  src={trip.imgUrl}
+                <Image
                   alt={trip.title}
+                  className="wrap w-full object-cover h-60 rounded-t-lg"
+                  objectFit="contain"
+                  width={384}
+                  height={424}
+                  src={trip.imgUrl}
+                  unoptimized
                 />
               </div>
               <div className="p-2">
