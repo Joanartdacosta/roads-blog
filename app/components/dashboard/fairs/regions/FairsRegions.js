@@ -15,28 +15,28 @@ export default function FairsRegions({ setRegion }) {
           key={"1"}
           label={REGIONS_LABELS.all}
           onClick={handleRegions}
-          value={null}
+          value={REGIONS_LABELS.all}
         />
 
         <ButtonOptionMid
           key={"2"}
           label={REGIONS_LABELS.north}
           onClick={handleRegions}
-          value="Norte"
+          value={REGIONS_LABELS.north}
         />
 
         <ButtonOptionMid
           key={"3"}
           label={REGIONS_LABELS.center}
           onClick={handleRegions}
-          value="Centro e Beira Interior"
+          value={REGIONS_LABELS.center}
         />
 
         <ButtonOptionMid
           key={"4"}
           label={REGIONS_LABELS.south}
           onClick={handleRegions}
-          value="Sul"
+          value={REGIONS_LABELS.south}
         />
 
         <ButtonOptionRight

@@ -9,7 +9,10 @@ export default function DropDownMenu() {
       <div className="flex flex-wrap justify-center align-items-center max-w-screen-xl mx-auto text-yellow-900 dark:text-white gap-2 p-2">
         {NAVBAR_LINKS["order"].map((item) => {
           return (
-            <div className="w-60 hover:bg-gray-200 dark:hover:bg-gray-700 p-3 border border-gray-100 rounded-lg shadow-md cursor-pointer">
+            <div
+              key={NAVBAR_LINKS[item].id}
+              className="w-60 hover:bg-gray-200 dark:hover:bg-gray-700 p-3 border border-gray-100 rounded-lg shadow-md cursor-pointer"
+            >
               <a href={NAVBAR_LINKS[item].href} className="rounded-lg ">
                 <img
                   className="object-cover w-96 h-28"

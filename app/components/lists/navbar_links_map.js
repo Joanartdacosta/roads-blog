@@ -13,7 +13,7 @@ const NAVBAR_LINKS = {
   ],
   about: {
     id: "navbar-1",
-    section: "SOBRE",
+    section: "SOBRE MIM",
     title: "Sobre mim",
     href: "/about",
     imgUrl:
@@ -30,11 +30,11 @@ const NAVBAR_LINKS = {
   },
   trips: {
     id: "navbar-3",
-    section: "PASSEIOS E PASSADIÇOS",
+    section: "PASSADIÇOS E MIRADOUROS",
     href: "/trips",
     imgUrl:
       "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/trips-banner02.jpg",
-    description: "Caminhar de norte a sul de Portugal",
+    description: "Explorando passadicos e miradouros em Portugal.",
   },
   tours: {
     id: "navbar-4",
@@ -50,15 +50,15 @@ const NAVBAR_LINKS = {
     href: "/geospots",
     imgUrl:
       "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/geo-banner.jpg",
-    description: "Lugares ligados à Geografia.",
+    description: "Lugares de interesse científico e turístico.",
   },
   proverbs: {
     id: "navbar-6",
-    section: "PROVÉRBIOS DO MES",
+    section: "PROVÉRBIOS AO LONGO DO ANO",
     href: "/proverbs",
     imgUrl:
-      "https://images.unsplash.com/photo-1462219157779-8a35f2687626?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    description: "Proverbios ao longo do ano.",
+      "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/proverbs-banner.jpg",
+    description: "",
   },
   media: {
     id: "navbar-7",
@@ -66,7 +66,7 @@ const NAVBAR_LINKS = {
     href: "/media",
     imgUrl:
       "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/media-banner.jpg",
-    description: "Noticias, artigos.",
+    description: "Reportagens, artigos e notícias.",
   },
   freetour: {
     id: "navbar-8",
@@ -81,7 +81,7 @@ const NAVBAR_LINKS = {
     href: "/passports",
     imgUrl:
       "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/passports-banner.jpg",
-    description: "Uma ótima forma de percorrer Portugal de Norte a Sul.",
+    description: "Uma excelente maneira de registar as suas viagens.",
   },
   food: {
     id: "navbar-10",
@@ -89,7 +89,7 @@ const NAVBAR_LINKS = {
     href: "/food",
     imgUrl:
       "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/food-banner-02.jpg",
-    description: "Dicas de gastronomia.",
+    description: "À descoberta da rica gastronomia portuguesa",
   },
   contacts: {
     id: "navbar-11",
@@ -97,7 +97,7 @@ const NAVBAR_LINKS = {
     href: "/contacts",
     imgUrl:
       "https://estradas-website.s3.amazonaws.com/Estradas/general-banner/contacts-banner.jpg",
-    description: "Entre em contacto comigo",
+    description: "Entre em contacto comigo.",
   },
 };
 

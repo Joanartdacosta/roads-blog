@@ -6,7 +6,7 @@ export default function ModalInfo(props) {
     <div>
       <div className="bg-gray-50 border border-gray-100 dark:bg-gray-800 dark:border-gray-700 p-5 rounded-lg ">
         <time className="font-semibold text-lg text-gray-900 dark:text-white">
-          Mais detalhes
+          Historia
         </time>
 
         <ol className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
@@ -17,11 +17,15 @@ export default function ModalInfo(props) {
               </span>{" "}
             </div>
             <div className="text-sm font-normal pb-10">
-              <p className="text-base bold italic pb-2">Curiosidades</p>
+              <p className="text-base bold italic pb-2">Mais detalhes</p>
               <p>{props.paragraph1}</p>
               <p>{props.paragraph2}</p>
               <p>{props.paragraph3}</p>
               <p>{props.paragraph4}</p>
+            </div>
+
+            <div>
+              <p>Fonte: {props.source}</p>
             </div>
 
             <ButtonYellow

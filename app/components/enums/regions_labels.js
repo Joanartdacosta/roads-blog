@@ -1,6 +1,6 @@
 const REGIONS_LABELS = Object.freeze({
   all: "Todos",
-  center: "Centro e Beira Interior",
+  center: "Centro",
   islands: "Arquipélagos dos Açores e Madeira",
   north: "Norte",
   south: "Sul",
