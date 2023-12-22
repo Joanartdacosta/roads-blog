@@ -3,8 +3,8 @@ import GeneralSection from "./general_info/GeneralSection";
 import Map from "./location/Map";
 import MenuItem from "./MenuItem";
 import PathOptions from "./path/PathOptions";
-import TAB_BUTTONS from "@/components/lists/TabButton";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
+import TAB_BUTTONS_TRIP from "@/components/lists/TabButtonTrip";
 import { useState } from "react";
 
 export default function MenuDetailsId() {
@@ -44,7 +44,7 @@ export default function MenuDetailsId() {
           data-tabs-toggle="#fullWidthTabContent"
           role="tablist"
         >
-          {TAB_BUTTONS.map((button) => {
+          {TAB_BUTTONS_TRIP.map((button) => {
             return (
               <MenuItem
                 href={button.href}
