@@ -7,30 +7,52 @@ import TAB_BUTTONS from "@/components/lists/TabButton";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 import { useState } from "react";
 
-export default function MenuDetailsId() {
+export default function MenuDetailsId(props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [info, setInfo] = useState(<GeneralSection />);
+  const [info, setInfo] = useState(
+    <GeneralSection
+      duration={props.duration}
+      description={props.description}
+      distance={props.distance}
+      difficulty={props.difficulty}
+    />
+  );
 
   function handleEvent(event) {
     const label = event.target.value;
 
     if (label == TAB_BUTTONS_LABELS.general) {
-      setInfo(<GeneralSection />);
+      setInfo(
+        <GeneralSection
+          label={props.label}
+          duration={props.duration}
+          description={props.description}
+          distance={props.distance}
+          difficulty={props.difficulty}
+        />
+      );
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.path) {
-      setInfo(<PathOptions />);
+      setInfo(
+        <PathOptions
+          description={props.description}
+          label={props.label}
+          waydescription={props.waydescription}
+          access={props.access}
+        />
+      );
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.tip) {
-      setInfo(<InfoBullets />);
+      setInfo(<InfoBullets description={props.description} />);
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.location) {
-      setInfo(<Map />);
+      setInfo(<Map latitude={props.latitude} longitude={props.longitude} />);
       setIsOpen(!isOpen);
     }
   }

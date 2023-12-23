@@ -1,4 +1,4 @@
-export default function Info() {
+export default function Info(props) {
   return (
     <div>
       <div
@@ -7,12 +7,10 @@ export default function Info() {
       >
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is an open-source library of interactive components built
-            on top of Tailwind CSS including buttons, dropdowns, modals,
-            navbars, and more.
+            {props.description}
           </p>
           <p class="text-gray-500 dark:text-gray-400">
-            Check out this guide to learn how to{" "}
+            {props.waydescription}
             <a
               href="/docs/getting-started/introduction/"
               class="text-green-600 dark:text-green-500 hover:underline"
@@ -29,12 +27,7 @@ export default function Info() {
         aria-labelledby="accordion-flush-heading-3"
       >
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            The main difference is that the core components from Flowbite are
-            open source under the MIT license, whereas Tailwind UI is a paid
-            product. Another difference is that Flowbite relies on smaller and
-            standalone components, whereas Tailwind UI offers sections of pages.
-          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">{props.access}</p>
           <p class="mb-2 text-gray-500 dark:text-gray-400">
             However, we actually recommend using both Flowbite, Flowbite Pro,
             and even Tailwind UI as there is no technical reason stopping you

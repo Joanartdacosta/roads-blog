@@ -4,12 +4,6 @@ import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
 
 export default function TripDetailsPage(props) {
-  const trip = props.selectedTrip;
-
-  if (!trip) {
-    return <p>Loading...</p>;
-  }
-
   return (
     <div>
       <GeneralBanner
@@ -18,7 +12,21 @@ export default function TripDetailsPage(props) {
         description={NAVBAR_LINKS["trips"]["description"]}
       />
       <div className="roboto max-w-5xl m-auto pt-20 pb-20">
-        <MenuDetailsId />
+        <MenuDetailsId
+          // access={props.selectedTrip.access}
+          accessOption1={props.selectedTrip.accessOption1}
+          accessOption2={props.selectedTrip.accessOption2}
+          description={props.selectedTrip.description}
+          evaluation={props.selectedTrip.evaluation}
+          parish={props.selectedTrip.parish}
+          road1={props.selectedTrip.road1}
+          road2={props.selectedTrip.road2}
+          road3={props.selectedTrip.road3}
+          tip1={props.selectedTrip.tip1}
+          tip2={props.selectedTrip.tip2}
+          weather={props.selectedTrip.weather}
+          waydescription={props.selectedTrip.waydescription}
+        />
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 import Bullet from "@/components/common/icons/bullets/Bullet";
-import LABELS from "@/components/lists/labels";
 
-export default function InfoBullets() {
+export default function InfoBullets(props) {
   return (
     <div>
       <div
@@ -15,16 +14,20 @@ export default function InfoBullets() {
           {TAB_BUTTONS_LABELS.recomendation}
         </h2>
         <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
-          {LABELS.map((item) => {
-            return (
-              <div>
-                <li class="flex space-x-2 items-center">
-                  <Bullet />
-                  <span class="leading-tight">{item.desciption}</span>
-                </li>
-              </div>
-            );
-          })}
+          <div>
+            <li class="flex space-x-2 items-center">
+              <Bullet />
+              <span class="leading-tight">{props.bullet1}</span>
+            </li>
+            <li class="flex space-x-2 items-center">
+              <Bullet />
+              <span class="leading-tight">{props.bullet2}</span>
+            </li>
+            <li class="flex space-x-2 items-center">
+              <Bullet />
+              <span class="leading-tight">{props.bullet3}</span>
+            </li>
+          </div>
         </ul>
       </div>
     </div>

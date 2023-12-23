@@ -24,7 +24,14 @@ export default function Path(props) {
           <Arrow />
         </button>
 
-        {show && <Info onClick={close} />}
+        {show && (
+          <Info
+            onClick={close}
+            description={props.description}
+            waydescription={props.waydescription}
+            access={props.access}
+          />
+        )}
       </h2>
     </div>
   );
