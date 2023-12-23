@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SOCIALS from "./socials";
 
 export default function Social() {
@@ -5,11 +6,14 @@ export default function Social() {
     <div className="m-auto">
       {SOCIALS.map((social) => (
         <a href={social.href} key={social.id}>
-          <img
-            className="icon padding-10"
-            src={social.imgURL}
+          <Image
             alt={social.text}
-          ></img>
+            className="icon padding-10"
+            height={240}
+            width={240}
+            src={social.imgURL}
+            unoptimized
+          />
         </a>
       ))}
     </div>

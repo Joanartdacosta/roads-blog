@@ -1,4 +1,5 @@
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
+import Image from "next/image";
 
 export default function DropDownMenu() {
   return (
@@ -14,10 +15,13 @@ export default function DropDownMenu() {
               className="w-60 hover:bg-gray-200 dark:hover:bg-gray-700 p-3 border border-gray-100 rounded-lg shadow-md cursor-pointer"
             >
               <a href={NAVBAR_LINKS[item].href} className="rounded-lg ">
-                <img
+                <Image
+                  alt={NAVBAR_LINKS[item].section}
+                  width={240}
+                  height={240}
                   className="object-cover w-96 h-28"
                   src={NAVBAR_LINKS[item].imgUrl}
-                  alt={NAVBAR_LINKS[item].section}
+                  unoptimized
                 />
                 <div className="font-semibold">
                   {NAVBAR_LINKS[item].section}
