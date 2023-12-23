@@ -2,6 +2,7 @@ import { Dropdown } from "flowbite-react";
 import NavbarLink from "@/components/common/navbar/navbar_small/NavBarLink";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import SmallFooter from "../../footer/footer_small/SmallFooter";
+import Image from "next/image";
 
 export default function NavBarSmall() {
   return (
@@ -15,10 +16,13 @@ export default function NavBarSmall() {
       </Dropdown>
       <div>
         <a href="/">
-          <img
+          <Image
+            alt="estradas fora blog"
             className="w-16 m-auto"
             src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
-            alt="logo"
+            height={240}
+            width={240}
+            unoptimized
           />
         </a>
       </div>
