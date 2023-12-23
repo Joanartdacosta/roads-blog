@@ -8,7 +8,7 @@ export default function GeneralSection() {
     <div>
       <div
         id="fullWidthTabContent"
-        class="border-t border-gray-200 dark:border-gray-600"
+        className="border-t border-gray-200 dark:border-gray-600"
       >
         <div className="flex justify-center">
           <GeneralValues

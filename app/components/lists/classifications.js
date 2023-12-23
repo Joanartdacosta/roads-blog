@@ -17,7 +17,7 @@ const CLASSIFICATIONS = [
     evaluation: "45%",
   },
   {
-    id: 7,
+    id: 4,
     label: CLASSIFICATION_LABELS.support,
     evaluation: "20%",
   },
@@ -32,7 +32,7 @@ const CLASSIFICATIONS = [
     evaluation: "20%",
   },
   {
-    id: 3,
+    id: 7,
     label: CLASSIFICATION_LABELS.emergency,
     evaluation: "45%",
   },

@@ -36,10 +36,10 @@ export default function MenuDetailsId() {
   }
 
   return (
-    <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div className="flex justify-center">
         <ul
-          class="text-ms font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400"
+          className="text-ms font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400"
           id="fullWidthTab"
           data-tabs-toggle="#fullWidthTabContent"
           role="tablist"
@@ -50,6 +50,7 @@ export default function MenuDetailsId() {
                 href={button.href}
                 id={button.id}
                 label={button.label}
+                key={button.id}
                 value={button.label}
                 onClick={handleEvent}
               />

@@ -2,7 +2,7 @@ export default function Bullet() {
   return (
     <div>
       <svg
-        class="flex-shrink-0 w-3.5 h-3.5 text-green-600 dark:text-blue-500"
+        className="flex-shrink-0 w-3.5 h-3.5 text-green-600 dark:text-blue-500"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"

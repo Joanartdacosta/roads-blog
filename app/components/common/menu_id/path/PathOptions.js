@@ -5,7 +5,7 @@ import Path from "./Path";
 export default function PathOptions() {
   return (
     <div
-      class="p-4 bg-white rounded-lg dark:bg-gray-800"
+      className="p-4 bg-white rounded-lg dark:bg-gray-800"
       id="faq"
       role="tabpanel"
       aria-labelledby="faq-tab"
