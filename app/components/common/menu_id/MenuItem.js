@@ -1,7 +1,7 @@
 export default function MenuItem(props) {
   return (
     <div>
-      <li class="w-full">
+      <li className="w-full">
         <button
           id={props.id}
           data-tabs-target={props.href}
@@ -10,7 +10,7 @@ export default function MenuItem(props) {
           aria-controls={props.id}
           aria-selected="true"
           value={props.label}
-          class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+          className="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
           onClick={props.onClick}
         >
           {props.label}
