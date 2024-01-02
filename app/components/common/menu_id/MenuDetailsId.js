@@ -10,12 +10,18 @@ import { useState } from "react";
 export default function MenuDetailsId(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [info, setInfo] = useState(
-    <GeneralSection
-      duration={props.duration}
-      description={props.description}
-      distance={props.distance}
-      difficulty={props.difficulty}
-    />
+    <div>
+      {" "}
+      <GeneralSection
+        duration={props.duration}
+        description={props.description}
+        distance={props.distance}
+        difficulty={props.difficulty}
+        bullet1={props.bullet1}
+        bullet2={props.bullet2}
+        bullet3={props.bullet3}
+      />
+    </div>
   );
 
   function handleEvent(event) {
@@ -29,6 +35,9 @@ export default function MenuDetailsId(props) {
           description={props.description}
           distance={props.distance}
           difficulty={props.difficulty}
+          bullet1={props.bullet1}
+          bullet2={props.bullet2}
+          bullet3={props.bullet3}
         />
       );
       setIsOpen(!isOpen);
@@ -47,7 +56,14 @@ export default function MenuDetailsId(props) {
     }
 
     if (label == TAB_BUTTONS_LABELS.tip) {
-      setInfo(<InfoBullets description={props.description} />);
+      setInfo(
+        <InfoBullets
+          description={props.description}
+          bullet1={props.bullet1}
+          bullet2={props.bullet2}
+          bullet3={props.bullet3}
+        />
+      );
       setIsOpen(!isOpen);
     }
 
