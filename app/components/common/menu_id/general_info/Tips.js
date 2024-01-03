@@ -1,4 +1,4 @@
-export default function Info(props) {
+export default function Tips(props) {
   return (
     <div>
       <div
@@ -18,10 +18,10 @@ export default function Info(props) {
           aria-labelledby="accordion-flush-heading-3"
         >
           <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p class="mb-2 text-gray-500 dark:text-gray-400">Percurso</p>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Restaurantes:</p>
             <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
               <li className="text-green-600 dark:text-green-500 hover:underline ">
-                {props.wayoption1}
+                {props.restaurant1}
               </li>
             </ul>
           </div>
@@ -29,9 +29,11 @@ export default function Info(props) {
             <p class="mb-2 text-gray-500 dark:text-gray-400">Alojamentos:</p>
             <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
               <li className="text-green-600 dark:text-green-500 hover:underline">
-                {props.wayoption1}
+                {props.hotel1}
               </li>
-              <li className="text-green-600 dark:text-green-500 hover:underline"></li>
+              <li className="text-green-600 dark:text-green-500 hover:underline">
+                {props.hotel2}
+              </li>
               <li className="text-green-600 dark:text-green-500 hover:underline">
                 {props.hotel3}
               </li>

@@ -6,6 +6,7 @@ import PathOptions from "./path/PathOptions";
 import TAB_BUTTONS from "@/components/lists/TabButton";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 import { useState } from "react";
+import Tips from "./general_info/Tips";
 
 export default function MenuDetailsId(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,10 +47,18 @@ export default function MenuDetailsId(props) {
     if (label == TAB_BUTTONS_LABELS.path) {
       setInfo(
         <PathOptions
-          description={props.description}
+          description1={props.description1}
           label={props.label}
           waydescription={props.waydescription}
           access={props.access}
+          restaurant1={props.restaurant1}
+          restaurant2={props.restaurant2}
+          hotel1={props.hotel1}
+          hotel2={props.hotel2}
+          hotel3={props.hotel3}
+          wayoption1={props.wayoption1}
+          wayoption2={props.wayoption2}
+          wayoption3={props.wayoption3}
         />
       );
       setIsOpen(!isOpen);
@@ -57,11 +66,13 @@ export default function MenuDetailsId(props) {
 
     if (label == TAB_BUTTONS_LABELS.tip) {
       setInfo(
-        <InfoBullets
-          description={props.description}
-          bullet1={props.bullet1}
-          bullet2={props.bullet2}
-          bullet3={props.bullet3}
+        <Tips
+          waydescription={props.waydescription}
+          description1={props.description1}
+          restaurant1={props.restaurant1}
+          hotel1={props.hotel1}
+          hotel2={props.hotel2}
+          hotel3={props.hotel3}
         />
       );
       setIsOpen(!isOpen);

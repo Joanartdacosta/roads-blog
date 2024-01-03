@@ -30,6 +30,7 @@ export default function Path(props) {
             description={props.description}
             waydescription={props.waydescription}
             access={props.access}
+            wayoption1={props.wayoption1}
           />
         )}
       </h2>
