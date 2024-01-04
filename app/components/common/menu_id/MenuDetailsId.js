@@ -14,13 +14,14 @@ export default function MenuDetailsId(props) {
     <div>
       {" "}
       <GeneralSection
-        duration={props.duration}
-        description={props.description}
-        distance={props.distance}
-        difficulty={props.difficulty}
         bullet1={props.bullet1}
         bullet2={props.bullet2}
         bullet3={props.bullet3}
+        bullet4={props.bullet4}
+        description1={props.description1}
+        distance={props.distance}
+        difficulty={props.difficulty}
+        duration={props.duration}
       />
     </div>
   );
@@ -31,14 +32,15 @@ export default function MenuDetailsId(props) {
     if (label == TAB_BUTTONS_LABELS.general) {
       setInfo(
         <GeneralSection
-          label={props.label}
-          duration={props.duration}
-          description={props.description}
-          distance={props.distance}
-          difficulty={props.difficulty}
           bullet1={props.bullet1}
           bullet2={props.bullet2}
           bullet3={props.bullet3}
+          bullet4={props.bullet4}
+          description1={props.description1}
+          distance={props.distance}
+          difficulty={props.difficulty}
+          duration={props.duration}
+          label={props.label}
         />
       );
       setIsOpen(!isOpen);
@@ -47,15 +49,15 @@ export default function MenuDetailsId(props) {
     if (label == TAB_BUTTONS_LABELS.path) {
       setInfo(
         <PathOptions
-          description1={props.description1}
-          label={props.label}
-          waydescription={props.waydescription}
           access={props.access}
-          restaurant1={props.restaurant1}
-          restaurant2={props.restaurant2}
+          description1={props.description1}
           hotel1={props.hotel1}
           hotel2={props.hotel2}
           hotel3={props.hotel3}
+          label={props.label}
+          restaurant1={props.restaurant1}
+          restaurant2={props.restaurant2}
+          waydescription={props.waydescription}
           wayoption1={props.wayoption1}
           wayoption2={props.wayoption2}
           wayoption3={props.wayoption3}
@@ -67,12 +69,12 @@ export default function MenuDetailsId(props) {
     if (label == TAB_BUTTONS_LABELS.tip) {
       setInfo(
         <Tips
-          waydescription={props.waydescription}
           description1={props.description1}
-          restaurant1={props.restaurant1}
           hotel1={props.hotel1}
           hotel2={props.hotel2}
           hotel3={props.hotel3}
+          restaurant1={props.restaurant1}
+          waydescription={props.waydescription}
         />
       );
       setIsOpen(!isOpen);
@@ -96,12 +98,12 @@ export default function MenuDetailsId(props) {
           {TAB_BUTTONS.map((button) => {
             return (
               <MenuItem
-                href={button.href}
                 id={button.id}
-                label={button.label}
+                href={button.href}
                 key={button.id}
-                value={button.label}
+                label={button.label}
                 onClick={handleEvent}
+                value={button.label}
               />
             );
           })}
