@@ -21,9 +21,9 @@ export default function TripDetailsPage(props) {
           bullet3={props.selectedTrip.bullet3}
           bullet4={props.selectedTrip.bullet4}
           description1={props.selectedTrip.description1}
+          difficulty={props.selectedTrip.difficulty}
           distance={props.selectedTrip.distance}
           duration={props.selectedTrip.duration}
-          difficulty={props.selectedTrip.difficulty}
           evaluation={props.selectedTrip.evaluation}
           labelOption1={props.selectedTrip.labelOption1}
           labelOption2={props.selectedTrip.labelOption2}
