@@ -19,8 +19,8 @@ export default function MenuDetailsId(props) {
         bullet3={props.bullet3}
         bullet4={props.bullet4}
         description1={props.description1}
-        distance={props.distance}
         difficulty={props.difficulty}
+        distance={props.distance}
         duration={props.duration}
       />
     </div>
@@ -37,8 +37,8 @@ export default function MenuDetailsId(props) {
           bullet3={props.bullet3}
           bullet4={props.bullet4}
           description1={props.description1}
-          distance={props.distance}
           difficulty={props.difficulty}
+          distance={props.distance}
           duration={props.duration}
           label={props.label}
         />
@@ -62,10 +62,6 @@ export default function MenuDetailsId(props) {
           labelOption2Description={props.labelOption2Description}
           restaurant1={props.restaurant1}
           restaurant2={props.restaurant2}
-          waydescription={props.waydescription}
-          wayoption1={props.wayoption1}
-          wayoption2={props.wayoption2}
-          wayoption3={props.wayoption3}
         />
       );
       setIsOpen(!isOpen);
@@ -83,7 +79,6 @@ export default function MenuDetailsId(props) {
           hotel2={props.hotel2}
           hotel3={props.hotel3}
           restaurant1={props.restaurant1}
-          waydescription={props.waydescription}
         />
       );
       setIsOpen(!isOpen);
