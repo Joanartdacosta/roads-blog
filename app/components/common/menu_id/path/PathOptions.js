@@ -4,7 +4,7 @@ import Path from "./Path";
 export default function PathOptions(props) {
   return (
     <div
-      className="p-4 bg-white rounded-lg dark:bg-gray-800"
+      className="p-8 bg-white rounded-lg dark:bg-gray-800"
       id="faq"
       role="tabpanel"
       aria-labelledby="faq-tab"
@@ -15,30 +15,30 @@ export default function PathOptions(props) {
         data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
         data-inactive-classes="text-gray-500 dark:text-gray-400"
       >
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
+        <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p className="mb-2 text-gray-500 dark:text-gray-400">
             {props.description1}
           </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
+          <p className="mb-2 text-gray-500 dark:text-gray-400">
             {props.waydescription}
           </p>
         </div>
         <Path
-          label={PATH_OPTIONS_LABELS.pathOption1}
-          access={props.access}
-          wayoption1={props.wayoption1}
+          label={props.labelOption1}
+          labelOption1Description={props.labelOption1Description}
         />
         <Path
-          label={PATH_OPTIONS_LABELS.pathOption2}
-          access={props.access}
-          wayoption2={props.wayoption2}
+          label={props.labelOption2}
+          labelOption2Description={props.labelOption2Description}
         />
         <Path
-          label={PATH_OPTIONS_LABELS.pathOption3}
-          access={props.access}
-          wayoption3={props.wayoption3}
+          label={props.labelOption3}
+          labelOption3Description={props.labelOption3Description}
         />
-        <Path label={PATH_OPTIONS_LABELS.pathOption4} access={props.access} />
+        <Path
+          label={props.labelOption3}
+          labelOption4Description={props.labelOption4Description}
+        />
       </div>
     </div>
   );

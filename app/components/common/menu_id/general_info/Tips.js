@@ -1,44 +1,49 @@
+import InfoBullets from "./InfoBullets";
+
 export default function Tips(props) {
   return (
     <div>
+      <InfoBullets
+        description={props.description}
+        bullet1={props.bullet1}
+        bullet2={props.bullet2}
+        bullet3={props.bullet3}
+      />
+
       <div
-        class="p-4 bg-white rounded-lg dark:bg-gray-800"
-        id="faq"
+        className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+        id="about"
         role="tabpanel"
-        aria-labelledby="faq-tab"
+        aria-labelledby="about-tab"
       >
-        <div
-          id="accordion-flush"
-          data-accordion="collapse"
-          data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
-          data-inactive-classes="text-gray-500 dark:text-gray-400"
-        ></div>
-        <div
-          id="accordion-flush-body-3"
-          aria-labelledby="accordion-flush-heading-3"
-        >
-          <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p class="mb-2 text-gray-500 dark:text-gray-400">Restaurantes:</p>
-            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-              <li className="text-green-600 dark:text-green-500 hover:underline ">
-                {props.restaurant1}
-              </li>
-            </ul>
-          </div>
-          <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p class="mb-2 text-gray-500 dark:text-gray-400">Alojamentos:</p>
-            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-              <li className="text-green-600 dark:text-green-500 hover:underline">
-                {props.hotel1}
-              </li>
-              <li className="text-green-600 dark:text-green-500 hover:underline">
-                {props.hotel2}
-              </li>
-              <li className="text-green-600 dark:text-green-500 hover:underline">
-                {props.hotel3}
-              </li>
-            </ul>
-          </div>
+        <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p className="text-gray-500 dark:text-gray-400">Restaurantes</p>
+          <ul
+            role="list"
+            className="space-y-4 text-gray-500 dark:text-gray-400"
+          >
+            <li className="text-green-600 dark:text-green-500">
+              {props.restaurant1}
+            </li>
+          </ul>
+        </div>
+
+        <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p className="mb-2 text-gray-500 dark:text-gray-400">Alojamentos</p>
+          <ul
+            role="list"
+            className="space-y-4 text-gray-500 dark:text-gray-400"
+          >
+            <li className="text-green-600 dark:text-green-500">
+              {props.hotel1}
+            </li>
+            <li className="text-green-600 dark:text-green-500">
+              {props.hotel2}
+            </li>
+            <li className="text-green-600 dark:text-green-500">
+              {props.hotel3}
+            </li>
+          </ul>
         </div>
       </div>
     </div>

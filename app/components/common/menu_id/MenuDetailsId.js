@@ -49,12 +49,17 @@ export default function MenuDetailsId(props) {
     if (label == TAB_BUTTONS_LABELS.path) {
       setInfo(
         <PathOptions
-          access={props.access}
+          accessOption1={props.accessOption1}
+          accessOption2={props.accessOption2}
+          accessOption3={props.accessOption3}
           description1={props.description1}
           hotel1={props.hotel1}
           hotel2={props.hotel2}
           hotel3={props.hotel3}
-          label={props.label}
+          labelOption1={props.labelOption1}
+          labelOption2={props.labelOption2}
+          labelOption1Description={props.labelOption1Description}
+          labelOption2Description={props.labelOption2Description}
           restaurant1={props.restaurant1}
           restaurant2={props.restaurant2}
           waydescription={props.waydescription}
@@ -69,6 +74,10 @@ export default function MenuDetailsId(props) {
     if (label == TAB_BUTTONS_LABELS.tip) {
       setInfo(
         <Tips
+          bullet1={props.bullet1}
+          bullet2={props.bullet2}
+          bullet3={props.bullet3}
+          bullet4={props.bullet4}
           description1={props.description1}
           hotel1={props.hotel1}
           hotel2={props.hotel2}

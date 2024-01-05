@@ -13,21 +13,23 @@ export default function TripDetailsPage(props) {
       />
       <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         <MenuDetailsId
-          accessOption1={props.accessOption1}
-          accessOption2={props.accessOption2}
-          accessOption3={props.accessOption3}
-          bullet1={props.bullet1}
-          bullet2={props.bullet2}
-          bullet3={props.bullet3}
-          bullet4={props.bullet4}
+          accessOption1={props.selectedTrip.accessOption1}
+          accessOption2={props.selectedTrip.accessOption2}
+          accessOption3={props.selectedTrip.accessOption3}
+          bullet1={props.selectedTrip.bullet1}
+          bullet2={props.selectedTrip.bullet2}
+          bullet3={props.selectedTrip.bullet3}
+          bullet4={props.selectedTrip.bullet4}
           description1={props.selectedTrip.description1}
-          distance={props.distance}
+          distance={props.selectedTrip.distance}
+          duration={props.selectedTrip.duration}
+          difficulty={props.selectedTrip.difficulty}
           evaluation={props.selectedTrip.evaluation}
           labelOption1={props.selectedTrip.labelOption1}
           labelOption2={props.selectedTrip.labelOption2}
-          labelOption1Description={props.labelOption1Description}
-          labelOption2Description={props.labelOption2Description}
-          source={props.source}
+          labelOption1Description={props.selectedTrip.labelOption1Description}
+          labelOption2Description={props.selectedTrip.labelOption2Description}
+          source={props.selectedTrip.source}
         />
       </div>
     </div>

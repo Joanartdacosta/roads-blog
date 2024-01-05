@@ -27,7 +27,7 @@ export default function Path(props) {
         {show && (
           <Info
             onClick={close}
-            description={props.description}
+            description1={props.description1}
             waydescription={props.waydescription}
             access={props.access}
             wayoption1={props.wayoption1}

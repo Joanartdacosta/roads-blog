@@ -13,21 +13,22 @@ export default function TourDetailPage(props) {
       />
       <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         <MenuDetailsId
-          duration={props.selectedTour.duration}
-          description1={props.selectedTour.description1}
-          description2={props.selectedTour.description2}
-          distance={props.selectedTour.distance}
-          difficulty={props.selectedTour.difficulty}
-          waydescription={props.selectedTour.waydescription}
           access={props.selectedTour.waydescription}
           bullet1={props.selectedTour.bullet1}
           bullet2={props.selectedTour.bullet2}
           bullet3={props.selectedTour.bullet3}
-          restaurant1={props.selectedTour.restaurant1}
-          restaurant2={props.selectedTour.restaurant2}
+          bullet4={props.selectedTour.bullet4}
+          description1={props.selectedTour.description1}
+          description2={props.selectedTour.description2}
+          difficulty={props.selectedTour.difficulty}
+          distance={props.selectedTour.distance}
+          duration={props.selectedTour.duration}
           hotel1={props.selectedTour.hotel1}
           hotel2={props.selectedTour.hotel2}
           hotel3={props.selectedTour.hotel3}
+          restaurant1={props.selectedTour.restaurant1}
+          restaurant2={props.selectedTour.restaurant2}
+          waydescription={props.selectedTour.waydescription}
           wayoption1={props.selectedTour.wayoption1}
           wayoption2={props.selectedTour.wayoption2}
           wayoption3={props.selectedTour.wayoption3}
