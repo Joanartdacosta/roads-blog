@@ -56,8 +56,6 @@ export default function MenuDetailsId(props) {
           hotel1={props.hotel1}
           hotel2={props.hotel2}
           hotel3={props.hotel3}
-          labelOption1={props.labelOption1}
-          labelOption2={props.labelOption2}
           labelOption1Description={props.labelOption1Description}
           labelOption2Description={props.labelOption2Description}
           restaurant1={props.restaurant1}

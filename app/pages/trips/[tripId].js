@@ -25,8 +25,6 @@ export default function TripDetailsPage(props) {
           distance={props.selectedTrip.distance}
           duration={props.selectedTrip.duration}
           evaluation={props.selectedTrip.evaluation}
-          labelOption1={props.selectedTrip.labelOption1}
-          labelOption2={props.selectedTrip.labelOption2}
           labelOption1Description={props.selectedTrip.labelOption1Description}
           labelOption2Description={props.selectedTrip.labelOption2Description}
           source={props.selectedTrip.source}

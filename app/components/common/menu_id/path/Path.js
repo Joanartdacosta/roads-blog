@@ -2,11 +2,28 @@ import Arrow from "@/components/common/icons/Arrow";
 import Info from "./Info";
 import { useState } from "react";
 
-export default function Path(props) {
-  const [show, setShow] = useState(false);
+import PATH_OPTIONS_LABELS from "@/components/enums/path_options_labels";
 
-  function setVisible() {
-    setShow(!show);
+export default function Path(props) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [info, setInfo] = useState(false);
+
+  function handleEvent() {
+    if (
+      props.label == PATH_OPTIONS_LABELS.pathOption1 ||
+      props.label == PATH_OPTIONS_LABELS.pathOption2 ||
+      props.label == PATH_OPTIONS_LABELS.pathOption3 ||
+      props.label == PATH_OPTIONS_LABELS.pathOption4
+    ) {
+      setInfo(
+        <Info
+          label={props.label}
+          labelDescription={props.labelDescription}
+          access={props.access}
+        />
+      );
+      setIsOpen(isOpen);
+    }
   }
 
   return (
@@ -17,15 +34,19 @@ export default function Path(props) {
           aria-controls="accordion-flush-body-2"
           className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
           data-accordion-target="#accordion-flush-body-2"
-          onClick={setVisible}
+          onClick={handleEvent}
           type="button"
         >
-          <span>{props.label}</span>
+          <div>
+            <h2>{props.label}</h2>
+          </div>
+
           <Arrow />
         </button>
-
-        {show && <Info description1={props.description1} onClick={close} />}
       </h2>
+
+      {info}
+      {isOpen}
     </div>
   );
 }

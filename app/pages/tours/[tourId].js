@@ -28,8 +28,6 @@ export default function TourDetailPage(props) {
           hotel1={props.selectedTour.hotel1}
           hotel2={props.selectedTour.hotel2}
           hotel3={props.selectedTour.hotel3}
-          labelOption1={props.selectedTrip.labelOption1}
-          labelOption2={props.selectedTrip.labelOption2}
           labelOption1Description={props.selectedTrip.labelOption1Description}
           labelOption2Description={props.selectedTrip.labelOption2Description}
           restaurant1={props.selectedTour.restaurant1}

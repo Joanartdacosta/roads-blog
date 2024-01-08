@@ -18,31 +18,50 @@ export default function Tips(props) {
       >
         <div className="py-5 border-b border-gray-200 dark:border-gray-700">
           <p className="text-gray-500 dark:text-gray-400">Restaurantes</p>
-          <ul
-            role="list"
-            className="space-y-4 text-gray-500 dark:text-gray-400"
-          >
-            <li className="text-green-600 dark:text-green-500">
-              {props.restaurant1}
-            </li>
-          </ul>
+          {props.restaurant1 ? (
+            <ul
+              role="list"
+              className="space-y-4 text-gray-500 dark:text-gray-400"
+            >
+              <li className="text-green-600 dark:text-green-500">
+                {props.restaurant1}
+              </li>
+            </ul>
+          ) : (
+            <p className="text-gray-600 dark:text-green-500">
+              Nao existem sugestoes de restaurantes.
+            </p>
+          )}
         </div>
-
         <div className="py-5 border-b border-gray-200 dark:border-gray-700">
           <p className="mb-2 text-gray-500 dark:text-gray-400">Alojamentos</p>
           <ul
             role="list"
             className="space-y-4 text-gray-500 dark:text-gray-400"
           >
-            <li className="text-green-600 dark:text-green-500">
-              {props.hotel1}
-            </li>
-            <li className="text-green-600 dark:text-green-500">
-              {props.hotel2}
-            </li>
-            <li className="text-green-600 dark:text-green-500">
-              {props.hotel3}
-            </li>
+            {props.hotel1 ? (
+              <li className="text-green-600 dark:text-green-500">
+                {props.hotel1}
+              </li>
+            ) : (
+              <p className="text-gray-600 dark:text-green-500">
+                Nao existem sugestoes de alojamentos
+              </p>
+            )}
+            {props.hotel2 ? (
+              <li className="text-green-600 dark:text-green-500">
+                {props.hotel2}
+              </li>
+            ) : (
+              ""
+            )}
+            {props.hotel3 ? (
+              <li className="text-green-600 dark:text-green-500">
+                {props.hotel3}
+              </li>
+            ) : (
+              ""
+            )}
           </ul>
         </div>
       </div>
