@@ -1,4 +1,4 @@
-import InfoBullets from "./general_info/InfoBullets";
+import Points from "@/components/common/menu_id/location/Points";
 import GeneralSection from "./general_info/GeneralSection";
 import Map from "./location/Map";
 import MenuItem from "./MenuItem";
@@ -84,6 +84,18 @@ export default function MenuDetailsId(props) {
           hotel2={props.hotel2}
           hotel3={props.hotel3}
           restaurant1={props.restaurant1}
+        />
+      );
+      setIsOpen(!isOpen);
+    }
+
+    if (label == TAB_BUTTONS_LABELS.points) {
+      setInfo(
+        <Points
+          point1={props.point1}
+          point2={props.point2}
+          point3={props.point3}
+          point4={props.point4}
         />
       );
       setIsOpen(!isOpen);

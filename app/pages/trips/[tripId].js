@@ -36,6 +36,10 @@ export default function TripDetailsPage(props) {
           percentageSafety={props.selectedTrip.percentageSafety}
           percentageShadow={props.selectedTrip.percentageShadow}
           percentageSupport={props.selectedTrip.percentageSupport}
+          point1={props.selectedTrip.point1}
+          point2={props.selectedTrip.point2}
+          point3={props.selectedTrip.point3}
+          point4={props.selectedTrip.point4}
         />
       </div>
     </div>
