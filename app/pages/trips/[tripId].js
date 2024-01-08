@@ -4,6 +4,7 @@ import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
 
 export default function TripDetailsPage(props) {
+  console.log(props);
   return (
     <div>
       <GeneralBanner
@@ -28,6 +29,13 @@ export default function TripDetailsPage(props) {
           labelOption1Description={props.selectedTrip.labelOption1Description}
           labelOption2Description={props.selectedTrip.labelOption2Description}
           source={props.selectedTrip.source}
+          percentageAcessibility={props.selectedTrip.percentageAcessibility}
+          percentageDifficulty={props.selectedTrip.percentageDifficulty}
+          percentageEmergency={props.selectedTrip.percentageEmergency}
+          percentageNature={props.selectedTrip.percentageNature}
+          percentageSafety={props.selectedTrip.percentageSafety}
+          percentageShadow={props.selectedTrip.percentageShadow}
+          percentageSupport={props.selectedTrip.percentageSupport}
         />
       </div>
     </div>

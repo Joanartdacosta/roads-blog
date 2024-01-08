@@ -25,7 +25,16 @@ export default function GeneralSection(props) {
           />
         </div>
       </div>
-      <Classification label={props.label} evaluation={props.evaluation} />
+      <Classification
+        label={props.label}
+        percentageAcessibility={props.percentageAcessibility}
+        percentageDifficulty={props.percentageDifficulty}
+        percentageEmergency={props.percentageEmergency}
+        percentageNature={props.percentageNature}
+        percentageSafety={props.percentageSafety}
+        percentageShadow={props.percentageShadow}
+        percentageSupport={props.percentageSupport}
+      />
     </div>
   );
 }
