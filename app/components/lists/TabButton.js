@@ -5,20 +5,27 @@ const TAB_BUTTONS = [
     href: "#general",
     label: TAB_BUTTONS_LABELS.general,
   },
+
   {
     id: "location-tab",
     href: "#local",
     label: TAB_BUTTONS_LABELS.location,
   },
+
   {
-    id: "recomendation-tab",
-    href: "#recomend",
-    label: TAB_BUTTONS_LABELS.tip,
+    id: "points-tab",
+    href: "#interest",
+    label: TAB_BUTTONS_LABELS.points,
   },
   {
     id: "path-tab",
     href: "#path",
     label: TAB_BUTTONS_LABELS.path,
+  },
+  {
+    id: "recomendation-tab",
+    href: "#recomend",
+    label: TAB_BUTTONS_LABELS.tip,
   },
 ];
 

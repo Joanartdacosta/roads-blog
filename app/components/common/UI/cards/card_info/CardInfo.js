@@ -39,6 +39,10 @@ export default function CardInfo(props) {
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   {trip.p4}
                 </p>
+
+                <p className="mb-3 font-normal text-xs text-gray-700 dark:text-gray-400">
+                  Fonte: {trip.source}
+                </p>
               </div>
             </a>
           </div>

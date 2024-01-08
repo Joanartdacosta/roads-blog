@@ -14,7 +14,7 @@ export default function HomeVideo() {
     <div className="video">
       {" "}
       <video
-        autoplay="autoplay"
+        autoPlay="autoplay"
         muted
         loop="loop"
         className="video object-cover w-screen h-screen fixed"

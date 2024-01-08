@@ -1,11 +1,11 @@
 const CLASSIFICATION_LABELS = Object.freeze({
   acessibility: "Acessibilidade",
   difficulty: "Dificuldade do percurso",
-  nature: "Beleza Natural",
-  support: "Apoios (Bar/WC/Áreas de descanso/bebedouros)",
-  shadow: "Zonas de sombra",
-  security: "Segurança",
   emergency: "Emergencia",
+  nature: "Beleza Natural",
+  safety: "Segurança",
+  shadow: "Zonas de sombra",
+  support: "Apoios (Bar/WC/Áreas de descanso/bebedouros)",
 });
 
 export default CLASSIFICATION_LABELS;

@@ -1,11 +1,11 @@
 const LABELS = [
   {
     id: 1,
-    desciption: "Calcado confortavel",
+    description: "Calcado confortavel",
   },
   {
     id: 2,
-    desciption: "Snacks e Agua (nao existem postos disponiveis)",
+    description: "Snacks e Agua (nao existem postos disponiveis)",
   },
 ];
 
