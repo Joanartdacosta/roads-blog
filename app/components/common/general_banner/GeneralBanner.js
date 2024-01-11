@@ -6,7 +6,7 @@ export default function GeneralBanner(props) {
       <Image
         alt="Turismo em Portugal  "
         className="w-full h-full object-cover absolute mix-blend-overlay"
-        layout="fill"
+        fill
         src={props.imgUrl}
         unoptimized
       />
