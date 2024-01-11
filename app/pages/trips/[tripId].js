@@ -4,7 +4,6 @@ import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
 
 export default function TripDetailsPage(props) {
-  console.log(props);
   return (
     <div>
       <GeneralBanner

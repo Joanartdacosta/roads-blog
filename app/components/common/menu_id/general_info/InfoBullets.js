@@ -43,18 +43,24 @@ export default function InfoBullets(props) {
               className="space-y-4 text-gray-500 dark:text-gray-400"
             >
               <div>
-                <li className="flex space-x-2 items-center">
-                  <Bullet />
-                  <span className="leading-tight">{props.point1}</span>
-                </li>
-                <li className="flex space-x-2 items-center">
-                  <Bullet />
-                  <span className="leading-tight">{props.point2}</span>
-                </li>
-                <li className="flex space-x-2 items-center">
-                  <Bullet />
-                  <span className="leading-tight">{props.point3}</span>
-                </li>
+                {props.point1 || props.point2 || props.point3 ? (
+                  <div>
+                    <li className="flex space-x-2 items-center">
+                      <Bullet />
+                      <span className="leading-tight">{props.point1}</span>
+                    </li>
+                    <li className="flex space-x-2 items-center">
+                      <Bullet />
+                      <span className="leading-tight">{props.point2}</span>
+                    </li>
+                    <li className="flex space-x-2 items-center">
+                      <Bullet />
+                      <span className="leading-tight">{props.point3}</span>
+                    </li>
+                  </div>
+                ) : (
+                  "Em atualizacao."
+                )}
               </div>
             </ul>
           </div>

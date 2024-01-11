@@ -4,6 +4,7 @@ import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getByIdTour, getFeaturedTours } from "@/helpers/api-util";
 
 export default function TourDetailPage(props) {
+  console.log(props.selectedTour.distance);
   return (
     <div>
       <GeneralBanner

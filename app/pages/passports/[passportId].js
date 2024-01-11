@@ -6,9 +6,6 @@ import CardInfo from "@/components/common/UI/cards/card_info/CardInfo";
 export default function PassportDetailsPage(props) {
   const passport = props.selectedPassport;
 
-  if (!passport) {
-    return <p>Loading...</p>;
-  }
   return (
     <div>
       <GeneralBanner
@@ -17,7 +14,7 @@ export default function PassportDetailsPage(props) {
         description={NAVBAR_LINKS["passports"]["description"]}
       />
       <div className="max-w-5xl m-auto pt-20 pb-20">
-        <CardInfo array={props.selectedPassport} />
+        <CardInfo array={[props.selectedPassport]} />
       </div>
     </div>
   );

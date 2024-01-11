@@ -14,11 +14,6 @@ export default function MenuDetailsId(props) {
     <div>
       {" "}
       <GeneralSection
-        bullet1={props.bullet1}
-        bullet2={props.bullet2}
-        bullet3={props.bullet3}
-        bullet4={props.bullet4}
-        description1={props.description1}
         difficulty={props.difficulty}
         distance={props.distance}
         duration={props.duration}
@@ -32,11 +27,6 @@ export default function MenuDetailsId(props) {
     if (label == TAB_BUTTONS_LABELS.general) {
       setInfo(
         <GeneralSection
-          bullet1={props.bullet1}
-          bullet2={props.bullet2}
-          bullet3={props.bullet3}
-          bullet4={props.bullet4}
-          description1={props.description1}
           difficulty={props.difficulty}
           distance={props.distance}
           duration={props.duration}
@@ -60,13 +50,8 @@ export default function MenuDetailsId(props) {
           accessOption2={props.accessOption2}
           accessOption3={props.accessOption3}
           description1={props.description1}
-          hotel1={props.hotel1}
-          hotel2={props.hotel2}
-          hotel3={props.hotel3}
           labelOption1Description={props.labelOption1Description}
           labelOption2Description={props.labelOption2Description}
-          restaurant1={props.restaurant1}
-          restaurant2={props.restaurant2}
         />
       );
       setIsOpen(!isOpen);

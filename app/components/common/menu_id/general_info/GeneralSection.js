@@ -10,19 +10,39 @@ export default function GeneralSection(props) {
         className="border-t border-gray-200 dark:border-gray-600"
       >
         <div className="flex justify-center">
-          <GeneralValues
-            value={props.distance}
-            subtitle={GENERAL_SUBTITLES.distance}
-            id={props.id}
-          />
-          <GeneralValues
-            value={props.duration}
-            subtitle={GENERAL_SUBTITLES.duration}
-          />
-          <GeneralValues
-            value={props.difficulty}
-            subtitle={GENERAL_SUBTITLES.difficulty}
-          />
+          {props.distance ? (
+            <GeneralValues
+              value={props.distance}
+              subtitle={GENERAL_SUBTITLES.distance}
+              id={props.id}
+            />
+          ) : (
+            <div className="flex flex-col items-center justify-center">
+              <p className="mb-2 text-3xl font-extrabold">N/A</p>
+            </div>
+          )}
+
+          {props.duration ? (
+            <GeneralValues
+              value={props.duration}
+              subtitle={GENERAL_SUBTITLES.duration}
+            />
+          ) : (
+            <div className="flex flex-col items-center justify-center">
+              <p className="mb-2 text-3xl font-extrabold"></p>
+            </div>
+          )}
+
+          {props.difficulty ? (
+            <GeneralValues
+              value={props.difficulty}
+              subtitle={GENERAL_SUBTITLES.difficulty}
+            />
+          ) : (
+            <div className="flex flex-col items-center justify-center">
+              <p className="mb-2 text-3xl font-extrabold"></p>
+            </div>
+          )}
         </div>
       </div>
       <Classification
