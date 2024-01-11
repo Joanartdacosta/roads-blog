@@ -24,7 +24,7 @@ export default function CardStars(props) {
               <div className="w-full p-2 pb-8">
                 <Image
                   alt={trip.title}
-                  className="wrap w-full h-60 rounded-t-lg"
+                  className="wrap w-full object-cover h-60 rounded-t-lg"
                   objectFit="contain"
                   width={384}
                   height={424}

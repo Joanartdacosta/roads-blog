@@ -17,9 +17,7 @@ export default function GeneralSection(props) {
               id={props.id}
             />
           ) : (
-            <div className="flex flex-col items-center justify-center">
-              <p className="mb-2 text-3xl font-extrabold">N/A</p>
-            </div>
+            ""
           )}
 
           {props.duration ? (
@@ -28,9 +26,7 @@ export default function GeneralSection(props) {
               subtitle={GENERAL_SUBTITLES.duration}
             />
           ) : (
-            <div className="flex flex-col items-center justify-center">
-              <p className="mb-2 text-3xl font-extrabold"></p>
-            </div>
+            ""
           )}
 
           {props.difficulty ? (
@@ -39,9 +35,7 @@ export default function GeneralSection(props) {
               subtitle={GENERAL_SUBTITLES.difficulty}
             />
           ) : (
-            <div className="flex flex-col items-center justify-center">
-              <p className="mb-2 text-3xl font-extrabold"></p>
-            </div>
+            ""
           )}
         </div>
       </div>
