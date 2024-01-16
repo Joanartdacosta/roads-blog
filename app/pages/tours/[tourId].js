@@ -12,7 +12,7 @@ export default function TourDetailPage(props) {
         description={NAVBAR_LINKS["tours"]["description"]}
       />
 
-      {props.selectedTour.distance ? (
+      {props.selectedTour ? (
         <div className="roboto max-w-5xl m-auto pt-20 pb-20">
           <MenuDetailsId
             accessOption1={props.selectedTour.accessOption1}
@@ -45,7 +45,7 @@ export default function TourDetailPage(props) {
           />
         </div>
       ) : (
-        <p></p>
+        <p>Nao existem roteiros.</p>
       )}
     </div>
   );
