@@ -8,7 +8,40 @@ export default function Tips(props) {
         bullet1={props.bullet1}
         bullet2={props.bullet2}
         bullet3={props.bullet3}
+        bullet4={props.bullet4}
+        bullet5={props.bullet5}
       />
+
+      <div
+        className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+        id="about"
+        role="tabpanel"
+        aria-labelledby="about-tab"
+      >
+        <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p className="text-gray-500 dark:text-gray-400">Precario</p>
+          {props.price1 || props.price2 || props.price3 ? (
+            <ul
+              role="list"
+              className="space-y-4 text-gray-500 dark:text-gray-400"
+            >
+              <li className="text-green-600 dark:text-green-500">
+                {props.price1}
+              </li>
+              <li className="text-green-600 dark:text-green-500">
+                {props.price2}
+              </li>
+              <li className="text-green-600 dark:text-green-500">
+                {props.price3}
+              </li>
+            </ul>
+          ) : (
+            <p className="text-gray-600 dark:text-green-500">
+              Sem informacao atualizada.
+            </p>
+          )}
+        </div>
+      </div>
 
       <div
         className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"

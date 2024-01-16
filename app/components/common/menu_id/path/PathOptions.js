@@ -28,16 +28,25 @@ export default function PathOptions(props) {
           label={PATH_OPTIONS_LABELS.pathOption1}
           labelDescription={props.labelOption1Description}
         />
-        <Path
-          access={props.accessOption2}
-          label={PATH_OPTIONS_LABELS.pathOption2}
-          labelDescription={props.labelOption2Description}
-        />
-        <Path
-          access={props.accessOption3}
-          label={PATH_OPTIONS_LABELS.pathOption3}
-          labelDescription={props.labelOption3Description}
-        />
+
+        {props.accessOption2 || props.labelOption2Description ? (
+          <Path
+            access={props.accessOption2}
+            label={PATH_OPTIONS_LABELS.pathOption2}
+            labelDescription={props.labelOption2Description}
+          />
+        ) : (
+          ""
+        )}
+        {props.accessOption3 || props.labelOption3Description ? (
+          <Path
+            access={props.accessOption3}
+            label={PATH_OPTIONS_LABELS.pathOption3}
+            labelDescription={props.labelOption3Description}
+          />
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

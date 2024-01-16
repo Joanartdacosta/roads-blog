@@ -20,6 +20,10 @@ export default function TripDetailsPage(props) {
           bullet2={props.selectedTrip.bullet2}
           bullet3={props.selectedTrip.bullet3}
           bullet4={props.selectedTrip.bullet4}
+          bullet5={props.selectedTrip.bullet5}
+          price1={props.selectedTrip.price1}
+          price2={props.selectedTrip.price2}
+          price3={props.selectedTrip.price3}
           description1={props.selectedTrip.description1}
           difficulty={props.selectedTrip.difficulty}
           distance={props.selectedTrip.distance}
@@ -39,6 +43,8 @@ export default function TripDetailsPage(props) {
           point2={props.selectedTrip.point2}
           point3={props.selectedTrip.point3}
           point4={props.selectedTrip.point4}
+          point5={props.selectedTrip.point5}
+          point6={props.selectedTrip.point6}
         />
       </div>
     </div>

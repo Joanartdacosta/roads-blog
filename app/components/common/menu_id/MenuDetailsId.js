@@ -64,10 +64,14 @@ export default function MenuDetailsId(props) {
           bullet2={props.bullet2}
           bullet3={props.bullet3}
           bullet4={props.bullet4}
+          bullet5={props.bullet5}
           description1={props.description1}
           hotel1={props.hotel1}
           hotel2={props.hotel2}
           hotel3={props.hotel3}
+          price1={props.price1}
+          price2={props.price2}
+          price3={props.price3}
           restaurant1={props.restaurant1}
         />
       );
@@ -81,6 +85,8 @@ export default function MenuDetailsId(props) {
           point2={props.point2}
           point3={props.point3}
           point4={props.point4}
+          point5={props.point5}
+          point6={props.point6}
         />
       );
       setIsOpen(!isOpen);

@@ -14,7 +14,6 @@ export default function GeneralSection(props) {
             <GeneralValues
               value={props.distance}
               subtitle={GENERAL_SUBTITLES.distance}
-              id={props.id}
             />
           ) : (
             ""

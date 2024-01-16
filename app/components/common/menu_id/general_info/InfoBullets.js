@@ -14,7 +14,11 @@ export default function InfoBullets(props) {
           {TAB_BUTTONS_LABELS.recomendation}
         </h2>
 
-        {props.bullet1 || props.bullet2 || props.bullet3 ? (
+        {props.bullet1 ||
+        props.bullet2 ||
+        props.bullet3 ||
+        props.bullet4 ||
+        props.bullet5 ? (
           <div>
             <ul
               role="list"
@@ -33,6 +37,10 @@ export default function InfoBullets(props) {
                   <Bullet />
                   <span className="leading-tight">{props.bullet3}</span>
                 </li>
+                <li className="flex space-x-2 items-center">
+                  <Bullet />
+                  <span className="leading-tight">{props.bullet4}</span>
+                </li>
               </div>
             </ul>
           </div>
@@ -43,7 +51,12 @@ export default function InfoBullets(props) {
               className="space-y-4 text-gray-500 dark:text-gray-400"
             >
               <div>
-                {props.point1 || props.point2 || props.point3 ? (
+                {props.point1 ||
+                props.point2 ||
+                props.point3 ||
+                props.point4 ||
+                props.point5 ||
+                props.point6 ? (
                   <div>
                     <li className="flex space-x-2 items-center">
                       <Bullet />
@@ -56,6 +69,18 @@ export default function InfoBullets(props) {
                     <li className="flex space-x-2 items-center">
                       <Bullet />
                       <span className="leading-tight">{props.point3}</span>
+                    </li>
+                    <li className="flex space-x-2 items-center">
+                      <Bullet />
+                      <span className="leading-tight">{props.point4}</span>
+                    </li>
+                    <li className="flex space-x-2 items-center">
+                      <Bullet />
+                      <span className="leading-tight">{props.point5}</span>
+                    </li>
+                    <li className="flex space-x-2 items-center">
+                      <Bullet />
+                      <span className="leading-tight">{props.point6}</span>
                     </li>
                   </div>
                 ) : (

@@ -4,7 +4,6 @@ import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getByIdTour, getFeaturedTours } from "@/helpers/api-util";
 
 export default function TourDetailPage(props) {
-  console.log(props.selectedTour.distance);
   return (
     <div>
       <GeneralBanner
@@ -23,6 +22,7 @@ export default function TourDetailPage(props) {
             bullet2={props.selectedTour.bullet2}
             bullet3={props.selectedTour.bullet3}
             bullet4={props.selectedTour.bullet4}
+            bullet5={props.selectedTour.bullet5}
             description1={props.selectedTour.description1}
             description2={props.selectedTour.description2}
             difficulty={props.selectedTour.difficulty}
@@ -45,7 +45,7 @@ export default function TourDetailPage(props) {
           />
         </div>
       ) : (
-        <p>Hello</p>
+        <p></p>
       )}
     </div>
   );
