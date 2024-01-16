@@ -18,9 +18,9 @@ export default function Tips(props) {
         role="tabpanel"
         aria-labelledby="about-tab"
       >
-        <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p className="text-gray-500 dark:text-gray-400">Precario</p>
-          {props.price1 || props.price2 || props.price3 ? (
+        {props.price1 || props.price2 || props.price3 ? (
+          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+            <p className="text-gray-500 dark:text-gray-400">Precario</p>
             <ul
               role="list"
               className="space-y-4 text-gray-500 dark:text-gray-400"
@@ -35,12 +35,10 @@ export default function Tips(props) {
                 {props.price3}
               </li>
             </ul>
-          ) : (
-            <p className="text-gray-600 dark:text-green-500">
-              Sem informacao atualizada.
-            </p>
-          )}
-        </div>
+          </div>
+        ) : (
+          <p className="text-gray-600 dark:text-green-500"></p>
+        )}
       </div>
 
       <div

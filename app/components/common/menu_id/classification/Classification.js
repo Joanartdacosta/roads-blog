@@ -1,13 +1,13 @@
 import CLASSIFICATION_LABELS from "@/components/enums/classification_labels";
 
 export default function Classification(props) {
-  let percentageAcessibility = props.percentageAcessibility;
-  let percentageDifficulty = props.percentageDifficulty;
-  let percentageEmergency = props.percentageEmergency;
-  let percentageNature = props.percentageNature;
-  let percentageSafety = props.percentageSafety;
-  let percentageShadow = props.percentageShadow;
-  let percentageSupport = props.percentageSupport;
+  let acessibility = props.percentageAcessibility;
+  let difficulty = props.percentageDifficulty;
+  let emergency = props.percentageEmergency;
+  let nature = props.percentageNature;
+  let safety = props.percentageSafety;
+  let shadow = props.percentageShadow;
+  let support = props.percentageSupport;
 
   return (
     <div className="p-8 m-auto">
@@ -20,7 +20,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: percentageAcessibility }}
+                style={{ width: acessibility }}
               ></div>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: percentageDifficulty }}
+                style={{ width: difficulty }}
               ></div>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: percentageNature }}
+                style={{ width: nature }}
               ></div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: percentageSupport }}
+                style={{ width: support }}
               ></div>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: percentageShadow }}
+                style={{ width: shadow }}
               ></div>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: percentageSafety }}
+                style={{ width: safety }}
               ></div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: percentageEmergency }}
+                style={{ width: emergency }}
               ></div>
             </div>
           </div>

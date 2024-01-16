@@ -10,7 +10,7 @@ export default function InfoBullets(props) {
         role="tabpanel"
         aria-labelledby="about-tab"
       >
-        {props.bullet1 || props.bullet2 || props.bullet3 || props.bullet4 ? (
+        {props.bullet1 || props.bullet2 || props.bullet3 ? (
           <div>
             <h2 className="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               {TAB_BUTTONS_LABELS.recomendation}
@@ -32,10 +32,23 @@ export default function InfoBullets(props) {
                   <Bullet />
                   <span className="leading-tight">{props.bullet3}</span>
                 </li>
-                <li className="flex space-x-2 items-center">
-                  <Bullet />
-                  <span className="leading-tight">{props.bullet4}</span>
-                </li>
+
+                {props.bullet4 ? (
+                  <li className="flex space-x-2 items-center">
+                    <Bullet />
+                    <span className="leading-tight">{props.bullet4}</span>
+                  </li>
+                ) : (
+                  ""
+                )}
+                {props.bullet5 ? (
+                  <li className="flex space-x-2 items-center">
+                    <Bullet />
+                    <span className="leading-tight">{props.bullet4}</span>
+                  </li>
+                ) : (
+                  ""
+                )}
               </div>
             </ul>
           </div>
