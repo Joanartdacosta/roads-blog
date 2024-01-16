@@ -13,7 +13,7 @@ export default function Arrow() {
           stroke="currentColor"
           strokeLinecap="round"
           strokeLinejoin="round"
-          stroke-Width="2"
+          strokeWidth="2"
           d="M9 5 5 1 1 5"
         />
       </svg>
