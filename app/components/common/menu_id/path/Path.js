@@ -17,9 +17,20 @@ export default function Path(props) {
     ) {
       setInfo(
         <Info
+          access={props.access}
+          accessOption1={props.accessOption1}
+          accessOption2={props.accessOption2}
+          accessOption3={props.accessOption3}
+          imagePath1={props.imagePath1}
+          imagePath2={props.imagePath2}
+          imagePath21={props.imagePath21}
+          imagePath22={props.imagePath22}
+          imagePath23={props.imagePath23}
+          imagePath24={props.imagePath24}
+          imagePath3={props.imagePath3}
+          imagePath4={props.imagePath4}
           label={props.label}
           labelDescription={props.labelDescription}
-          access={props.access}
         />
       );
       setIsOpen(isOpen);

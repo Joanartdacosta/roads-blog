@@ -22,27 +22,64 @@ export default function PathOptions(props) {
           <p className="mb-2 text-gray-500 dark:text-gray-400">
             {props.waydescription}
           </p>
+
+          <p className="mt-8 text-green-800 dark:text-gray-400">
+            Percurso total do roteiro:
+          </p>
+          <p className="mb-2 mt-2 text-gray-800 dark:text-gray-400">
+            {props.access}
+          </p>
         </div>
         <Path
           access={props.accessOption1}
           label={PATH_OPTIONS_LABELS.pathOption1}
           labelDescription={props.labelOption1Description}
+          imagePath1={props.imagePath1}
+          imagePath11={props.imagePath11}
         />
 
-        {props.accessOption2 || props.labelOption2Description ? (
+        {props.accessOption2 ||
+        props.labelOption2Description ||
+        imagePath2 ||
+        imagePath21 ||
+        imagePath22 ||
+        imagePath23 ||
+        imagePath24 ? (
           <Path
             access={props.accessOption2}
             label={PATH_OPTIONS_LABELS.pathOption2}
             labelDescription={props.labelOption2Description}
+            imagePath2={props.imagePath2}
+            imagePath21={props.imagePath21}
+            imagePath22={props.imagePath22}
+            imagePath23={props.imagePath23}
+            imagePath24={props.imagePath24}
           />
         ) : (
           ""
         )}
-        {props.accessOption3 || props.labelOption3Description ? (
+        {props.accessOption3 ||
+        props.labelOption3Description ||
+        props.imagePath3 ? (
           <Path
             access={props.accessOption3}
             label={PATH_OPTIONS_LABELS.pathOption3}
             labelDescription={props.labelOption3Description}
+            imagePath3={props.imagePath3}
+            imagePath31={props.imagePath31}
+          />
+        ) : (
+          ""
+        )}
+
+        {props.pathOption4 ||
+        props.labelOption4Description ||
+        props.imagePath4 ? (
+          <Path
+            access={props.accessOption4}
+            label={PATH_OPTIONS_LABELS.pathOption4}
+            labelDescription={props.labelOption4Description}
+            imagePath4={props.imagePath4}
           />
         ) : (
           ""

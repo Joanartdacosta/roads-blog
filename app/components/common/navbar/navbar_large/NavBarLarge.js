@@ -34,9 +34,9 @@ export default function NavBarLarge() {
               <Image
                 alt="logo"
                 className="m-auto"
-                height={96}
-                width={96}
-                src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png"
+                height={66}
+                width={66}
+                src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/roads-logo-white.png"
                 unoptimized
               />
             </a>

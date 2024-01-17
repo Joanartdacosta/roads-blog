@@ -54,12 +54,21 @@ export default function MenuDetailsId(props) {
     if (label == TAB_BUTTONS_LABELS.path) {
       setInfo(
         <PathOptions
+          access={props.access}
           accessOption1={props.accessOption1}
           accessOption2={props.accessOption2}
           accessOption3={props.accessOption3}
           description1={props.description1}
           labelOption1Description={props.labelOption1Description}
           labelOption2Description={props.labelOption2Description}
+          imagePath1={props.imagePath1}
+          imagePath2={props.imagePath2}
+          imagePath21={props.imagePath21}
+          imagePath22={props.imagePath22}
+          imagePath23={props.imagePath23}
+          imagePath24={props.imagePath24}
+          imagePath3={props.imagePath3}
+          imagePath4={props.imagePath4}
         />
       );
       setIsOpen(!isOpen);
@@ -77,6 +86,7 @@ export default function MenuDetailsId(props) {
           hotel1={props.hotel1}
           hotel2={props.hotel2}
           hotel3={props.hotel3}
+          hotel4={props.hotel4}
           price1={props.price1}
           price2={props.price2}
           price3={props.price3}
