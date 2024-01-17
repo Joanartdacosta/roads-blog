@@ -1,4 +1,4 @@
-import InfoBullets from "./general_info/InfoBullets";
+import Points from "@/components/common/menu_id/location/Points";
 import GeneralSection from "./general_info/GeneralSection";
 import Map from "./location/Map";
 import MenuItem from "./MenuItem";
@@ -6,31 +6,102 @@ import PathOptions from "./path/PathOptions";
 import TAB_BUTTONS from "@/components/lists/TabButton";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 import { useState } from "react";
+import Tips from "./general_info/Tips";
 
-export default function MenuDetailsId() {
+export default function MenuDetailsId(props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [info, setInfo] = useState(<GeneralSection />);
+  const [info, setInfo] = useState(
+    <div>
+      {" "}
+      <GeneralSection
+        difficulty={props.difficulty}
+        distance={props.distance}
+        duration={props.duration}
+        label={props.label}
+        percentageAcessibility={props.percentageAcessibility}
+        percentageDifficulty={props.percentageDifficulty}
+        percentageEmergency={props.percentageEmergency}
+        percentageNature={props.percentageNature}
+        percentageSafety={props.percentageSafety}
+        percentageShadow={props.percentageShadow}
+        percentageSupport={props.percentageSupport}
+      />
+    </div>
+  );
 
   function handleEvent(event) {
     const label = event.target.value;
 
     if (label == TAB_BUTTONS_LABELS.general) {
-      setInfo(<GeneralSection />);
+      setInfo(
+        <GeneralSection
+          difficulty={props.difficulty}
+          distance={props.distance}
+          duration={props.duration}
+          label={props.label}
+          percentageAcessibility={props.percentageAcessibility}
+          percentageDifficulty={props.percentageDifficulty}
+          percentageEmergency={props.percentageEmergency}
+          percentageNature={props.percentageNature}
+          percentageSafety={props.percentageSafety}
+          percentageShadow={props.percentageShadow}
+          percentageSupport={props.percentageSupport}
+        />
+      );
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.path) {
-      setInfo(<PathOptions />);
+      setInfo(
+        <PathOptions
+          accessOption1={props.accessOption1}
+          accessOption2={props.accessOption2}
+          accessOption3={props.accessOption3}
+          description1={props.description1}
+          labelOption1Description={props.labelOption1Description}
+          labelOption2Description={props.labelOption2Description}
+        />
+      );
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.tip) {
-      setInfo(<InfoBullets />);
+      setInfo(
+        <Tips
+          bullet1={props.bullet1}
+          bullet2={props.bullet2}
+          bullet3={props.bullet3}
+          bullet4={props.bullet4}
+          bullet5={props.bullet5}
+          description1={props.description1}
+          hotel1={props.hotel1}
+          hotel2={props.hotel2}
+          hotel3={props.hotel3}
+          price1={props.price1}
+          price2={props.price2}
+          price3={props.price3}
+          restaurant1={props.restaurant1}
+        />
+      );
+      setIsOpen(!isOpen);
+    }
+
+    if (label == TAB_BUTTONS_LABELS.points) {
+      setInfo(
+        <Points
+          point1={props.point1}
+          point2={props.point2}
+          point3={props.point3}
+          point4={props.point4}
+          point5={props.point5}
+          point6={props.point6}
+        />
+      );
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.location) {
-      setInfo(<Map />);
+      setInfo(<Map latitude={props.latitude} longitude={props.longitude} />);
       setIsOpen(!isOpen);
     }
   }
@@ -47,12 +118,12 @@ export default function MenuDetailsId() {
           {TAB_BUTTONS.map((button) => {
             return (
               <MenuItem
-                href={button.href}
                 id={button.id}
-                label={button.label}
+                href={button.href}
                 key={button.id}
-                value={button.label}
+                label={button.label}
                 onClick={handleEvent}
+                value={button.label}
               />
             );
           })}

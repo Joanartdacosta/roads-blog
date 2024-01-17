@@ -4,9 +4,9 @@ export default function GeneralBanner(props) {
   return (
     <div className="bg-gradient-to-tr from-neutral-700 to-neutral-700 h-96 w-full relative">
       <Image
-        alt={props.title}
+        alt="Turismo em Portugal  "
         className="w-full h-full object-cover absolute mix-blend-overlay"
-        layout="fill"
+        fill
         src={props.imgUrl}
         unoptimized
       />

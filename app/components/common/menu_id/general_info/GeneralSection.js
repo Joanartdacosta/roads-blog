@@ -1,9 +1,8 @@
 import Classification from "@/components/common/menu_id/classification/Classification";
-import InfoBullets from "@/components/common/menu_id/general_info/InfoBullets";
 import GeneralValues from "@/components/common/menu_id/general_info/GeneralValues";
 import GENERAL_SUBTITLES from "@/components/enums/general_subtitle";
 
-export default function GeneralSection() {
+export default function GeneralSection(props) {
   return (
     <div>
       <div
@@ -11,19 +10,44 @@ export default function GeneralSection() {
         className="border-t border-gray-200 dark:border-gray-600"
       >
         <div className="flex justify-center">
-          <GeneralValues
-            value={"12 KM"}
-            subtitle={GENERAL_SUBTITLES.distance}
-          />
-          <GeneralValues value={"4/5"} subtitle={GENERAL_SUBTITLES.duration} />
-          <GeneralValues
-            value={"3.5"}
-            subtitle={GENERAL_SUBTITLES.difficulty}
-          />
+          {props.distance ? (
+            <GeneralValues
+              value={props.distance}
+              subtitle={GENERAL_SUBTITLES.distance}
+            />
+          ) : (
+            ""
+          )}
+
+          {props.duration ? (
+            <GeneralValues
+              value={props.duration}
+              subtitle={GENERAL_SUBTITLES.duration}
+            />
+          ) : (
+            ""
+          )}
+
+          {props.difficulty ? (
+            <GeneralValues
+              value={props.difficulty}
+              subtitle={GENERAL_SUBTITLES.difficulty}
+            />
+          ) : (
+            ""
+          )}
         </div>
       </div>
-      <Classification />
-      <InfoBullets />
+      <Classification
+        label={props.label}
+        percentageAcessibility={props.percentageAcessibility}
+        percentageDifficulty={props.percentageDifficulty}
+        percentageEmergency={props.percentageEmergency}
+        percentageNature={props.percentageNature}
+        percentageSafety={props.percentageSafety}
+        percentageShadow={props.percentageShadow}
+        percentageSupport={props.percentageSupport}
+      />
     </div>
   );
 }
