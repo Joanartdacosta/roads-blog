@@ -7,9 +7,8 @@ export default function TourDetailPage(props) {
   return (
     <div>
       <GeneralBanner
-        section={NAVBAR_LINKS["tours"]["section"]}
+        section={props.selectedTour.title}
         imgUrl={NAVBAR_LINKS["tours"]["imgUrl"]}
-        description={NAVBAR_LINKS["tours"]["description"]}
       />
 
       {props.selectedTour ? (

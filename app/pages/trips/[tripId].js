@@ -7,9 +7,8 @@ export default function TripDetailsPage(props) {
   return (
     <div>
       <GeneralBanner
-        section={NAVBAR_LINKS["trips"]["section"]}
+        section={props.selectedTrip.title}
         imgUrl={NAVBAR_LINKS["trips"]["imgUrl"]}
-        description={NAVBAR_LINKS["trips"]["description"]}
       />
       <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         {props.selectedTrip ? (
