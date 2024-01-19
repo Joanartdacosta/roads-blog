@@ -6,10 +6,17 @@ import { getByIdTour, getFeaturedTours } from "@/helpers/api-util";
 export default function TourDetailPage(props) {
   return (
     <div>
-      <GeneralBanner
-        section={props.selectedTour.title}
-        imgUrl={NAVBAR_LINKS["tours"]["imgUrl"]}
-      />
+      {props.selectedTour ? (
+        <GeneralBanner
+          section={props.selectedTour.title}
+          imgUrl={NAVBAR_LINKS["tours"]["imgUrl"]}
+        />
+      ) : (
+        <GeneralBanner
+          section={NAVBAR_LINKS["tours"]["section"]}
+          imgUrl={NAVBAR_LINKS["trips"]["imgUrl"]}
+        />
+      )}
 
       {props.selectedTour ? (
         <div className="roboto max-w-5xl m-auto pt-20 pb-20">
