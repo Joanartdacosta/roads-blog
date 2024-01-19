@@ -8,6 +8,8 @@ export default function Points(props) {
         point2={props.point2}
         point3={props.point3}
         point4={props.point4}
+        point5={props.point5}
+        point6={props.point6}
       />
     </div>
   );

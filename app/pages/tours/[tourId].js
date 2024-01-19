@@ -54,6 +54,10 @@ export default function TourDetailPage(props) {
             percentageSafety={props.selectedTour.percentageSafety}
             percentageShadow={props.selectedTour.percentageShadow}
             percentageSupport={props.selectedTour.percentageSupport}
+            point1={props.selectedTour.point1}
+            point2={props.selectedTour.point2}
+            point3={props.selectedTour.point3}
+            point4={props.selectedTour.point4}
             tourPathDescription1={props.selectedTour.tourPathDescription1}
           />
         </div>

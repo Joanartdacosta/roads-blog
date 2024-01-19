@@ -87,6 +87,21 @@ export default function InfoBullets(props) {
                 ) : (
                   "Em atualizacao."
                 )}
+
+                {props.point5 || props.point6 ? (
+                  <div>
+                    <li className="flex space-x-2 items-center">
+                      <Bullet />
+                      <span className="leading-tight">{props.point5}</span>
+                    </li>
+                    <li className="flex space-x-2 items-center">
+                      <Bullet />
+                      <span className="leading-tight">{props.point6}</span>
+                    </li>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </ul>
           </div>
