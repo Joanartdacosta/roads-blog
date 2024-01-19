@@ -15,6 +15,7 @@ export default function TourDetailPage(props) {
       {props.selectedTour ? (
         <div className="roboto max-w-5xl m-auto pt-20 pb-20">
           <MenuDetailsId
+            access={props.selectedTour.access}
             accessOption1={props.selectedTour.accessOption1}
             accessOption2={props.selectedTour.accessOption2}
             accessOption3={props.selectedTour.accessOption3}
@@ -28,9 +29,20 @@ export default function TourDetailPage(props) {
             difficulty={props.selectedTour.difficulty}
             distance={props.selectedTour.distance}
             duration={props.selectedTour.duration}
+            imagePath1={props.selectedTour.imagePath1}
+            imagePath11={props.selectedTour.imagePath11}
+            imagePath2={props.selectedTour.imagePath2}
+            imagePath21={props.selectedTour.imagePath21}
+            imagePath22={props.selectedTour.imagePath22}
+            imagePath23={props.selectedTour.imagePath23}
+            imagePath24={props.selectedTour.imagePath24}
+            imagePath25={props.selectedTour.imagePath25}
+            imagePath3={props.selectedTour.imagePath3}
+            imagePath4={props.selectedTour.imagePath4}
             hotel1={props.selectedTour.hotel1}
             hotel2={props.selectedTour.hotel2}
             hotel3={props.selectedTour.hotel3}
+            hotel4={props.selectedTour.hotel4}
             labelOption1Description={props.selectedTour.labelOption1Description}
             labelOption2Description={props.selectedTour.labelOption2Description}
             restaurant1={props.selectedTour.restaurant1}
@@ -42,6 +54,11 @@ export default function TourDetailPage(props) {
             percentageSafety={props.selectedTour.percentageSafety}
             percentageShadow={props.selectedTour.percentageShadow}
             percentageSupport={props.selectedTour.percentageSupport}
+            point1={props.selectedTour.point1}
+            point2={props.selectedTour.point2}
+            point3={props.selectedTour.point3}
+            point4={props.selectedTour.point4}
+            tourPathDescription1={props.selectedTour.tourPathDescription1}
           />
         </div>
       ) : (
