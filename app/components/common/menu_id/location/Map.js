@@ -2,7 +2,7 @@ import LOCATIONS_COORD from "@/components/enums/locations_coord";
 import { Loader } from "@googlemaps/js-api-loader";
 import { useEffect, useRef } from "react";
 
-export default function Map() {
+export default function Map(props) {
   const mapRef = useRef(null);
 
   useEffect(() => {
@@ -30,15 +30,6 @@ export default function Map() {
           },
           map: MAP,
           title: "Passadicos do Mondego",
-        });
-
-        new GOOGLE.maps.Marker({
-          position: {
-            lat: LOCATIONS_COORD.gema_lat,
-            lng: LOCATIONS_COORD.gema_long,
-          },
-          map: MAP,
-          title: "Minas de Sal Gema",
         });
       } catch (error) {
         console.error("Error loading Google Maps:", error);

@@ -45,6 +45,8 @@ export default function TourDetailPage(props) {
             hotel4={props.selectedTour.hotel4}
             labelOption1Description={props.selectedTour.labelOption1Description}
             labelOption2Description={props.selectedTour.labelOption2Description}
+            latitude={props.selectedTour.latitude}
+            longitude={props.selectedTour.longitude}
             restaurant1={props.selectedTour.restaurant1}
             restaurant2={props.selectedTour.restaurant2}
             percentageAcessibility={props.selectedTour.percentageAcessibility}
