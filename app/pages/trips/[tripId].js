@@ -6,11 +6,17 @@ import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
 export default function TripDetailsPage(props) {
   return (
     <div>
-      <GeneralBanner
-        section={NAVBAR_LINKS["trips"]["section"]}
-        imgUrl={NAVBAR_LINKS["trips"]["imgUrl"]}
-        description={NAVBAR_LINKS["trips"]["description"]}
-      />
+      {props.selectedTrip ? (
+        <GeneralBanner
+          section={props.selectedTrip.title}
+          imgUrl={NAVBAR_LINKS["trips"]["imgUrl"]}
+        />
+      ) : (
+        <GeneralBanner
+          section={NAVBAR_LINKS["trips"]["section"]}
+          imgUrl={NAVBAR_LINKS["trips"]["imgUrl"]}
+        />
+      )}
       <div className="roboto max-w-5xl m-auto pt-20 pb-20">
         {props.selectedTrip ? (
           <MenuDetailsId
