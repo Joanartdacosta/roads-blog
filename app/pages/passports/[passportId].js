@@ -1,7 +1,7 @@
-import { getByIdPassport, getFeaturedPassports } from "@/helpers/api-util";
-import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
-import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import CardInfo from "@/components/common/UI/cards/card_info/CardInfo";
+import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
+import { getByIdPassport, getFeaturedPassports } from "@/helpers/api-util";
+import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 
 export default function PassportDetailsPage(props) {
   return (
