@@ -1,12 +1,12 @@
-import Points from "@/components/common/menu_id/location/Points";
 import GeneralSection from "./general_info/GeneralSection";
 import Map from "./location/Map";
 import MenuItem from "./MenuItem";
 import PathOptions from "./path/PathOptions";
+import Points from "@/components/common/menu_id/location/Points";
 import TAB_BUTTONS from "@/components/lists/TabButton";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
-import { useState } from "react";
 import Tips from "./general_info/Tips";
+import { useState } from "react";
 
 export default function MenuDetailsId(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,16 +59,20 @@ export default function MenuDetailsId(props) {
           accessOption2={props.accessOption2}
           accessOption3={props.accessOption3}
           description1={props.description1}
+          labelOption1={props.labelOption1}
+          labelOption2={props.labelOption2}
           labelOption1Description={props.labelOption1Description}
           labelOption2Description={props.labelOption2Description}
           imagePath1={props.imagePath1}
+          imagePath11={props.imagePath11}
           imagePath2={props.imagePath2}
           imagePath21={props.imagePath21}
           imagePath22={props.imagePath22}
           imagePath23={props.imagePath23}
           imagePath24={props.imagePath24}
+          imagePath25={props.imagePath25}
           imagePath3={props.imagePath3}
-          imagePath4={props.imagePath4}
+          tourPathDescription1={props.tourPathDescription1}
         />
       );
       setIsOpen(!isOpen);
@@ -91,6 +95,7 @@ export default function MenuDetailsId(props) {
           price2={props.price2}
           price3={props.price3}
           restaurant1={props.restaurant1}
+          restaurant2={props.restaurant2}
         />
       );
       setIsOpen(!isOpen);

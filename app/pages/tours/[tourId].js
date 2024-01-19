@@ -30,11 +30,13 @@ export default function TourDetailPage(props) {
             distance={props.selectedTour.distance}
             duration={props.selectedTour.duration}
             imagePath1={props.selectedTour.imagePath1}
+            imagePath11={props.selectedTour.imagePath11}
             imagePath2={props.selectedTour.imagePath2}
             imagePath21={props.selectedTour.imagePath21}
             imagePath22={props.selectedTour.imagePath22}
             imagePath23={props.selectedTour.imagePath23}
             imagePath24={props.selectedTour.imagePath24}
+            imagePath25={props.selectedTour.imagePath25}
             imagePath3={props.selectedTour.imagePath3}
             imagePath4={props.selectedTour.imagePath4}
             hotel1={props.selectedTour.hotel1}
@@ -52,6 +54,7 @@ export default function TourDetailPage(props) {
             percentageSafety={props.selectedTour.percentageSafety}
             percentageShadow={props.selectedTour.percentageShadow}
             percentageSupport={props.selectedTour.percentageSupport}
+            tourPathDescription1={props.selectedTour.tourPathDescription1}
           />
         </div>
       ) : (
