@@ -23,37 +23,63 @@ export default function PathOptions(props) {
             {props.waydescription}
           </p>
 
-          <p className="mt-8 text-green-800 dark:text-gray-400">
-            Percurso total do roteiro:
-          </p>
-          <p className="mb-2 mt-2 text-gray-800 dark:text-gray-400">
-            {props.access}
-          </p>
+          {props.tourPathDescription ? (
+            <div>
+              {" "}
+              <p className="mt-8 text-green-800 dark:text-gray-400">
+                Percurso total do roteiro:
+              </p>
+              <p className="mb-2 mt-2 text-gray-800 dark:text-gray-400">
+                {props.access}
+              </p>{" "}
+            </div>
+          ) : (
+            ""
+          )}
+
+          {props.labelOption1Description || props.labelOption2Description ? (
+            <div>
+              <p className="mt-8 text-green-800 dark:text-gray-400">
+                {props.labelDescription}
+              </p>
+              <p className="mb-2 mt-2 text-green-600 underline dark:text-gray-400">
+                {props.labelOption1}
+              </p>{" "}
+              <p className="mb-2 mt-2 text-gray-600 dark:text-gray-400">
+                {props.labelOption1Description}
+              </p>
+              <p className="mb-2 mt-2 text-green-600 underline dark:text-gray-400">
+                {props.labelOption2}
+              </p>{" "}
+              <p className="mb-2 mt-2 text-gray-600 dark:text-gray-400">
+                {props.labelOption2Description}
+              </p>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
+
         <Path
           access={props.accessOption1}
           label={PATH_OPTIONS_LABELS.pathOption1}
           labelDescription={props.labelOption1Description}
           imagePath1={props.imagePath1}
           imagePath11={props.imagePath11}
+          tourPathDescription1={props.tourPathDescription1}
         />
 
-        {props.accessOption2 ||
-        props.labelOption2Description ||
-        imagePath2 ||
-        imagePath21 ||
-        imagePath22 ||
-        imagePath23 ||
-        imagePath24 ? (
+        {props.accessOption2 || props.labelOption2Description || imagePath2 ? (
           <Path
             access={props.accessOption2}
             label={PATH_OPTIONS_LABELS.pathOption2}
-            labelDescription={props.labelOption2Description}
             imagePath2={props.imagePath2}
             imagePath21={props.imagePath21}
             imagePath22={props.imagePath22}
             imagePath23={props.imagePath23}
             imagePath24={props.imagePath24}
+            imagePath25={props.imagePath25}
+            tourPathDescription1={props.tourPathDescription1}
           />
         ) : (
           ""
@@ -64,22 +90,8 @@ export default function PathOptions(props) {
           <Path
             access={props.accessOption3}
             label={PATH_OPTIONS_LABELS.pathOption3}
-            labelDescription={props.labelOption3Description}
             imagePath3={props.imagePath3}
-            imagePath31={props.imagePath31}
-          />
-        ) : (
-          ""
-        )}
-
-        {props.pathOption4 ||
-        props.labelOption4Description ||
-        props.imagePath4 ? (
-          <Path
-            access={props.accessOption4}
-            label={PATH_OPTIONS_LABELS.pathOption4}
-            labelDescription={props.labelOption4Description}
-            imagePath4={props.imagePath4}
+            tourPathDescription1={props.tourPathDescription1}
           />
         ) : (
           ""
