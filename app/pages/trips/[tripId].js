@@ -37,6 +37,8 @@ export default function TripDetailsPage(props) {
             labelOption2={props.selectedTrip.labelOption2}
             labelOption1Description={props.selectedTrip.labelOption1Description}
             labelOption2Description={props.selectedTrip.labelOption2Description}
+            latitude={props.selectedTrip.latitude}
+            longitude={props.selectedTrip.longitude}
             source={props.selectedTrip.source}
             percentageAcessibility={props.selectedTrip.percentageAcessibility}
             percentageDifficulty={props.selectedTrip.percentageDifficulty}
