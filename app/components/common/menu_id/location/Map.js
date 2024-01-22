@@ -25,8 +25,8 @@ export default function Map(props) {
 
         new GOOGLE.maps.Marker({
           position: {
-            lat: LOCATIONS_COORD.mondego_lat,
-            lng: LOCATIONS_COORD.mondego_long,
+            lat: props.latitude,
+            lng: props.longitude,
           },
           map: MAP,
           title: "Passadicos do Mondego",
