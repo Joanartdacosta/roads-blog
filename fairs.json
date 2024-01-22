@@ -1,0 +1,429 @@
+[
+  {
+    "id": "fair-02-01",
+    "title": "Festa de São Brás",
+    "startDate": "2024-02-01T00:00:00",
+    "endDate": "2024-02-08T00:00:00",
+    "region": "Norte",
+    "town": ["Vila Real"],
+    "imgURL": "",
+    "description": "Mais um ano, mais uma romaria ao São Brás, padroeiro das doenças na garganta. É assim em Vila Real há já vários séculos, a tradição cumpre-se. A Vila Velha, local onde se situa a Capela de São Brás, classificada como Monumento Nacional desde 1910, é o palco desta festividade com características tão peculiares que fazem deste dia uma verdadeira atração turística.",
+    "paragraphs": [
+      "Ano após ano, a Vila Velha é animada pelas muitas barraquinhas improvisadas onde se podem comprar as “Ganchas”, um doce tradicional que consiste num rebuçado em forma de báculo.",
+      "Conta a história, que a gancha terá surgido depois de São Brás ter salvo uma criança depois de engasgada com uma espinha na garganta. É que foi o facto de ter sido uma espécie de gancha em açúcar, e portanto, doce, que fez com que a criança colaborasse.",
+      "Reza também a lenda, que depois de receberem o Pito, oferecido pelas mulheres no dia de Santa Luzia, os homens oferecem a Gancha no dia de São Brás."
+    ],
+    "sources": "Adaptado dos sites: “https://noticiasdevilareal.com/em-vila-real-da-se-a-gancha-no-dia-de-sao-bras/”, “https://www.timeoff.pt/2018/02/santa-luzia-e-sao-bras-vila-real-religiao-e-tradicao-html/”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-02",
+    "title": "Carnaval de Cabanas de Viriato",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": ["Viseu", "Carregal do Sal", "Cabanas do Viriato"],
+    "imgURL": "",
+    "description": "Uma das mais antigas tradições de Portugal é a “dança dos cus” do Carnaval de Cabanas de Viriato. Esta é uma das festividades mais vistas pela sua singularidade, não perdendo ao longo dos anos a tradição que já vem do século XIX quando os actores do grupo de teatro depois do espetáculo do Bombeiros saíram à rua e percorreram a vila ao som de valsa. A “dança grande” foi posteriormente batizada como “dança dos cus” em que os pares divididos em duas filas ao terceiro compasso da música viram-se para o meio e chocam nádega com nádega.",
+    "paragraphs": [
+      "Sendo um carnaval com mais de 100 anos esta tradição continua a ser feita de uma forma natural e espontânea ao som da Filarmónica, com cabeçudos e muito mais na tradicional dança dos cus."
+    ],
+    "sources": "Adaptado do site: “https://www.mysound-mag.com/2019/02/carnaval-de-cabanas-de-viriato.html”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-03",
+    "title": "Enterro do Entrudo",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": [
+      "Guarda",
+      "Freixo de Espada à Cinta",
+      "União das Freguesias de Freixo de Espada à Cinta  e Mazouco"
+    ],
+    "imgURL": "",
+    "description": "No Carnaval, é curioso o ritual pagão que se realiza há séculos. Trata-se do «Enterro do Entrudo» que encerra os festejos carnavalescos e um período de folia extravasando todas as tensões e energias, mas ao mesmo tempo prepara o espírito para o sossego da Quaresma que se aproxima.",
+    "paragraphs": [
+      "Na noite de Terça feira de Carnaval, a rapaziada corre em cortejo as principais ruas da vila, levando numa padiola um defunto fictício e nas mãos os fachuqueiros ou 'chafusqueiros' ( pedaços de palha de centeio atados para que não queimem depressa demais) a arder, que iluminam a noite fria.",
+      "Transportam também chocalhos, latos velhos, penicos e ao percorrerem durante a noite as ruas fazem um funeral simbólico e num barulho ensurdecedor canta-se  'Ó meu Entrudo, Cabeça de Burro, Roubaste-me a Chicha e Deixaste-me os Ossos!!!'",
+      "Outros jovens transportam baldes de farinha que lançam aos curiosos que lhes aparecem ao caminho ou assomam às janelas.",
+      "Esta iniciativa é organizada pela Comissão de Festas Nossa Senhora dos Montes Ermos 2022, e conta com o apoio da Câmara Municipal de Freixo de Espada à Cinta."
+    ],
+    "sources": "Adaptado do site: “http://www.cm-freixoespadacinta.pt/ver.php?cod=0E0E0F”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-04",
+    "title": "Entrudo de Lazarim",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": ["Vila Real", "Lamego"],
+    "imgURL": "",
+    "description": "O carnaval em Lazarim é um dos mais genuínos do país. Tem caretos de madeira, demónios e senhorinhas, caldo de farinha, tradição e catarse. Os caretos do carnaval de Lazarim usam máscaras artesanais esculpidas em madeira de amieiro de tradição muito antiga. Em Lazarim, o essencial da festa realiza-se nos quatro dias anteriores ao Carnaval.",
+    "paragraphs": [
+      "Naqueles dias, a aldeia enche-se de actividades de promoção dos caretos, como o encontro com os artesãos, o raid etnográfico, com caretos locais e também convidados de fora, ao som de sonantes bombos."
+    ],
+    "sources": "Adaptado do site: “https://www.visitportugal.com/pt-pt/content/entrudo-de-lazarim”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-05",
+    "title": "Festa dos Caretos",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": ["Bragança", "Macedo Cavaleiros", "Podence e Santa Combinha"],
+    "imgURL": "",
+    "description": "O Entrudo Chocalheiro de Podence é considerado o Carnaval mais genuíno de Portugal, portanto, todos os anos entusiastas do Carnaval e curiosos rumam a esta vila para presenciar o peculiar evento.",
+    "paragraphs": [
+      "A atestar a importância dos Caretos de Podence está a inclusão do Entrudo Chocalheiro na lista do Património Cultural Imaterial da Humanidade pela UNESCO, desde 12 de Dezembro de 2019.",
+      "Acredita-se que a tradição dos caretos tem origem Celta pré-histórica, sendo que a Associação Grupo de Caretos de Podence é a guardiã destes costumes ancestrais.",
+      "Figuras diabólicas saem à rua com trajes específicos para celebrar o endiabrado Carnaval e apesar de tradicionalmente, apenas os rapazes poderem vestir o traje dos caretos, hoje as regras já não são tão rígidas."
+    ],
+    "sources": "Adaptado do site: “https://passaportenobolso.com/caretos-de-podence/”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-06",
+    "title": "Feira da Amendoeira em flor",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": ["Guarda", "Vila Nova de Foz Côa"],
+    "imgURL": "",
+    "description": "A Festa da Amendoeira em Flor corresponde ao maior evento que se comemora em Vila Nova de Foz Côa. Teve início em 1980 e conta com um programa diversificado pensado para todas as idades. O ponto alto é o desfile etnográfico/alegórico que retrata o modo de vida das pessoas os seus usos costumes e tradições de outros tempos. A história do concelho é trabalhada, retratada, e apresentada no desfile há milhares de turistas que todos os anos se deslocam a Foz Côa, nesta data.",
+    "paragraphs": [
+      "Não faltarão motivos para visitar o concelho dos 2 Patrimónios Mundiais, em três fins de semana, onde as associações o comércio local e as juntas de freguesia desempenham um papel central na dinamização concelhia.",
+      "A Capital da Amendoeira em Flor estará na altura coberta de lindos mantos matizados de rosa e branco, à espera de serem contemplados pelos locais e turistas que nesta altura do ano nos visitam."
+    ],
+    "sources": "Adaptado dos sites: https://www.cm-fozcoa.pt/index.php/divulgacao/noticias2/1048-amendoeira-em-flor-2023 e https://www.ilovedouro.pt/pt/blog/93/festa-amendoeira-em-flor-2023---vila-nova-de-foz-coa, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-07",
+    "title": "Festa de São Brás",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Centro",
+    "town": ["Leiria", "Nazaré"],
+    "imgURL": "",
+    "description": "A Romaria de São Brás realiza-se anualmente e sempre no dia 3 de fevereiro. A romaria ao São Brás é antiga e uma das festas populares integradas no evento Carnaval 2023 Só se tá néuva.",
+    "paragraphs": [
+      "Esta tradição deriva da história ligada à fundação da vila da Nazaré quando o último rei visigodo D. Rodrigo e Frei Romano, decidem fugir às invasões dos mouros, partindo de barco e chegando ao oeste português.",
+      "No barco diz-se que traziam as relíquias de São Brás e São Bartolomeu assim como a escultura em madeira da Nossa Senhora da Nazaré.",
+      "O Frei Romano tornou-se num ermita e habitou o Monte de São Bartolomeu onde no seu topo reside a ermida de São Brás.",
+      "Esta é uma das festas mais populares de toda a região e costuma reunir sempre muita gente durante o dia."
+    ],
+    "sources": "Retirado do site: “https://gonazare.com/romaria-de-sao-bras-na-nazare/”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-08",
+    "title": "Festa em Honra de Nossa Senhora da Purificacao e São Brás",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": [
+      "Aveiro",
+      "Vale de Cambra",
+      "União das freguesias Vila Chã, Codal e Vila Cova de Perrinho"
+    ],
+    "imgURL": "",
+    "description": "A Festa em honra de Nossa Senhora da Purificação e São Brás celebra dos dois santos locais, festejando ao longo de uma semana com várias celebrações religiosas na última semana de Janeiro e primeira de fevereiro. As várias actuações de grupos dão um colorido diferente nas primeiras grandes festas anuais de Vale de Cambra conhecida pela gastronomia dos grelos, sendo uma festividade onde este petisco gastronómico não poderá faltar.",
+    "paragraphs": [
+      "Sendo uma festa religiosa maioritariamente religiosa são várias as celebrações entre o Santuário e a Igreja Matriz que leva a várias procissões entre os dois espaços religiosos, e respectivas celebrações religiosas, em Vila Chã, Vale de Cambra."
+    ],
+    "sources": "Retirado do site: “https://www.mysound-mag.com/2023/01/festa-de-sao-bras-vale-cambra.html ”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-09",
+    "title": "",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": ["Aveiro", "Ovar"],
+    "imgURL": "",
+    "description": "Carnaval de Ovar: mais do que uma tradição, uma história diferenciadora. Uma marca no modo de vida e no sentir vareiro.",
+    "paragraphs": [
+      "1887 - O Início: Não se conhece o início das tradições Carnavalescas em Ovar. Os periódicos vareiros referem-se ao Carnaval de Ovar em 1887, designadamente “O Ovarense”, que entre outros refere “Tem decahido muito a animação d’este bello tempo dedicado aos divertimentos populares.",
+      "Década 80 - O Samba conquista Ovar: Uma década marcada pelo aparecimento do samba no Carnaval Vareiro e pelo Cortejo Infantil. A Costa de Prata sai, como projeto de escola de samba, em 1983. No ano seguinte, é a primeira pronta e acabada. Foi um êxito, que marcou irremediavelmente o Carnaval Vareiro.",
+      "Dois Mil - A Fundação A Fundação do Carnaval de Ovar trouxe uma nova dinâmica ao Carnaval de Ovar, contribuindo para a sua afirmação de a Grande Festa da Cidade, através do fomento de ações dirigidas a um público cada vez mais diversificado, projetando cada vez mais o Carnaval."
+    ],
+    "sources": "Retirado do site: “https://carnaval.cm-ovar.pt/pt/menu/51/historia.aspx”, consultado em novembro 23",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-10",
+    "title": "Carnaval de Estarreja",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": ["Aveiro", "Estarreja", "Beduído e Vieiros"],
+    "imgURL": "",
+    "description": "São antigas as memórias que, por Estarreja, remetem para as primeiras comemorações da época festiva do Entrudo. Pelos inícios do século XX, o Povo fazia sair à rua, ainda que de forma tímida, a crítica social que contrastava com os característicos bailaricos que reuniam a mais alta sociedade da então Vila de Estarreja.",
+    "paragraphs": [
+      "Em 1986, o Carnaval conheceu o primeiro grupo de folia. Longe do batismo que caracteriza as participações no corso carnavalesco, os Pimpões vieram imprimir uma nova dinâmica ao trabalho dos grupos apeados, com a introdução de novas ideias e diferentes métodos de trabalho.",
+      "Estava dado o passo rumo ao final dos grupos de lugares e ao aparecimento de dezenas de novos grupos de folia.",
+      "Mas os anos 80 foram símbolo da chegada do samba ao Carnaval de Estarreja. Nasciam assim os carecas, em 1986, formado exclusivamente por elementos masculinos. Um ano mais tarde, já com raparigas, os carecas e as carequinhas mudavam o rumo do Carnaval de Estarreja.",
+      "A chegada do novo milénio trouxe a visibilidade que o Carnaval de Estarreja há tanto tempo ansiava e hoje continua a marcar posição entre os carnavais mediáticos do país.",
+      "Hoje vive-se o verdadeiro sentimento de folia aliado ao mais quente ritmo das escolas de samba … É este o sabor do Carnaval de Estarreja. "
+    ],
+    "sources": "Retirado do site: “https://carnavalestarreja.pt/historia”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-02-11",
+    "title": "Cardadores",
+    "startDate": "2024-02-15T00:00:00",
+    "endDate": "2024-02-31T00:00:00",
+    "region": "Norte",
+    "town": ["Aveiro", " Ílhavo (S. Salvador)"],
+    "imgURL": "",
+    "description": "Esta manifestação de cariz tão popular integra os satíricos Corsos Carnavalescos e os fascinantes Cardadores, aquelas figuras típicas e irreverentes que surgem do meio da multidão a roncar, a saltar e a cardar.",
+    "paragraphs": [
+      "Totalizando cerca de 400 figurantes, que proporcionaram grande espetacularidade ao cortejo, conferida pela beleza dos seus fatos e carros alegóricos, aliando a cor e a alegria à sátira social e brejeirice, às imensas pessoas que afluem às ruas de Vale de Ílhavo",
+      "Os Cardadores, personagens míticas de Vale de Ílhavo, com características únicas, marcam presença nesta iniciativa com as suas brincadeiras, saltos e corridas inesperadas, percorrendo o cortejo e misturando-se no meio do público num corrupio, provocando grande alarido devido aos apitos, sinetas e guizos que trazem amarrados a si e aos excêntricos trajes que envergam.",
+      "O Carnaval de Vale de Ílhavo, organizado pela Associação Cultural e Recreativa “Os Baldas”, conta com o apoio da Câmara Municipal de Ílhavo, numa parceria que visa a revitalização e o crescimento desta inigualável festa tradicional no panorama do Carnaval Português."
+    ],
+    "sources": "Retirado do site: “https://www.cm-ilhavo.pt/viver/areas-de-intervencao/cultura/iniciativas-culturais/carnaval-de-vale-de-ilhavo”, consultado em novembro 23.",
+    "isFeatured": true
+  },
+
+  {
+    "id": "fair-10-01",
+    "title": "Festa da Nossa Senhora das Areias",
+    "startDate": "2024-10-15T00:00:00",
+    "endDate": "2024-10-31T00:00:00",
+    "region": "Norte",
+    "town": ["Aveiro", "Sao Jacinto"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "Uma das mais antigas romarias, na que já foi Paróquia de Santa Maria das Areias, no município de Viana do Castelo. Terra de pescadores, da seca do bacalhau, de farta agricultura, para aqui concorriam gentes de freguesias bem distantes para pedirem à Nossa Senhora das Areias que livrasse os seus campos, as vinhas, dos males da terra e as colheitas fossem fartas.",
+    "paragraphs": [
+      "Uma lenda esteve na base da construção da ermida que, segundo alguns documentos, já existiria no século XV. Conta essa lenda que um certo dia, entrou pela barra um casco de navio que encalhara na costa das Areias.",
+      "No interior deste, descobriu-se uma pequena imagem da Nossa Senhora da Conceição. Tal facto foi motivo para a construção da ermida, a mando, segundo a tradição, do Cabido do Porto, na época, o senhorio da região, a quem cabia a dízima do pescado.",
+      "A santa recebeu o apelido Areias, pois, na época, ainda S. Jacinto se denominava Areias. A partir desta lenda a freguesia presta homenagem à Senhora das Areias."
+    ],
+    "sources": "http://patrimonioreligiosodeaveiro.blogspot.com/2020/11/historia-da-capela-de-nossa-senhora-das.html e https://jf-darque.com/a-singela-festa-de-nossa-senhora-das-areias/” , consultado em setembro 2024.",
+    "isFeatured": true
+  },
+
+  {
+    "id": "fair-10-02",
+    "title": "Festa de Nossa Senhora do Rosário (Terra da Sopa Seca)",
+    "startDate": "2024-10-02T00:00:00",
+    "endDate": "2024-10-02T00:00:00",
+    "region": "Norte",
+    "town": ["Porto", "Penafiel", "Duas Igrejas"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "",
+    "paragraphs": [
+      "Na Festa de Nossa Senhora do Rosário não pode faltar a SOPA SECA (sobras de pão em calda de limão, canela, vinho do Porto e folhas de hortelã levadas a forno de lenha).",
+      "Esta sopa típica do final das vindimas, e do Natal, é mais um doce, do que uma sopa. Era conhecida pela sobremesa dos pobres porque era feita nesta época em honra de Nossa Senhora  do Rosário pelos mais pobres.",
+      "A santa recebeu o apelido Areias, pois, na época, ainda S. Jacinto se denominava Areias.",
+      "A partir desta lenda a freguesia presta homenagem à Senhora das Areias."
+    ],
+    "sources": "Retirado do site “https://www.mysound-mag.com/2021/09/festa-senhora-rosario-duas-igrejas.html”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-03",
+    "title": "Festa de Nossa Senhora do Fetal",
+    "startDate": "2024-10-15T00:00:00",
+    "endDate": "2024-10-31T00:00:00",
+    "region": "Centro",
+    "town": ["Leiria", "Batalha", "Reguengo do Fetal"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "",
+    "paragraphs": [
+      "Na aldeia de Reguengo do Fetal, no Concelho da Batalha, realizam-se anualmente duas procissões ancestrais, intervaladas por sete dias, únicas em todo o país, que conferem a esta manifestação religiosa uma ambiência única. Toda a aldeia é iluminada através da utilização de milhares de cascas de caracóis que a população, com grande sentido devocional, dispõe nas ruas e nas escarpas recortadas desta localidade.",
+      "As procissões realizam-se em período noturno, com a utilização de milhares de cascas de caracóis onde se encontram embebidas, em azeite, torcidas de cordel que servem de pavio e que depois de acesas conferem um efeito visual único e impactante para quem participa nas procissões.",
+      "A iluminação realizada com as cascas de caracóis não se limita ao percurso dos cerca de 800 metros entre os dois locais uma vez que os habitantes executam autênticas obras artísticas com a iluminação das suas casas, recriando moinhos, fachadas de igrejas, cruzes e outros motivos religiosos, que requerem arte e engenho na colocação das cascas e nas formas expressivas que recriam, estimando-se que sejam utilizadas 12 mil cascas de caracóis nas ornamentações.",
+      "As iluminações estendem-se também às escarpas de toda a aldeia, o que proporciona aos visitantes a oportunidade única de assistirem ao vivo a um espetáculo impressionante de luz, cor e de devoção."
+    ],
+    "sources": "Retirado do site “https://7maravilhas.pt/portfolio/procissao-dos-caracois-festa-de-nossa-senhora-do-fetal/”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-02",
+    "title": "Festa de Nossa Senhora do Rosário (Terra da Sopa Seca)",
+    "startDate": "2024-10-02T00:00:00",
+    "endDate": "2024-10-02T00:00:00",
+    "region": "Norte",
+    "town": ["Porto", "Penafiel", "Duas Igrejas"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "",
+    "paragraphs": [
+      "Na Festa de Nossa Senhora do Rosário não pode faltar a SOPA SECA (sobras de pão em calda de limão, canela, vinho do Porto e folhas de hortelã levadas a forno de lenha).",
+      "Esta sopa típica do final das vindimas, e do Natal, é mais um doce, do que uma sopa. Era conhecida pela sobremesa dos pobres porque era feita nesta época em honra de Nossa Senhora  do Rosário pelos mais pobres.",
+      "A santa recebeu o apelido Areias, pois, na época, ainda S. Jacinto se denominava Areias.",
+      "A partir desta lenda a freguesia presta homenagem à Senhora das Areias."
+    ],
+    "sources": "Retirado do site “https://www.mysound-mag.com/2021/09/festa-senhora-rosario-duas-igrejas.html”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-03",
+    "title": "Festa de Nossa Senhora do Fetal",
+    "startDate": "2024-10-15T00:00:00",
+    "endDate": "2024-10-31T00:00:00",
+    "region": "Centro",
+    "town": ["Leiria", "Batalha", "Reguengo do Fetal"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "",
+    "paragraphs": [
+      "Na aldeia de Reguengo do Fetal, no Concelho da Batalha, realizam-se anualmente duas procissões ancestrais, intervaladas por sete dias, únicas em todo o país, que conferem a esta manifestação religiosa uma ambiência única. Toda a aldeia é iluminada através da utilização de milhares de cascas de caracóis que a população, com grande sentido devocional, dispõe nas ruas e nas escarpas recortadas desta localidade.",
+      "As procissões realizam-se em período noturno, com a utilização de milhares de cascas de caracóis onde se encontram embebidas, em azeite, torcidas de cordel que servem de pavio e que depois de acesas conferem um efeito visual único e impactante para quem participa nas procissões.",
+      "A iluminação realizada com as cascas de caracóis não se limita ao percurso dos cerca de 800 metros entre os dois locais uma vez que os habitantes executam autênticas obras artísticas com a iluminação das suas casas, recriando moinhos, fachadas de igrejas, cruzes e outros motivos religiosos, que requerem arte e engenho na colocação das cascas e nas formas expressivas que recriam, estimando-se que sejam utilizadas 12 mil cascas de caracóis nas ornamentações.",
+      "As iluminações estendem-se também às escarpas de toda a aldeia, o que proporciona aos visitantes a oportunidade única de assistirem ao vivo a um espetáculo impressionante de luz, cor e de devoção."
+    ],
+    "sources": "Retirado do site “https://7maravilhas.pt/portfolio/procissao-dos-caracois-festa-de-nossa-senhora-do-fetal/”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-04",
+    "title": "Festa do Senhor dos Milagres",
+    "startDate": "2024-10-11T00:00:00",
+    "endDate": "2024-10-11T00:00:00",
+    "region": "Ilhas",
+    "district": "Arquipélago da Madeira",
+    "town": ["Machico"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "",
+    "paragraphs": [
+      "Segundo os historiadores, foi no dia 2 de julho de 1419, num sítio do concelho de Machico, que passou a ser denominado Banda d’Além, que se celebrou por padres franciscanos, a primeira missa na Madeira. Como agradecimento da nova descoberta, João Gonçalves Zarco mandou construir uma capela, no local onde se realizou tal ato litúrgico, à qual foi dado o nome de Capela de Cristo. Segundo a tradição popular, a capela está assente no túmulo dos lendários e trágicos amantes Robert Machim e Ane d’Arfet, ingleses que fugiram de Bristol e que teriam sido os primeiros a chegarem à Madeira.",
+      "Em 9 de outubro de 1803, depois de dias consecutivos a chover, o leito da ribeira transbordou, inundando a vila de Machico e toda a zona leste da freguesia. As águas também invadiram a capela, destruindo-a parcialmente e arrastaram para o mar, a imagem de Nosso Senhor na Cruz, obra do séc. XVI. Segundo a lenda, três dias depois, uma embarcação americana que vinha do Funchal recolheu a imagem, que, apesar do seu peso, milagrosamente boiava. Ao pretender seguir viagem, o vento começou a soprar em direção contrária. O capitão decidiu então levar a imagem para a Sé do Funchal.",
+      "Em 1813 a capela é reconstruída pelos Irmãos da Misericórdia, voltando a imagem para a sua capela, num barco, acompanhada por alguns pescadores naturais de Machico. Como chegou de noite, foi recebida pelos pescadores com archotes, cantando hinos ao Senhor e por esse motivo estes, munidos de archotes, figuram, anualmente, na procissão.",
+      "Ainda segundo a lenda, quando os barcos entraram na baía, os sinos tocaram a rebate sem que ninguém lhes tocasse. Devido a este milagre e à fé do povo, a capela passou a ser denominada de Capela dos Milagres. Em memória do dia em que Nosso Senhor dos Milagres protegeu aquela zona aquando da grande aluvião de 1803 e devido ao facto de se ter recuperado milagrosamente a imagem intacta, celebra-se a 8 e 9 de outubro a sua festa."
+    ],
+    "sources": "“https://cultura.madeira.gov.pt/visitas-virtuais1/1315-festa-do-senhor-dos-milagres-machico.html”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-05",
+    "title": "Feira dos Gorazes",
+    "startDate": "2024-10-01T00:00:00",
+    "endDate": "2024-10-01T00:00:00",
+    "region": "Norte",
+    "town": [
+      "Braganca",
+      "Mogadouro",
+      "Mogadouro, Valverde, Vale de Porco e Vilar de Rei"
+    ],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "A feira dos Gorazes é uma das feiras anuais mais antigas de Portugal e, seguramente, a mais importante e antiga feira das Terras de Trás-os-Montes.",
+    "paragraphs": [
+      "O certame tem lugar em Mogadouro, pelo menos, desde os dias 15 e 16 de outubro de 1760, ano em que aparecem as primeiras referências escritas sobre o evento, embora exista quem defenda a sua origem medieval. Se não é de estranhar a origem anterior ao século XVIII desta Feira, motivo de maior surpresa e alvo até de uma certa controvérsia é a própria designação do certame. É que apesar de Goraz ser nome de peixe o que é facto é que na Feira todos se juntam para comer carne. Tamanha contradição parece encontrar explicação na história e na origem da própria palavra.",
+      "Goraz será o resultado da evolução da palavra Voraz relacionado com a grande apetência para o consumo de carne de porco e vitela, neste período. De acordo com A. Mourinho, autor de uma obra dedicada a esta feira o termo Gorazil, Corazil e Goarazel têm a sua raiz na palavra grega Koipás (que se lê Goiráz ou Koirás), a qual significa carne de porco.",
+      "O “Goarazel” ou “Goraz” seria um imposto pago pelos de Mogadouro aos senhores destas terras. O tributo, pago em carne de porco (localmente designada marrã) por altura da Feira anual, deu nome ao evento e popularizou o consumo e compra da marrã durante a Feira.",
+      "A tese não é consensual, mas foi ganhando expressão e os mogadourenses continuam a pagar o imposto à tradição durante os dias do evento. À marrã juntou-se, atualmente, a posta transmontana e poucos são os que resistem a degustar um bom naco de carne durante os Gorazes."
+    ],
+    "sources": "Retirado do site “https://7maravilhas.pt/portfolio/feira-dos-gorazes-de-mogadouro/”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-06",
+    "title": "Feira das Mercês",
+    "startDate": "2024-10-15T00:00:00",
+    "endDate": "2024-10-15T00:00:00",
+    "region": "Centro",
+    "town": ["Lisboa", "Sintra", "Rio de Mouro"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "Esta feira realiza-se na Quinta do Marquês de Pombal, mandada construída pelo próprio para oferecer ao seu filho.",
+    "paragraphs": [
+      "Esta feira realiza-se na Quinta do Marquês de Pombal, mandada construída pelo próprio para oferecer ao seu filho.",
+      "O evento transporta os visitantes para o último quartel do séc. XVIII, altura em que a feira das Mercês se tornou na bolsa agrícola da região saloia, por ser aqui que se fixavam os preços dos cereais, legumes e outros bens de primeira necessidade, se adquiriam instrumentos agrícolas, se contratava pessoal para o cultivo dos campos, e se deslocava a população da região saloia e de Lisboa para fazer compras e participar na festa religiosa de Nossa Sra. das Mercês junto da capela com o seu nome.",
+      "O momento social mais importante da Feira das Mercês eram as aventuras amorosas preconizadas pelos rapazes e raparigas no muro que delimitava o recinto da feira, ao qual o povo tão afavelmente chamou de Muro do Derrete."
+    ],
+    "sources": "Retirado do site “https://cm-sintra.pt/atualidade/agenda/1482-a-feira-das-merces-esta-de-regresso-a-sintra-2”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-07",
+    "title": "Festa dos Círios a Nossa Senhora dos Remédios",
+    "startDate": "2024-10-20T00:00:00.000Z",
+    "endDate": "2024-10-20T00:00:00.000Z",
+    "region": "Center",
+    "town": ["Leiria", "Peniche"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "",
+    "paragraphs": [
+      "A tradição mantém-se no terceiro domingo de outubro, em que o Santuário de Nossa Senhora dos Remédios, em Peniche, acolhe os romeiros que ali querem comparecer para cumprir todas as promessas feitas ao longo do ano, em círios (peregrinações coletivas) por devoção a Nossa Senhora e muitas vezes pelas graças já recebidas.",
+      "A tradicional procissão faz-se em redor do santuário com a imagem de Nossa Senhora dos Remédios e no final há o tradicional canto das loas a Nossa Senhora, seguido da despedida dos Círios."
+    ],
+    "sources": "Retirado do site “https://jornaldascaldas.pt/2021/10/18/cirios-a-nossa-senhora-dos-remedios-2/”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-08",
+    "title": "Feira de Castro",
+    "startDate": "2024-10-15T00:00:00.000Z",
+    "endDate": "2024-10-31T00:00:00.000Z",
+    "region": "Center",
+    "town": [
+      "Beja",
+      "Castro Verde",
+      "Uniao das Freguesias de Castro Verde e Casével"
+    ],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "Instituída por Filipe II, em 1620, em resposta a uma solicitação feita pelos moradores do concelho que pretendiam obter, com o rendimento dos terrádegos (imposto sobre o terreno ocupado pelas barracas e tendas dos feirantes), os fundos necessários à reconstrução da Igreja das Chagas do Salvador (ou Igreja de Nossa Senhora dos Remédios), a Feira de Castro depressa se tornou a principal feira do sul, primeiro de gado, depois de mil e uma mercadorias, manufaturas e produtos da terra, animando o comércio local e regional.",
+    "paragraphs": [
+      "Durante três dias e encerrando, invariavelmente, numa tradição que se perpetua no terceiro domingo de outubro, que originou o dito popular de «tão certo como a Feira de Castro», a feira mantém vivos alguns elos com o passado, desde o tradicional arraial de gado à venda dos produtos do pequeno comércio e da indústria familiar, das mantas de lã aos queijos, dos frutos secos aos artefactos da latoaria, das quinquilharias às loiças de barro, das alfaias agrícolas ao mobiliário rústico.",
+      "Com o passar dos tempos, a feira acabou por se moldar às exigências do presente e aos ditames da modernidade, tanto no comércio como na indústria do lazer e do divertimento. Porém, continua a mesma no apelo que faz ao convívio, à troca e ao encontro.",
+      "Paralelamente à animação da própria feira, é dinamizado um conjunto de iniciativas que têm como referência o valorizar da tradição e do património cultural da região, merecendo destaque o desfile de corais Planície a Cantar ou o Encontro de Tocadores de Viola Campaniça e Cantadores de Despique e Baldão."
+    ],
+    "sources": "Retirado do Site “https://www.cm-castroverde.pt/pt/menu/943/feira-de-castro.aspx”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-09",
+    "title": "Feira de S. Simao",
+    "startDate": "2024-10-28T00:00:00.000Z",
+    "endDate": "2024-10-29T00:00:00.000Z",
+    "region": "North",
+    "town": ["Vila Real", "Chaves", "Vidago"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "Uma Feira que conta já com mais de um século de tradição, onde os visitantes poderão encontrar deliciosas passas, castanhas, pinhões, nozes, entre muitos outros produtos típicos da época, que estarão expostos em vários stands.",
+    "paragraphs": [
+      "Nesta altura as colheitas agrícolas estão praticamente concluídas e é comum vender-se os produtos cultivados na região para saldar as dívidas contraídas durante o ano.",
+      "Era esta a principal característica da feira que ainda hoje se mantém, apesar da mudança socioeconómica."
+    ],
+    "sources": "Adaptado  do livro “Guia das Mais Famosas FESTAS & ROMARIAS de Portugal, Atlântico Press.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-10",
+    "title": "Feira de Santa Iria",
+    "startDate": "2024-10-20T00:00:00.000Z",
+    "endDate": "2024-10-20T00:00:00.000Z",
+    "region": "Center",
+    "town": ["Santarem", "Tomar"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "A Feira de Santa Iria realiza-se todos os anos em Tomar desde o século XVII. Apenas situações invulgares, como foi a pandemia em 2020 e 2021, levaram à sua interrupção.",
+    "paragraphs": [
+      "A Feira de Santa Iria realiza-se todos os anos em Tomar desde o século XVII. Apenas situações invulgares, como foi a pandemia em 2020 e 2021, levaram à sua interrupção.",
+      "Habitualmente, está aberta durante dez dias, que incluem 20 de outubro, data dedicada à padroeira da cidade.",
+      "Nesse dia, a imagem da Santa é levada em procissão, com a presença de grande número de crianças das escolas do concelho, que lançam pétalas ao rio, evocando o seu martírio."
+    ],
+    "sources": "Retirado do site “https://fairantairia.pt/index.php/2022/09/29/historia-da-feira-de-santa-iria/”, consultado em setembro 23.",
+    "isFeatured": true
+  },
+  {
+    "id": "fair-10-11",
+    "title": "Festival Nacional de Gastronomia",
+    "startDate": "2024-10-20T00:00:00.000Z",
+    "endDate": "2024-10-20T00:00:00.000Z",
+    "region": "Center",
+    "town": ["Santarem"],
+    "imgURL": "https://barlavento.sapo.pt/wp-content/uploads/2021/08/Mina-de-Sal-gema-Loul%C3%A9-01.jpg",
+    "description": "Festival promovido desde de 1981, na Casa do Campino, em Santarém onde os paladares das regiões de todo o país são expostos, numa mostra única da variada e rica gastronomia portuguesa, através de tasquinhas. ",
+    "paragraphs": [
+      "Festival promovido desde de 1981, na Casa do Campino, em Santarém onde os paladares das regiões de todo o país são expostos, numa mostra única da variada e rica gastronomia portuguesa, através de tasquinhas. ",
+      "Também se fazem workshops culinários e provas de vinho."
+    ],
+    "sources": "Retirado do site “https://cm-sintra.pt/atualidade/agenda/1482-a-feira-das-merces-esta-de-regresso-a-sintra-2”, consultado em setembro 23.",
+    "isFeatured": true
+  }
+]
