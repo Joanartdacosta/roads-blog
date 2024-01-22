@@ -17,6 +17,7 @@ export default function MenuDetailsId(props) {
         difficulty={props.difficulty}
         distance={props.distance}
         duration={props.duration}
+        introduction={props.introduction}
         label={props.label}
         percentageAcessibility={props.percentageAcessibility}
         percentageDifficulty={props.percentageDifficulty}
@@ -25,6 +26,7 @@ export default function MenuDetailsId(props) {
         percentageSafety={props.percentageSafety}
         percentageShadow={props.percentageShadow}
         percentageSupport={props.percentageSupport}
+        title={props.title}
       />
     </div>
   );
@@ -38,6 +40,7 @@ export default function MenuDetailsId(props) {
           difficulty={props.difficulty}
           distance={props.distance}
           duration={props.duration}
+          introduction={props.introduction}
           label={props.label}
           percentageAcessibility={props.percentageAcessibility}
           percentageDifficulty={props.percentageDifficulty}
