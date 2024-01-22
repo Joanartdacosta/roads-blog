@@ -1,10 +1,12 @@
 import Classification from "@/components/common/menu_id/classification/Classification";
 import GeneralValues from "@/components/common/menu_id/general_info/GeneralValues";
 import GENERAL_SUBTITLES from "@/components/enums/general_subtitle";
+import Introduction from "./Introduction";
 
 export default function GeneralSection(props) {
   return (
     <div>
+      <Introduction title={props.title} introduction={props.introduction} />
       <div
         id="fullWidthTabContent"
         className="border-t border-gray-200 dark:border-gray-600"
