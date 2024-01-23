@@ -5,7 +5,7 @@ export default function DropDownMenu() {
   return (
     <div
       id="mega-menu-full-dropdown"
-      className="border-yellow-800 shadow-sm bg-gray-100 border-y dark:bg-gray-800 dark:border-gray-600"
+      className="shadow-sm bg-gray-100 border-y dark:bg-gray-800 dark:border-gray-600"
     >
       <div className="flex flex-wrap justify-center align-items-center max-w-screen-xl mx-auto text-yellow-900 dark:text-white gap-2 p-2">
         {NAVBAR_LINKS["order"].map((item) => {

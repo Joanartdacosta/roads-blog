@@ -1,7 +1,7 @@
 export default function Introduction() {
   return (
     <div>
-      <div className="pb-8 text-center m-auto roboto">
+      <div className="pb-8 text-center m-auto">
         <p>
           Chamo-me Rui Costa e fui professor de Geografia ao longo de 42 anos.
         </p>
@@ -18,7 +18,7 @@ export default function Introduction() {
           interesse geográfico.
         </p>
       </div>
-      <div className="text-center m-auto border border-green-100 p-8 roboto">
+      <div className="text-center m-auto border border-green-100 p-8">
         <p className="font-bold italic text-s text-green-700">
           A vida é o que fazemos dela. As viagens são os viajantes. O que vemos
           não é o que vemos, senão o que somos.

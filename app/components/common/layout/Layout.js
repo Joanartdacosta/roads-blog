@@ -22,7 +22,20 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Open+Sans&family=Oswald:wght@700&family=Play:wght@700&family=Poppins:wght@200;300&family=Recursive&family=Roboto:ital,wght@0,500;1,300&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans&family=Play:wght@700&family=Recursive&display=swap"
+          rel="stylesheet"
+        />
 
+        <link
+          href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans&family=Play:wght@700&family=Recursive&display=swap"
+          rel="stylesheet"
+        />
+
+        <link
+          href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans&family=Outfit:wght@100..900&family=Play:wght@700&family=Recursive&display=swap"
+          rel="stylesheet"
+        />
         <meta
           name="keywords"
           content="Blog de Turismo, Dicas de Lugares, passadiços"
