@@ -8,7 +8,7 @@ export default function NavBar() {
         <NavBarLarge />
       </div>
 
-      <div className="play menu-hamburguer z-20">
+      <div className="menu-hamburguer z-20">
         <NavBarSmall />
       </div>
     </div>
