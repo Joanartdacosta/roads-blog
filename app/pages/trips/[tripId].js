@@ -8,7 +8,7 @@ export default function TripDetailsPage(props) {
     <div>
       {props.selectedTrip ? (
         <GeneralBanner
-          section={props.selectedTrip.title}
+          section={NAVBAR_LINKS["trips"]["section"]}
           imgUrl={NAVBAR_LINKS["trips"]["imgUrl"]}
         />
       ) : (
@@ -32,11 +32,14 @@ export default function TripDetailsPage(props) {
             difficulty={props.selectedTrip.difficulty}
             distance={props.selectedTrip.distance}
             duration={props.selectedTrip.duration}
+            introduction={props.selectedTrip.introduction}
             evaluation={props.selectedTrip.evaluation}
             labelOption1={props.selectedTrip.labelOption1}
             labelOption2={props.selectedTrip.labelOption2}
             labelOption1Description={props.selectedTrip.labelOption1Description}
             labelOption2Description={props.selectedTrip.labelOption2Description}
+            latitude={props.selectedTrip.latitude}
+            longitude={props.selectedTrip.longitude}
             source={props.selectedTrip.source}
             percentageAcessibility={props.selectedTrip.percentageAcessibility}
             percentageDifficulty={props.selectedTrip.percentageDifficulty}
@@ -54,6 +57,7 @@ export default function TripDetailsPage(props) {
             price1={props.selectedTrip.price1}
             price2={props.selectedTrip.price2}
             price3={props.selectedTrip.price3}
+            title={props.selectedTrip.title}
           />
         ) : (
           <p>Nao existem passeios.</p>

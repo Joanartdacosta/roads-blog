@@ -8,7 +8,7 @@ export default function TourDetailPage(props) {
     <div>
       {props.selectedTour ? (
         <GeneralBanner
-          section={props.selectedTour.title}
+          section={NAVBAR_LINKS["tours"]["section"]}
           imgUrl={NAVBAR_LINKS["tours"]["imgUrl"]}
         />
       ) : (
@@ -45,12 +45,15 @@ export default function TourDetailPage(props) {
             imagePath25={props.selectedTour.imagePath25}
             imagePath3={props.selectedTour.imagePath3}
             imagePath4={props.selectedTour.imagePath4}
+            introduction={props.selectedTour.introduction}
             hotel1={props.selectedTour.hotel1}
             hotel2={props.selectedTour.hotel2}
             hotel3={props.selectedTour.hotel3}
             hotel4={props.selectedTour.hotel4}
             labelOption1Description={props.selectedTour.labelOption1Description}
             labelOption2Description={props.selectedTour.labelOption2Description}
+            latitude={props.selectedTour.latitude}
+            longitude={props.selectedTour.longitude}
             restaurant1={props.selectedTour.restaurant1}
             restaurant2={props.selectedTour.restaurant2}
             percentageAcessibility={props.selectedTour.percentageAcessibility}
@@ -64,6 +67,7 @@ export default function TourDetailPage(props) {
             point2={props.selectedTour.point2}
             point3={props.selectedTour.point3}
             point4={props.selectedTour.point4}
+            title={props.selectedTour.title}
             tourPathDescription1={props.selectedTour.tourPathDescription1}
           />
         </div>
