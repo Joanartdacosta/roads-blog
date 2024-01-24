@@ -4,11 +4,11 @@ import NavBarSmall from "./navbar_small/NavBarSmall";
 export default function NavBar() {
   return (
     <div>
-      <div className="play menu-normal">
+      <div className="menu-normal oswald">
         <NavBarLarge />
       </div>
 
-      <div className="play menu-hamburguer z-20">
+      <div className="menu-hamburguer z-20">
         <NavBarSmall />
       </div>
     </div>

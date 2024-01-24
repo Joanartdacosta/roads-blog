@@ -22,21 +22,21 @@ export default function InfoBullets(props) {
               <div>
                 <li className="flex space-x-2 items-center">
                   <Bullet />
-                  <span className="leading-tight">{props.bullet1}</span>
+                  <span className="leading-tight p-1">{props.bullet1}</span>
                 </li>
                 <li className="flex space-x-2 items-center">
                   <Bullet />
-                  <span className="leading-tight">{props.bullet2}</span>
+                  <span className="leading-tight p-1">{props.bullet2}</span>
                 </li>
                 <li className="flex space-x-2 items-center">
                   <Bullet />
-                  <span className="leading-tight">{props.bullet3}</span>
+                  <span className="leading-tight p-1">{props.bullet3}</span>
                 </li>
 
                 {props.bullet4 ? (
                   <li className="flex space-x-2 items-center">
                     <Bullet />
-                    <span className="leading-tight">{props.bullet4}</span>
+                    <span className="leading-tight p-1">{props.bullet4}</span>
                   </li>
                 ) : (
                   ""
@@ -69,19 +69,19 @@ export default function InfoBullets(props) {
                     </h2>
                     <li className="flex space-x-2 items-center">
                       <Bullet />
-                      <span className="leading-tight">{props.point1}</span>
+                      <span className="leading-tight p-2">{props.point1}</span>
                     </li>
                     <li className="flex space-x-2 items-center">
                       <Bullet />
-                      <span className="leading-tight">{props.point2}</span>
+                      <span className="leading-tight p-2">{props.point2}</span>
                     </li>
                     <li className="flex space-x-2 items-center">
                       <Bullet />
-                      <span className="leading-tight">{props.point3}</span>
+                      <span className="leading-tight p-2">{props.point3}</span>
                     </li>
                     <li className="flex space-x-2 items-center">
                       <Bullet />
-                      <span className="leading-tight">{props.point4}</span>
+                      <span className="leading-tight p-2">{props.point4}</span>
                     </li>
                   </div>
                 ) : (
@@ -92,11 +92,11 @@ export default function InfoBullets(props) {
                   <div>
                     <li className="flex space-x-2 items-center">
                       <Bullet />
-                      <span className="leading-tight">{props.point5}</span>
+                      <span className="leading-tight p-2">{props.point5}</span>
                     </li>
                     <li className="flex space-x-2 items-center">
                       <Bullet />
-                      <span className="leading-tight">{props.point6}</span>
+                      <span className="leading-tight p-2">{props.point6}</span>
                     </li>
                   </div>
                 ) : (
