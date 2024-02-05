@@ -1,32 +1,72 @@
 import BUTTONS_LABELS from "@/components/enums/buttons_labels";
+import FORM_LABELS from "@/components/enums/form_labels";
 import Input from "./details/Input";
-import Select from "./details/Select";
 import SubmitButton from "./details/SubmitButton";
 import TextArea from "./details/TextArea";
-import FORM_LABELS from "@/components/enums/form_labels";
+
+import { useState } from "react";
 
 export default function Form() {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [arrival, setArrival] = useState("");
+  const [departure, setDeparture] = useState("");
+
   return (
-    <form className="pb-20" id="freetour">
-      <Input type={"text"} label={FORM_LABELS.name} />
-      <Input type={"email"} label={FORM_LABELS.email} />
-      <TextArea />
+    <form
+      className="pb-20"
+      id="freetour"
+      action="https://formcarry.com/s/yq6rkztaug1"
+      method="POST"
+    >
+      <Input
+        type={"text"}
+        label={FORM_LABELS.name}
+        value={name}
+        name="name"
+        onChange={(e) => setName(e.target.value)}
+        required
+      />
+      <Input
+        type={"email"}
+        label={FORM_LABELS.email}
+        value={email}
+        name="email"
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <TextArea
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        id="message"
+        name="message"
+        placeholder="Enter your message..."
+        required
+      />
 
       <div className="pt-10 pb-10">
         <p>Para solicitar o roteiro gratuito, estes campos sao obrigatorios:</p>
       </div>
 
       <div className="grid md:grid-cols-2 md:gap-6">
-        <Input type={"text"} label={FORM_LABELS.departurePoint} />
-        <Input type={"text"} label={FORM_LABELS.arrivalPoint} />
+        <Input
+          type={"text"}
+          label={FORM_LABELS.departurePoint}
+          value={departure}
+          onChange={(e) => setDeparture(e.target.value)}
+          name="departure"
+        />
+        <Input
+          type={"text"}
+          label={FORM_LABELS.arrivalPoint}
+          value={arrival}
+          name="arrival"
+          onChange={(e) => setArrival(e.target.value)}
+        />
       </div>
 
-      <div className="grid md:grid-cols-2 md:gap-6">
-        <Select label={FORM_LABELS.message} />
-        <Input type={"text"} label={FORM_LABELS.others} />
-      </div>
-
-      <SubmitButton label={BUTTONS_LABELS.sendMessage} />
+      <SubmitButton id="submit" label={BUTTONS_LABELS.sendMessage} />
     </form>
   );
 }
