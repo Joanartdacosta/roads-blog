@@ -8,7 +8,10 @@ export default function Layout({ children }) {
     <div>
       <Head>
         <title>Estradas</title>
-        <meta name="description" content="Blog de turismo" />
+        <meta
+          name="description"
+          content="A descoberta de Portugal - Blog de turismo, passeios e roteiros em Portugal. Estrada fora"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
@@ -38,9 +41,19 @@ export default function Layout({ children }) {
         />
         <meta
           name="keywords"
-          content="Blog de Turismo, Dicas de Lugares, passadiços"
+          content="Para quem gosta de viajar por Portugal: sugestao de roteiros, dicas e muito mais."
         />
-        <meta name="author" content="Estradas Blog" />
+        <meta name="author" content="Rui Costa" />
+        <meta
+          name="title"
+          content="Estrada Fora, Paisagens adentro: blog de turismo em Portugal."
+        />
+        <meta http-equiv="refresh" content="5" />
+        <meta
+          name="keywords"
+          content="Portugal, turismo, Estrada fora, Roteiros"
+        />
+        <link rel="canonical" href="https://roads-blog.vercel.app/tours" />
       </Head>
 
       <main>
