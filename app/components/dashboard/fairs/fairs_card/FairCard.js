@@ -2,6 +2,7 @@ import AvatarImg from "@/components/common/icons/AvatarImg";
 import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import ButtonYellow2 from "@/components/common/UI/button/ButtonYellow2";
 import CalendarIcon from "@/components/common/icons/calendar/CalendarIcon";
+import { darkRgba } from "@/consts/colors";
 import FAIRS from "@/components/lists/fairs";
 import FairLocation from "./FairLocation";
 import FairMonth from "./FairMonth";
@@ -9,6 +10,7 @@ import Modal from "react-modal";
 import ModalInfo from "./ModalInfo";
 import { useState } from "react";
 import WorldIcon from "@/components/common/icons/WorldIcon";
+import { whiteRgba } from "@/consts/colors";
 
 export default function FairCard(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -21,14 +23,11 @@ export default function FairCard(props) {
     setModalIsOpen(true);
   }
 
-  let dark = "rgba(17, 18, 19, 0.7)";
-  let white = "rgba(255, 255, 255)";
-
   const modalStyles = {
     content: {
       top: "5rem",
       bottom: "5rem",
-      backgroundColor: white,
+      backgroundColor: whiteRgba,
       position: "absolute",
       overflow: "auto",
       transition: "opacity-5 2 ease-in-out, transform 2s ease-in-out",
@@ -39,7 +38,7 @@ export default function FairCard(props) {
       left: 0,
       right: 0,
       bottom: 0,
-      backgroundColor: dark,
+      backgroundColor: darkRgba,
     },
   };
 
