@@ -1,5 +1,4 @@
 import ButtonBlack from "@/components/common/UI/button/ButtonBlack";
-import ButtonLight from "@/components/common/UI/button/ButtonLight";
 import React from "react";
 
 export default function Title() {
