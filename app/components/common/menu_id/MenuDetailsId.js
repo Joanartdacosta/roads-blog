@@ -49,6 +49,7 @@ export default function MenuDetailsId(props) {
           percentageSafety={props.percentageSafety}
           percentageShadow={props.percentageShadow}
           percentageSupport={props.percentageSupport}
+          title={props.title}
         />
       );
       setIsOpen(!isOpen);
