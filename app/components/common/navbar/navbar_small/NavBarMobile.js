@@ -1,10 +1,10 @@
 import { Dropdown } from "flowbite-react";
 import NavbarLink from "@/components/common/navbar/navbar_small/NavBarLink";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
-import SmallFooter from "../../footer/footer_small/SmallFooter";
 import Image from "next/image";
+import FooterMobile from "../../footer/footer_mobile/FooterMobile";
 
-export default function NavBarSmall() {
+export default function NavBarMobile() {
   return (
     <div className="bg-black h-20 w-full flex justify-between">
       <Dropdown
@@ -12,7 +12,7 @@ export default function NavBarSmall() {
         label="MENU "
       >
         <NavbarLink array={NAVBAR_LINKS} />
-        <SmallFooter />
+        <FooterMobile />
       </Dropdown>
       <div>
         <a href="/">
