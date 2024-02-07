@@ -39,21 +39,16 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cinzel:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans&family=Outfit:wght@100..900&family=Play:wght@700&family=Recursive&display=swap"
           rel="stylesheet"
         />
-        <meta
-          name="keywords"
-          content="Para quem gosta de viajar por Portugal: sugestao de roteiros, dicas e muito mais."
-        />
         <meta name="author" content="Rui Costa" />
         <meta
           name="title"
           content="Estrada Fora, Paisagens adentro: blog de turismo em Portugal."
         />
-        <meta http-equiv="refresh" content="5" />
+
         <meta
           name="keywords"
           content="Portugal, turismo, Estrada fora, Roteiros"
         />
-        <link rel="canonical" href="https://roads-blog.vercel.app/tours" />
       </Head>
 
       <main>
