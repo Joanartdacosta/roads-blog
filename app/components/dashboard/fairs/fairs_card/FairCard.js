@@ -21,11 +21,14 @@ export default function FairCard(props) {
     setModalIsOpen(true);
   }
 
+  let dark = "rgba(17, 18, 19, 0.7)";
+  let white = "rgba(255, 255, 255)";
+
   const modalStyles = {
     content: {
       top: "5rem",
       bottom: "5rem",
-      backgroundColor: "rgba(255, 255, 255)",
+      backgroundColor: white,
       position: "absolute",
       overflow: "auto",
       transition: "opacity-5 2 ease-in-out, transform 2s ease-in-out",
@@ -36,7 +39,7 @@ export default function FairCard(props) {
       left: 0,
       right: 0,
       bottom: 0,
-      backgroundColor: "rgba(17, 18, 19, 0.7)",
+      backgroundColor: dark,
     },
   };
 
