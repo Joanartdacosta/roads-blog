@@ -1,12 +1,17 @@
+import ButtonBlack from "@/components/common/UI/button/ButtonBlack";
 import React from "react";
 
 export default function Title() {
   return (
-    <div className="text-white text-5xl">
+    <div className="text-gray-200">
       <div className="p-10">
-        <p className="p-4 text-5xl oswald">ESTRADA FORA, </p>
-        <p className="p-4 text-4xl oswald">PAISAGENS ADENTRO...</p>
-        <p className="p-4 text-5xl oswald">E OUTROS LUGARES QUE TAIS!</p>
+        <p className="pb-4 text-6xl oswald">ESTRADA FORA, </p>
+        <p className="pb-4 text-4xl oswald">PAISAGENS ADENTRO...</p>
+        <p className="pb-12 text-5xl oswald">E OUTROS LUGARES QUE TAIS!</p>
+        <ButtonBlack
+          label={"OBTENHA UM ROTEIRO GRATUITO"}
+          href={"/tours/freetour"}
+        />
       </div>
     </div>
   );

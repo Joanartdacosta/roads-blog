@@ -1,5 +1,5 @@
 import NavBarLarge from "./navbar_large/NavBarLarge";
-import NavBarSmall from "./navbar_small/NavBarSmall";
+import NavBarMobile from "./navbar_small/NavBarMobile";
 
 export default function NavBar() {
   return (
@@ -9,7 +9,7 @@ export default function NavBar() {
       </div>
 
       <div className="menu-hamburguer z-20">
-        <NavBarSmall />
+        <NavBarMobile />
       </div>
     </div>
   );

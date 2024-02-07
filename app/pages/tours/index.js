@@ -3,6 +3,7 @@ import CardStars from "@/components/common/UI/cards/card_stars/CardStars";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import { getFeaturedTours } from "@/helpers/api-util";
+import FreeTourBanner from "@/components/common/freetour_banner/FreeTourBanner";
 
 export default function Tours(props) {
   return (
@@ -15,6 +16,7 @@ export default function Tours(props) {
       <div className="max-w-5xl m-auto pt-20 pb-20">
         <CardStars array={props.tours} />
       </div>
+      <FreeTourBanner />
     </div>
   );
 }
