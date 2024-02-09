@@ -1,24 +1,46 @@
-import { useState } from "react";
-import FAIRS from "@/components/lists/fairs";
-import WorldIcon from "@/components/common/icons/WorldIcon";
 import AvatarImg from "@/components/common/icons/AvatarImg";
-import FairLocation from "./FairLocation";
-import FairMonth from "./FairMonth";
-import ModalInfo from "./ModalInfo";
+import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import ButtonYellow2 from "@/components/common/UI/button/ButtonYellow2";
 import CalendarIcon from "@/components/common/icons/calendar/CalendarIcon";
-import BUTTONS_LABELS from "@/components/enums/buttons_labels";
+import { darkRgba } from "@/consts/colors";
+import FAIRS from "@/components/lists/fairs";
+import FairLocation from "./FairLocation";
+import FairMonth from "./FairMonth";
+import Modal from "react-modal";
+import ModalInfo from "./ModalInfo";
+import { useState } from "react";
+import WorldIcon from "@/components/common/icons/WorldIcon";
+import { whiteRgba } from "@/consts/colors";
 
 export default function FairCard(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  function handleClose() {
+  function closeModal() {
     setModalIsOpen(false);
   }
 
-  function handleSeeMore() {
+  function openModal() {
     setModalIsOpen(true);
   }
+
+  const modalStyles = {
+    content: {
+      top: "5rem",
+      bottom: "5rem",
+      backgroundColor: whiteRgba,
+      position: "absolute",
+      overflow: "auto",
+      transition: "opacity-5 2 ease-in-out, transform 2s ease-in-out",
+    },
+    overlay: {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: darkRgba,
+    },
+  };
 
   const humanReadableDate = new Date(props.month).toLocaleDateString("pt-PT", {
     day: "numeric",
@@ -52,23 +74,32 @@ export default function FairCard(props) {
         </div>
         <div className="flex justify-end">
           <ButtonYellow2
-            onClick={handleSeeMore}
+            onClick={openModal}
             label={BUTTONS_LABELS.moreInfo}
+            id="openModal"
           />
+          <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Modal"
+            style={modalStyles}
+          >
+            <div>
+              <ModalInfo
+                array={FAIRS}
+                description={props.description}
+                onClick={closeModal}
+                paragraph1={props.paragraph1}
+                paragraph2={props.paragraph2}
+                paragraph3={props.paragraph3}
+                paragraph4={props.paragraph4}
+                imgURL={props.imgURL}
+                source={props.source}
+              />
+            </div>
+          </Modal>
         </div>
       </div>
-
-      {modalIsOpen && (
-        <ModalInfo
-          array={FAIRS}
-          description={props.description}
-          onClick={handleClose}
-          paragraph1={props.paragraph1}
-          paragraph2={props.paragraph2}
-          paragraph3={props.paragraph3}
-          paragraph4={props.paragraph4}
-        />
-      )}
     </div>
   );
 }

@@ -94,6 +94,12 @@ svg {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .image-responsive {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 770px) {
   .menu-hamburguer {
     display: none;
