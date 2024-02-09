@@ -1,6 +1,9 @@
 import CLASSIFICATION_LABELS from "@/components/enums/classification_labels";
+import { useSelector } from "react-redux";
 
 export default function Classification(props) {
+  const currentTrip = useSelector((state) => state.trip);
+
   return (
     <div className="p-8 m-auto">
       <div>

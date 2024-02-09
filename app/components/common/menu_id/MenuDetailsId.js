@@ -7,7 +7,7 @@ import TAB_BUTTONS from "@/components/lists/TabButton";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 import Tips from "./general_info/Tips";
 import { useState } from "react";
-
+import { useSelector } from "react-redux";
 export default function MenuDetailsId(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [info, setInfo] = useState(
@@ -30,6 +30,8 @@ export default function MenuDetailsId(props) {
       />
     </div>
   );
+
+  const currentTrip = useSelector((state) => state.trip);
 
   function handleEvent(event) {
     const label = event.target.value;
