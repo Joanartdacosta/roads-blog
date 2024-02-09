@@ -1,9 +1,13 @@
+import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import MenuDetailsId from "@/components/common/menu_id/MenuDetailsId";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
-import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
+import { saveTrip } from "@/redux/tripSlice";
+import store from "@/redux/store";
 
 export default function TripDetailsPage(props) {
+  store.dispatch(saveTrip(props.selectedTrip));
+
   return (
     <div>
       {props.selectedTrip ? (
