@@ -28,17 +28,7 @@ export default function Info(props) {
             </ul>
           </div>
 
-          <Access
-            image1={props.imagePath1}
-            image11={props.imagePath11}
-            image2={props.imagePath2}
-            image21={props.imagePath21}
-            image22={props.imagePath22}
-            image23={props.imagePath23}
-            image24={props.imagePath24}
-            image25={props.imagePath25}
-            image3={props.imagePath3}
-          />
+          <Access />
         </div>
       </div>
     </div>

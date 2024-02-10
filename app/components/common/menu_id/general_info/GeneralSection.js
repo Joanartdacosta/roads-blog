@@ -2,37 +2,45 @@ import Classification from "@/components/common/menu_id/classification/Classific
 import GeneralValues from "@/components/common/menu_id/general_info/GeneralValues";
 import GENERAL_SUBTITLES from "@/components/enums/general_subtitle";
 import Introduction from "./Introduction";
+import { useSelector } from "react-redux";
 
 export default function GeneralSection(props) {
+  let current = null;
+  if (props.page === "trip") {
+    current = useSelector((state) => state.trip.selectedTrip);
+  } else if ("page" === "tour") {
+    current = useSelector((state) => state.tour.selectedTour);
+  }
+
   return (
     <div>
-      <Introduction title={props.title} introduction={props.introduction} />
+      <Introduction page="trip" />
       <div
         id="fullWidthTabContent"
         className="border-t border-gray-200 dark:border-gray-600"
       >
         <div className="flex justify-center">
-          {props.distance ? (
+          {current.distance ? (
             <GeneralValues
-              value={props.distance}
+              value={current.distance}
               subtitle={GENERAL_SUBTITLES.distance}
             />
           ) : (
             ""
           )}
 
-          {props.duration ? (
+          {current.duration ? (
             <GeneralValues
-              value={props.duration}
+              value={current.duration}
               subtitle={GENERAL_SUBTITLES.duration}
             />
           ) : (
             ""
           )}
 
-          {props.difficulty ? (
+          {current.difficulty ? (
             <GeneralValues
-              value={props.difficulty}
+              value={current.difficulty}
               subtitle={GENERAL_SUBTITLES.difficulty}
             />
           ) : (
@@ -40,16 +48,7 @@ export default function GeneralSection(props) {
           )}
         </div>
       </div>
-      <Classification
-        label={props.label}
-        percentageAcessibility={props.percentageAcessibility}
-        percentageDifficulty={props.percentageDifficulty}
-        percentageEmergency={props.percentageEmergency}
-        percentageNature={props.percentageNature}
-        percentageSafety={props.percentageSafety}
-        percentageShadow={props.percentageShadow}
-        percentageSupport={props.percentageSupport}
-      />
+      <Classification page="trip" />
     </div>
   );
 }
