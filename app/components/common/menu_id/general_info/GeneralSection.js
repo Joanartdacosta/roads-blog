@@ -48,7 +48,7 @@ export default function GeneralSection(props) {
           )}
         </div>
       </div>
-      <Classification page="trip" />
+      <Classification page={props.page} />
     </div>
   );
 }
