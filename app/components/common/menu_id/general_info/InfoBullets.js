@@ -44,7 +44,7 @@ export default function InfoBullets(props) {
               {props.bullet5 ? (
                 <li className="flex space-x-2 items-center">
                   <Bullet />
-                  <span className="leading-tight">{props.bullet5}</span>
+                  <span className="leading-tight p-2">{props.bullet5}</span>
                 </li>
               ) : (
                 ""
