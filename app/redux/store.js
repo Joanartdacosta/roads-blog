@@ -1,8 +1,6 @@
+import allReducers from "./allReducers";
 import { configureStore } from "@reduxjs/toolkit";
-import tripReducer from "./tripSlice";
 
 export default configureStore({
-  reducer: {
-    trip: tripReducer,
-  },
+  reducer: allReducers,
 });
