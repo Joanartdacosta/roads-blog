@@ -13,7 +13,7 @@ export default function MenuDetailsId(props) {
   const [info, setInfo] = useState(
     <div>
       {" "}
-      <GeneralSection page="trip" />
+      <GeneralSection page={props.page} />
     </div>
   );
 
@@ -21,27 +21,27 @@ export default function MenuDetailsId(props) {
     const label = event.target.value;
 
     if (label == TAB_BUTTONS_LABELS.general) {
-      setInfo(<GeneralSection page="trip" />);
+      setInfo(<GeneralSection page={props.page} />);
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.path) {
-      setInfo(<PathOptions page="trip" />);
+      setInfo(<PathOptions page={props.page} />);
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.tip) {
-      setInfo(<Tips page="trip" />);
+      setInfo(<Tips page={props.page} />);
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.points) {
-      setInfo(<Points page="trip" />);
+      setInfo(<Points page={props.page} />);
       setIsOpen(!isOpen);
     }
 
     if (label == TAB_BUTTONS_LABELS.location) {
-      setInfo(<Map page="trip" />);
+      setInfo(<Map page={props.page} />);
       setIsOpen(!isOpen);
     }
   }

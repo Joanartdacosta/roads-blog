@@ -16,7 +16,11 @@ export default function TripDetailsPage(props) {
       />
 
       <div className="roboto max-w-5xl m-auto pt-20 pb-20">
-        {props.selectedTrip ? <MenuDetailsId /> : <p>Nao existem passeios.</p>}
+        {props.selectedTrip ? (
+          <MenuDetailsId page="trip" />
+        ) : (
+          <p>Nao existem passeios.</p>
+        )}
       </div>
     </div>
   );
