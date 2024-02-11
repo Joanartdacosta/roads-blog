@@ -8,13 +8,13 @@ export default function GeneralSection(props) {
   let current = null;
   if (props.page === "trip") {
     current = useSelector((state) => state.trip.selectedTrip);
-  } else if ("page" === "tour") {
+  } else if (props.page === "tour") {
     current = useSelector((state) => state.tour.selectedTour);
   }
 
   return (
     <div>
-      <Introduction page="trip" />
+      <Introduction page={props.page} />
       <div
         id="fullWidthTabContent"
         className="border-t border-gray-200 dark:border-gray-600"

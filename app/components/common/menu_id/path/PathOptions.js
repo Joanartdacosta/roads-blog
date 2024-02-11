@@ -6,7 +6,7 @@ export default function PathOptions(props) {
   let current = null;
   if (props.page === "trip") {
     current = useSelector((state) => state.trip.selectedTrip);
-  } else if ("page" === "tour") {
+  } else if (props.page === "tour") {
     current = useSelector((state) => state.tour.selectedTour);
   }
 
@@ -76,7 +76,7 @@ export default function PathOptions(props) {
           tripPathDescription1={current.tripPathDescription1}
           imagePath1={current.imagePath1}
           imagePath11={current.imagePath11}
-          page="trip"
+          page={props.page}
         />
 
         {current.accessOption2 ||
@@ -92,7 +92,7 @@ export default function PathOptions(props) {
             imagePath24={current.imagePath24}
             imagePath25={current.imagePath25}
             tourPathDescription1={current.tourPathDescription1}
-            page="trip"
+            page={props.page}
           />
         ) : (
           ""
@@ -105,7 +105,7 @@ export default function PathOptions(props) {
             label={PATH_OPTIONS_LABELS.pathOption3}
             imagePath3={current.imagePath3}
             tourPathDescription1={current.tourPathDescription1}
-            page="trip"
+            page={props.page}
           />
         ) : (
           ""

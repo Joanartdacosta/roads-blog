@@ -5,7 +5,7 @@ export default function Access(props) {
   let current = null;
   if (props.page === "trip") {
     current = useSelector((state) => state.trip.selectedTrip);
-  } else if ("page" === "tour") {
+  } else if (props.page === "tour") {
     current = useSelector((state) => state.tour.selectedTour);
   }
 
@@ -48,7 +48,7 @@ export default function Access(props) {
           <PathImage image={current.image22} title={current.title} />
           <PathImage image={current.image23} title={current.title} />
           <PathImage image={current.image24} title={current.title} />
-          <PathImage image={current.image25} title={props.title} />
+          <PathImage image={current.image25} title={current.title} />
         </div>
       ) : (
         ""

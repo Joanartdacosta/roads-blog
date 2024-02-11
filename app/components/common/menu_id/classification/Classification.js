@@ -5,7 +5,7 @@ export default function Classification(props) {
   let current = null;
   if (props.page === "trip") {
     current = useSelector((state) => state.trip.selectedTrip);
-  } else if ("page" === "tour") {
+  } else if (props.page === "tour") {
     current = useSelector((state) => state.tour.selectedTour);
   }
 
