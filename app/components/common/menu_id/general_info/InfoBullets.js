@@ -20,10 +20,15 @@ export default function InfoBullets(props) {
             className="space-y-4 text-gray-500 dark:text-gray-400"
           >
             <div>
-              <li className="flex space-x-2 items-center">
-                <Bullet />
-                <span className="leading-tight p-2">{props.bullet1}</span>
-              </li>
+              {props.bullets.forEach((bullet) => {
+                return (
+                  <li className="flex space-x-2 items-center">
+                    <Bullet />
+                    <span className="leading-tight p-2">{bullet}</span>
+                  </li>
+                );
+              })}
+              {/*               
               <li className="flex space-x-2 items-center">
                 <Bullet />
                 <span className="leading-tight p-2">{props.bullet2}</span>
@@ -48,7 +53,7 @@ export default function InfoBullets(props) {
                 </li>
               ) : (
                 ""
-              )}
+              )} */}
             </div>
           </ul>
         </div>

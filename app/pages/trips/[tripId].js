@@ -30,6 +30,7 @@ export async function getStaticProps(context) {
   const tripId = context.params.tripId;
 
   const trip = await getByIdTrips(tripId);
+  // trip = { ...trip, ...treipDetails };
 
   return {
     props: {
@@ -41,6 +42,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const trips = await getFeaturedTrips();
+
   const paths = trips.map((trip) => ({ params: { tripId: trip.id } }));
 
   return {

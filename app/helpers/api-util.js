@@ -6,10 +6,16 @@ export async function getAllTours() {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allTours = await db.collection("tours").find({}).toArray();
+    const allTours = await db.collection("tour_id").find({}).toArray();
 
     return allTours.map((mongoDbItem) => {
-      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
+      return {
+        ...mongoDbItem,
+        _id: String(mongoDbItem._id),
+        trip_details: mongoDbItem.trip_details.map((trip_detail) =>
+          String(trip_detail)
+        ),
+      };
     });
   } catch (e) {
     console.error(e);
@@ -33,10 +39,16 @@ export async function getAllTrips() {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allTrips = await db.collection("trips").find({}).toArray();
+    const allTrips = await db.collection("trip_id").find({}).toArray();
 
     return allTrips.map((mongoDbItem) => {
-      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
+      return {
+        ...mongoDbItem,
+        _id: String(mongoDbItem._id),
+        trip_details: mongoDbItem.trip_details.map((trip_detail) =>
+          String(trip_detail)
+        ),
+      };
     });
   } catch (e) {
     console.error(e);
