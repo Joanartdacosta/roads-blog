@@ -11,13 +11,7 @@ export default function Tips(props) {
 
   return (
     <div>
-      <InfoBullets
-        bullet1={current.bullet1}
-        bullet2={current.bullet2}
-        bullet3={current.bullet3}
-        bullet4={current.bullet4}
-        bullet5={current.bullet5}
-      />
+      <InfoBullets bullets={current.bullets} />
 
       <div
         className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
@@ -25,84 +19,88 @@ export default function Tips(props) {
         role="tabpanel"
         aria-labelledby="about-tab"
       >
-        {current.price1 || current.price2 || current.price3 ? (
+        {current.prices ? (
           <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p className="text-gray-500 dark:text-gray-400">Precario</p>
-            <ul
+            <p className="text-gray-500 dark:text-gray-400 py-5">Preçário</p>
+            <div
               role="list"
               className="space-y-4 text-gray-500 dark:text-gray-400"
             >
-              <li className="text-green-600 dark:text-green-500">
-                {current.price1}
-              </li>
-              <li className="text-green-600 dark:text-green-500">
-                {current.price2}
-              </li>
-              <li className="text-green-600 dark:text-green-500">
-                {current.price3}
-              </li>
-            </ul>
+              {current.prices.map((price) => {
+                return (
+                  <div
+                    className="poppins text-sm text-green-600 dark:text-green-500"
+                    key={price}
+                  >
+                    <p className="text-gray-500">{price}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         ) : (
-          <p className="text-gray-600 dark:text-green-500"></p>
+          ""
         )}
       </div>
 
-      <div
-        className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
-        id="about"
-        role="tabpanel"
-        aria-labelledby="about-tab"
-      >
-        <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p className="text-gray-500 dark:text-gray-400">Restaurantes</p>
-          {current.restaurant1 ? (
-            <ul
+      {current.restaurants ? (
+        <div
+          className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+          id="about"
+          role="tabpanel"
+          aria-labelledby="about-tab"
+        >
+          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+            <p className="text-gray-500 dark:text-gray-400">Restaurantes</p>
+
+            <div
               role="list"
               className="space-y-4 text-gray-500 dark:text-gray-400"
             >
-              <li className="text-green-600 dark:text-green-500">
-                {current.restaurant1}
-              </li>
-            </ul>
-          ) : (
-            <p className="text-gray-600 dark:text-green-500">
-              Nao existem sugestoes de restaurantes.
-            </p>
-          )}
+              {current.restaurants.map((restaurant) => {
+                return (
+                  <p
+                    className="text-green-600 dark:text-green-500"
+                    key={restaurant}
+                  >
+                    {restaurant}
+                  </p>
+                );
+              })}
+            </div>
+          </div>
         </div>
-        <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p className="mb-2 text-gray-500 dark:text-gray-400">Alojamentos</p>
-          <ul
-            role="list"
-            className="space-y-4 text-gray-500 dark:text-gray-400"
-          >
-            {current.hotel1 ? (
-              <li className="text-green-600 dark:text-green-500">
-                {current.hotel1}
-              </li>
-            ) : (
-              <p className="text-gray-600 dark:text-green-500">
-                Nao existem sugestoes de alojamentos
-              </p>
-            )}
-            {current.hotel2 ? (
-              <li className="text-green-600 dark:text-green-500">
-                {current.hotel2}
-              </li>
-            ) : (
-              ""
-            )}
-            {current.hotel3 ? (
-              <li className="text-green-600 dark:text-green-500">
-                {current.hotel3}
-              </li>
-            ) : (
-              ""
-            )}
-          </ul>
+      ) : (
+        ""
+      )}
+
+      {current.hotels ? (
+        <div
+          className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+          id="about"
+          role="tabpanel"
+          aria-labelledby="about-tab"
+        >
+          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+            <p className="text-gray-500 dark:text-gray-400">Alojamento:</p>
+
+            <div
+              role="list"
+              className="space-y-4 text-gray-500 dark:text-gray-400"
+            >
+              {current.hotels.map((hotel) => {
+                return (
+                  <p className="text-green-600 dark:text-green-500" key={hotel}>
+                    {hotel}
+                  </p>
+                );
+              })}
+            </div>
+          </div>
         </div>
-      </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

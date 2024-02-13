@@ -11,13 +11,18 @@ export default function Points(props) {
 
   return (
     <div className="flex flex-col justify justify-center">
-      <InfoBullets
-        bullet1={current.point1}
-        bullet2={current.point2}
-        bullet3={current.point3}
-        bullet4={current.point4}
-        bullet5={current.point5}
-      />
+      {current.points ? (
+        <InfoBullets bullets={current.points} key={current.points} />
+      ) : (
+        <div
+          className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+          id="about"
+          role="tabpanel"
+          aria-labelledby="about-tab"
+        >
+          <p>De momento, nao existem pontos de interesse.</p>
+        </div>
+      )}
     </div>
   );
 }

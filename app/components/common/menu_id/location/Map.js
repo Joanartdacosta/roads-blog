@@ -33,8 +33,8 @@ export default function Map(props) {
 
         new GOOGLE.maps.Marker({
           position: {
-            lat: current.latitude,
-            lng: current.longitude,
+            lat: current.coordinates1.lat,
+            lng: current.coordinates1.long,
           },
           map: MAP,
           title: "Passadicos do Mondego",

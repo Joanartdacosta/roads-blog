@@ -1,12 +1,12 @@
 import {
-  getByIdDescription,
-  getByIdTrips,
-  getFeaturedTrips,
   getByIdAccesses,
   getByIdCoordinates,
+  getByIdDescription,
   getByIdMarkers,
   getByIdTourismTips,
-} from "@/helpers/api-util-trip";
+  getByIdTrips,
+  getFeaturedTrips,
+} from "@/helpers/api-util";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import MenuDetailsId from "@/components/common/menu_id/MenuDetailsId";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";

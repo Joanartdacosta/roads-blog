@@ -20,40 +20,14 @@ export default function InfoBullets(props) {
             className="space-y-4 text-gray-500 dark:text-gray-400"
           >
             <div>
-              {props.bullets.forEach((bullet) => {
+              {props.bullets.map((bullet) => {
                 return (
-                  <li className="flex space-x-2 items-center">
+                  <li className="flex space-x-2 items-center" key={bullet}>
                     <Bullet />
                     <span className="leading-tight p-2">{bullet}</span>
                   </li>
                 );
               })}
-              {/*               
-              <li className="flex space-x-2 items-center">
-                <Bullet />
-                <span className="leading-tight p-2">{props.bullet2}</span>
-              </li>
-              <li className="flex space-x-2 items-center">
-                <Bullet />
-                <span className="leading-tight p-2">{props.bullet3}</span>
-              </li>
-
-              {props.bullet4 ? (
-                <li className="flex space-x-2 items-center">
-                  <Bullet />
-                  <span className="leading-tight p-2">{props.bullet4}</span>
-                </li>
-              ) : (
-                ""
-              )}
-              {props.bullet5 ? (
-                <li className="flex space-x-2 items-center">
-                  <Bullet />
-                  <span className="leading-tight p-2">{props.bullet5}</span>
-                </li>
-              ) : (
-                ""
-              )} */}
             </div>
           </ul>
         </div>

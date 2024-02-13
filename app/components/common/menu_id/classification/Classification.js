@@ -12,7 +12,7 @@ export default function Classification(props) {
   return (
     <div className="p-8 m-auto">
       <div>
-        {current.percentageAcessibility ? (
+        {current.percentage.acessibility ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.acessibility}</p>
@@ -21,7 +21,7 @@ export default function Classification(props) {
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
                 style={{
-                  width: current.percentageAcessibility,
+                  width: current.percentage.acessibility,
                 }}
               ></div>
             </div>
@@ -30,7 +30,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageDifficulty ? (
+        {current.percentage.difficulty ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.difficulty}</p>
@@ -38,7 +38,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: current.percentageDifficulty }}
+                style={{ width: current.percentage.difficulty }}
               ></div>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageNature ? (
+        {current.percentage.nature ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.nature}</p>
@@ -54,7 +54,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: current.percentageNature }}
+                style={{ width: current.percentage.nature }}
               ></div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageSupport ? (
+        {current.percentage.support ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.support}</p>
@@ -70,7 +70,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: current.percentageSupport }}
+                style={{ width: current.percentage.support }}
               ></div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageShadow ? (
+        {current.percentage.shadow ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p>{CLASSIFICATION_LABELS.shadow}</p>
@@ -86,7 +86,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: current.percentageShadow }}
+                style={{ width: current.percentage.shadow }}
               ></div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageSafety ? (
+        {current.percentage.safety ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.safety}</p>
@@ -102,14 +102,14 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: current.percentageSafety }}
+                style={{ width: current.percentage.safety }}
               ></div>
             </div>
           </div>
         ) : (
           ""
         )}
-        {current.percentageEmergency ? (
+        {current.percentage.emergency ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.emergency}</p>
@@ -117,7 +117,7 @@ export default function Classification(props) {
             <div className="w-96 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
               <div
                 className="bg-green-700 h-2.5 rounded-full dark:bg-gray-300"
-                style={{ width: current.percentageEmergency }}
+                style={{ width: current.percentage.emergency }}
               ></div>
             </div>
           </div>
