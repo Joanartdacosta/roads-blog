@@ -2,6 +2,11 @@ import Bullet from "@/components/common/icons/bullets/Bullet";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 
 export default function InfoBullets(props) {
+  const ARRAY = [];
+
+  for (let i = 0; i < props.bullets.length; i++) {
+    ARRAY.push(props.bullets[i]);
+  }
   return (
     <div>
       <div
@@ -20,7 +25,7 @@ export default function InfoBullets(props) {
             className="space-y-4 text-gray-500 dark:text-gray-400"
           >
             <div>
-              {props.bullets.map((bullet) => {
+              {ARRAY.map((bullet) => {
                 return (
                   <li className="flex space-x-2 items-center" key={bullet}>
                     <Bullet />
