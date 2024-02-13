@@ -26,7 +26,7 @@ export default function GeneralSection(props) {
               subtitle={GENERAL_SUBTITLES.distance}
             />
           ) : (
-            "NA"
+            ""
           )}
 
           {current.info ? (
@@ -35,7 +35,7 @@ export default function GeneralSection(props) {
               subtitle={GENERAL_SUBTITLES.duration}
             />
           ) : (
-            "NA"
+            ""
           )}
 
           {current.info ? (
@@ -44,7 +44,7 @@ export default function GeneralSection(props) {
               subtitle={GENERAL_SUBTITLES.difficulty}
             />
           ) : (
-            "NA"
+            ""
           )}
         </div>
       </div>

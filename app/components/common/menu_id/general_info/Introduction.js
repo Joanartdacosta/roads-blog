@@ -8,6 +8,12 @@ export default function Introduction(props) {
     current = useSelector((state) => state.tour.selectedTour);
   }
 
+  const ARRAY = [];
+
+  for (let i = 0; i < current.description1.length; i++) {
+    ARRAY.push(current.description1[i]);
+  }
+
   return (
     <div className="">
       <div className="m-auto text-gray-900  dark:text-white">
@@ -17,7 +23,7 @@ export default function Introduction(props) {
           </div>
 
           <div className="mb-8 ml-10 mr-10 text-gray-500 dark:text-gray-400">
-            {current.description1.map((description) => {
+            {ARRAY.map((description) => {
               return (
                 <div
                   className="poppins text-sm text-gray-900 dark:text-white"
