@@ -12,8 +12,8 @@ export async function getAllTours() {
       return {
         ...mongoDbItem,
         _id: String(mongoDbItem._id),
-        trip_details: mongoDbItem.trip_details.map((trip_detail) =>
-          String(trip_detail)
+        tour_details: mongoDbItem.tour_details.map((tour_detail) =>
+          String(tour_detail)
         ),
       };
     });
@@ -29,7 +29,140 @@ export async function getFeaturedTours() {
 
 export async function getByIdTour(id) {
   const all = await getAllTours();
+
   return all.find((item) => item.id === id);
+}
+
+// ACCESS
+
+export async function getAllTourAccesses() {
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
+
+    const allAccess = await db.collection("tour_access").find({}).toArray();
+
+    return allAccess.map((mongoDbItem) => {
+      return {
+        ...mongoDbItem,
+        _id: String(mongoDbItem._id),
+      };
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+export async function getByTourIdAccesses(id) {
+  const access = await getAllTourAccesses();
+
+  return access.find((item) => item.tourId === id);
+}
+
+// DESCRIPTIONS
+
+export async function getAllTourDescriptions() {
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
+
+    const allDescriptions = await db
+      .collection("tour_descriptions")
+      .find({})
+      .toArray();
+
+    return allDescriptions.map((mongoDbItem) => {
+      return {
+        ...mongoDbItem,
+        _id: String(mongoDbItem._id),
+      };
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+export async function getByTourIdDescription(id) {
+  const descriptions = await getAllTourDescriptions();
+  return descriptions.find((item) => item.tourId === id);
+}
+
+// COORDINATES
+
+export async function getAllTourCoordinates() {
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
+
+    const allCoordinates = await db
+      .collection("tour_coordinates")
+      .find({})
+      .toArray();
+
+    return allCoordinates.map((mongoDbItem) => {
+      return {
+        ...mongoDbItem,
+        _id: String(mongoDbItem._id),
+      };
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+export async function getByTourIdCoordinates(id) {
+  const coordinates = await getAllTourCoordinates();
+  return coordinates.find((item) => item.tourId === id);
+}
+
+// MARKERS
+
+export async function getAllTourMarkers() {
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
+
+    const allMarkers = await db.collection("tour_markers").find({}).toArray();
+
+    return allMarkers.map((mongoDbItem) => {
+      return {
+        ...mongoDbItem,
+        _id: String(mongoDbItem._id),
+      };
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+export async function getByTourIdMarkers(id) {
+  const markers = await getAllTourMarkers();
+  return markers.find((item) => item.tourId === id);
+}
+
+// TOURISM
+
+export async function getAllTourTips() {
+  try {
+    const client = await clientPromise;
+    const db = client.db("roads");
+
+    const allTourTips = await db.collection("tour_tourism").find({}).toArray();
+
+    return allTourTips.map((mongoDbItem) => {
+      return {
+        ...mongoDbItem,
+        _id: String(mongoDbItem._id),
+      };
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+export async function getByTourIdTips(id) {
+  const tourismTips = await getAllTourTips();
+  return tourismTips.find((item) => item.tourId === id);
 }
 
 // FAIRS
@@ -143,7 +276,7 @@ export async function getByIdTrips(id) {
 
 // ACCESS
 
-export async function getAllAccesses() {
+export async function getAllTripAccesses() {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
@@ -161,14 +294,15 @@ export async function getAllAccesses() {
   }
 }
 
-export async function getByIdAccesses(id) {
-  const access = await getAllAccesses();
+export async function getByTripIdAccesses(id) {
+  const access = await getAllTripAccesses();
+
   return access.find((item) => item.tripId === id);
 }
 
 // DESCRIPTIONS
 
-export async function getAllDescriptions() {
+export async function getAllTripDescriptions() {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
@@ -189,14 +323,14 @@ export async function getAllDescriptions() {
   }
 }
 
-export async function getByIdDescription(id) {
-  const descriptions = await getAllDescriptions();
+export async function getByTripIdDescription(id) {
+  const descriptions = await getAllTripDescriptions();
   return descriptions.find((item) => item.tripId === id);
 }
 
 // COORDINATES
 
-export async function getAllCoordinates() {
+export async function getAllTripCoordinates() {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
@@ -217,14 +351,14 @@ export async function getAllCoordinates() {
   }
 }
 
-export async function getByIdCoordinates(id) {
-  const coordinates = await getAllCoordinates();
+export async function getByTripIdCoordinates(id) {
+  const coordinates = await getAllTripCoordinates();
   return coordinates.find((item) => item.tripId === id);
 }
 
 // MARKERS
 
-export async function getAllMarkers() {
+export async function getAllTripMarkers() {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
@@ -242,14 +376,14 @@ export async function getAllMarkers() {
   }
 }
 
-export async function getByIdMarkers(id) {
-  const markers = await getAllMarkers();
+export async function getByTripIdMarkers(id) {
+  const markers = await getAllTripMarkers();
   return markers.find((item) => item.tripId === id);
 }
 
 // TOURISM
 
-export async function getAllTourismTips() {
+export async function getAllTripTourismTips() {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
@@ -270,7 +404,7 @@ export async function getAllTourismTips() {
   }
 }
 
-export async function getByIdTourismTips(id) {
-  const tourismTips = await getAllTourismTips();
+export async function getByTripIdTourismTips(id) {
+  const tourismTips = await getAllTripTourismTips();
   return tourismTips.find((item) => item.tripId === id);
 }
