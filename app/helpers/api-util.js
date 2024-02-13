@@ -32,39 +32,6 @@ export async function getByIdTour(id) {
   return all.find((item) => item.id === id);
 }
 
-// TRIPS
-
-export async function getAllTrips() {
-  try {
-    const client = await clientPromise;
-    const db = client.db("roads");
-
-    const allTrips = await db.collection("trip_id").find({}).toArray();
-
-    return allTrips.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-        trip_details: mongoDbItem.trip_details.map((trip_detail) =>
-          String(trip_detail)
-        ),
-      };
-    });
-  } catch (e) {
-    console.error(e);
-  }
-}
-
-export async function getFeaturedTrips() {
-  const all = await getAllTrips();
-  return all.filter((item) => item.isFeatured == true);
-}
-
-export async function getByIdTrips(id) {
-  const all = await getAllTrips();
-  return all.find((item) => item.id === id);
-}
-
 // FAIRS
 
 export async function getAllFairs() {

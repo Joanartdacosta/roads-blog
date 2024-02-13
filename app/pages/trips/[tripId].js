@@ -1,4 +1,12 @@
-import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
+import {
+  getByIdDescription,
+  getByIdTrips,
+  getFeaturedTrips,
+  getByIdAccesses,
+  getByIdCoordinates,
+  getByIdMarkers,
+  getByIdTourismTips,
+} from "@/helpers/api-util-trip";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import MenuDetailsId from "@/components/common/menu_id/MenuDetailsId";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
@@ -29,8 +37,21 @@ export default function TripDetailsPage(props) {
 export async function getStaticProps(context) {
   const tripId = context.params.tripId;
 
-  const trip = await getByIdTrips(tripId);
-  // trip = { ...trip, ...treipDetails };
+  const tripIds = await getByIdTrips(tripId);
+  const tripDescriptions = await getByIdDescription(tripId);
+  const tripAccess = await getByIdAccesses(tripId);
+  const tripCoordinates = await getByIdCoordinates(tripId);
+  const tripMarkers = await getByIdMarkers(tripId);
+  const tripTourismTips = await getByIdTourismTips(tripId);
+
+  const trip = {
+    ...tripIds,
+    ...tripDescriptions,
+    ...tripAccess,
+    ...tripCoordinates,
+    ...tripMarkers,
+    ...tripTourismTips,
+  };
 
   return {
     props: {
