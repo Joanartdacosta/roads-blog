@@ -23,7 +23,7 @@ export default function PathOptions(props) {
         data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
         data-inactive-classes="text-gray-500 dark:text-gray-400"
       >
-        {current.description3 ? (
+        {current?.description3 ? (
           <div className="py-5 border-b border-gray-200 dark:border-gray-700">
             {current.description3.map((description) => {
               return (
@@ -39,7 +39,7 @@ export default function PathOptions(props) {
           ""
         )}
 
-        {current.optionDescription ? (
+        {current?.optionDescription ? (
           <div>
             <p className="mb-2 mt-8 text-green-600 underline dark:text-gray-400">
               {current.options[0]}
@@ -63,14 +63,14 @@ export default function PathOptions(props) {
         </p>
 
         <Path
-          access={current.accessOption[0]}
+          access={current?.accessOption[0]}
           label={PATH_OPTIONS_LABELS.pathOption1}
-          pathDescription={current.pathDescription}
-          imagePath1={current.imagePath1}
+          pathDescription={current?.pathDescription}
+          imagePath1={current?.imagePath1}
           page={props.page}
         />
 
-        {current.accessOption[1] || imagePath2 ? (
+        {current?.accessOption[1] || imagePath2 ? (
           <Path
             access={current.accessOption[1]}
             label={PATH_OPTIONS_LABELS.pathOption2}
@@ -82,7 +82,7 @@ export default function PathOptions(props) {
           ""
         )}
 
-        {current.accessOption[2] || current.imagePath3 ? (
+        {current?.accessOption[2] || current.imagePath3 ? (
           <Path
             access={current.accessOption[2]}
             label={PATH_OPTIONS_LABELS.pathOption3}

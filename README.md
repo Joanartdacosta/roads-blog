@@ -2,7 +2,7 @@
 
 **This is a Web-App developed for a tourism blog called _Estrada fora, Paisagens adentro e outros lugares que tais_**.
 
-> ![Estradas Fora, Paisagens adentro e outros lugares que tais](https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/logo-estradas4.png)
+> ![Estradas Fora, Paisagens adentro e outros lugares que tais](https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/roads-logo-white.png)
 
 The project applied **JavaScript, React and Next.js**.
 In the website it will be possible to find information about several tours, viewpoints, media content around the world.

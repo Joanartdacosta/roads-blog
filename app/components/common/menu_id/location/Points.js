@@ -11,7 +11,7 @@ export default function Points(props) {
 
   return (
     <div className="flex flex-col justify justify-center">
-      {current.points ? (
+      {current?.points ? (
         <InfoBullets bullets={current.points} key={current.points} />
       ) : (
         <div
