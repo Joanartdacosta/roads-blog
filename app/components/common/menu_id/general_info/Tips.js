@@ -11,13 +11,17 @@ export default function Tips(props) {
 
   return (
     <div>
-      <InfoBullets
-        bullet1={current.bullet1}
-        bullet2={current.bullet2}
-        bullet3={current.bullet3}
-        bullet4={current.bullet4}
-        bullet5={current.bullet5}
-      />
+      {current?.bullets ? (
+        <InfoBullets
+          bullet1={current.bullet1}
+          bullet2={current.bullet2}
+          bullet3={current.bullet3}
+          bullet4={current.bullet4}
+          bullet5={current.bullet5}
+        />
+      ) : (
+        ""
+      )}
 
       <div
         className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
@@ -25,7 +29,7 @@ export default function Tips(props) {
         role="tabpanel"
         aria-labelledby="about-tab"
       >
-        {current?.price1 || current?.price2 || current?.price3 ? (
+        {current?.prices ? (
           <div className="py-5 border-b border-gray-200 dark:border-gray-700">
             <p className="text-gray-500 dark:text-gray-400">Precario</p>
             <ul

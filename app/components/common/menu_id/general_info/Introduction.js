@@ -13,11 +13,11 @@ export default function Introduction(props) {
       <div className="m-auto text-gray-900  dark:text-white">
         <div className="flex flex-col items-center justify-center">
           <div className="mb-8 mt-8 text-3xl font-extrabold">
-            {current.title}
+            {current?.title}
           </div>
 
           <div className="mb-8 text-gray-500 dark:text-gray-400">
-            {current.introduction}
+            {current?.introduction}
           </div>
         </div>
       </div>
