@@ -16,7 +16,7 @@ export default function Access(props) {
     >
       <p className="mb-2 text-gray-500 dark:text-gray-400">{props.label}</p>
 
-      {current.imagesPath1 ? (
+      {current?.imagesPath1 ? (
         <div>
           {current?.imagesPath1.map((image) => {
             return (

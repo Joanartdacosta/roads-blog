@@ -1,9 +1,9 @@
 import {
-  getByIdAccesses,
-  getByIdCoordinates,
-  getByIdDescription,
-  getByIdMarkers,
-  getByIdTourismTips,
+  getByTripIdAccesses,
+  getByTripIdCoordinates,
+  getByTripIdDescription,
+  getByTripIdMarkers,
+  getByTripIdTourismTips,
   getByIdTrips,
   getFeaturedTrips,
 } from "@/helpers/api-util";
@@ -38,11 +38,11 @@ export async function getStaticProps(context) {
   const tripId = context.params.tripId;
 
   const tripIds = await getByIdTrips(tripId);
-  const tripDescriptions = await getByIdDescription(tripId);
-  const tripAccess = await getByIdAccesses(tripId);
-  const tripCoordinates = await getByIdCoordinates(tripId);
-  const tripMarkers = await getByIdMarkers(tripId);
-  const tripTourismTips = await getByIdTourismTips(tripId);
+  const tripDescriptions = await getByTripIdDescription(tripId);
+  const tripAccess = await getByTripIdAccesses(tripId);
+  const tripCoordinates = await getByTripIdCoordinates(tripId);
+  const tripMarkers = await getByTripIdMarkers(tripId);
+  const tripTourismTips = await getByTripIdTourismTips(tripId);
 
   const trip = {
     ...tripIds,

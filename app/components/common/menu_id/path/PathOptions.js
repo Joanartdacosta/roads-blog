@@ -70,7 +70,7 @@ export default function PathOptions(props) {
           page={props.page}
         />
 
-        {current?.accessOption[1] || imagePath2 ? (
+        {current?.accessOption[1] || current?.imagePath2 ? (
           <Path
             access={current.accessOption[1]}
             label={PATH_OPTIONS_LABELS.pathOption2}
@@ -82,7 +82,7 @@ export default function PathOptions(props) {
           ""
         )}
 
-        {current?.accessOption[2] || current.imagePath3 ? (
+        {current?.accessOption[2] || current?.imagePath3 ? (
           <Path
             access={current.accessOption[2]}
             label={PATH_OPTIONS_LABELS.pathOption3}

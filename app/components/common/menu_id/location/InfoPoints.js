@@ -1,12 +1,12 @@
 import Bullet from "@/components/common/icons/bullets/Bullet";
-import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 
-export default function InfoBullets(props) {
+export default function InfoPoints(props) {
   const ARRAY = [];
 
   for (let i = 0; i < props.bullets.length; i++) {
     ARRAY.push(props.bullets[i]);
   }
+
   return (
     <div>
       <div
@@ -18,8 +18,9 @@ export default function InfoBullets(props) {
         {" "}
         <div>
           <h2 className="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            {TAB_BUTTONS_LABELS.recomendation}
+            {props.label}
           </h2>
+
           <ul
             role="list"
             className="space-y-4 text-gray-500 dark:text-gray-400"

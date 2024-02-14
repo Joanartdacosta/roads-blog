@@ -1,4 +1,5 @@
-import InfoBullets from "../general_info/InfoBullets";
+import TourPoints from "./TourPoints";
+import TripPoints from "./TripPoints";
 import { useSelector } from "react-redux";
 
 export default function Points(props) {
@@ -9,20 +10,16 @@ export default function Points(props) {
     current = useSelector((state) => state.tour.selectedTour);
   }
 
-  return (
-    <div className="flex flex-col justify justify-center">
-      {current?.points ? (
-        <InfoBullets bullets={current.points} key={current.points} />
-      ) : (
-        <div
-          className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
-          id="about"
-          role="tabpanel"
-          aria-labelledby="about-tab"
-        >
-          <p>De momento, nao existem pontos de interesse.</p>
-        </div>
-      )}
-    </div>
-  );
+  if (props.page === "tour") {
+    return (
+      <TourPoints
+        day1={current?.day1}
+        day2={current?.day2}
+        day3={current?.day3}
+        page="tour"
+      />
+    );
+  } else if (props.page === "trip") {
+    return <TripPoints points={current.points} page="trip" />;
+  }
 }
