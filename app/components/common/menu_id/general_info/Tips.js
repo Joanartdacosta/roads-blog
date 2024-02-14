@@ -25,7 +25,7 @@ export default function Tips(props) {
         role="tabpanel"
         aria-labelledby="about-tab"
       >
-        {current.price1 || current.price2 || current.price3 ? (
+        {current?.price1 || current?.price2 || current?.price3 ? (
           <div className="py-5 border-b border-gray-200 dark:border-gray-700">
             <p className="text-gray-500 dark:text-gray-400">Precario</p>
             <ul
@@ -56,7 +56,7 @@ export default function Tips(props) {
       >
         <div className="py-5 border-b border-gray-200 dark:border-gray-700">
           <p className="text-gray-500 dark:text-gray-400">Restaurantes</p>
-          {current.restaurant1 ? (
+          {current?.restaurant1 ? (
             <ul
               role="list"
               className="space-y-4 text-gray-500 dark:text-gray-400"
@@ -77,7 +77,7 @@ export default function Tips(props) {
             role="list"
             className="space-y-4 text-gray-500 dark:text-gray-400"
           >
-            {current.hotel1 ? (
+            {current?.hotel1 ? (
               <li className="text-green-600 dark:text-green-500">
                 {current.hotel1}
               </li>
@@ -86,14 +86,14 @@ export default function Tips(props) {
                 Nao existem sugestoes de alojamentos
               </p>
             )}
-            {current.hotel2 ? (
+            {current?.hotel2 ? (
               <li className="text-green-600 dark:text-green-500">
                 {current.hotel2}
               </li>
             ) : (
               ""
             )}
-            {current.hotel3 ? (
+            {current?.hotel3 ? (
               <li className="text-green-600 dark:text-green-500">
                 {current.hotel3}
               </li>

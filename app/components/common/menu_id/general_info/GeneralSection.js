@@ -20,7 +20,7 @@ export default function GeneralSection(props) {
         className="border-t border-gray-200 dark:border-gray-600"
       >
         <div className="flex justify-center">
-          {current.distance ? (
+          {current?.distance ? (
             <GeneralValues
               value={current.distance}
               subtitle={GENERAL_SUBTITLES.distance}
@@ -29,7 +29,7 @@ export default function GeneralSection(props) {
             ""
           )}
 
-          {current.duration ? (
+          {current?.duration ? (
             <GeneralValues
               value={current.duration}
               subtitle={GENERAL_SUBTITLES.duration}
@@ -38,7 +38,7 @@ export default function GeneralSection(props) {
             ""
           )}
 
-          {current.difficulty ? (
+          {current?.difficulty ? (
             <GeneralValues
               value={current.difficulty}
               subtitle={GENERAL_SUBTITLES.difficulty}

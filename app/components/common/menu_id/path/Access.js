@@ -18,8 +18,8 @@ export default function Access(props) {
 
       {props.image1 ? (
         <div>
-          <PathImage image={current.image1} title={current.title} />
-          <PathImage image={current.image11} title={current.title} />
+          <PathImage image={current?.image1} title={current?.title} />
+          <PathImage image={current?.image11} title={current?.title} />
         </div>
       ) : (
         ""
@@ -28,10 +28,10 @@ export default function Access(props) {
       {props.image3 || props.image4 || props.image5 ? (
         <div>
           <p className="underline">Percurso em partes: </p>
-          <PathImage image={current.image2} title={current.title} />
-          <PathImage image={current.image3} title={current.title} />
-          <PathImage image={current.image4} title={current.title} />
-          <PathImage image={current.image5} title={current.title} />
+          <PathImage image={current?.image2} title={current?.title} />
+          <PathImage image={current?.image3} title={current?.title} />
+          <PathImage image={current?.image4} title={current?.title} />
+          <PathImage image={current?.image5} title={current?.title} />
         </div>
       ) : (
         ""
@@ -44,11 +44,11 @@ export default function Access(props) {
       props.image24 ? (
         <div>
           <p className="underline">Percurso em partes: </p>
-          <PathImage image={current.image21} title={current.title} />
-          <PathImage image={current.image22} title={current.title} />
-          <PathImage image={current.image23} title={current.title} />
-          <PathImage image={current.image24} title={current.title} />
-          <PathImage image={current.image25} title={current.title} />
+          <PathImage image={current?.image21} title={current?.title} />
+          <PathImage image={current?.image22} title={current?.title} />
+          <PathImage image={current?.image23} title={current?.title} />
+          <PathImage image={current?.image24} title={current?.title} />
+          <PathImage image={current?.image25} title={current?.title} />
         </div>
       ) : (
         ""

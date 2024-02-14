@@ -12,7 +12,7 @@ export default function Classification(props) {
   return (
     <div className="p-8 m-auto">
       <div>
-        {current.percentageAcessibility ? (
+        {current?.percentageAcessibility ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.acessibility}</p>
@@ -30,7 +30,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageDifficulty ? (
+        {current?.percentageDifficulty ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.difficulty}</p>
@@ -46,7 +46,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageNature ? (
+        {current?.percentageNature ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.nature}</p>
@@ -62,7 +62,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageSupport ? (
+        {current?.percentageSupport ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.support}</p>
@@ -78,7 +78,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageShadow ? (
+        {current?.percentageShadow ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p>{CLASSIFICATION_LABELS.shadow}</p>
@@ -94,7 +94,7 @@ export default function Classification(props) {
           ""
         )}
 
-        {current.percentageSafety ? (
+        {current?.percentageSafety ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.safety}</p>
@@ -109,7 +109,7 @@ export default function Classification(props) {
         ) : (
           ""
         )}
-        {current.percentageEmergency ? (
+        {current?.percentageEmergency ? (
           <div>
             <div className="mb-1 text-base font-medium dark:text-white">
               <p> {CLASSIFICATION_LABELS.emergency}</p>

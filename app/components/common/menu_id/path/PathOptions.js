@@ -31,7 +31,7 @@ export default function PathOptions(props) {
             {current.waydescription}
           </p>
 
-          {current.tourPathDescription ? (
+          {current?.tourPathDescription ? (
             <div>
               {" "}
               <p className="mt-8 text-green-800 dark:text-gray-400">
@@ -45,8 +45,8 @@ export default function PathOptions(props) {
             ""
           )}
 
-          {current.labelOption1Description ||
-          current.labelOption2Description ? (
+          {current?.labelOption1Description ||
+          current?.labelOption2Description ? (
             <div>
               <p className="mt-8 text-green-800 dark:text-gray-400">
                 {current.labelDescription}
@@ -79,8 +79,8 @@ export default function PathOptions(props) {
           page={props.page}
         />
 
-        {current.accessOption2 ||
-        current.labelOption2Description ||
+        {current?.accessOption2 ||
+        current?.labelOption2Description ||
         imagePath2 ? (
           <Path
             access={current.accessOption2}
@@ -97,9 +97,9 @@ export default function PathOptions(props) {
         ) : (
           ""
         )}
-        {current.accessOption3 ||
-        current.labelOption3Description ||
-        current.imagePath3 ? (
+        {current?.accessOption3 ||
+        current?.labelOption3Description ||
+        current?.imagePath3 ? (
           <Path
             access={current.accessOption3}
             label={PATH_OPTIONS_LABELS.pathOption3}
