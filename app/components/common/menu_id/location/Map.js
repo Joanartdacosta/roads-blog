@@ -48,8 +48,14 @@ export default function Map(props) {
   }, []);
 
   return (
-    <div className="flex flex-col justify justify-center items-center">
-      <div style={{ height: "400px", width: "700px" }} ref={mapRef} />
+    <div>
+      {current?.latitude || current?.longitude ? (
+        <div className="flex flex-col justify justify-center items-center">
+          <div style={{ height: "400px", width: "700px" }} ref={mapRef} />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

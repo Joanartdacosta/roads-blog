@@ -16,7 +16,7 @@ export default function Access(props) {
     >
       <p className="mb-2 text-gray-500 dark:text-gray-400">{props.label}</p>
 
-      {current.imagesPath1 ? (
+      {current?.imagesPath1 ? (
         <div>
           {current.imagesPath1.map((image) => {
             return (
@@ -30,7 +30,7 @@ export default function Access(props) {
         ""
       )}
 
-      {current.imagesPath2 ? (
+      {current?.imagesPath2 ? (
         <div>
           {current.imagesPath2.map((image) => {
             return (
@@ -44,7 +44,7 @@ export default function Access(props) {
         ""
       )}
 
-      {current.imagesPath3 ? (
+      {current?.imagesPath3 ? (
         <div>
           {current.imagesPath3.map((image) => {
             return (
@@ -58,7 +58,7 @@ export default function Access(props) {
         ""
       )}
 
-      {current.imagesPath4 ? (
+      {current?.imagesPath4 ? (
         <div>
           {current.imagesPath4.map((image) => {
             return (

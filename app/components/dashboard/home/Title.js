@@ -5,7 +5,6 @@ export default function Title() {
   return (
     <div>
       <div className="text-gray-100 font-extrabold text-6xl tracking-widest p-2 oswald">
-        {/* border-current border-solid border-4"> */}
         <Typewriter
           onInit={(typewriter) => {
             typewriter.typeString("ESTRADA FORA ").pauseFor(2000).start();

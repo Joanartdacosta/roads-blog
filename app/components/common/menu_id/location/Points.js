@@ -13,9 +13,9 @@ export default function Points(props) {
   if (props.page === "tour") {
     return (
       <TourPoints
-        day1={current.day1}
-        day2={current.day2}
-        day3={current.day3}
+        day1={current?.day1}
+        day2={current?.day2}
+        day3={current?.day3}
         page="tour"
       />
     );

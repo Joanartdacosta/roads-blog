@@ -17,9 +17,9 @@ export default function Tips(props) {
         role="tabpanel"
         aria-labelledby="about-tab"
       >
-        {current.bullets ? <InfoBullets bullets={current.bullets} /> : ""}
+        {current?.bullets ? <InfoBullets bullets={current.bullets} /> : ""}
 
-        {current.prices ? (
+        {current?.prices ? (
           <div className="py-5 border-b border-gray-200 dark:border-gray-700">
             <p className="text-gray-500 dark:text-gray-400 py-5">Preçário</p>
             <div
@@ -43,7 +43,7 @@ export default function Tips(props) {
         )}
       </div>
 
-      {current.restaurants ? (
+      {current?.restaurants ? (
         <div
           className=" bg-white rounded-lg md:pl-8 dark:bg-gray-800"
           id="about"
@@ -71,7 +71,7 @@ export default function Tips(props) {
         ""
       )}
 
-      {current.hotels ? (
+      {current?.hotels ? (
         <div
           className=" bg-white rounded-lg md:pl-8 dark:bg-gray-800 pt-8 pb-8"
           id="about"
