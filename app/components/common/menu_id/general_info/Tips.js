@@ -1,16 +1,27 @@
 import InfoBullets from "./InfoBullets";
+import { useSelector } from "react-redux";
 
 export default function Tips(props) {
+  let current = null;
+  if (props.page === "trip") {
+    current = useSelector((state) => state.trip.selectedTrip);
+  } else if (props.page === "tour") {
+    current = useSelector((state) => state.tour.selectedTour);
+  }
+
   return (
     <div>
-      <InfoBullets
-        description={props.description}
-        bullet1={props.bullet1}
-        bullet2={props.bullet2}
-        bullet3={props.bullet3}
-        bullet4={props.bullet4}
-        bullet5={props.bullet5}
-      />
+      {current?.bullets ? (
+        <InfoBullets
+          bullet1={current.bullet1}
+          bullet2={current.bullet2}
+          bullet3={current.bullet3}
+          bullet4={current.bullet4}
+          bullet5={current.bullet5}
+        />
+      ) : (
+        ""
+      )}
 
       <div
         className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
@@ -18,7 +29,7 @@ export default function Tips(props) {
         role="tabpanel"
         aria-labelledby="about-tab"
       >
-        {props.price1 || props.price2 || props.price3 ? (
+        {current?.prices ? (
           <div className="py-5 border-b border-gray-200 dark:border-gray-700">
             <p className="text-gray-500 dark:text-gray-400">Precario</p>
             <ul
@@ -26,13 +37,13 @@ export default function Tips(props) {
               className="space-y-4 text-gray-500 dark:text-gray-400"
             >
               <li className="text-green-600 dark:text-green-500">
-                {props.price1}
+                {current.price1}
               </li>
               <li className="text-green-600 dark:text-green-500">
-                {props.price2}
+                {current.price2}
               </li>
               <li className="text-green-600 dark:text-green-500">
-                {props.price3}
+                {current.price3}
               </li>
             </ul>
           </div>
@@ -49,13 +60,13 @@ export default function Tips(props) {
       >
         <div className="py-5 border-b border-gray-200 dark:border-gray-700">
           <p className="text-gray-500 dark:text-gray-400">Restaurantes</p>
-          {props.restaurant1 ? (
+          {current?.restaurant1 ? (
             <ul
               role="list"
               className="space-y-4 text-gray-500 dark:text-gray-400"
             >
               <li className="text-green-600 dark:text-green-500">
-                {props.restaurant1}
+                {current.restaurant1}
               </li>
             </ul>
           ) : (
@@ -70,25 +81,25 @@ export default function Tips(props) {
             role="list"
             className="space-y-4 text-gray-500 dark:text-gray-400"
           >
-            {props.hotel1 ? (
+            {current?.hotel1 ? (
               <li className="text-green-600 dark:text-green-500">
-                {props.hotel1}
+                {current.hotel1}
               </li>
             ) : (
               <p className="text-gray-600 dark:text-green-500">
                 Nao existem sugestoes de alojamentos
               </p>
             )}
-            {props.hotel2 ? (
+            {current?.hotel2 ? (
               <li className="text-green-600 dark:text-green-500">
-                {props.hotel2}
+                {current.hotel2}
               </li>
             ) : (
               ""
             )}
-            {props.hotel3 ? (
+            {current?.hotel3 ? (
               <li className="text-green-600 dark:text-green-500">
-                {props.hotel3}
+                {current.hotel3}
               </li>
             ) : (
               ""

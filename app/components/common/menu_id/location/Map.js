@@ -1,8 +1,16 @@
 import LOCATIONS_COORD from "@/components/enums/locations_coord";
 import { Loader } from "@googlemaps/js-api-loader";
 import { useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
 
 export default function Map(props) {
+  let current = null;
+  if (props.page === "trip") {
+    current = useSelector((state) => state.trip.selectedTrip);
+  } else if (props.page === "tour") {
+    current = useSelector((state) => state.tour.selectedTour);
+  }
+
   const mapRef = useRef(null);
 
   useEffect(() => {
@@ -25,8 +33,8 @@ export default function Map(props) {
 
         new GOOGLE.maps.Marker({
           position: {
-            lat: props.latitude,
-            lng: props.longitude,
+            lat: current.latitude,
+            lng: current.longitude,
           },
           map: MAP,
           title: "Passadicos do Mondego",
@@ -40,8 +48,14 @@ export default function Map(props) {
   }, []);
 
   return (
-    <div className="flex flex-col justify justify-center items-center">
-      <div style={{ height: "400px", width: "700px" }} ref={mapRef} />
+    <div>
+      {current?.latitude || current?.longitude ? (
+        <div className="flex flex-col justify justify-center items-center">
+          <div style={{ height: "400px", width: "700px" }} ref={mapRef} />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
