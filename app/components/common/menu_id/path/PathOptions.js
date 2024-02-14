@@ -25,10 +25,10 @@ export default function PathOptions(props) {
       >
         <div className="py-5 border-b border-gray-200 dark:border-gray-700">
           <p className="mb-2 text-gray-500 dark:text-gray-400">
-            {current.description1}
+            {current?.description1}
           </p>
           <p className="mb-2 text-gray-500 dark:text-gray-400">
-            {current.waydescription}
+            {current?.waydescription}
           </p>
 
           {current?.tourPathDescription ? (
@@ -38,8 +38,8 @@ export default function PathOptions(props) {
                 Percurso total do roteiro:
               </p>
               <p className="mb-2 mt-2 text-gray-800 dark:text-gray-400">
-                {current.access}
-              </p>{" "}
+                {current?.access}
+              </p>
             </div>
           ) : (
             ""
@@ -70,12 +70,12 @@ export default function PathOptions(props) {
         </div>
 
         <Path
-          access={current.accessOption1}
+          access={current?.accessOption1}
           label={PATH_OPTIONS_LABELS.pathOption1}
-          labelDescription={current.labelOption1Description}
-          tripPathDescription1={current.tripPathDescription1}
-          imagePath1={current.imagePath1}
-          imagePath11={current.imagePath11}
+          labelDescription={current?.labelOption1Description}
+          tripPathDescription1={current?.tripPathDescription1}
+          imagePath1={current?.imagePath1}
+          imagePath11={current?.imagePath11}
           page={props.page}
         />
 
