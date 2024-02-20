@@ -9,6 +9,7 @@ export default function GeneralBanner(props) {
         fill
         src={props.imgUrl}
         unoptimized
+        priority={false}
       />
       <div className="w-full text-center m-auto p-24">
         <h1 className="tracking-widest text-5xl text-white relative font-extrabold overline decoration-1 oswald">
