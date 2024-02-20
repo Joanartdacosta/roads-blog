@@ -37,7 +37,15 @@ export default function Map(props) {
             lng: current.coordinates1.long,
           },
           map: MAP,
-          title: "Passadicos do Mondego",
+          title: current.titleCoordinates1,
+        });
+        new GOOGLE.maps.Marker({
+          position: {
+            lat: current.coordinates2.lat,
+            lng: current.coordinates2.long,
+          },
+          map: MAP,
+          title: current.titleCoordinates2,
         });
       } catch (error) {
         console.error("Error loading Google Maps:", error);
@@ -49,7 +57,7 @@ export default function Map(props) {
 
   return (
     <div>
-      {current?.latitude || current?.longitude ? (
+      {current ? (
         <div className="flex flex-col justify justify-center items-center">
           <div style={{ height: "400px", width: "700px" }} ref={mapRef} />
         </div>
