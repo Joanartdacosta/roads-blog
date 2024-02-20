@@ -8,8 +8,6 @@ export default function Introduction(props) {
     current = useSelector((state) => state.tour.selectedTour);
   }
 
-  console.log(current.description1);
-
   return (
     <div className="">
       <div className="m-auto text-gray-900  dark:text-white">
