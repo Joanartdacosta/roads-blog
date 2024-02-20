@@ -35,134 +35,80 @@ export async function getByIdTour(id) {
 
 // ACCESS
 
-export async function getAllTourAccesses() {
+export async function getTourAccesses(tourId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allAccess = await db.collection("tour_access").find({}).toArray();
+    const allAccess = await db.collection("tour_access").findOne({ tourId });
 
-    return allAccess.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allAccess);
   } catch (e) {
     console.error(e);
   }
 }
 
-export async function getByTourIdAccesses(id) {
-  const access = await getAllTourAccesses();
-
-  return access.find((item) => item.tourId === id);
-}
-
 // DESCRIPTIONS
 
-export async function getAllTourDescriptions() {
+export async function getTourDescriptions(tourId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
     const allDescriptions = await db
       .collection("tour_descriptions")
-      .find({})
-      .toArray();
-
-    return allDescriptions.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+      .findOne({ tourId });
+    return transformObjectIdToString(allDescriptions);
   } catch (e) {
     console.error(e);
   }
 }
 
-export async function getByTourIdDescription(id) {
-  const descriptions = await getAllTourDescriptions();
-  return descriptions.find((item) => item.tourId === id);
-}
-
 // COORDINATES
 
-export async function getAllTourCoordinates() {
+export async function getTourCoordinates(tourId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
     const allCoordinates = await db
       .collection("tour_coordinates")
-      .find({})
-      .toArray();
+      .findOne({ tourId });
 
-    return allCoordinates.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allCoordinates);
   } catch (e) {
     console.error(e);
   }
-}
-
-export async function getByTourIdCoordinates(id) {
-  const coordinates = await getAllTourCoordinates();
-  return coordinates.find((item) => item.tourId === id);
 }
 
 // MARKERS
 
-export async function getAllTourMarkers() {
+export async function getTourMarkers(tourId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allMarkers = await db.collection("tour_markers").find({}).toArray();
+    const allMarkers = await db.collection("tour_markers").findOne({ tourId });
 
-    return allMarkers.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allMarkers);
   } catch (e) {
     console.error(e);
   }
-}
-
-export async function getByTourIdMarkers(id) {
-  const markers = await getAllTourMarkers();
-  return markers.find((item) => item.tourId === id);
 }
 
 // TOURISM
 
-export async function getAllTourTips() {
+export async function getTourTips(tourId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allTourTips = await db.collection("tour_tourism").find({}).toArray();
+    const allTourTips = await db.collection("tour_tourism").findOne({ tourId });
 
-    return allTourTips.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allTourTips);
   } catch (e) {
     console.error(e);
   }
-}
-
-export async function getByTourIdTips(id) {
-  const tourismTips = await getAllTourTips();
-  return tourismTips.find((item) => item.tourId === id);
 }
 
 // FAIRS
@@ -356,6 +302,13 @@ export async function getTripTourismTips(tripId) {
 }
 
 // UTILS
+
+function transformObjectIdToString(mongoDbItem) {
+  return {
+    ...mongoDbItem,
+    _id: String(mongoDbItem._id),
+  };
+}
 
 function transformObjectIdToString(mongoDbItem) {
   return {
