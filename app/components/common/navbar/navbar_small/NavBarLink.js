@@ -1,7 +1,7 @@
 import Link from "next/link";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 
-export default function NavbarLink(props) {
+export default function NavbarLink() {
   return (
     <div className="bg-black h-max p-4 poppins">
       {NAVBAR_LINKS["order"].map((item) => {
