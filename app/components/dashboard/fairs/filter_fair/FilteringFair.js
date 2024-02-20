@@ -1,22 +1,24 @@
 import Calendar from "../calendar/Calendar";
 import FairCard from "@/components/dashboard/fairs/fairs_card/FairCard";
-import FAIRS from "@/components/lists/fairs";
-import { useState, useEffect } from "react";
 import Regions from "../regions/FairsRegions";
+import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 
 export default function FilteringFairByDateAndRegion() {
+  let current = useSelector((state) => state.fair.allFairs);
+
   const [region, setRegion] = useState(null);
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
-  const [allfairs, setFairs] = useState(FAIRS);
+  const [allfairs, setFairs] = useState(current);
 
   useEffect(() => {
     filterFairs();
   }, [region, startDate, endDate]);
 
   function filterFairs() {
-    let filteredFairs = FAIRS;
+    let filteredFairs = current;
 
     if (region) {
       filteredFairs = filterFairsByRegions(region, filteredFairs);
@@ -71,24 +73,11 @@ export default function FilteringFairByDateAndRegion() {
             Por favor seleccione um intervalo de datas no calendário.
           </p>
           <div>
-            {allfairs.length ? (
+            {current ? (
               allfairs.map((fair) => {
                 return (
-                  <div className="w-full">
-                    <FairCard
-                      description={fair.description}
-                      district={fair.district}
-                      imgURL={fair.imgURL}
-                      key={fair.id}
-                      month={fair.month}
-                      paragraph1={fair.paragraph1}
-                      paragraph2={fair.paragraph2}
-                      paragraph3={fair.paragraph3}
-                      paragraph4={fair.paragraph4}
-                      region={fair.region}
-                      title={fair.title}
-                      town2={fair.town2}
-                    />
+                  <div className="w-full" key={fair._id}>
+                    <FairCard fair={fair} />
                   </div>
                 );
               })
