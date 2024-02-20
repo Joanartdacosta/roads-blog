@@ -38,6 +38,7 @@ export default function NavBarLarge() {
                 width={66}
                 src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/roads-logo-white.png"
                 unoptimized
+                priority={false}
               />
             </a>
           </div>

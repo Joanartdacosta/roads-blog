@@ -16,8 +16,19 @@ export default function Introduction(props) {
             {current?.title}
           </div>
 
-          <div className="mb-8 text-gray-500 dark:text-gray-400">
-            {current?.introduction}
+          <div className="mb-8 ml-10 mr-10 text-gray-500 dark:text-gray-400">
+            {current?.description1
+              ? current.description1.map((description) => {
+                  return (
+                    <div
+                      className="poppins text-sm text-gray-900 dark:text-white"
+                      key={description}
+                    >
+                      <p className="text-gray-500">{description}</p>
+                    </div>
+                  );
+                })
+              : ""}
           </div>
         </div>
       </div>

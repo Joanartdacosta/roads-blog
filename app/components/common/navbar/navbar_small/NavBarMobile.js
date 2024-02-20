@@ -11,7 +11,7 @@ export default function NavBarMobile() {
         className="h-max m-auto bg-black border border-yellow-900"
         label="MENU "
       >
-        <NavbarLink array={NAVBAR_LINKS} />
+        <NavbarLink />
         <FooterMobile />
       </Dropdown>
       <div>

@@ -1,4 +1,12 @@
-import { getByIdTrips, getFeaturedTrips } from "@/helpers/api-util";
+import {
+  getByIdTrips,
+  getFeaturedTrips,
+  getTripAccesses,
+  getTripCoordinates,
+  getTripDescriptions,
+  getTripMarkers,
+  getTripTourismTips,
+} from "@/helpers/api-util";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import MenuDetailsId from "@/components/common/menu_id/MenuDetailsId";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
@@ -29,7 +37,23 @@ export default function TripDetailsPage(props) {
 export async function getStaticProps(context) {
   const tripId = context.params.tripId;
 
-  const trip = await getByIdTrips(tripId);
+  const tripIds = await getByIdTrips(tripId);
+  const tripAccess = await getTripAccesses(tripId);
+  const tripCoordinates = await getTripCoordinates(tripId);
+  const tripDescriptions = await getTripDescriptions(tripId);
+  const tripMarkers = await getTripMarkers(tripId);
+  const tripTourismTips = await getTripTourismTips(tripId);
+
+  const trip = {
+    ...tripAccess,
+    ...tripCoordinates,
+    ...tripDescriptions,
+    ...tripIds,
+    ...tripMarkers,
+    ...tripTourismTips,
+  };
+
+  console.log(trip);
 
   return {
     props: {
@@ -41,6 +65,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const trips = await getFeaturedTrips();
+
   const paths = trips.map((trip) => ({ params: { tripId: trip.id } }));
 
   return {

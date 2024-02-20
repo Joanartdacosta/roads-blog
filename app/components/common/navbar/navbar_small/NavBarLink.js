@@ -1,13 +1,7 @@
 import Link from "next/link";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 
-export default function NavbarLink(props) {
-  const ARRAY = [];
-
-  for (let i = 0; i < props.array.length; i++) {
-    ARRAY.push(props.array[i]);
-  }
-
+export default function NavbarLink() {
   return (
     <div className="bg-black h-max p-4 poppins">
       {NAVBAR_LINKS["order"].map((item) => {
