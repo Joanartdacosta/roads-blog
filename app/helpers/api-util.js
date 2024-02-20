@@ -276,135 +276,90 @@ export async function getByIdTrips(id) {
 
 // ACCESS
 
-export async function getAllTripAccesses() {
+export async function getTripAccesses(tripId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allAccess = await db.collection("trip_access").find({}).toArray();
+    const allAccess = await db.collection("trip_access").findOne({ tripId });
 
-    return allAccess.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allAccess);
   } catch (e) {
     console.error(e);
   }
 }
 
-export async function getByTripIdAccesses(id) {
-  const access = await getAllTripAccesses();
-
-  return access.find((item) => item.tripId === id);
-}
-
 // DESCRIPTIONS
 
-export async function getAllTripDescriptions() {
+export async function getTripDescriptions(tripId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
     const allDescriptions = await db
       .collection("trip_descriptions")
-      .find({})
-      .toArray();
+      .findOne({ tripId });
 
-    return allDescriptions.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allDescriptions);
   } catch (e) {
     console.error(e);
   }
 }
 
-export async function getByTripIdDescription(id) {
-  const descriptions = await getAllTripDescriptions();
-  return descriptions.find((item) => item.tripId === id);
-}
-
 // COORDINATES
 
-export async function getAllTripCoordinates() {
+export async function getTripCoordinates(tripId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
     const allCoordinates = await db
       .collection("trip_coordinates")
-      .find({})
-      .toArray();
+      .findOne({ tripId });
 
-    return allCoordinates.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allCoordinates);
   } catch (e) {
     console.error(e);
   }
-}
-
-export async function getByTripIdCoordinates(id) {
-  const coordinates = await getAllTripCoordinates();
-  return coordinates.find((item) => item.tripId === id);
 }
 
 // MARKERS
 
-export async function getAllTripMarkers() {
+export async function getTripMarkers(tripId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allMarkers = await db.collection("trip_markers").find({}).toArray();
+    const allMarkers = await db.collection("trip_markers").findOne({ tripId });
 
-    return allMarkers.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allMarkers);
   } catch (e) {
     console.error(e);
   }
 }
 
-export async function getByTripIdMarkers(id) {
-  const markers = await getAllTripMarkers();
-  return markers.find((item) => item.tripId === id);
-}
-
 // TOURISM
 
-export async function getAllTripTourismTips() {
+export async function getTripTourismTips(tripId) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
     const allTourismTips = await db
       .collection("trip_tourism")
-      .find({})
-      .toArray();
+      .findOne({ tripId });
 
-    return allTourismTips.map((mongoDbItem) => {
-      return {
-        ...mongoDbItem,
-        _id: String(mongoDbItem._id),
-      };
-    });
+    return transformObjectIdToString(allTourismTips);
   } catch (e) {
     console.error(e);
   }
 }
 
-export async function getByTripIdTourismTips(id) {
-  const tourismTips = await getAllTripTourismTips();
-  return tourismTips.find((item) => item.tripId === id);
+// UTILS
+
+function transformObjectIdToString(mongoDbItem) {
+  return {
+    ...mongoDbItem,
+    _id: String(mongoDbItem._id),
+  };
 }
