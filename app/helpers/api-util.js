@@ -60,7 +60,7 @@ export async function getAllFairs() {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allFairs = await db.collection("fairs").find({}).toArray();
+    const allFairs = await db.collection("all_fairs").find({}).toArray();
 
     return allFairs.map((mongoDbItem) => {
       return { ...mongoDbItem, _id: String(mongoDbItem._id) };
