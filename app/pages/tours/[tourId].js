@@ -1,11 +1,11 @@
 import {
-  getByTourIdAccesses,
-  getByTourIdCoordinates,
-  getByTourIdDescription,
-  getByTourIdMarkers,
-  getByTourIdTips,
   getByIdTour,
   getFeaturedTours,
+  getTourAccesses,
+  getTourCoordinates,
+  getTourDescriptions,
+  getTourMarkers,
+  getTourTips,
 } from "@/helpers/api-util";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import MenuDetailsId from "@/components/common/menu_id/MenuDetailsId";
@@ -38,13 +38,11 @@ export async function getStaticProps(context) {
   const tourId = context.params.tourId;
 
   const tourIds = await getByIdTour(tourId);
-
-  const tourDescriptions = await getByTourIdDescription(tourId);
-  const tourAccess = await getByTourIdAccesses(tourId);
-
-  const tourCoordinates = await getByTourIdCoordinates(tourId);
-  const tourMarkers = await getByTourIdMarkers(tourId);
-  const tourTourismTips = await getByTourIdTips(tourId);
+  const tourAccess = await getTourAccesses(tourId);
+  const tourCoordinates = await getTourCoordinates(tourId);
+  const tourDescriptions = await getTourDescriptions(tourId);
+  const tourMarkers = await getTourMarkers(tourId);
+  const tourTourismTips = await getTourTips(tourId);
 
   const tour = {
     ...tourIds,
@@ -54,6 +52,8 @@ export async function getStaticProps(context) {
     ...tourMarkers,
     ...tourTourismTips,
   };
+
+  console.log(tour);
 
   return {
     props: {
