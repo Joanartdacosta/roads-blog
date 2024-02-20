@@ -1,10 +1,10 @@
 import Bullet from "@/components/common/icons/bullets/Bullet";
 
 export default function InfoPoints(props) {
-  const ARRAY = [];
+  const POINTS = [];
 
   for (let i = 0; i < props.bullets.length; i++) {
-    ARRAY.push(props.bullets[i]);
+    POINTS.push(props.bullets[i]);
   }
 
   return (
@@ -26,7 +26,7 @@ export default function InfoPoints(props) {
             className="space-y-4 text-gray-500 dark:text-gray-400"
           >
             <div>
-              {ARRAY.map((bullet) => {
+              {POINTS.map((bullet) => {
                 return (
                   <li className="flex space-x-2 items-center" key={bullet}>
                     <Bullet />
