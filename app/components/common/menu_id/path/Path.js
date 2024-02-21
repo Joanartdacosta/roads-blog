@@ -14,12 +14,7 @@ export default function Path(props) {
       props.label == PATH_OPTIONS_LABELS.pathOption2 ||
       props.label == PATH_OPTIONS_LABELS.pathOption3
     ) {
-      setInfo(
-        <Info
-          access={props.access}
-          tourPathDescription1={props.tourPathDescription1}
-        />
-      );
+      setInfo(<Info access={props.access} />);
       setIsOpen(!isOpen);
     }
   }

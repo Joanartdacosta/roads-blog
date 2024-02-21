@@ -1,4 +1,5 @@
-import InfoBullets from "../general_info/InfoBullets";
+import TourPoints from "./TourPoints";
+import TripPoints from "./TripPoints";
 import { useSelector } from "react-redux";
 
 export default function Points(props) {
@@ -9,15 +10,16 @@ export default function Points(props) {
     current = useSelector((state) => state.tour.selectedTour);
   }
 
-  return (
-    <div className="flex flex-col justify justify-center">
-      <InfoBullets
-        bullet1={current?.point1}
-        bullet2={current?.point2}
-        bullet3={current?.point3}
-        bullet4={current?.point4}
-        bullet5={current?.point5}
+  if (props.page === "tour") {
+    return (
+      <TourPoints
+        day1={current?.day1}
+        day2={current?.day2}
+        day3={current?.day3}
+        page="tour"
       />
-    </div>
-  );
+    );
+  } else if (props.page === "trip") {
+    return <TripPoints points={current.points} page="trip" />;
+  }
 }
