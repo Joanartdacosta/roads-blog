@@ -3,13 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --font-title: "Roboto", san-serif;
-  --font-text: "Poppins", sans-serif;
+  --font-title: "Play", san-serif;
+  --font-text: "poppins", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+p,
+span {
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
 }
 
 main {
@@ -34,54 +45,8 @@ main {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
-
 .oswald {
   font-family: "Oswald", sans-serif;
-}
-
-.roboto {
-  font-family: "Roboto", sans-serif;
-}
-.cinzel {
-  font-family: "Cinzel", sans-serif;
-}
-
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-}
-
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.baskervville-regular {
-  font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.baskervville-regular-italic {
-  font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.outfit {
-  font-family: "Outfit", sans-serif;
 }
 
 svg {
