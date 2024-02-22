@@ -3,15 +3,11 @@ import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import Image from "next/image";
 
 export default function ModalInfo(props) {
-  console.log("hey you");
-  console.log(props.paragraphs);
   const PARAGRAPHS = [];
 
   for (let i = 0; i < props.paragraphs.length; i++) {
     PARAGRAPHS.push(props.paragraphs[i]);
   }
-
-  console.log(PARAGRAPHS);
 
   return (
     <div>
@@ -33,11 +29,9 @@ export default function ModalInfo(props) {
                 <p className="text-base bold italic pb-2">Mais detalhes</p>
 
                 {props.paragraphs
-                  ? props.paragraphs.map((p) => {
-                      <div>
-                        <p>{p}</p>
-                      </div>;
-                    })
+                  ? Object.values(props.paragraphs).map((paragraph) => (
+                      <p>{paragraph}</p>
+                    ))
                   : ""}
               </div>
 
