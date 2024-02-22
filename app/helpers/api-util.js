@@ -309,10 +309,3 @@ function transformObjectIdToString(mongoDbItem) {
     _id: String(mongoDbItem._id),
   };
 }
-
-function transformObjectIdToString(mongoDbItem) {
-  return {
-    ...mongoDbItem,
-    _id: String(mongoDbItem._id),
-  };
-}
