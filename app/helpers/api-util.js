@@ -167,7 +167,7 @@ export async function getByIdPassport(id) {
 
 // PROVERBS
 
-export async function getProverbs(id) {
+export async function getProverbs() {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
