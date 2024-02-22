@@ -22,6 +22,7 @@ export default function DropDownMenu() {
                   className="object-cover w-96 h-28"
                   src={NAVBAR_LINKS[item].imgUrl}
                   unoptimized
+                  priority={true}
                 />
                 <div className="font-semibold">
                   {NAVBAR_LINKS[item].section}
