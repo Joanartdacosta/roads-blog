@@ -92,6 +92,9 @@ svg {
   .menu-normal {
     display: none;
   }
+  .menu-labels {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -102,6 +105,10 @@ svg {
 
 @media screen and (min-width: 770px) {
   .menu-hamburguer {
+    display: none;
+  }
+
+  .menu-icons {
     display: none;
   }
 }
