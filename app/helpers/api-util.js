@@ -167,24 +167,25 @@ export async function getByIdPassport(id) {
 
 // PROVERBS
 
-export async function getAllProverbs() {
+export async function getProverbs(id) {
   try {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const allProverbs = await db.collection("proverbs").find({}).toArray();
+    const currentDate = new Date();
+    let currentMonth = currentDate.getMonth() + 1;
 
-    return allProverbs.map((mongoDbItem) => {
+    const proverbs = await db
+      .collection("proverbs")
+      .find({ id: currentMonth })
+      .toArray();
+
+    return proverbs.map((mongoDbItem) => {
       return { ...mongoDbItem, _id: String(mongoDbItem._id) };
     });
   } catch (e) {
     console.error(e);
   }
-}
-
-export async function getFeaturedProverbs() {
-  const all = await getAllProverbs();
-  return all.filter((item) => item.isFeatured == true);
 }
 
 // TRIPS
@@ -302,13 +303,6 @@ export async function getTripTourismTips(tripId) {
 }
 
 // UTILS
-
-function transformObjectIdToString(mongoDbItem) {
-  return {
-    ...mongoDbItem,
-    _id: String(mongoDbItem._id),
-  };
-}
 
 function transformObjectIdToString(mongoDbItem) {
   return {
