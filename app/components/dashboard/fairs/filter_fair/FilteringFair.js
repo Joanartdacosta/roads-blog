@@ -51,7 +51,11 @@ export default function FilteringFairByDateAndRegion() {
 
   return (
     <div>
-      <Regions filterFairs={filterFairs} setRegion={setRegion} />
+      <Regions
+        filterFairs={filterFairs}
+        setRegion={setRegion}
+        setFairs={setFairs}
+      />
 
       <div className="flex pt-16">
         <div className="w-full">
