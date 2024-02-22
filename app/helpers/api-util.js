@@ -128,16 +128,6 @@ export async function getAllFairs() {
   }
 }
 
-export async function getFeaturedFairs() {
-  const all = await getAllFairs();
-  return all.filter((item) => item.isFeatured == true);
-}
-
-export async function getByIdFair(id) {
-  const all = await getAllFairs();
-  return all.find((item) => item.id === id);
-}
-
 // PASSPORTS
 
 export async function getAllPassaports() {
