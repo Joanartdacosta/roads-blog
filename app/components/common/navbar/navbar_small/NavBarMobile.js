@@ -1,8 +1,7 @@
 import { Dropdown } from "flowbite-react";
-import NavbarLink from "@/components/common/navbar/navbar_small/NavBarLink";
-import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
 import Image from "next/image";
-import FooterMobile from "../../footer/footer_mobile/FooterMobile";
+import FooterMobile from "@/components/common/footer/footer_mobile/FooterMobile";
+import NavbarLink from "@/components/common/navbar/navbar_small/NavBarLink";
 
 export default function NavBarMobile() {
   return (

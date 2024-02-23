@@ -1,4 +1,4 @@
-import InfoBullets from "./InfoBullets";
+import InfoBullets from "@/components/common/menu_id/general_info/InfoBullets";
 import { useSelector } from "react-redux";
 
 export default function Tips(props) {

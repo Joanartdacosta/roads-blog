@@ -1,11 +1,11 @@
-import GeneralSection from "./general_info/GeneralSection";
-import Map from "./location/Map";
-import MenuItem from "./MenuItem";
-import PathOptions from "./path/PathOptions";
+import GeneralSection from "@/components/common/menu_id/general_info/GeneralSection";
+import Map from "@/components/common/menu_id/location/Map";
+import MenuItem from "@/components/common/menu_id/MenuItem";
+import PathOptions from "@/components/common/menu_id/path/PathOptions";
 import Points from "@/components/common/menu_id/location/Points";
 import TAB_BUTTONS from "@/components/lists/TabButton";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
-import Tips from "./general_info/Tips";
+import Tips from "@/components/common/menu_id/general_info/Tips";
 import { useState } from "react";
 
 export default function MenuDetailsId(props) {

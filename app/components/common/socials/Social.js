@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SOCIALS from "./socials";
+import SOCIALS from "@/components/common/socials/socials";
 
 export default function Social() {
   return (
