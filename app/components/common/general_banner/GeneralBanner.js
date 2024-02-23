@@ -12,7 +12,7 @@ export default function GeneralBanner(props) {
         priority={false}
       />
       <div className="w-full text-center m-auto p-24">
-        <h1 className="tracking-widest text-5xl text-white relative font-extrabold overline decoration-1 oswald">
+        <h1 className="tracking-widest text-5xl text-white relative font-extrabold overline decoration-1 oswald responsive-title">
           {props.section}
         </h1>
         <p className="text-base text-white text-slate-200 relative play">

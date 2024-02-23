@@ -5,9 +5,9 @@ export default function FreeTourBanner() {
   return (
     <div className="bg-neutral-300 h-full opacity-80">
       <div className="text-center relative m-auto sm:static sm:px-6 lg:px-8">
-        <p className="tracking-tight text-amber-600 pt-16 pb-6 text-dark-600 sm:text-3xl responsive-title">
+        <h1 className="tracking-tight text-amber-700 pt-16 pb-6 text-dark-600 text-3xl">
           Peca o seu roteiro gratuito
-        </p>
+        </h1>
         <p className="poppins text-sm text-gray-800 w-3/6 m-auto responsive-text">
           Está a planear uma viagem pelo país e gostaria de ter um roteiro que o
           ajude a aproveitar ao máximo essa experiência? Não dispõe de tempo ou

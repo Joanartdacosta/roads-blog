@@ -70,12 +70,19 @@ svg {
   }
 
   .responsive-title {
-    font-size: 1.8rem;
+    text-decoration: none;
   }
 
   .responsive-flex {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .responsive-estradas {
+    font-size: 2.5rem;
+  }
+
+  .margin-left {
+    margin-left: 1.5rem;
   }
 }
 @media screen and (max-width: 1000px) {
