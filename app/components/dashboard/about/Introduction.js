@@ -1,33 +1,21 @@
+import CardInfo from "@/components/common/UI/cards/card_info/CardInfo";
 import Image from "next/image";
+import INTRODUCTION from "@/components/lists/introduction";
 
 export default function Introduction() {
   return (
     <div>
-      <div className=" text-center m-auto">
-        <p>
-          Chamo-me Rui Costa e fui professor de Geografia ao longo de 42 anos.
-        </p>
-        <p>
-          A experiência como professor fez crescer o meu gosto por viajar e
-          levou-me a organizar muitos passeios, como professor e tambem para a
-          família.{" "}
-        </p>
-        <p>
-          {" "}
-          Agora que me encontro, numa nova etapa da minha vida (aposentado),
-          achei que podia ajudar, quem gosta de viajar, testemunhando as minhas
-          experiências, partilhando roteiros das viagens e divulgando aspetos de
-          interesse geográfico.
-        </p>
+      <div className=" text-center m-auto ">
+        <CardInfo array={INTRODUCTION} />
 
         <Image
           src="https://estradas-website.s3.amazonaws.com/Estradas/rui.png"
           alt="Rui Costa"
           unoptimized
           priority={true}
-          width={1100}
-          height={1100}
-          className="m-auto mb-10 mt-10"
+          width={500}
+          height={160}
+          className="m-auto mb-10"
         />
       </div>
       <div className="text-center m-auto border border-double border-amber-800 p-6 border-8 rounded">
