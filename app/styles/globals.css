@@ -60,8 +60,19 @@ svg {
   .menu-labels {
     display: none;
   }
-}
+  .banner-responsive {
+    display: none;
+  }
 
+  .responsive-button,
+  .responsive-text {
+    width: 22rem;
+  }
+
+  .responsive-title {
+    font-size: 1.8rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   .image-responsive {
     display: none;
