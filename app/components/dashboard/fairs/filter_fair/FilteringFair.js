@@ -51,7 +51,7 @@ export default function FilteringFairByDateAndRegion() {
     <div>
       <Regions filterFairs={filterFairs} setRegion={setRegion} />
 
-      <div className="flex pt-16">
+      <div className="flex responsive-flex">
         <div className="w-full">
           <p className="pb-10 text-xl font-bold ">Lista de Eventos</p>
 
@@ -70,6 +70,7 @@ export default function FilteringFairByDateAndRegion() {
           <p className="text-sm pb-8 pt-8">
             Por favor seleccione um intervalo de datas no calendário.
           </p>
+
           <div>
             {allfairs.length ? (
               allfairs.map((fair) => {
@@ -98,7 +99,7 @@ export default function FilteringFairByDateAndRegion() {
           </div>
         </div>
 
-        <div className="pl-20">
+        <div className="m-auto p-10">
           <Calendar
             filterFairs={filterFairs}
             startDate={startDate}

@@ -72,6 +72,11 @@ svg {
   .responsive-title {
     font-size: 1.8rem;
   }
+
+  .responsive-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 @media screen and (max-width: 1000px) {
   .image-responsive {
