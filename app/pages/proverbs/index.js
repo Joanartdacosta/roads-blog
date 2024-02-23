@@ -7,7 +7,7 @@ export default function Proverbs(props) {
     <div className="justify-items-center">
       <div className="m-auto w-max">
         <RevealWrapper>
-          <CardProverb array={props.proverbs} />
+          <CardProverb array={[props.proverbs]} />
         </RevealWrapper>
       </div>
     </div>

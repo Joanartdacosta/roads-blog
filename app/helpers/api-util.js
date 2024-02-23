@@ -176,12 +176,9 @@ export async function getProverbs() {
 
     const proverbs = await db
       .collection("proverbs")
-      .find({ month: currentMonth })
-      .toArray();
+      .findOne({ month: currentMonth });
 
-    return proverbs.map((mongoDbItem) => {
-      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
-    });
+    return transformObjectIdToString(proverbs);
   } catch (e) {
     console.error(e);
   }
