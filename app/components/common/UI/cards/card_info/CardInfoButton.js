@@ -1,4 +1,4 @@
-import ButtonBlack from "../../button/ButtonBlack";
+import ButtonBlack from "@/components/common/UI/button/ButtonBlack";
 import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import Link from "next/link";
 import ModalInfo from "@/components/dashboard/fairs/fairs_card/ModalInfo";

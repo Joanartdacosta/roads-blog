@@ -1,8 +1,8 @@
-import Calendar from "../calendar/Calendar";
+import Calendar from "@/components/dashboard/fairs/calendar/Calendar";
 import FairCard from "@/components/dashboard/fairs/fairs_card/FairCard";
 import FAIRS from "@/components/lists/fairs";
 import { useState, useEffect } from "react";
-import Regions from "../regions/FairsRegions";
+import Regions from "@/components/dashboard/fairs/regions/FairsRegions";
 
 export default function FilteringFairByDateAndRegion() {
   const [region, setRegion] = useState(null);

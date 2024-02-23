@@ -1,5 +1,5 @@
 import TRANSPORTS_LABELS from "@/components/enums/transports_labels";
-import Label from "./Label";
+import Label from "@/components/common/UI/forms/details/Label";
 
 export default function Select() {
   return (
