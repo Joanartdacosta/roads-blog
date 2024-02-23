@@ -1,4 +1,4 @@
-import InfoBullets from "./InfoBullets";
+import InfoBullets from "@/components/common/menu_id/general_info/InfoBullets";
 import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 import { useSelector } from "react-redux";
 

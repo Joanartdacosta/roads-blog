@@ -1,8 +1,8 @@
 import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import FORM_LABELS from "@/components/enums/form_labels";
-import Input from "./details/Input";
-import SubmitButton from "./details/SubmitButton";
-import TextArea from "./details/TextArea";
+import Input from "@/components/common/UI/forms/details/Input";
+import SubmitButton from "@/components/common/UI/forms/details/SubmitButton";
+import TextArea from "@/components/common/UI/forms/details/TextArea";
 
 import { useState } from "react";
 

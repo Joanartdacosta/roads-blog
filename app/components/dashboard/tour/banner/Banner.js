@@ -1,5 +1,5 @@
-import BannerGallery from "../banner_gallery/BannerGallery";
-import BannerDescription from "./FreeTourDescription";
+import BannerGallery from "@/components/dashboard/tour/banner_gallery/BannerGallery";
+import BannerDescription from "@/components/dashboard/tour/banner/FreeTourDescription";
 
 export default function Banner() {
   return (

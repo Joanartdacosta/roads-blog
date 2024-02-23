@@ -1,5 +1,5 @@
-import BannerImageCol from "./BannerImageCol";
-import PLACES from "./places";
+import BannerImageCol from "@/components/dashboard/tour/banner_gallery/BannerImageCol";
+import PLACES from "@/components/dashboard/tour/banner_gallery/places";
 
 export default function BannerGallery() {
   return (

@@ -1,5 +1,5 @@
-import NavBarLarge from "./navbar_large/NavBarLarge";
-import NavBarMobile from "./navbar_small/NavBarMobile";
+import NavBarLarge from "@/components/common/navbar/navbar_large/NavBarLarge";
+import NavBarMobile from "@/components/common/navbar/navbar_small/NavBarMobile";
 
 export default function NavBar() {
   return (
