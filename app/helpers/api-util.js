@@ -1,15 +1,8 @@
+import db from "@/helpers/dbConnection";
 // TOURS
-import clientPromise from "@/components/mongo/client";
-
-async function getDbConnection() {
-  const client = await clientPromise;
-  return client.db("roads");
-}
 
 export async function getAllTours() {
   try {
-    const db = await getDbConnection();
-
     const allTours = await db.collection("tour_id").find({}).toArray();
 
     return allTours.map((mongoDbItem) => {
@@ -41,8 +34,6 @@ export async function getByIdTour(id) {
 
 export async function getTourAccesses(tourId) {
   try {
-    const db = await getDbConnection();
-
     const allAccess = await db.collection("tour_access").findOne({ tourId });
 
     return transformObjectIdToString(allAccess);
@@ -55,8 +46,6 @@ export async function getTourAccesses(tourId) {
 
 export async function getTourDescriptions(tourId) {
   try {
-    const db = await getDbConnection();
-
     const allDescriptions = await db
       .collection("tour_descriptions")
       .findOne({ tourId });
@@ -70,8 +59,6 @@ export async function getTourDescriptions(tourId) {
 
 export async function getTourCoordinates(tourId) {
   try {
-    const db = await getDbConnection();
-
     const allCoordinates = await db
       .collection("tour_coordinates")
       .findOne({ tourId });
@@ -86,8 +73,6 @@ export async function getTourCoordinates(tourId) {
 
 export async function getTourMarkers(tourId) {
   try {
-    const db = await getDbConnection();
-
     const allMarkers = await db.collection("tour_markers").findOne({ tourId });
 
     return transformObjectIdToString(allMarkers);
@@ -100,8 +85,6 @@ export async function getTourMarkers(tourId) {
 
 export async function getTourTips(tourId) {
   try {
-    const db = await getDbConnection();
-
     const allTourTips = await db.collection("tour_tourism").findOne({ tourId });
 
     return transformObjectIdToString(allTourTips);
@@ -114,8 +97,6 @@ export async function getTourTips(tourId) {
 
 export async function getAllFairs() {
   try {
-    const db = await getDbConnection();
-
     const allFairs = await db.collection("fairs").find({}).toArray();
 
     return allFairs.map((mongoDbItem) => {
@@ -140,8 +121,6 @@ export async function getByIdFair(id) {
 
 export async function getAllPassaports() {
   try {
-    const db = await getDbConnection();
-
     const allPassaports = await db.collection("passports").find({}).toArray();
 
     return allPassaports.map((mongoDbItem) => {
@@ -166,8 +145,6 @@ export async function getByIdPassport(id) {
 
 export async function getAllProverbs() {
   try {
-    const db = await getDbConnection();
-
     const allProverbs = await db.collection("proverbs").find({}).toArray();
 
     return allProverbs.map((mongoDbItem) => {
@@ -187,8 +164,6 @@ export async function getFeaturedProverbs() {
 
 export async function getAllTrips() {
   try {
-    const db = await getDbConnection();
-
     const allTrips = await db.collection("trip_id").find({}).toArray();
 
     return allTrips.map((mongoDbItem) => {
@@ -231,8 +206,6 @@ export async function getTripAccesses(tripId) {
 
 export async function getTripDescriptions(tripId) {
   try {
-    const db = await getDbConnection();
-
     const allDescriptions = await db
       .collection("trip_descriptions")
       .findOne({ tripId });
@@ -247,8 +220,6 @@ export async function getTripDescriptions(tripId) {
 
 export async function getTripCoordinates(tripId) {
   try {
-    const db = await getDbConnection();
-
     const allCoordinates = await db
       .collection("trip_coordinates")
       .findOne({ tripId });
@@ -263,8 +234,6 @@ export async function getTripCoordinates(tripId) {
 
 export async function getTripMarkers(tripId) {
   try {
-    const db = await getDbConnection();
-
     const allMarkers = await db.collection("trip_markers").findOne({ tripId });
 
     return transformObjectIdToString(allMarkers);
@@ -277,8 +246,6 @@ export async function getTripMarkers(tripId) {
 
 export async function getTripTourismTips(tripId) {
   try {
-    const db = await getDbConnection();
-
     const allTourismTips = await db
       .collection("trip_tourism")
       .findOne({ tripId });
