@@ -2,8 +2,7 @@ import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import ButtonYellow from "../../button/ButtonYellow";
 import Image from "next/image";
 import { RevealList } from "next-reveal";
-import StartWhite from "../../../icons/stars/StarWhite";
-import StartYellow from "../../../icons/stars/StarYellow";
+import StartsEvaluation from "./StarsEvaluation";
 
 export default function CardStars(props) {
   const ARRAY = [];
@@ -38,11 +37,8 @@ export default function CardStars(props) {
                 </h5>
 
                 <div className="flex items-center mt-2.5 mb-2.5 justify-start pb-4">
-                  <StartYellow />
-                  <StartYellow />
-                  <StartYellow />
-                  <StartWhite />
-                  <span className="bg-gray-200 text-dark-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                  <StartsEvaluation evaluation={trip.evaluation} />
+                  <span className="bg-gray-200 text-dark-800 text-lg font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
                     {trip.evaluation}
                   </span>
                 </div>
