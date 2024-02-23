@@ -172,12 +172,11 @@ export async function getProverbs() {
     const client = await clientPromise;
     const db = client.db("roads");
 
-    const currentDate = new Date();
-    let currentMonth = currentDate.getMonth() + 1;
+    let currentMonth = new Date().getMonth() + 1;
 
     const proverbs = await db
       .collection("proverbs")
-      .find({ id: currentMonth })
+      .find({ month: currentMonth })
       .toArray();
 
     return proverbs.map((mongoDbItem) => {
