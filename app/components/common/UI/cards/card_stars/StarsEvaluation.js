@@ -1,8 +1,7 @@
-import StartWhite from "../../../icons/stars/StarWhite";
-import StartYellow from "../../../icons/stars/StarYellow";
+import StartWhite from "@/components/common/icons/stars/StarWhite";
+import StartYellow from "@/components/common/icons/stars/StarYellow";
 
 export default function StartsEvaluation(props) {
-  console.log(props.evaluation - 5);
   const renderStars = () => {
     const stars = [];
     for (let i = 0; i < props.evaluation; i++) {
