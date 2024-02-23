@@ -9,8 +9,8 @@ export default function FairsRegions({ setRegion }) {
   }
 
   return (
-    <div className="">
-      <div className="flex justify-center pb-20">
+    <div className="pr-6 pl-6">
+      <div className="flex justify-center pb-10">
         <ButtonOptionLeft
           key={"1"}
           label={REGIONS_LABELS.all}
