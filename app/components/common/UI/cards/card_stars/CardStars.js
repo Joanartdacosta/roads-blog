@@ -20,7 +20,7 @@ export default function CardStars(props) {
             key={trip.id}
           >
             <RevealList interval={50} delay={50} reset={true}>
-              <div className="w-full p-2 pb-8">
+              <div className="w-full p-2 pb-2">
                 <Image
                   alt={trip.title}
                   className="wrap w-full object-cover h-60 rounded-t-lg"
@@ -32,23 +32,27 @@ export default function CardStars(props) {
                 />
               </div>
               <div className="p-2">
-                <h5 className="text-xl tracking-tight text-gray-800 dark:text-yellow poppins">
+                <h5 className="text-xl tracking-tight text-gray-800 dark:text-yellow poppins mb-8">
                   {trip.title}
                 </h5>
+                {props.evaluation ? (
+                  <div className="flex items-center mt-2.5 mb-2.5 justify-start pb-4">
+                    <StartsEvaluation evaluation={trip.evaluation} />
+                    <span className="bg-gray-200 text-dark-800 text-lg font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                      {trip.evaluation}
+                    </span>
+                  </div>
+                ) : (
+                  ""
+                )}
 
-                <div className="flex items-center mt-2.5 mb-2.5 justify-start pb-4">
-                  <StartsEvaluation evaluation={trip.evaluation} />
-                  <span className="bg-gray-200 text-dark-800 text-lg font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                    {trip.evaluation}
-                  </span>
-                </div>
                 <div className="flex items-center justify-between items-baseline">
                   <div className="flex flex-col">
                     {" "}
-                    <span className="text-lg font-semibold text-gray-900 dark:text-white">
+                    <span className="text-sm text-gray-900 dark:text-white">
                       {trip.district}
                     </span>{" "}
-                    <span className="text-sm font-semibold text-gray-900">
+                    <span className="text-sm font-thin text-gray-900">
                       {trip.town}
                     </span>
                   </div>
