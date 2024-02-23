@@ -26,7 +26,7 @@ export default function DropDownMenu() {
                 <div className="font-semibold">
                   {NAVBAR_LINKS[item].section}
                 </div>
-                <span className="text-xs text-gray-700 dark:text-gray-400">
+                <span className="play text-xs text-gray-700 dark:text-gray-400">
                   {NAVBAR_LINKS[item].description}
                 </span>
               </a>
