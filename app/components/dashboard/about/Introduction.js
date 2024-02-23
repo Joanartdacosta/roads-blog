@@ -6,7 +6,7 @@ export default function Introduction() {
   return (
     <div>
       <div className=" text-center m-auto ">
-        <CardInfo array={INTRODUCTION} />
+        <CardInfo data={INTRODUCTION} />
 
         <Image
           src="https://estradas-website.s3.amazonaws.com/Estradas/rui.png"
