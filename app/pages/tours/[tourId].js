@@ -53,8 +53,6 @@ export async function getStaticProps(context) {
     ...tourTourismTips,
   };
 
-  console.log(tour);
-
   return {
     props: {
       selectedTour: tour,
