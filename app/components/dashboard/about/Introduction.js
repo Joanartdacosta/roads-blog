@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function Introduction() {
   return (
     <div>
-      <div className="pb-8 text-center m-auto">
+      <div className=" text-center m-auto">
         <p>
           Chamo-me Rui Costa e fui professor de Geografia ao longo de 42 anos.
         </p>
@@ -17,13 +19,25 @@ export default function Introduction() {
           experiências, partilhando roteiros das viagens e divulgando aspetos de
           interesse geográfico.
         </p>
+
+        <Image
+          src="https://estradas-website.s3.amazonaws.com/Estradas/rui.png"
+          alt="Rui Costa"
+          unoptimized
+          priority={true}
+          width={1100}
+          height={1100}
+          className="m-auto mb-10 mt-10"
+        />
       </div>
-      <div className="text-center m-auto border border-green-100 p-8">
-        <p className="font-bold italic text-s text-green-700">
+      <div className="text-center m-auto border border-double border-amber-800 p-6 border-8 rounded">
+        <p className="font-bold italic text-s play">
           A vida é o que fazemos dela. As viagens são os viajantes. O que vemos
           não é o que vemos, senão o que somos.
         </p>
-        <p>Fernando Pessoa</p>
+        <p className="font-bold text-xs text-amber-800 mt-4 play">
+          Fernando Pessoa
+        </p>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export default function Introduction(props) {
   }
 
   return (
-    <div className="">
+    <div>
       <div className="m-auto text-gray-900  dark:text-white">
         <div className="flex flex-col items-center justify-center">
           <div className="mb-8 mt-8 text-3xl font-extrabold">
@@ -21,7 +21,7 @@ export default function Introduction(props) {
               ? current.description1.map((description) => {
                   return (
                     <div
-                      className="poppins text-sm text-gray-900 dark:text-white"
+                      className="text-base text-gray-900 dark:text-white"
                       key={description}
                     >
                       <p className="text-gray-500">{description}</p>
