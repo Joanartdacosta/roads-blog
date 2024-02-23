@@ -1,4 +1,5 @@
 import InfoBullets from "@/components/common/menu_id/general_info/InfoBullets";
+import TAB_BUTTONS_LABELS from "@/components/enums/tab_buttons_labels";
 import { useSelector } from "react-redux";
 
 export default function Tips(props) {
@@ -11,7 +12,14 @@ export default function Tips(props) {
 
   return (
     <div>
-      {current?.bullets ? <InfoBullets bullets={current.bullets} /> : ""}
+      {current?.bullets ? (
+        <InfoBullets
+          bullets={current.bullets}
+          label={TAB_BUTTONS_LABELS.recomendation}
+        />
+      ) : (
+        ""
+      )}
 
       <div
         className="bg-white rounded-lg md:p-8 dark:bg-gray-800"
