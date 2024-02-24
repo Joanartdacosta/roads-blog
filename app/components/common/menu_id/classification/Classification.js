@@ -10,7 +10,7 @@ export default function Classification(props) {
   }
 
   return (
-    <div className="p-4 responsive-width">
+    <div className="p-4 responsive-width text-left">
       {current?.percentage ? (
         <div>
           {current.percentage.acessibility ? (
