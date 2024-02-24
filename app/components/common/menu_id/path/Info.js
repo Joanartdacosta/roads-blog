@@ -1,4 +1,4 @@
-import Access from "./Access";
+import Access from "@/components/common/menu_id/path/Access";
 
 export default function Info(props) {
   return (

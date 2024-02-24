@@ -1,4 +1,4 @@
-import PathImage from "./PathImage";
+import PathImage from "@/components/common/menu_id/path/PathImage";
 import { useSelector } from "react-redux";
 
 export default function Access(props) {

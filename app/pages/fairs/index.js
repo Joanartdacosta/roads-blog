@@ -11,7 +11,7 @@ export default function Fairs() {
         imgUrl={NAVBAR_LINKS["fairs"]["imgUrl"]}
         description={NAVBAR_LINKS["fairs"]["description"]}
       />
-      <div className="roboto max-w-5xl m-auto pt-20 pb-20">
+      <div className="roboto max-w-5xl m-auto pt-20 pb-20 pr-6 pl-6">
         <FilteringFair />
       </div>
     </div>

@@ -1,5 +1,5 @@
 import BUTTONS_LABELS from "@/components/enums/buttons_labels";
-import ButtonYellow from "../../button/ButtonYellow";
+import ButtonYellow from "@/components/common/UI/button/ButtonYellow";
 import Image from "next/image";
 import { RevealList } from "next-reveal";
 import StartsEvaluation from "./StarsEvaluation";

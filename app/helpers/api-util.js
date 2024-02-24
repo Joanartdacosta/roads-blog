@@ -143,21 +143,18 @@ export async function getByIdPassport(id) {
 
 // PROVERBS
 
-export async function getAllProverbs() {
+export async function getProverbs() {
   try {
-    const allProverbs = await db.collection("proverbs").find({}).toArray();
+    let currentMonth = new Date().getMonth() + 1;
 
-    return allProverbs.map((mongoDbItem) => {
-      return { ...mongoDbItem, _id: String(mongoDbItem._id) };
-    });
+    const proverbs = await db
+      .collection("proverbs")
+      .findOne({ month: currentMonth });
+
+    return transformObjectIdToString(proverbs);
   } catch (e) {
     console.error(e);
   }
-}
-
-export async function getFeaturedProverbs() {
-  const all = await getAllProverbs();
-  return all.filter((item) => item.isFeatured == true);
 }
 
 // TRIPS

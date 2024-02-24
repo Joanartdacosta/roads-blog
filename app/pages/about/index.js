@@ -10,7 +10,7 @@ export default function AboutMe() {
         imgUrl={NAVBAR_LINKS["about"]["imgUrl"]}
         description={NAVBAR_LINKS["about"]["description"]}
       />
-      <div className="max-w-3xl m-auto pt-20 pb-20">
+      <div className="max-w-5xl m-auto pt-20 pb-20 pl-8 pr-8">
         <Introduction />
       </div>
     </div>
