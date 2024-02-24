@@ -14,7 +14,7 @@ export default function Tours(props) {
         description={NAVBAR_LINKS["tours"]["description"]}
       />
       <div className="max-w-5xl m-auto pt-20 pb-20">
-        <CardStars array={props.tours} />
+        <CardStars data={props.tours} />
       </div>
       <FreeTourBanner />
     </div>
