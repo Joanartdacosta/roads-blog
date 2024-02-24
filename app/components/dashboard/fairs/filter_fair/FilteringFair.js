@@ -54,7 +54,7 @@ export default function FilteringFairByDateAndRegion() {
       </h1>
       <Regions filterFairs={filterFairs} setRegion={setRegion} />
 
-      <div className="flex pt-16">
+      <div className="flex responsive-flex">
         <div className="w-full">
           <div className="p-4 bg-gray-100 text-xs ">
             <h1 className="text-lg pb-2 text-center">Filtro seleccionado</h1>

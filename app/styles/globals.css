@@ -90,8 +90,31 @@ svg {
   .display-none {
     display: none;
   }
-}
+  .banner-responsive {
+    display: none;
+  }
 
+  .responsive-button,
+  .responsive-text {
+    width: 22rem;
+  }
+
+  .responsive-title {
+    text-decoration: none;
+  }
+
+  .responsive-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .responsive-estradas {
+    font-size: 2.5rem;
+  }
+
+  .margin-left {
+    margin-left: 1.5rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   .image-responsive {
     display: none;

@@ -3,7 +3,7 @@ import BannerDescription from "@/components/dashboard/tour/banner/FreeTourDescri
 
 export default function Banner() {
   return (
-    <div className="flex justify-center m-auto">
+    <div className="flex justify-center m-auto pl-8 pr-8">
       <BannerDescription />
       <BannerGallery />
     </div>
