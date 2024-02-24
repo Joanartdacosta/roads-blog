@@ -12,7 +12,7 @@ export default function PassportDetailsPage(props) {
         description={NAVBAR_LINKS["passports"]["description"]}
       />
       <div className="max-w-xl m-auto pt-20 pb-20">
-        <CardInfo data={[props.selectedPassport]} />
+        <CardInfo data={props.selectedPassport} />
       </div>
     </div>
   );

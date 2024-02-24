@@ -5,15 +5,9 @@ import { RevealList } from "next-reveal";
 import StartsEvaluation from "./StarsEvaluation";
 
 export default function CardStars(props) {
-  const ARRAY = [];
-
-  for (let i = 0; i < props.array.length; i++) {
-    ARRAY.push(props.array[i]);
-  }
-
   return (
     <div className="flex flex-wrap gap-8 justify-center">
-      {ARRAY.map((trip) => {
+      {props.data.map((trip) => {
         return (
           <div
             className="p-4 bg-neutral-100 rounded-lg shadow dark:bg-yellow-800 dark:border-gray-700 w-96 h-70"
@@ -35,8 +29,8 @@ export default function CardStars(props) {
                 <h5 className="text-xl tracking-tight text-gray-800 dark:text-yellow poppins mb-8">
                   {trip.title}
                 </h5>
-                {props.evaluation ? (
-                  <div className="flex items-center mt-2.5 mb-2.5 justify-start pb-4">
+                {trip.evaluation ? (
+                  <div className="flex items-center justify-start pb-4">
                     <StartsEvaluation evaluation={trip.evaluation} />
                     <span className="bg-gray-200 text-dark-800 text-lg font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
                       {trip.evaluation}
@@ -46,18 +40,17 @@ export default function CardStars(props) {
                   ""
                 )}
 
-                <div className="flex items-center justify-between items-baseline">
+                <div className="flex items-center justify-between">
                   <div className="flex flex-col">
-                    {" "}
-                    <span className="text-sm text-gray-900 dark:text-white">
-                      {trip.district}
+                    <span className="text-base text-gray-900 dark:text-white">
+                      {trip.location.district}
                     </span>{" "}
                     <span className="text-sm font-thin text-gray-900">
-                      {trip.town}
+                      {trip.location.town}
                     </span>
                   </div>
 
-                  <div className="pt-2">
+                  <div>
                     <ButtonYellow
                       href={trip.href}
                       label={BUTTONS_LABELS.moreInfo}
