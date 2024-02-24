@@ -5,7 +5,6 @@ import { RevealList } from "next-reveal";
 import StartsEvaluation from "./StarsEvaluation";
 
 export default function CardStars(props) {
-  console.log(props);
   return (
     <div className="flex flex-wrap gap-8 justify-center">
       {props.data.map((trip) => {
