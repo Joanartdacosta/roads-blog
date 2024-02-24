@@ -1,7 +1,7 @@
 const TAB_BUTTONS_LABELS = Object.freeze({
   general: "Informações gerais",
   location: "Localização",
-  path: "Como chegar - trajectos",
+  path: "Como chegar",
   points: "Pontos de interesse",
   tip: "Dicas e Recomendações",
   recomendation: "Recomendações gerais",
