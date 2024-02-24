@@ -5,10 +5,10 @@ export default function StartsEvaluation(props) {
   const renderStars = () => {
     const stars = [];
     for (let i = 0; i < props.evaluation; i++) {
-      stars.push(<StartYellow key={i} />);
+      stars.push(<StartYellow key={`${i}y`} />);
     }
     for (let i = 0; i < 5 - props.evaluation; i++) {
-      stars.push(<StartWhite key={i} />);
+      stars.push(<StartWhite key={`${i}w`} />);
     }
 
     return stars;
