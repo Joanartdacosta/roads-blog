@@ -37,7 +37,7 @@ export default function CardStars(props) {
                     </span>
                   </div>
                 ) : (
-                  ""
+                  <div></div>
                 )}
 
                 <div className="flex items-center justify-between">
