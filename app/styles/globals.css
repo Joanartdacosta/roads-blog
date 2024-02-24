@@ -106,4 +106,9 @@ svg {
   .menu-icons {
     display: none;
   }
+
+  .responsive-width {
+    width: 24rem;
+    margin-left: 2rem;
+  }
 }
