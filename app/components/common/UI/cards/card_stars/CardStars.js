@@ -5,13 +5,14 @@ import { RevealList } from "next-reveal";
 import StartsEvaluation from "./StarsEvaluation";
 
 export default function CardStars(props) {
+  console.log(props);
   return (
     <div className="flex flex-wrap gap-8 justify-center">
       {props.data.map((trip) => {
         return (
           <div
             className="p-4 bg-neutral-100 rounded-lg shadow dark:bg-yellow-800 dark:border-gray-700 w-96 h-70"
-            key={trip._id}
+            key={trip.id}
           >
             <RevealList interval={50} delay={50} reset={true}>
               <div className="w-full p-2 pb-8">
