@@ -57,7 +57,37 @@ svg {
   .menu-normal {
     display: none;
   }
-  .menu-labels {
+  .responsive-button,
+  .responsive-text {
+    width: 22rem;
+  }
+  .margin-left {
+    margin-left: 1.5rem;
+  }
+  .responsive-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .responsive-estradas {
+    font-size: 2.5rem;
+  }
+
+  .responsive-banner {
+    font-size: 2.5rem;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+
+  .responsive-calendar {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  .responsive-menu {
+    width: 20rem;
+    margin: auto;
+    text-align: center;
+  }
+  .display-none {
     display: none;
   }
 }
