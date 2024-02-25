@@ -64,6 +64,10 @@ svg {
   .margin-left {
     margin-left: 1.5rem;
   }
+  .responsive-margin {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
   .responsive-flex {
     display: flex;
     flex-direction: column-reverse;
@@ -109,10 +113,6 @@ svg {
   }
   .responsive-estradas {
     font-size: 2.5rem;
-  }
-
-  .margin-left {
-    margin-left: 1.5rem;
   }
 }
 @media screen and (max-width: 1000px) {

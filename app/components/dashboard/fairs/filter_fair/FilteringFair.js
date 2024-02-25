@@ -44,6 +44,14 @@ export default function FilteringFairByDateAndRegion() {
       const dateObjFairStartDate = new Date(fair.date.endDate);
       const dateObjFairEndDate = new Date(fair.date.startDate);
 
+      console.log(current);
+
+      if (fair._id === "65b40904a7e4271800c4071b") {
+        console.log(dateObjFairEndDate);
+        console.log(dateObjFairStartDate);
+        console.log(dateObjEndDate);
+        console.log(dateObjStartDate);
+      }
       if (dateObjFairEndDate < dateObjStartDate) {
         return false;
       } else if (dateObjFairStartDate > dateObjEndDate) {
@@ -56,7 +64,7 @@ export default function FilteringFairByDateAndRegion() {
 
   return (
     <div>
-      <h1 className="text-sm pb-8 pt-8 display text-center">
+      <h1 className="text-sm pb-8 pt-8 display text-center m-auto ">
         Por favor seleccione um intervalo de datas e uma regiao no calendário.
       </h1>
       <Regions
@@ -65,7 +73,7 @@ export default function FilteringFairByDateAndRegion() {
         setFairs={setFairs}
       />
 
-      <div className="flex responsive-flex">
+      <div className="flex responsive-flex responsive-margin">
         <div className="w-full">
           <div className="p-4 bg-gray-100 text-xs ">
             <h1 className="text-lg pb-2 text-center">Filtro seleccionado</h1>
@@ -96,7 +104,7 @@ export default function FilteringFairByDateAndRegion() {
           </div>
         </div>
 
-        <div className="m-auto pl-4 responsive-calendar">
+        <div className="pl-4 responsive-calendar">
           <Calendar
             filterFairs={filterFairs}
             startDate={startDate}
