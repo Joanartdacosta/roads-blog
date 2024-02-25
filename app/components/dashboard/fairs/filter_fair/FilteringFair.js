@@ -31,17 +31,22 @@ export default function FilteringFairByDateAndRegion() {
     setFairs(filteredFairs);
   }
 
-  function filterFairsByRegions(region, fairs) {
-    return fairs.filter((fair) =>
+  function filterFairsByRegions(region, current) {
+    return current.filter((fair) =>
       fair.region.toLowerCase().includes(region.toLowerCase())
     );
   }
 
-  function filterFairsByDate(startDate, endDate, fairs) {
-    return fairs.filter((fair) => {
-      if (fair.endDate < startDate) {
+  function filterFairsByDate(startDate, endDate, current) {
+    return current.filter((fair) => {
+      const dateObjStartDate = new Date(startDate);
+      const dateObjEndDate = new Date(endDate);
+      const dateObjFairStartDate = new Date(fair.date.endDate);
+      const dateObjFairEndDate = new Date(fair.date.startDate);
+
+      if (dateObjFairEndDate < dateObjStartDate) {
         return false;
-      } else if (fair.startDate > endDate) {
+      } else if (dateObjFairStartDate > dateObjEndDate) {
         return false;
       } else {
         return true;

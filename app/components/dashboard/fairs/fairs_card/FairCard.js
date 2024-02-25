@@ -41,15 +41,6 @@ export default function FairCard(props) {
     },
   };
 
-  const humanReadableDate = new Date(props.fair.startDate).toLocaleDateString(
-    "pt-PT",
-    {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    }
-  );
-
   return (
     <div>
       <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
@@ -57,9 +48,30 @@ export default function FairCard(props) {
           <span>
             <CalendarIcon />
           </span>
-          <span>
-            <FairMonth />
-          </span>
+
+          {props.fair.date ? (
+            <span>
+              <FairMonth
+                startDate={new Date(
+                  props.fair.date.startDate
+                ).toLocaleDateString("pt-PT", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+                endDate={new Date(props.fair.date.endDate).toLocaleDateString(
+                  "pt-PT",
+                  {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  }
+                )}
+              />
+            </span>
+          ) : (
+            ""
+          )}
         </div>
         <div className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
           <div className="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700">
