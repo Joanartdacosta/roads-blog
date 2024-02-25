@@ -18,7 +18,7 @@ export default function Introduction() {
           className="m-auto mb-10"
         />
       </div>
-      <div className="text-center m-auto border border-double border-amber-800 p-6 border-8 rounded">
+      <div className="text-center m-auto  p-6 border-8 rounded">
         <p className="font-bold italic text-s play">
           A vida é o que fazemos dela. As viagens são os viajantes. O que vemos
           não é o que vemos, senão o que somos.

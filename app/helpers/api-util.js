@@ -97,7 +97,7 @@ export async function getTourTips(tourId) {
 
 export async function getAllFairs() {
   try {
-    const allFairs = await db.collection("fairs").find({}).toArray();
+    const allFairs = await db.collection("all_fairs").find({}).toArray();
 
     return allFairs.map((mongoDbItem) => {
       return { ...mongoDbItem, _id: String(mongoDbItem._id) };
