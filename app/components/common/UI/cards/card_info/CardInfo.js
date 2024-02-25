@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export default function CardInfo(props) {
-  console.log(props);
   return (
     <div className="m-auto">
       <div className="p-4">
