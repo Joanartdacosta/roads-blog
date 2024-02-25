@@ -13,8 +13,6 @@ import { whiteRgba } from "@/consts/colors";
 
 export default function FairCard(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  console.log("feiras");
-  console.log(props);
 
   function closeModal() {
     setModalIsOpen(false);
