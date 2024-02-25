@@ -23,9 +23,9 @@ export default function Tips(props) {
 
       <div
         className="bg-white rounded-lg md:p-8 dark:bg-gray-800"
-        id="about"
+        id="tip"
         role="tabpanel"
-        aria-labelledby="about-tab"
+        aria-labelledby="tip"
       >
         {current?.prices ? (
           <div className="py-5 border-b border-gray-200 dark:border-gray-700">

@@ -29,7 +29,7 @@ export default function Path(props) {
           type="button"
         >
           <div>
-            <h2 className="text-lg">{props.label}</h2>
+            <h2 className="text-base">{props.label}</h2>
           </div>
 
           <Arrow isOpen={isOpen} />

@@ -12,7 +12,7 @@ export default function Passports(props) {
         description={NAVBAR_LINKS["passports"]["description"]}
       />
       <div className="roboto max-w-5xl m-auto pt-20 pb-20">
-        <CardStars array={props.passports} />
+        <CardStars data={props.passports} />
       </div>
     </div>
   );
