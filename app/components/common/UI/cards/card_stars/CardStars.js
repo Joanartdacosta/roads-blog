@@ -11,7 +11,7 @@ export default function CardStars(props) {
         return (
           <div
             className="p-4 bg-neutral-100 rounded-lg shadow dark:bg-yellow-800 dark:border-gray-700 w-96 h-70"
-            key={trip.id}
+            key={trip._id}
           >
             <RevealList interval={50} delay={50} reset={true}>
               <div className="w-full p-2 pb-2">
@@ -23,6 +23,7 @@ export default function CardStars(props) {
                   height={424}
                   src={trip.imgUrl}
                   unoptimized
+                  priority={false}
                 />
               </div>
               <div className="p-2">

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function MenuItem(props) {
   return (
     <div>
-      <div className="w-full menu-labels">
+      <div className="w-full display-none">
         <Link onClick={props.onClick} href={props.href}>
           <button
             id={props.id}
@@ -19,7 +19,7 @@ export default function MenuItem(props) {
           </button>
         </Link>
       </div>
-      <div className="menu-icons w-24 m-auto">
+      <div className="menu-icons m-auto">
         <Link onClick={props.onClick} href={props.href}>
           <button
             id={props.id}
@@ -28,7 +28,7 @@ export default function MenuItem(props) {
             aria-controls={props.id}
             aria-selected="true"
             value={props.label}
-            className="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+            className="inline-block p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600"
           >
             {props.icon}
           </button>

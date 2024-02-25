@@ -9,7 +9,7 @@ export default function FairsRegions({ setRegion }) {
   }
 
   return (
-    <div className="pr-6 pl-6">
+    <div className="m-auto">
       <div className="flex justify-center pb-10">
         <ButtonOptionLeft
           key={"1"}

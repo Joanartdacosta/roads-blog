@@ -56,7 +56,7 @@ export default function Map(props) {
   }, []);
 
   return (
-    <div>
+    <div id="location">
       {current ? (
         <div className="flex flex-col justify justify-center items-center">
           <div style={{ height: "400px", width: "700px" }} ref={mapRef} />

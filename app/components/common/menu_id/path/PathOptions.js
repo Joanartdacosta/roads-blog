@@ -13,7 +13,7 @@ export default function PathOptions(props) {
   return (
     <div
       className="p-8 bg-white rounded-lg dark:bg-gray-800"
-      id="faq"
+      id="path"
       role="tabpanel"
       aria-labelledby="faq-tab"
     >
