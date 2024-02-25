@@ -3,13 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --font-title: "Roboto", san-serif;
-  --font-text: "Poppins", sans-serif;
+  --font-title: "Play", san-serif;
+  --font-text: "poppins", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+p,
+span {
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
 }
 
 main {
@@ -34,54 +45,8 @@ main {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
-
 .oswald {
   font-family: "Oswald", sans-serif;
-}
-
-.roboto {
-  font-family: "Roboto", sans-serif;
-}
-.cinzel {
-  font-family: "Cinzel", sans-serif;
-}
-
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-}
-
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.baskervville-regular {
-  font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.baskervville-regular-italic {
-  font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.outfit {
-  font-family: "Outfit", sans-serif;
 }
 
 svg {
@@ -92,8 +57,64 @@ svg {
   .menu-normal {
     display: none;
   }
-}
+  .responsive-button,
+  .responsive-text {
+    width: 22rem;
+  }
+  .margin-left {
+    margin-left: 1.5rem;
+  }
+  .responsive-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .responsive-estradas {
+    font-size: 2.5rem;
+  }
 
+  .responsive-banner {
+    font-size: 2.5rem;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+
+  .responsive-calendar {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  .responsive-menu {
+    width: 20rem;
+    margin: auto;
+    text-align: center;
+  }
+  .display-none {
+    display: none;
+  }
+  .banner-responsive {
+    display: none;
+  }
+
+  .responsive-button,
+  .responsive-text {
+    width: 22rem;
+  }
+
+  .responsive-title {
+    text-decoration: none;
+  }
+
+  .responsive-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .responsive-estradas {
+    font-size: 2.5rem;
+  }
+
+  .margin-left {
+    margin-left: 1.5rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   .image-responsive {
     display: none;
@@ -103,5 +124,14 @@ svg {
 @media screen and (min-width: 770px) {
   .menu-hamburguer {
     display: none;
+  }
+
+  .menu-icons {
+    display: none;
+  }
+
+  .responsive-width {
+    width: 24rem;
+    margin-left: 2rem;
   }
 }

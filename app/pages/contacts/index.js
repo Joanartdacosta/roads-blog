@@ -11,7 +11,7 @@ export default function Contacts() {
         imgUrl={NAVBAR_LINKS["contacts"]["imgUrl"]}
         description={NAVBAR_LINKS["contacts"]["description"]}
       />
-      <div className="roboto max-w-5xl m-auto pt-20 pb-20">
+      <div className="roboto max-w-5xl m-auto pt-20 pb-20 pl-8 pr-8">
         <p className="pb-11 text-center">Entre em contacto comigo.</p>
 
         <Form />

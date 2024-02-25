@@ -1,5 +1,5 @@
-import TourPoints from "./TourPoints";
-import TripPoints from "./TripPoints";
+import TourPoints from "@/components/common/menu_id/location/TourPoints";
+import TripPoints from "@/components/common/menu_id/location/TripPoints";
 import { useSelector } from "react-redux";
 
 export default function Points(props) {

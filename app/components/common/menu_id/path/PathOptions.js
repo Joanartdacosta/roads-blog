@@ -1,5 +1,5 @@
 import PATH_OPTIONS_LABELS from "@/components/enums/path_options_labels";
-import Path from "./Path";
+import Path from "@/components/common/menu_id/path/Path";
 import { useSelector } from "react-redux";
 
 export default function PathOptions(props) {
@@ -13,7 +13,7 @@ export default function PathOptions(props) {
   return (
     <div
       className="p-8 bg-white rounded-lg dark:bg-gray-800"
-      id="faq"
+      id="path"
       role="tabpanel"
       aria-labelledby="faq-tab"
     >

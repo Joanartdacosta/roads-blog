@@ -1,5 +1,5 @@
 import FORM_LABELS from "@/components/enums/form_labels";
-import Label from "./Label";
+import Label from "@/components/common/UI/forms/details/Label";
 
 export default function TextArea(props) {
   return (
