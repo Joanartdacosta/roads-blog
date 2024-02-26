@@ -97,7 +97,7 @@ export async function getTourTips(tourId) {
 
 export async function getAllFairs() {
   try {
-    const allFairs = await db.collection("fairs").find({}).toArray();
+    const allFairs = await db.collection("all_fairs").find({}).toArray();
 
     return allFairs.map((mongoDbItem) => {
       return { ...mongoDbItem, _id: String(mongoDbItem._id) };
@@ -105,16 +105,6 @@ export async function getAllFairs() {
   } catch (e) {
     console.error(e);
   }
-}
-
-export async function getFeaturedFairs() {
-  const all = await getAllFairs();
-  return all.filter((item) => item.isFeatured == true);
-}
-
-export async function getByIdFair(id) {
-  const all = await getAllFairs();
-  return all.find((item) => item.id === id);
 }
 
 // PASSPORTS

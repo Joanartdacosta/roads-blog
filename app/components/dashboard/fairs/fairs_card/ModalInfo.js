@@ -3,6 +3,12 @@ import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import Image from "next/image";
 
 export default function ModalInfo(props) {
+  const PARAGRAPHS = [];
+
+  for (let i = 0; i < props.paragraphs.length; i++) {
+    PARAGRAPHS.push(props.paragraphs[i]);
+  }
+
   return (
     <div>
       <div className="flex">
@@ -15,19 +21,22 @@ export default function ModalInfo(props) {
             <div className="text-gray-600 dark:text-gray-400">
               <div className="text-base font-normal pb-5">
                 <span className="font-medium text-gray-900 dark:text-white">
-                  <p>{props.description}</p>
+                  {props.description ? <p>{props.description}</p> : ""}
                 </span>{" "}
-              </div>
-              <div className="text-sm font-normal pb-10">
-                <p className="text-base bold italic pb-2">Mais detalhes</p>
-                <p>{props.paragraph1}</p>
-                <p>{props.paragraph2}</p>
-                <p>{props.paragraph3}</p>
-                <p>{props.paragraph4}</p>
               </div>
 
               <div className="text-sm font-normal pb-10">
-                <p>Fonte: {props.source}</p>
+                <p className="text-base bold italic pb-2">Mais detalhes</p>
+
+                {props.paragraphs
+                  ? Object.values(props.paragraphs).map((paragraph) => (
+                      <p>{paragraph}</p>
+                    ))
+                  : ""}
+              </div>
+
+              <div className="text-sm font-normal pb-10">
+                <p>Fonte: {props.sources}</p>
               </div>
 
               <ButtonYellow

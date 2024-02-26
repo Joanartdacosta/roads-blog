@@ -1,22 +1,24 @@
 import Calendar from "@/components/dashboard/fairs/calendar/Calendar";
 import FairCard from "@/components/dashboard/fairs/fairs_card/FairCard";
-import FAIRS from "@/components/lists/fairs";
-import { useState, useEffect } from "react";
 import Regions from "@/components/dashboard/fairs/regions/FairsRegions";
+import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 
 export default function FilteringFairByDateAndRegion() {
+  let current = useSelector((state) => state.fair.allFairs);
+
   const [region, setRegion] = useState(null);
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
-  const [allfairs, setFairs] = useState(FAIRS);
+  const [allfairs, setFairs] = useState(current);
 
   useEffect(() => {
     filterFairs();
   }, [region, startDate, endDate]);
 
   function filterFairs() {
-    let filteredFairs = FAIRS;
+    let filteredFairs = current;
 
     if (region) {
       filteredFairs = filterFairsByRegions(region, filteredFairs);
@@ -29,17 +31,22 @@ export default function FilteringFairByDateAndRegion() {
     setFairs(filteredFairs);
   }
 
-  function filterFairsByRegions(region, fairs) {
-    return fairs.filter((fair) =>
+  function filterFairsByRegions(region, current) {
+    return current.filter((fair) =>
       fair.region.toLowerCase().includes(region.toLowerCase())
     );
   }
 
-  function filterFairsByDate(startDate, endDate, fairs) {
-    return fairs.filter((fair) => {
-      if (fair.endDate < startDate) {
+  function filterFairsByDate(startDate, endDate, current) {
+    return current.filter((fair) => {
+      const dateObjStartDate = new Date(startDate);
+      const dateObjEndDate = new Date(endDate);
+      const dateObjFairStartDate = new Date(fair.date.endDate);
+      const dateObjFairEndDate = new Date(fair.date.startDate);
+
+      if (dateObjFairEndDate < dateObjStartDate) {
         return false;
-      } else if (fair.startDate > endDate) {
+      } else if (dateObjFairStartDate > dateObjEndDate) {
         return false;
       } else {
         return true;
@@ -49,12 +56,16 @@ export default function FilteringFairByDateAndRegion() {
 
   return (
     <div>
-      <h1 className="text-sm pb-8 pt-8 display text-center">
+      <h1 className="text-sm pb-8 pt-8 display text-center m-auto ">
         Por favor seleccione um intervalo de datas e uma regiao no calendário.
       </h1>
-      <Regions filterFairs={filterFairs} setRegion={setRegion} />
+      <Regions
+        filterFairs={filterFairs}
+        setRegion={setRegion}
+        setFairs={setFairs}
+      />
 
-      <div className="flex responsive-flex">
+      <div className="flex responsive-flex responsive-margin">
         <div className="w-full">
           <div className="p-4 bg-gray-100 text-xs ">
             <h1 className="text-lg pb-2 text-center">Filtro seleccionado</h1>
@@ -71,24 +82,11 @@ export default function FilteringFairByDateAndRegion() {
           <p className="pt-10 pb-4 text-xl font-bold ">Lista de Eventos</p>
 
           <div>
-            {allfairs.length ? (
+            {current ? (
               allfairs.map((fair) => {
                 return (
-                  <div className="w-full">
-                    <FairCard
-                      description={fair.description}
-                      district={fair.district}
-                      imgURL={fair.imgURL}
-                      key={fair.id}
-                      month={fair.month}
-                      paragraph1={fair.paragraph1}
-                      paragraph2={fair.paragraph2}
-                      paragraph3={fair.paragraph3}
-                      paragraph4={fair.paragraph4}
-                      region={fair.region}
-                      title={fair.title}
-                      town2={fair.town2}
-                    />
+                  <div className="w-full" key={fair._id}>
+                    <FairCard fair={fair} />
                   </div>
                 );
               })
@@ -98,7 +96,7 @@ export default function FilteringFairByDateAndRegion() {
           </div>
         </div>
 
-        <div className="m-auto pl-4 responsive-calendar">
+        <div className="pl-4 responsive-calendar">
           <Calendar
             filterFairs={filterFairs}
             startDate={startDate}

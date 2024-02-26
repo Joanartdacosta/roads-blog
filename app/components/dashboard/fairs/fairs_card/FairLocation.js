@@ -10,9 +10,16 @@ export default function FairLocation(props) {
         <span>
           <LocationIcon />
         </span>
-        <span className="text-base text-gray-800">
-          {props.district} || {props.town2}
-        </span>{" "}
+
+        {props?.town3 ? (
+          <span className="text-base text-gray-800">
+            {props.town1} || {props.town2} || {props.town3}
+          </span>
+        ) : (
+          <span className="text-base text-gray-800">
+            {props.town1} || {props.town2}
+          </span>
+        )}
       </div>
     </div>
   );

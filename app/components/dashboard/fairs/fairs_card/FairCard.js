@@ -3,7 +3,6 @@ import BUTTONS_LABELS from "@/components/enums/buttons_labels";
 import ButtonYellow2 from "@/components/common/UI/button/ButtonYellow2";
 import CalendarIcon from "@/components/common/icons/calendar/CalendarIcon";
 import { darkRgba } from "@/consts/colors";
-import FAIRS from "@/components/lists/fairs";
 import FairLocation from "@/components/dashboard/fairs/fairs_card/FairLocation";
 import FairMonth from "@/components/dashboard/fairs/fairs_card/FairMonth";
 import Modal from "react-modal";
@@ -42,12 +41,6 @@ export default function FairCard(props) {
     },
   };
 
-  const humanReadableDate = new Date(props.month).toLocaleDateString("pt-PT", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-
   return (
     <div>
       <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
@@ -55,20 +48,41 @@ export default function FairCard(props) {
           <span>
             <CalendarIcon />
           </span>
-          <span>
-            <FairMonth month={humanReadableDate} />
-          </span>
+
+          {props.fair.date ? (
+            <span>
+              <FairMonth
+                startDate={new Date(
+                  props.fair.date.startDate
+                ).toLocaleDateString("pt-PT", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+                endDate={new Date(props.fair.date.endDate).toLocaleDateString(
+                  "pt-PT",
+                  {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  }
+                )}
+              />
+            </span>
+          ) : (
+            ""
+          )}
         </div>
         <div className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
           <div className="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700">
-            <AvatarImg imgURL={props.imgURL} title={props.title} />
+            <AvatarImg imgURL={props.fair.imgURL} title={props.fair.title} />
             <div className="text-gray-600 dark:text-gray-400">
               <FairLocation
-                district={props.district}
-                title={props.title}
-                town2={props.town2}
+                town1={props.fair.location.town1}
+                title={props.fair.title}
+                town2={props.fair.location.town2}
               />{" "}
-              <WorldIcon region={props.region} />
+              <WorldIcon region={props.fair.region} />
             </div>
           </div>
         </div>
@@ -86,15 +100,11 @@ export default function FairCard(props) {
           >
             <div>
               <ModalInfo
-                array={FAIRS}
-                description={props.description}
+                description={props.fair.description}
                 onClick={closeModal}
-                paragraph1={props.paragraph1}
-                paragraph2={props.paragraph2}
-                paragraph3={props.paragraph3}
-                paragraph4={props.paragraph4}
-                imgURL={props.imgURL}
-                source={props.source}
+                paragraphs={props.fair.paragraphs}
+                imgURL={props.fair.imgURL}
+                sources={props.fair.sources}
               />
             </div>
           </Modal>

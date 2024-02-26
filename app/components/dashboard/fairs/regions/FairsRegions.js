@@ -2,10 +2,16 @@ import ButtonOptionLeft from "../../../common/UI/button/ButtonOptionLeft";
 import ButtonOptionMid from "../../../common/UI/button/ButtonOptionMiddle";
 import ButtonOptionRight from "../../../common/UI/button/ButtonOptionRight";
 import REGIONS_LABELS from "@/components/enums/regions_labels";
+import { useSelector } from "react-redux";
 
-export default function FairsRegions({ setRegion }) {
+export default function FairsRegions({ setRegion, setFairs }) {
+  let current = useSelector((state) => state.fair.allFairs);
   function handleRegions(event) {
     setRegion(event.target.value);
+  }
+
+  function showAll() {
+    setFairs(current);
   }
 
   return (
@@ -14,7 +20,7 @@ export default function FairsRegions({ setRegion }) {
         <ButtonOptionLeft
           key={"1"}
           label={REGIONS_LABELS.all}
-          onClick={handleRegions}
+          onClick={showAll}
           value={REGIONS_LABELS.all}
         />
 
