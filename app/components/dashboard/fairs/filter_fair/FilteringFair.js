@@ -44,14 +44,6 @@ export default function FilteringFairByDateAndRegion() {
       const dateObjFairStartDate = new Date(fair.date.endDate);
       const dateObjFairEndDate = new Date(fair.date.startDate);
 
-      console.log(current);
-
-      if (fair._id === "65b40904a7e4271800c4071b") {
-        console.log(dateObjFairEndDate);
-        console.log(dateObjFairStartDate);
-        console.log(dateObjEndDate);
-        console.log(dateObjStartDate);
-      }
       if (dateObjFairEndDate < dateObjStartDate) {
         return false;
       } else if (dateObjFairStartDate > dateObjEndDate) {
