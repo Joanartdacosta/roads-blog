@@ -54,6 +54,10 @@ export default function FilteringFairByDateAndRegion() {
     });
   }
 
+  const orderFairs = allfairs.slice().sort((a, b) => {
+    return new Date(a.date.startDate) - new Date(b.date.startDate);
+  });
+
   return (
     <div>
       <h1 className="text-sm pb-8 pt-8 display text-center m-auto ">
@@ -83,7 +87,7 @@ export default function FilteringFairByDateAndRegion() {
 
           <div>
             {current ? (
-              allfairs.map((fair) => {
+              orderFairs.map((fair) => {
                 return (
                   <div className="w-full" key={fair._id}>
                     <FairCard fair={fair} />

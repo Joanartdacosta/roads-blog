@@ -10,9 +10,9 @@ export default function ModalInfo(props) {
   }
 
   return (
-    <div>
-      <div className="flex">
-        <div className="bg-gray-50 border border-gray-100 dark:bg-gray-800 dark:border-gray-700 p-5 rounded-lg">
+    <div className="flex">
+      <div className="flex ">
+        <div className="bg-gray-50 border border-gray-100 dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg ">
           <time className="font-semibold text-lg text-gray-900 dark:text-white">
             Historia
           </time>
@@ -46,17 +46,17 @@ export default function ModalInfo(props) {
             </div>
           </ol>
         </div>
-
-        <Image
-          src={props.imgURL}
-          alt={props.title}
-          width={100}
-          height={100}
-          unoptimized
-          className="object-cover w-10/12 image-responsive"
-        />
       </div>
-      <div></div>
+
+      <Image
+        src={props.imgURL}
+        alt={props.title}
+        unoptimized
+        contain={true}
+        width={300}
+        height={100}
+        className="object-cover image-responsive"
+      />
     </div>
   );
 }
