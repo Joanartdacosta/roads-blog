@@ -53,6 +53,12 @@ svg {
   color: rgb(186, 152, 13);
 }
 
+.stroke {
+  -webkit-text-stroke: 1px rgb(105, 140, 105);
+  -webkit-text-fill-color: white;
+  padding: 10px;
+}
+
 @media screen and (max-width: 770px) {
   .menu-normal {
     display: none;
