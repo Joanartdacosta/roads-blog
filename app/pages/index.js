@@ -6,7 +6,7 @@ export default function Home() {
     <div className="m-auto">
       <HomeVideo />
 
-      <div className="flex flex-column w-screen pt-40 ml-28">
+      <div className="flex flex-column w-screen pt-40 sm:ml-28">
         <header className="relative">
           <MainTitle />
         </header>

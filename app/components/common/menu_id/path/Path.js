@@ -1,8 +1,7 @@
 import Arrow from "@/components/common/icons/Arrow";
-import Info from "./Info";
-import { useState } from "react";
-
+import Info from "@/components/common/menu_id/path/Info";
 import PATH_OPTIONS_LABELS from "@/components/enums/path_options_labels";
+import { useState } from "react";
 
 export default function Path(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +29,7 @@ export default function Path(props) {
           type="button"
         >
           <div>
-            <h2>{props.label}</h2>
+            <h2 className="text-base">{props.label}</h2>
           </div>
 
           <Arrow isOpen={isOpen} />

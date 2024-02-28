@@ -1,4 +1,4 @@
-import PathImage from "./PathImage";
+import PathImage from "@/components/common/menu_id/path/PathImage";
 import { useSelector } from "react-redux";
 
 export default function Access(props) {
@@ -14,11 +14,11 @@ export default function Access(props) {
       id="accordion-flush-body-3"
       aria-labelledby="accordion-flush-heading-3"
     >
-      <p className="mb-2 text-gray-500 dark:text-gray-400">{props.label}</p>
+      <p className="mb-2 text-gray-500 dark:text-gray-400 ">{props.label}</p>
 
       {current?.imagesPath1 ? (
         <div>
-          {current.imagesPath1.map((image) => {
+          {current?.imagesPath1.map((image) => {
             return (
               <div>
                 <PathImage image={image} title={current.title} />

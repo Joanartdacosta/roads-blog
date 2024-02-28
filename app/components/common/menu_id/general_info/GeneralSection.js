@@ -1,7 +1,7 @@
 import Classification from "@/components/common/menu_id/classification/Classification";
 import GeneralValues from "@/components/common/menu_id/general_info/GeneralValues";
 import GENERAL_SUBTITLES from "@/components/enums/general_subtitle";
-import Introduction from "./Introduction";
+import Introduction from "@/components/common/menu_id/general_info/Introduction";
 import { useSelector } from "react-redux";
 
 export default function GeneralSection(props) {
@@ -48,6 +48,7 @@ export default function GeneralSection(props) {
           )}
         </div>
       </div>
+
       <Classification page={props.page} />
     </div>
   );

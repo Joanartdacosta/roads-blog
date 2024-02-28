@@ -1,7 +1,7 @@
-import DropDownArrow from "../../icons/DropDownArrow";
-import { useState, useEffect, useRef } from "react";
-import DropDownMenu from "./DropDownMenu";
+import DropDownArrow from "@/components/common/icons/DropDownArrow";
+import DropDownMenu from "@/components/common/navbar/navbar_large/DropDownMenu";
 import Image from "next/image";
+import { useState, useEffect, useRef } from "react";
 
 export default function NavBarLarge() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +38,7 @@ export default function NavBarLarge() {
                 width={66}
                 src="https://estradas-website.s3.amazonaws.com/Estradas/icons/logos/roads-logo-white.png"
                 unoptimized
+                priority={false}
               />
             </a>
           </div>

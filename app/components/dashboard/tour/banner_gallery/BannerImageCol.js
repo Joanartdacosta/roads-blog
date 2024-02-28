@@ -1,4 +1,4 @@
-import BannerImage from "./BannerImage";
+import BannerImage from "@/components/dashboard/tour/banner_gallery/BannerImage";
 
 export default function BannerImageCol(props) {
   const IMG_URLS = [];

@@ -10,7 +10,7 @@ export default function InfoBullets(props) {
   return (
     <div>
       <div
-        className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+        className="p-8 bg-white rounded-lg md:p-8 dark:bg-gray-800 text-left"
         id="about"
         role="tabpanel"
         aria-labelledby="about-tab"
@@ -18,7 +18,7 @@ export default function InfoBullets(props) {
         {" "}
         <div>
           <h2 className="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            {TAB_BUTTONS_LABELS.recomendation}
+            {props.label}
           </h2>
           <ul
             role="list"
@@ -27,9 +27,11 @@ export default function InfoBullets(props) {
             <div>
               {BULLETS.map((bullet) => {
                 return (
-                  <li className="flex space-x-2 items-center" key={bullet}>
-                    <Bullet />
-                    <span className="leading-tight p-2">{bullet}</span>
+                  <li className="flex space-x-2" key={bullet}>
+                    <Bullet className="pr-2" />
+                    <span className="leading-tight pl-2 pb-4 poppins">
+                      {bullet}
+                    </span>
                   </li>
                 );
               })}
