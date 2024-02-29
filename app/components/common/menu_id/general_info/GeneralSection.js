@@ -19,22 +19,30 @@ export default function GeneralSection(props) {
         id="fullWidthTabContent"
         className="border-t border-gray-200 dark:border-gray-600"
       >
-        <div className="flex justify-center responsive-flex p-4">
-          {props.page === "trip" || current?.info ? (
-            <div>
-              <GeneralValues
-                value={current.info.distance}
-                subtitle={GENERAL_SUBTITLES.distance}
-              />
-              <GeneralValues
-                value={current.info.duration}
-                subtitle={GENERAL_SUBTITLES.duration}
-              />
-              <GeneralValues
-                value={current.info.difficulty}
-                subtitle={GENERAL_SUBTITLES.difficulty}
-              />
-            </div>
+        <div className="flex justify-center">
+          {current?.info?.distance ? (
+            <GeneralValues
+              value={current.info.distance}
+              subtitle={GENERAL_SUBTITLES.distance}
+            />
+          ) : (
+            ""
+          )}
+
+          {current?.info?.duration ? (
+            <GeneralValues
+              value={current.info.duration}
+              subtitle={GENERAL_SUBTITLES.duration}
+            />
+          ) : (
+            ""
+          )}
+
+          {current?.info?.difficulty ? (
+            <GeneralValues
+              value={current.info.difficulty}
+              subtitle={GENERAL_SUBTITLES.difficulty}
+            />
           ) : (
             ""
           )}
