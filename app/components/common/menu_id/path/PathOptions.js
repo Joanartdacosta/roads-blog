@@ -24,7 +24,7 @@ export default function PathOptions(props) {
         data-inactive-classes="text-gray-500 dark:text-gray-400"
       >
         {current?.description3 ? (
-          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+          <div className="py-5 border-b border-gray-200 dark:border-gray-700 text-center">
             {current.description3.map((description) => {
               return (
                 <div key={description}>

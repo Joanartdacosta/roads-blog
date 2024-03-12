@@ -10,7 +10,7 @@ export default function Introduction(props) {
 
   return (
     <div>
-      <div className="m-auto text-gray-900  dark:text-white">
+      <div className="m-auto text-gray-900 text-center dark:text-white">
         <div className="flex flex-col items-center justify-center">
           <div className="mb-8 mt-8 text-3xl font-extrabold">
             {current?.title}

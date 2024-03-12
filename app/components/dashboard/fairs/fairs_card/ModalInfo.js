@@ -26,8 +26,6 @@ export default function ModalInfo(props) {
               </div>
 
               <div className="text-sm font-normal pb-10">
-                <p className="text-base bold italic pb-2">Mais detalhes</p>
-
                 {props.paragraphs
                   ? Object.values(props.paragraphs).map((paragraph) => (
                       <p>{paragraph}</p>
@@ -35,8 +33,9 @@ export default function ModalInfo(props) {
                   : ""}
               </div>
 
-              <div className="text-sm font-normal pb-10">
-                <p>Fonte: {props.sources}</p>
+              <div className="text-xs pb-10">
+                <p className="font-extrabold">Fonte:</p>
+                <p> {props.sources}</p>
               </div>
 
               <ButtonYellow
