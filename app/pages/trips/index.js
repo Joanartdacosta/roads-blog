@@ -1,5 +1,4 @@
 import CardStars from "@/components/common/UI/cards/card_stars/CardStars";
-import FreeTourBanner from "@/components/common/freetour_banner/FreeTourBanner";
 import { getFeaturedTrips } from "@/helpers/api-util";
 import GeneralBanner from "@/components/common/general_banner/GeneralBanner";
 import NAVBAR_LINKS from "@/components/lists/navbar_links_map";
@@ -16,7 +15,6 @@ export default function Trips(props) {
       <div className="max-w-5xl m-auto pt-20 pb-20">
         <CardStars data={props.trips} />
       </div>
-      <FreeTourBanner />
     </div>
   );
 }

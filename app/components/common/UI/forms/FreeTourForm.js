@@ -6,7 +6,7 @@ import TextArea from "@/components/common/UI/forms/details/TextArea";
 
 import { useState } from "react";
 
-export default function Form() {
+export default function FreeTourForm() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -45,6 +45,29 @@ export default function Form() {
           placeholder="Enter your message..."
           required
         />
+
+        <div className="pt-10 pb-10">
+          <p>
+            Para solicitar o roteiro gratuito, estes campos sao obrigatorios:
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 md:gap-6">
+          <Input
+            type={"text"}
+            label={FORM_LABELS.departurePoint}
+            value={departure}
+            onChange={(e) => setDeparture(e.target.value)}
+            name="departure"
+          />
+          <Input
+            type={"text"}
+            label={FORM_LABELS.arrivalPoint}
+            value={arrival}
+            name="arrival"
+            onChange={(e) => setArrival(e.target.value)}
+          />
+        </div>
 
         <SubmitButton id="submit" label={BUTTONS_LABELS.sendMessage} />
       </form>

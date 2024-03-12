@@ -1,5 +1,5 @@
-import Form from "@/components/common/UI/forms/Form";
 import Banner from "@/components/dashboard/tour/banner/Banner";
+import FreeTourForm from "@/components/common/UI/forms/FreeTourForm";
 
 export default function FreeTour() {
   return (
@@ -15,7 +15,7 @@ export default function FreeTour() {
           será entregue uma proposta de roteiro no prazo máximo de uma semana.
         </p>
 
-        <Form />
+        <FreeTourForm />
       </div>
     </div>
   );
