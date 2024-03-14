@@ -12,7 +12,7 @@ export default function MenuItem(props) {
             aria-controls={props.id}
             aria-selected="true"
             value={props.label}
-            className="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
+            className="play font-bold inline-block w-full p-4 rounded-tl-lg bg-gray-50 text-black hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600"
             onClick={props.onClick}
           >
             {props.label}
@@ -28,7 +28,7 @@ export default function MenuItem(props) {
             aria-controls={props.id}
             aria-selected="true"
             value={props.label}
-            className="inline-block p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600"
+            className="play font-bold inline-block p-4 rounded-tl-lg bg-gray-50 text-black hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600"
           >
             {props.icon}
           </button>
